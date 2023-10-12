@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+.border-container {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 70%;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+}
+
+div > p {
+  font-family: "Craftwork Grotesk", sans-serif !important;
+}
+
+div > h1 {
+  font-family: "Craftwork Grotesk", sans-serif !important;
+}
+
+div > h2 {
+  font-family: "Craftwork Grotesk", sans-serif !important;
+}
