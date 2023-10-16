@@ -8,3 +8,9 @@
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
+
+.bgImg {
+  background-image: url("./assets/bg_team.png");
+  background-size: cover;
+  background-position: center;
+}
