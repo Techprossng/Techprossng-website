@@ -1,0 +1,23 @@
+.services {
+  background-image: url("../images/union.svg");
+}
+
+.line {
+  margin: auto 35rem auto 35rem;
+  width: 70px;
+  height: 6px;
+  border-radius: 12px;
+  background: #2b3f8c;
+}
+
+.header {
+  color: #272727;
+}
+
+.title {
+  color: #001975;
+}
+
+.paragraph {
+  color: #656565;
+}
