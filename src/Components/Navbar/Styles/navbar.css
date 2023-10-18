@@ -1,0 +1,43 @@
+.custom-height {
+  height: 98px;
+}
+
+.custom-font {
+  font-weight: 640;
+  font-size: 15px;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1);
+}
+
+.button-1 {
+  background: rgba(0, 25, 117, 1);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.button-2 {
+  background: #fff;
+  color: rgba(0, 0, 0, 1);
+  font-size: 13px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.menu {
+  height: 30px;
+  width: 30px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 880px) {
+  .custom-image-small {
+    position: relative;
+    right: 30px;
+    bottom: 5px;
+  }
+}
