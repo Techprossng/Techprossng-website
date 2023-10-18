@@ -1,10 +1,6 @@
-.font {
-  font-size: 40px;
-}
 
 .header-text {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-weight: 800;
 }
 
 .background-color {
@@ -16,9 +12,4 @@
 
 .color {
   background: rgba(43, 63, 140, 1);
-  width: 83px;
-  height: 6px;
-  border-radius: 12px;
-  transform: translateX(-90%);
-  margin-bottom: 30px;
 }

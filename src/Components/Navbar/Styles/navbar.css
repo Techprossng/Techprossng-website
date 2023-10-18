@@ -2,29 +2,9 @@
   height: 98px;
 }
 
-.custom-gap {
-  gap: 6rem;
-}
-
-.custom-size {
-  font-size: 17px;
-}
-
 .custom-font {
   font-weight: 640;
-}
-
-.custom-position {
-  position: relative;
-  left: 10rem;
-}
-
-.links-gap {
-  gap: 30px;
-}
-
-.gap {
-  gap: 20rem;
+  font-size: 15px;
 }
 
 .shadow {
@@ -49,36 +29,15 @@
   border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.button-gap {
-  gap: 20px;
-}
-
 .menu {
   height: 30px;
   width: 30px;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 880px) {
-  .custom-position-small {
-    position: relative;
-    left: 0;
-  }
-
-  .custom-button-position {
-    position: relative;
-    right: 20rem;
-  }
-
-  .button-gap {
-    gap: 20px;
-    display: inline-flex;
-    margin-top: 20px;
-    justify-content: space-between;
-  }
-
   .custom-image-small {
     position: relative;
     right: 30px;
-    bottom: 20px;
+    bottom: 5px;
   }
 }

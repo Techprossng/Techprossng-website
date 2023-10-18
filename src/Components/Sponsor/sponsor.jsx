@@ -1,4 +1,3 @@
-
 import Sponsor1 from "../../assets/images/coinbase.svg";
 import Sponsor2 from "../../assets/images/spotify.svg";
 import Sponsor3 from "../../assets/images/slack.svg";
@@ -14,7 +13,6 @@ import Sponsor12 from "../../assets/images/figma.svg";
 import "../Sponsor/Styles/sponsor.css";
 
 const Sponsor = () => {
-
   const sponsorLogos = [
     Sponsor1,
     Sponsor2,
@@ -30,27 +28,19 @@ const Sponsor = () => {
     Sponsor12,
   ];
 
-
   return (
-    <div
-      className="bg-contain w-full  bg-center bg-fixed py-40 background-color"
-    >
-      <div className="top-0  left-0 right-0 text-center pt-4 ">
-        <h2 className="text-3xl  font-semibold text-black header-text ">
+    <div className="bg-contain w-full  bg-center bg-fixed py-40 background-color">
+      <div className="flex justify-center " style={{ zIndex: 1 }}>
+        <h2 className="text-[32px] leading-[38.4px] relative w-fit header-text">
           PARTNERSHIPS
+          <p className="absolute bottom-[-8px] left-0 w-[83px] h-[6px] color rounded-[12px]"></p>
         </h2>
-        <div className=" mx-auto mt-0 color"></div>
       </div>
 
-      <div className="container  mx-auto grid grid-cols-6 gap-0">
+      <div className="container mt-10  mx-auto grid grid-cols-6 gap-0">
         {sponsorLogos.map((logo, index) => (
           <div key={index} className="w-2/2 p-10">
-            <img
-              src={logo}
-              alt={`Sponsor ${index + 1}`}
-              className="mx-auto"
-            
-            />
+            <img src={logo} alt={`Sponsor ${index + 1}`} className="mx-auto" />
           </div>
         ))}
       </div>
