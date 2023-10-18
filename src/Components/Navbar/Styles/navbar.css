@@ -4,7 +4,7 @@
 
 .custom-font {
   font-weight: 640;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .shadow {
@@ -32,6 +32,10 @@
 .menu {
   height: 30px;
   width: 30px;
+}
+
+.custom-space-x > * {
+  margin-right: 65px;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 880px) {

@@ -70,7 +70,7 @@ const Navbar = () => {
       </div>
 
       {/* Tablet and Desktop Menu */}
-      <div className="hidden md:flex space-x-20">
+      <div className="hidden md:flex custom-space-x">
         {Links.map((link) => (
           <a
             href={link.link}
