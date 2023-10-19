@@ -1,12 +1,19 @@
-// import React from 'react'
 import './App.css'
+import Navbar from './Components/Navbar/navbar'
+import Sponsor from './Components/Sponsor/sponsor'
 
 function App() {
  
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+     <>
+     <Navbar/>
+     <Sponsor/>
+      <div className='bg-full w-full h-screen'>
+       
+      </div>
+     </> 
+     
+
   )
 }
 

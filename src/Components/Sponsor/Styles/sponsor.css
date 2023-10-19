@@ -1,0 +1,15 @@
+
+.header-text {
+  font-weight: 800;
+}
+
+.background-color {
+  background-color: rgba(240, 243, 255, 1);
+  background-image: url(../../../assets/images/Group.svg), url(../../../assets/images/Group2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: 37%, 62%;
+}
+
+.color {
+  background: rgba(43, 63, 140, 1);
+}
