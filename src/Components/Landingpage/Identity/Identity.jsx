@@ -1,5 +1,4 @@
 import React from "react";
-import "./fonts/CraftworkGrotesk-Regular.ttf";
 import icon from "./icons/icon.svg";
 import vector from "./icons/vector.png";
 import vector1 from "./icons/vector1.svg";
@@ -7,7 +6,6 @@ import "./styles/style.css";
 
 const Identity = () => {
   return (
-    // statistics section
     <section className="container">
       <div className="border-container">
         <div className="flex justify-between items-center">
