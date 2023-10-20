@@ -3,8 +3,8 @@ import Navbar from './Components/Navbar/navbar'
 import Sponsor from './Components/Sponsor/sponsor'
 
 function App() {
- 
   return (
+
      <>
      <Navbar/>
      <Sponsor/>
@@ -13,8 +13,7 @@ function App() {
       </div>
      </> 
      
-
   )
 }
 
-export default App
+export default App;
