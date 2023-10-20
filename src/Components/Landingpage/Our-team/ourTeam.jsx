@@ -1,5 +1,6 @@
 import React from "react";
-import team_avi from "../../assets/team_avi.png";
+import team_avi from "../../../assets/team_avi.png";
+import "./styles/team.css"
 
 export const team = [
   {

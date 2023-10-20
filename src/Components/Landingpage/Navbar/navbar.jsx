@@ -1,6 +1,6 @@
 // src/components/Navbar.js
 import { useState } from "react";
-import "../Navbar/Styles/navbar.css";
+import "../../Landingpage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
   let Links = [
@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="flex items-center">
         <img
-          src="src/assets/images/Logo.svg"
+          src="../../src/assets/images/Logo.svg"
           alt="Logo"
           className="custom-image-small"
         />

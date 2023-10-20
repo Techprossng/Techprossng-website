@@ -1,16 +1,16 @@
-import Sponsor1 from "../../assets/images/coinbase.svg";
-import Sponsor2 from "../../assets/images/spotify.svg";
-import Sponsor3 from "../../assets/images/slack.svg";
-import Sponsor4 from "../../assets/images/dropbox.svg";
-import Sponsor5 from "../../assets/images/webflow.svg";
-import Sponsor6 from "../../assets/images/zoom.svg";
-import Sponsor7 from "../../assets/images/loom.svg";
-import Sponsor8 from "../../assets/images/asana.svg";
-import Sponsor9 from "../../assets/images/adobe.svg";
-import Sponsor10 from "../../assets/images/calendly.svg";
-import Sponsor11 from "../../assets/images/github.svg";
-import Sponsor12 from "../../assets/images/figma.svg";
-import "../Sponsor/Styles/sponsor.css";
+import Sponsor1 from "../../../assets/images/coinbase.svg";
+import Sponsor2 from "../../../assets/images/spotify.svg";
+import Sponsor3 from "../../../assets/images/slack.svg";
+import Sponsor4 from "../../../assets/images/dropbox.svg";
+import Sponsor5 from "../../../assets/images/webflow.svg";
+import Sponsor6 from "../../../assets/images/zoom.svg";
+import Sponsor7 from "../../../assets/images/loom.svg";
+import Sponsor8 from "../../../assets/images/asana.svg";
+import Sponsor9 from "../../../assets/images/adobe.svg";
+import Sponsor10 from "../../../assets/images/calendly.svg";
+import Sponsor11 from "../../../assets/images/github.svg";
+import Sponsor12 from "../../../assets/images/figma.svg";
+import "../../Landingpage/Sponsor/Styles/sponsor.css";
 
 const Sponsor = () => {
   const sponsorLogos = [

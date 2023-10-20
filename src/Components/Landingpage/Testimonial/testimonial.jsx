@@ -1,5 +1,5 @@
 import React from "react";
-import avi from "../../assets/avi.png";
+import avi from "../../../assets/avi.png";
 import Card from "./card";
 
 export const cards = [

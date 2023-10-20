@@ -1,16 +1,11 @@
 import './App.css'
-import Navbar from './Components/Navbar/navbar'
-import Sponsor from './Components/Sponsor/sponsor'
+import LandingPage from './pages/landing-page';
 
 function App() {
   return (
 
      <>
-     <Navbar/>
-     <Sponsor/>
-      <div className='bg-full w-full h-screen'>
-       
-      </div>
+      <LandingPage/>
      </> 
      
   )
