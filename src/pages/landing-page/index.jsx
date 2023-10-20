@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Navbar from "../../Components/Landingpage/Navbar/navbar";
 import Sponsor from "../../Components/Landingpage/Sponsor/sponsor";
 import Testimonial from "../../Components/Landingpage/Testimonial/testimonial";
