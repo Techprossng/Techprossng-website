@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import avi from "../../../assets/avi.png";
 import Card from "./card";
 
@@ -51,6 +51,7 @@ const Testimonial = () => {
       <div className="flex gap-16 items-center justify-center mx-24 flex-col px-32 ">
         {cards.map((item, index) => (
           <Card
+            key={index}
             image={item.image}
             heading={item.heading}
             subHeading={item.subHeading}
