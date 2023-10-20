@@ -1,19 +1,19 @@
-import React from "react";
-import "./App.css";
-import Testimonial from "./Components/Testimonial/testimonial";
-import OurTeam from "./Components/Our-team/ourTeam";
+import './App.css'
+import Navbar from './Components/Navbar/navbar'
+import Sponsor from './Components/Sponsor/sponsor'
 
 function App() {
   return (
-    <>
-      <div className="mx-20 my-16">
-        <Testimonial />
+
+     <>
+     <Navbar/>
+     <Sponsor/>
+      <div className='bg-full w-full h-screen'>
+       
       </div>
-      <div className="mx-20 my-16">
-        <OurTeam />
-      </div>
-    </>
-  );
+     </> 
+     
+  )
 }
 
 export default App;
