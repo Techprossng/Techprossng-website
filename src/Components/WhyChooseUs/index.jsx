@@ -1,5 +1,5 @@
-export default function CTA() {
-  const ctaList = [
+export default function WhyChooseUs() {
+  const list = [
     { 
       title: "Lorem Ipsum",
       description: "Lorem ipsum dolor sit amet consectetur. Adipiscing enim amet id elit non ac aenean. Venenatis ultricies velit morbi quam tincidunt congue."
@@ -30,16 +30,16 @@ export default function CTA() {
       {/* contents */}
       <div>
         <div className="absolute top-[14%] left-[5%] z-[-50]">
-          <img src="src/assets/icons/cta_dots.svg" className="w-[185px]"/>
+          <img src="src/assets/icons/whychooseus_dots.svg" className="w-[185px]"/>
         </div>
         <div className="absolute top-[18%] right-0 z-[-50]">
-          <img src="src/assets/images/cta_image.png" className="w-[1135px]"/>
+          <img src="src/assets/images/whychooseus_image.png" className="w-[1135px]"/>
         </div>
         <ul className="p-[84px_68px] space-y-[32px]">
           {
-            ctaList.map((item, index) => (
+            list.map((item, index) => (
               <li key={index} className="flex gap-x-[24px] items-start">
-                <img src="src/assets/icons/cta_frame.svg" alt="" width={64} height={64} />
+                <img src="src/assets/icons/whychooseus_frame.svg" alt="" width={64} height={64} />
                 <div className="max-w-[392px] space-y-[8px]">
                   <p className="font-medium text-[24px]">{item.title}</p>
                   <p>{item.description}</p>
