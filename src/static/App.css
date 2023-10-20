@@ -9,8 +9,6 @@
   src:
     url('src/assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
     url('src/assets/fonts/Mona-Sans.woff2') format('woff2-variations');
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
 }
 
 * {
