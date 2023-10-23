@@ -10,8 +10,7 @@ const Mission = () => {
                     <h4 className="heading text-3xl font-normal mb-3">Our Vision</h4>
                     <hr />
                     <p className="paragraph text-base font-medium">
-                        Lorem ipsum dolor sit amet consectetur. Sollicitudin 
-                        sed nisl vulputate consequat placerat. Risus enim lectus.
+                    TechProsNG aims to become Nigeria's premier EdTech institution by 2030. Our goal is to disseminate tech education throughout the nation, empowering a tech-savvy generation to drive the country's technological advancement.
                     </p>
                 </div>
 
@@ -19,8 +18,7 @@ const Mission = () => {
                     <h4 className="heading text-3xl font-normal mb-3">Our Mission</h4>
                     <hr />
                     <p className="paragraph text-base font-medium">
-                        Lorem ipsum dolor sit amet consectetur. Sollicitudin 
-                        sed nisl vulputate consequat placerat. Risus enim lectus.
+                    TechProsNG is dedicated to championing digital literacy and tech proficiency in Nigeria's education and workforce. We offer accessible, relevant tech education to empower students and professionals in an evolving digital landscape, fostering a tech-savvy future, one learner at a time.
                     </p>
                 </div>    
             </div>
