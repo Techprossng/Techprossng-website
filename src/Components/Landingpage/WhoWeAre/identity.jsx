@@ -19,7 +19,6 @@ const Identity = () => {
                 <p>
                 We are a dynamic tech education company that helps people access high-quality tech skills by increasing digital literacy and celebrating tech talents globally.
                 We are on a mission to empower the next generation of tech Innovators in Nigeria.
-
                 </p>
               </div>
               <div className="mini-border-container">
