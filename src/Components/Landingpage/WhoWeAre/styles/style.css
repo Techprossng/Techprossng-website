@@ -1,0 +1,39 @@
+.identity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+.border-container {
+  border: 0.5px solid #fff;
+  border-radius: 32px;
+  background: #ccd1e3;
+  padding: 32px;
+  width: 70%;
+}
+
+.mini-border-container {
+  display: flex;
+  border: 0.5px solid #fff;
+  border-radius: 16px;
+  padding: 24px 24px 32px 32px;
+  background: #f7f9ff;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+div > h6 {
+  font-family: "Craftwork Grotesk", sans-serif !important;
+  color: #272727;
+}
+
+div > h5 {
+  font-family: "Craftwork Grotesk", sans-serif !important;
+  letter-spacing: -0.41px;
+  color: #001975;
+}
