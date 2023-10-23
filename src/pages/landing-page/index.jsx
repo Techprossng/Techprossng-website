@@ -1,5 +1,6 @@
 // import React from "react";
 import Navbar from "../../Components/Landingpage/Navbar/navbar";
+import Mission from "../../Components/Landingpage/Mission/mission-vision";
 import Sponsor from "../../Components/Landingpage/Sponsor/sponsor";
 import Testimonial from "../../Components/Landingpage/Testimonial/testimonial";
 import OurTeam from "../../Components/Landingpage/Our-team/ourTeam";
@@ -11,6 +12,7 @@ const LandingPage = () => {
     <>
       <Navbar />
       <Sponsor />
+      <Mission />
       <Testimonial />
       <OurTeam />
       <CTA />
