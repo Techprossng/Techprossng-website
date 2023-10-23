@@ -1,5 +1,4 @@
 import React from "react";
-import "./fonts/CraftworkGrotesk-Regular.ttf";
 import "./styles/services.css"
 import online from "./images/online.png"
 import mentorship from "./images/mentorship.png"
