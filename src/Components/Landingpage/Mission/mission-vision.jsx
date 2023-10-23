@@ -14,7 +14,7 @@ const Mission = () => {
                     </p>
                 </div>
 
-                <div className="mission-container">
+                <div className="mission-container" data-aos="fade-up">
                     <h4 className="heading text-3xl font-normal mb-3">Our Mission</h4>
                     <hr />
                     <p className="paragraph text-base font-medium">
@@ -23,7 +23,7 @@ const Mission = () => {
                 </div>    
             </div>
 
-            <div className="mission-image mt-3 mb-3">
+            <div className="mission-image mt-3 mb-3" data-aos="zoom-in">
                 <img src={dartImage} alt="dart image" />
             </div>
         </section>
