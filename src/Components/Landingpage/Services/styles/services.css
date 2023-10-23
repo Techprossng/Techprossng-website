@@ -3,14 +3,6 @@
   margin-top: 1rem;
 }
 
-.line {
-  margin: auto 35rem auto 36rem;
-  width: 70px;
-  height: 6px;
-  border-radius: 12px;
-  background: #2b3f8c;
-}
-
 .header {
   color: #272727;
 }
