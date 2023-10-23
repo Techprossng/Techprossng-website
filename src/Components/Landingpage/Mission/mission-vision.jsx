@@ -1,12 +1,11 @@
 import React from "react";
-import "./fonts/CraftworkGrotesk-Regular.ttf"
 import dartImage from "./images/dart-diagram.png";
 import "./styles/mission.css";
 
 const Mission = () => {
     return (
         <section className="mission-container flex justify-around">
-            <div className="texts-container flex flex-col justify-center items-center gap-20 ">
+            <div className="texts-container flex flex-col justify-center items-center gap-20">
                 <div className="vision-container">
                     <h4 className="heading text-3xl font-normal mb-3">Our Vision</h4>
                     <hr />
@@ -26,7 +25,7 @@ const Mission = () => {
                 </div>    
             </div>
 
-            <div className="mission-image">
+            <div className="mission-image mt-3 mb-3">
                 <img src={dartImage} alt="dart image" />
             </div>
         </section>
