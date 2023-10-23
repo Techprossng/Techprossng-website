@@ -11,8 +11,8 @@ const LandingPage = () => {
   return (
     <>
       <Navbar />
-      <Services />
       <Sponsor />
+      <Services />
       <Testimonial />
       <OurTeam />
       <CTA />
