@@ -27,13 +27,18 @@
   flex-shrink: 0;
 }
 
-div > h6 {
-  font-family: "Craftwork Grotesk", sans-serif !important;
-  color: #272727;
-}
+@media screen and (max-width: 768px) {
+  .identity-container {
+    height: 100%;
+  }
 
-div > h5 {
-  font-family: "Craftwork Grotesk", sans-serif !important;
-  letter-spacing: -0.41px;
-  color: #001975;
+  .border-container {
+    border-radius: 0%;
+    width: 100%;
+
+  }
+
+  .mini-border-container {
+    display: none;
+  }
 }
