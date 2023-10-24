@@ -7,23 +7,23 @@ const Mission = () => {
         <section className="mission-container flex justify-around">
             <div className="texts-container flex flex-col justify-center items-center gap-20">
                 <div className="vision-container">
-                    <h4 className="heading text-3xl font-normal mb-3">Our Vision</h4>
+                    <h4 className="heading text-3xl font-primary mb-3 uppercase">Our Vision</h4>
                     <hr />
-                    <p className="paragraph text-base font-medium">
-                    TechProsNG aims to become Nigeria's premier EdTech institution by 2030. Our goal is to disseminate tech education throughout the nation, empowering a tech-savvy generation to drive the country's technological advancement.
+                    <p className="paragraph text-base font-secondary">
+                    TechProsNG aims to become Nigeria's premier EdTech institution by 2030. Our goal is to disseminate tech education throughout the nation, empowering a tech-savvy generation to drive the country's technological advancement. 
                     </p>
                 </div>
 
                 <div className="mission-container" data-aos="fade-up">
-                    <h4 className="heading text-3xl font-normal mb-3">Our Mission</h4>
+                    <h4 className="heading text-3xl font-primary mb-3 uppercase">Our Mission</h4>
                     <hr />
-                    <p className="paragraph text-base font-medium">
+                    <p className="paragraph text-base font-secondary">
                     TechProsNG is dedicated to championing digital literacy and tech proficiency in Nigeria's education and workforce. We offer accessible, relevant tech education to empower students and professionals in an evolving digital landscape, fostering a tech-savvy future, one learner at a time.
                     </p>
                 </div>    
             </div>
 
-            <div className="mission-image mt-3 mb-3" data-aos="zoom-in">
+            <div className="mission-image mt-3 mb-5" data-aos="zoom-in">
                 <img src={dartImage} alt="dart image" />
             </div>
         </section>
