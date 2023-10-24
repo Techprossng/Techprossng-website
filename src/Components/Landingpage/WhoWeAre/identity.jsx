@@ -14,21 +14,18 @@ const Identity = () => {
             className="flex flex-col items-start gap-[16px]"
             data-aos="fade-right"
           >
-            <h6 className="text-base font-normal">WHO WE ARE</h6>
-            <h5 className="text-3xl font-normal">
+            <h6 className="text-base font-primary text-[#272727]">WHO WE ARE</h6>
+            <h5 className="text-3xl font-primary text-[#001975]">
               WE ARE YOUR PARTNER FOR LEARNING AND CAREER GROWTH.
             </h5>
-            <p>
+            <p className="font-secondary text-[#272727]">
               We are a dynamic tech education company that helps people access
               high-quality tech skills by increasing digital literacy and
               celebrating tech talents globally. We are on a mission to empower
               the next generation of tech Innovators in Nigeria.
             </p>
           </div>
-          <div
-            className="mini-border-container"
-            data-aos="fade-left"
-          >
+          <div className="mini-border-container" data-aos="fade-left">
             <i className="h-9">
               <img src={vector1} alt="vector" />
             </i>
