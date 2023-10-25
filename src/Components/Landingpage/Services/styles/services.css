@@ -14,3 +14,17 @@
 .paragraph {
   color: #656565;
 }
+
+@media (max-width: 480px) {
+  .services-header {
+    font-size: 17px;
+  }
+
+  .paragraph {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+}
