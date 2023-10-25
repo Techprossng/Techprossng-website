@@ -3,7 +3,9 @@
   max-width: 1250px;
 }
 
-.heading .paragraph {
+.text-heading,
+.vision-paragraph,
+.mission-paragraph {
   color: #272727;
 }
 
@@ -16,17 +18,29 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-  .mission-container{
+  .mission-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #CCD1E3;
+    background-color: #ccd1e3;
+  }
+
+  .text-heading {
+    font-weight: 400;
+    font-size: 24px;
+    color: #001975;
+  }
+
+  .vision-paragraph,
+  .mission-paragraph {
+    font-weight: 500;
+    font-size: 15px;
   }
 
   .texts-container {
-    border: 1px solid #CCD1E3;
+    border: 1px solid #ccd1e3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,13 +55,6 @@ hr {
     justify-content: center;
   }
 
-  .mission-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-  }
-
   h4 {
     color: #001975;
   }
@@ -55,8 +62,7 @@ hr {
   .vision-container,
   .mission-container > p {
     text-align: center;
-    color: ext Dark
-    #272727;
+    color: #272727;
   }
 
   hr {
@@ -65,5 +71,13 @@ hr {
 
   .mission-image {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-heading {
+    font-weight: 400;
+    font-size: 17px;
+    color: #001975;
   }
 }
