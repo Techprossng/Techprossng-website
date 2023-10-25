@@ -10,11 +10,12 @@ const LandingPage = () => {
   return (
     <>
       <Navbar />
-      <Sponsor />
+      <Sponsor/>
       <Testimonial />
       <OurTeam />
       <CTA />
       <WhyChooseUs />
+      
     </>
   );
 };

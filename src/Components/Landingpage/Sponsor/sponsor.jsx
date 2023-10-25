@@ -21,30 +21,30 @@ const Sponsor = () => {
     Sponsor5,
     Sponsor6,
     Sponsor7,
-    Sponsor8,
-    Sponsor9,
     Sponsor10,
     Sponsor11,
+    Sponsor9,
+    Sponsor8,
     Sponsor12,
   ];
 
   return (
-    <div className="bg-contain w-full  bg-center bg-fixed py-40 background-color">
-      <div className="flex justify-center " style={{ zIndex: 1 }}>
-        <h2 className="text-[32px] leading-[38.4px] relative w-fit header-text">
-          PARTNERSHIPS
-          <p className="absolute bottom-[-8px] left-0 w-[83px] h-[6px] color rounded-[12px]"></p>
-        </h2>
-      </div>
-
-      <div className="container mt-10  mx-auto grid grid-cols-6 gap-0">
-        {sponsorLogos.map((logo, index) => (
-          <div key={index} className="w-2/2 p-10">
-            <img src={logo} alt={`Sponsor ${index + 1}`} className="mx-auto" />
-          </div>
-        ))}
-      </div>
+    <div className="bg-contain w-full bg-center py-40 background-color sponsor-contain">
+    <div className="flex justify-center" style={{ zIndex: 1 }}>
+      <h2 className="text-[32px] leading-[38.4px] relative w-fit header-text ">
+        PARTNERSHIPS
+        <p className="absolute bottom-[-8px] left-0 w-[83px] h-[6px] color rounded-[12px] under-line"></p>
+      </h2>
     </div>
+
+    <div className="container mt-20  mx-auto grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-20 pl-0 sponsor-small ">
+      {sponsorLogos.map((logo, index) => (
+        <div key={index} className="w-full sm:w-5/5 md:w-5/5 lg:w-5/5 "> 
+          <img src={logo} alt={`Sponsor ${index + 1}`} className="mx-auto" />
+        </div>
+      ))}
+    </div>
+  </div>
   );
 };
 
