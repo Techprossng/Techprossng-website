@@ -1,6 +1,6 @@
 // import React from "react";
 import team_avi from "../../../assets/team_avi.png";
-import "./styles/team.css"
+import "./styles/team.css";
 
 export const team = [
   {
@@ -29,7 +29,7 @@ export const team = [
 const OurTeam = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-16 py-11">
-      <div>
+      <div data-aos="zoom-in-left">
         <h4
           className="text-3xl ml-24 mr-24 uppercase"
           style={{ color: "#272727" }}
@@ -43,7 +43,7 @@ const OurTeam = () => {
       </div>
       <div className="flex gap-10 items-center justify-center mx-24 ">
         {team.map((item, index) => (
-          <div key={index}>
+          <div key={index} data-aos="flip-right">
             <div className="rounded-t-2xl">
               <img
                 src={item.img}
