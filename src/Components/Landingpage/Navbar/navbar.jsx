@@ -26,7 +26,7 @@ const Navbar = () => {
           alt="Logo"
           className="custom-image-large"
         />
-         <img
+        <img
           src="../../src/assets/images/Logo2.svg"
           alt="Logo"
           className="custom-image-small md:hidden"
@@ -47,35 +47,34 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
 
-    <div
-  className={`md:hidden
+      <div
+        className={`md:hidden
   md:pb-0 pb-12 absolute md:static bg-gray-500 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in ${
-    open ? "top-24 " : "top-[-690px]" 
+    open ? "top-24 " : "top-[-690px]"
   }`}
-   style={{ textAlign:'center', alignItems:'center'}}
->
-  <div className="flex flex-col space-y-10">
-    {Links.map((link) => (
-      <a
-        key={link.name}
-        href={link.link}
-        className="text-gray-800 hover:text-red-700 duration-500 "
-        style={{ fontSize:'20px' , fontWeight:'500'}}
+        style={{ textAlign: "center", alignItems: "center" }}
       >
-        {link.name}
-      </a>
-    ))}
-  </div>
-  <div className=" flex flex-wrap space-y-4 pr-5 pl-5 mt-10 ">
-    <button className="w-full h-[48px] px-5 py-3 rounded-md  button-2-small">
-      Log in
-    </button>
-    <button className="w-full h-[48px] px-5 py-3 rounded-md  text-white button-1">
-      Signup
-    </button>
-  </div>
-</div>
-
+        <div className="flex flex-col space-y-10">
+          {Links.map((link) => (
+            <a
+              key={link.name}
+              href={link.link}
+              className="text-gray-800 hover:text-red-700 duration-500 "
+              style={{ fontSize: "20px", fontWeight: "500" }}
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+        <div className=" flex flex-wrap space-y-4 pr-5 pl-5 mt-10 ">
+          <button className="w-full h-[48px] px-5 py-3 rounded-md  button-2-small">
+            Log in
+          </button>
+          <button className="w-full h-[48px] px-5 py-3 rounded-md  text-white button-1">
+            Signup
+          </button>
+        </div>
+      </div>
 
       {/* Tablet and Desktop Menu */}
       <div className="hidden md:flex custom-space-x">
@@ -90,9 +89,7 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden md:flex space-x-4">
-        <button className="w-32 h-[44px] px-3 py-3 button-2">
-          Log in
-        </button>
+        <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
         <button className="w-32 h-[48px] px-5 py-3 rounded-md  text-white button-1">
           Sign In
         </button>

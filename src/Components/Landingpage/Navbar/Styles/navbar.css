@@ -10,7 +10,13 @@
 .shadow {
   box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1);
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 8.59%, #f4050a 49.81%, rgba(0, 0, 0, 0) 89.96%);
+  border-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 8.59%,
+      #f4050a 49.81%,
+      rgba(0, 0, 0, 0) 89.96%
+    );
   border-image-slice: 1;
 }
 
