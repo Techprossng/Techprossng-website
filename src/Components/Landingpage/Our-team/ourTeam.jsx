@@ -7,6 +7,7 @@ export const team = [
     img: team_avi,
     name: "Lorem Ipsum",
     role: "Founder & CEO",
+    fade: "fade-right",
     description:
       "Lorem ipsum dolor sit amet consectetur. Adipiscing enim amet id elit non ac aenean. Adipiscing enim amet id elit non ac aenean. ",
   },
@@ -14,6 +15,7 @@ export const team = [
     img: team_avi,
     name: "Lorem Ipsum",
     role: "Founder & CEO",
+    fade: "flip-right",
     description:
       "Lorem ipsum dolor sit amet consectetur. Adipiscing enim amet id elit non ac aenean. Adipiscing enim amet id elit non ac aenean. ",
   },
@@ -21,6 +23,7 @@ export const team = [
     img: team_avi,
     name: "Lorem Ipsum",
     role: "Founder & CEO",
+    fade: "fade-left",
     description:
       "Lorem ipsum dolor sit amet consectetur. Adipiscing enim amet id elit non ac aenean. Adipiscing enim amet id elit non ac aenean. ",
   },
@@ -28,7 +31,7 @@ export const team = [
 
 const OurTeam = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-16 py-11">
+    <div className="flex flex-col  items-center justify-center gap-16 py-11">
       <div data-aos="zoom-in-left">
         <h4
           className="text-3xl ml-24 mr-24 uppercase"
@@ -43,7 +46,7 @@ const OurTeam = () => {
       </div>
       <div className="flex gap-10 items-center justify-center mx-24 ">
         {team.map((item, index) => (
-          <div key={index} data-aos="flip-right">
+          <div key={index} data-aos={item.fade}>
             <div className="rounded-t-2xl">
               <img
                 src={item.img}

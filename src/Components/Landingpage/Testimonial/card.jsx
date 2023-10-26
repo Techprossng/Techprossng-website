@@ -2,9 +2,9 @@ import React from "react";
 
 const Card = ({ image, heading, subHeading, content, even }) => {
   return (
-    <div className="flex gap-8 justify-center items-center px-16">
+    <div className="flex gap-8 justify-center items-center px-16 transform hover:scale-110">
       {even ? (
-        <div className="flex gap-9 " data-aos="zoom-in-left">
+        <div className="flex gap-9" data-aos="zoom-in-left">
           <img src={image} alt="avi" className="w-40 h-40" />
 
           <div className="rounded-lg px-4 py-6 shadow-2xl">
