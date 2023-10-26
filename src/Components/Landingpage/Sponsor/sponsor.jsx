@@ -39,11 +39,11 @@ const Sponsor = () => {
 
       <div
         className="container mt-20 mx-auto grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-20 pl-0 sponsor-small"
-        data-aos="zoom-in"
+        data-aos="zoom-in-up"
         data-aos-anchor="#example-anchor"
         data-aos-offset="500"
-        data-aos-duration="2000"
-        data-aos-easing="ease-in-back"
+        data-aos-duration="1000"
+        data-aos-easing="ease-out"
       >
         {sponsorLogos.map((logo, index) => (
           <div key={index} className="w-full sm:w-5/5 md:w-5/5 lg:w-5/5 ">
