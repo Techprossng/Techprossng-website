@@ -14,11 +14,11 @@ const Identity = () => {
             className="flex flex-col items-start gap-[16px]"
             data-aos="fade-right"
           >
-            <h6 className="who-we-are text-base font-primary text-[#272727]">WHO WE ARE</h6>
-            <h5 className="opening-text text-3xl font-primary text-[#001975]">
+            <h6 className="who-we-are text-base font-normal font-primary text-[#272727]">WHO WE ARE</h6>
+            <h5 className="opening-text text-3xl font-normal font-primary text-[#001975]">
               WE ARE YOUR PARTNER FOR LEARNING AND CAREER GROWTH.
             </h5>
-            <p className="opening-paragraph font-secondary text-[#272727]">
+            <p className="opening-paragraph font-medium font-secondary text-[#272727]">
               We are a dynamic tech education company that helps people access
               high-quality tech skills by increasing digital literacy and
               celebrating tech talents globally. We are on a mission to empower
