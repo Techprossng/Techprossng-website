@@ -16,7 +16,14 @@
 }
 
 @media (max-width: 480px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .services-header {
+    margin-top: 11rem;
     font-size: 17px;
   }
 
