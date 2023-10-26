@@ -2,8 +2,8 @@ export default function CTA() {
   return (
     <section className="p-[48px_128px]">
       <div className="flex flex-col sm:flex-row gap-[40px] justify-between items-center">
-        <div className="space-y-[32px]">
-            <div className="text-[40px] leading-[48px]">Take that step <br/> with TechProsNG!</div>
+        <div className="space-y-[32px]" data-aos="fade">
+            <div className="text-[42px] leading-[48px] font-semibold">Take that step <br/> with TechProsNG!</div>
             <button className="rounded-[20px] bg-[#FE0000] outline-none text-white p-[18px_24px]  flex justify-center items-center">
               <p className="w-[129px]">See Courses</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
@@ -11,8 +11,8 @@ export default function CTA() {
               </svg>
             </button>
         </div>
-        <div>
-          <img src="src/assets/images/cta_image.png" />
+        <div data-aos="zoom-in">
+          <img src="src/assets/images/cta_image.png"/>
         </div>
       </div>
     </section>
