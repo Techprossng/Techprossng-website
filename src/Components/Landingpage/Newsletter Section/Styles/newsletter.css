@@ -1,8 +1,4 @@
 .news-box{
-    position: relative;
-    margin-top: 150px;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     display: flex;
     flex-direction: column;
