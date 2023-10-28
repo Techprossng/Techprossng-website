@@ -21,9 +21,9 @@ export default function WhyChooseUs() {
     <section className="p-[96px_66px] relative">
       {/* header */}
       <div className="flex justify-center">
-        <header className="text-[32px] leading-[38.4px] relative w-fit">
+        <header className="text-[32px] leading-[38.4px] relative w-fit font-bold">
           WHY CHOOSE US?
-          <p className="absolute bottom-[-8px] left-0 w-[83px] h-[6px] bg-black rounded-[12px]"></p>
+          <p className="absolute bottom-[-12px] left-0 w-[83px] h-[6px] bg-[#2B3F8C] rounded-[12px]"></p>
         </header>
       </div>
 
@@ -32,17 +32,17 @@ export default function WhyChooseUs() {
         <div className="absolute top-[14%] left-[5%] z-[-50]">
           <img src="src/assets/icons/whychooseus_dots.svg" className="w-[185px]"/>
         </div>
-        <div className="absolute top-[18%] right-0 z-[-50]">
+        <div className="absolute top-[18%] right-0 z-[-50]" data-aos="fade-left" data-aos-delay="50">
           <img src="src/assets/images/whychooseus_image.png" className="w-[1135px]"/>
         </div>
         <ul className="p-[84px_68px] space-y-[32px]">
           {
             list.map((item, index) => (
-              <li key={index} className="flex gap-x-[24px] items-start">
+              <li key={index} className="flex gap-x-[24px] items-start" data-aos="fade-up-right">
                 <img src="src/assets/icons/whychooseus_frame.svg" alt="" width={64} height={64} />
-                <div className="max-w-[392px] space-y-[8px]">
-                  <p className="font-medium text-[24px]">{item.title}</p>
-                  <p>{item.description}</p>
+                <div className="max-w-[392px] space-y-[6px]">
+                  <p className="font-semibold text-[24px]">{item.title}</p>
+                  <p className="font-secondary text-[#656565]">{item.description}</p>
                 </div>
               </li>
             ))
