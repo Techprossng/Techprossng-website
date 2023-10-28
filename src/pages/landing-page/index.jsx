@@ -5,16 +5,19 @@ import Testimonial from "../../Components/Landingpage/Testimonial/testimonial";
 import OurTeam from "../../Components/Landingpage/Our-team/ourTeam";
 import CTA from "../../Components/Landingpage/CTA";
 import WhyChooseUs from "../../Components/Landingpage/WhyChooseUs";
+import Newsletter from "../../Components/Landingpage/Newsletter Section/newsletter";
 
 const LandingPage = () => {
   return (
     <>
       <Navbar />
       <Sponsor />
+      <WhyChooseUs />
       <Testimonial />
       <OurTeam />
+      <Newsletter />
       <CTA />
-      <WhyChooseUs />
+      
     </>
   );
 };
