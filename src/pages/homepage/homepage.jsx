@@ -1,10 +1,10 @@
 import React from "react";
-import Sample from "../../Components/Homepage/Sample/sample";
+import Library from "../../Components/Homepage/Resource Library/library";
 
 const Homepage = () => {
     return (
         <>
-        <Sample />
+        <Library />
         </>
     );
     }
