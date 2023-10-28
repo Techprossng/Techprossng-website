@@ -27,6 +27,10 @@ hr {
     background-color: #ccd1e3;
   }
 
+  .absolute {
+    display: none;
+  }
+
   .text-heading {
     font-weight: 400;
     font-size: 24px;
@@ -79,5 +83,9 @@ hr {
     font-weight: 400;
     font-size: 17px;
     color: #001975;
+  }
+
+  .absolute {
+    display: none;
   }
 }
