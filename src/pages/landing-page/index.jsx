@@ -1,5 +1,6 @@
 // import React from "react";
 import Navbar from "../../Components/Landingpage/Navbar/navbar";
+import Identity from "../../Components/Landingpage/WhoWeAre/identity";
 import Sponsor from "../../Components/Landingpage/Sponsor/sponsor";
 import Testimonial from "../../Components/Landingpage/Testimonial/testimonial";
 import OurTeam from "../../Components/Landingpage/Our-team/ourTeam";
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <Sponsor />
       <WhyChooseUs />
       <Testimonial />
+      <Identity />
       <OurTeam />
       <Newsletter />
       <CTA />
