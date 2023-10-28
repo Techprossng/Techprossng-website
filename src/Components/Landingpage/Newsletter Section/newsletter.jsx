@@ -4,7 +4,7 @@ import '../Newsletter Section/Styles/newsletter.css'
 function Newsletter() {
   return (
         <div>
-        <div className="news-box" data-aos="zoom-in-up">
+        <div className="news-box">
         <h1> Would you like to stay updated?</h1> 
         <h4>Subscribe to our newsletter.</h4>
         <div className="email" data-aos="fade-right">
