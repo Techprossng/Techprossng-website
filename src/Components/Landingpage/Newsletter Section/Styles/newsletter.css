@@ -1,130 +1,151 @@
-.news-box{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} 
-.news-box h1{
-    font-size: 30px;
-    color: black;
-    margin-bottom: 20px;
+.news-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.news-box h4{
-    font-size: 15px;
-    color: gray;
-    margin-bottom: 20px;
-} 
-.news-box .email{
-    height: 50px;
-    position: relative;
-    color: gray; 
-    margin-bottom: 20px;
+
+.news-box h1 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
 }
-.news-box .email input{
-    height: 100%;
-    width: 550px;
-    padding-left: 50px;
-    font-size: 12px;
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    border: 2px solid #001975;
+
+.news-box h4 {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 20px;
 }
-.news-box .email .icon{
-    position: absolute;
-    left: 25px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
+
+.news-box .email {
+  height: 50px;
+  position: relative;
+  color: gray;
+  margin-bottom: 20px;
 }
-.news-box .email button{
-    position: absolute;
-    top: 50%;
-    right: -70px;
-    transform: translate(-50%, -50%);
-    padding: 8px 12px;
-    cursor: pointer;
-    outline: none;
-    border-radius: 10px;
-    background: #001975;
-    color: white;
-    width: 150px; 
-    transition: 0.3s;
+
+.news-box .email input {
+  height: 100%;
+  width: 550px;
+  padding-left: 50px;
+  font-size: 12px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: 2px solid #001975;
 }
-.news-box .email button:hover{
-    background: #001999;
+
+.news-box .email .icon {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
 }
-.news-box p{
-    font-size: 15px;
-    color: gray;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 550px;
-    padding-left: 10px;
-    font-size: 12px;
+
+.news-box .email button {
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  transform: translate(-50%, -50%);
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  background: #001975;
+  color: white;
+  width: 150px;
+  transition: 0.3s;
 }
-.news-box p a{
-    text-decoration: none;
-    color: #001999;
+
+.news-box .email button:hover {
+  background: #001999;
 }
-@media only screen and (min-width: 360px) and (max-width: 640px){
-    .news-box h1{
-        margin-left: 5px;
-    }
-    .news-box .email{
-        position: left;
-    }
-    .news-box .email input{
-        width: 350px;
-        margin-right: 0;
-    }
-    .news-box .email button{
-        margin-right: 0;
-    }
-    .news-box h4{
-        text-align: left;
-        padding-right: 40%;
-        margin-left: -10px;
-    }
-    .news-box p{
-        text-align: left;
-        padding-right: 200px;
-        margin-left: 180px;
-    }
+
+.news-box p {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 550px;
+  padding-left: 10px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-.news-box h1{
+
+.news-box p a {
+  text-decoration: none;
+  color: #001999;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+  .news-box h1 {
+    margin-left: 5px;
+  }
+
+  .news-box .email {
+    position: left;
+  }
+
+  .news-box .email input {
+    width: 350px;
+    margin-right: 0;
+  }
+
+  .news-box .email button {
+    margin-right: 0;
+  }
+
+  .news-box h4 {
+    text-align: left;
+    padding-right: 40%;
+    margin-left: -10px;
+  }
+
+  .news-box p {
+    text-align: left;
+    padding-right: 200px;
+    margin-left: 180px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .news-box h1 {
     margin-left: -80px;
-}
-.news-box .email{
+  }
+
+  .news-box .email {
     position: center;
     margin-right: 120px;
-}
-.news-box .email input{
+  }
+
+  .news-box .email input {
     width: 550px;
     margin-right: 70px;
     margin-left: 210px;
-}
-.news-box .email button{
+  }
+
+  .news-box .email button {
     margin-right: 70px;
-}
-.news-box .email .icon{
+  }
+
+  .news-box .email .icon {
     position: absolute;
     margin-left: 210px;
     left: 25px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 12px;
-}
-.news-box h4{
+  }
+
+  .news-box h4 {
     text-align: left;
     padding-right: 40%;
     margin-left: -20px;
-}
-.news-box p{
+  }
+
+  .news-box p {
     text-align: left;
     padding-right: 5px;
-    margin-left: 0px;
-}
+    margin-left: 0;
+  }
 }

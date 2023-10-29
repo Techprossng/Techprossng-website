@@ -1,4 +1,5 @@
-import React from "react";
+import PropTypes from 'prop-types';
+
 
 const Card = ({ image, heading, subHeading, content, even }) => {
   return (
@@ -57,6 +58,14 @@ const Card = ({ image, heading, subHeading, content, even }) => {
       )}
     </div>
   );
+};
+
+Card.propTypes = {
+  image: PropTypes.string,
+  heading: PropTypes.string,
+  subHeading: PropTypes.string,
+  content: PropTypes.string,
+  even: PropTypes.bool,
 };
 
 export default Card;

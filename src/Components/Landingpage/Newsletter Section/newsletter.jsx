@@ -1,4 +1,3 @@
-import React from 'react'
 import '../Newsletter Section/Styles/newsletter.css'
 
 function Newsletter() {

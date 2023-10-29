@@ -1,4 +1,3 @@
-import React from "react";
 import icon from "./icons/icon.svg";
 import vector from "./icons/vector.png";
 import vector1 from "./icons/vector1.svg";
