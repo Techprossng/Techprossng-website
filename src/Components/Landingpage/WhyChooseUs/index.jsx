@@ -1,20 +1,24 @@
 export default function WhyChooseUs() {
   const list = [
     { 
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur. Adipiscing enim amet id elit non ac aenean. Venenatis ultricies velit morbi quam tincidunt congue."
+      title: "Proper Tech Learning-drill",
+      description: "We focus on real-world applications, so you can confidently apply your skills in any tech-related field."
     },
     { 
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur. Adipiscing enim amet id elit non ac aenean. Venenatis ultricies velit morbi quam tincidunt congue."
+      title: "Flexibility",
+      description: "Learn at your own pace with our online and offline classes. Fit tech education into your busy life."
     },
     { 
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur. Adipiscing enim amet id elit non ac aenean. Venenatis ultricies velit morbi quam tincidunt congue."
+      title: "Industry-Driven Curriculum",
+      description: "Our courses are designed in collaboration with industry experts to ensure you're learning what matters most."
     },
     { 
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur. Adipiscing enim amet id elit non ac aenean. Venenatis ultricies velit morbi quam tincidunt congue."
+      title: "Supportive Community",
+      description: "Join a network of fellow learners, mentors, and alumni who are passionate about tech."
+    },
+    { 
+      title: "Career Opportunities",
+      description: "TechProsNg graduates are followed up and given internship opportunities to land their first jobs."
     },
   ]
   return (
@@ -29,10 +33,10 @@ export default function WhyChooseUs() {
 
       {/* contents */}
       <div>
-        <div className="absolute top-[14%] left-[5%] z-[-50]">
+        <div className="absolute top-[14%] right-[8%] z-[-50] md:left-[5%]">
           <img src="src/assets/icons/whychooseus_dots.svg" className="w-[185px]"/>
         </div>
-        <div className="absolute top-[18%] right-0 z-[-50]" data-aos="fade-left" data-aos-delay="50">
+        <div className="absolute top-[18%] right-0 z-[-50] hidden md:block" data-aos="fade-left" data-aos-delay="50">
           <img src="src/assets/images/whychooseus_image.png" className="w-[1135px]"/>
         </div>
         <ul className="p-[84px_68px] space-y-[32px]">
