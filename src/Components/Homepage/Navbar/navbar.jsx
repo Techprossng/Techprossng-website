@@ -1,6 +1,6 @@
 // src/components/Navbar.js
 import { useState } from "react";
-import "../../Landingpage/Navbar/Styles/navbar.css";
+import "../../Homepage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
   let Links = [

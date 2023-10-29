@@ -1,0 +1,78 @@
+.move-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: -10%; 
+  display: flex; 
+  align-items: center; 
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  transform: translateY(-50%); 
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: none;
+  border-radius: 0;
+}
+.slick-prev:before {
+    content: url("../../../../assets/icons/left-arrow.svg") !important;
+    max-width: 20px !important;
+    height: 20px !important;
+    opacity: 1; 
+  }
+  
+  .slick-next:before {
+    content: url("../../../../assets/icons/right-arrow.svg") !important;
+    width: 20px !important; 
+    height: 20px !important; 
+    opacity: 1; 
+  }
+  
+.slick-prev {
+ left: 94%;
+}
+
+[dir="rtl"] .slick-prev {
+  right: 0;
+  left: auto;
+}
+
+.slick-prev:before {
+  content: "←";
+}
+
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+.slick-next {
+  right: 0; /* Adjust the horizontal position to make them very close */
+}
+
+[dir="rtl"] .slick-next {
+  right: auto;
+  left: 0;
+}
+
+.slick-next:before {
+  content: "→";
+}
+
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
