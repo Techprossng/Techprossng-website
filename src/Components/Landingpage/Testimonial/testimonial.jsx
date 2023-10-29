@@ -35,11 +35,8 @@ export const cards = [
 
 const Testimonial = () => {
   return (
-    <div
-      className="flex flex-col items-center justify-center gap-16 py-11"
-      data-aos="zoom-in-left"
-    >
-      <div>
+    <div className="flex flex-col items-center justify-center gap-16 py-11">
+      <div data-aos="zoom-in-left">
         <h4
           className="text-3xl ml-24 mr-24 uppercase"
           style={{ color: "#272727" }}
