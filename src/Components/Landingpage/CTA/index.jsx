@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="p-[48px_128px] max-[480px]:px-[1.5rem] max-[768px]:px-[2rem]">
+    <section className="p-[48px_128px] max-[375px]:px-[1.5rem] max-[768px]:px-[2rem]">
       <div className="flex flex-col sm:flex-row gap-[40px] justify-between sm:items-center">
         <div className="space-y-[32px]" data-aos="fade">
             <div className="text-[32px] md:text-[42px] leading-[48px] font-semibold">Take that step <br className="hidden sm:block"/> with TechProsNG!</div>

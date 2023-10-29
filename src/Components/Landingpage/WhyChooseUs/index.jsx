@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
     },
   ]
   return (
-    <section className="p-[96px_66px] relative max-[480px]:px-[1.5rem] max-[768px]:px-[1.5rem]">
+    <section className="p-[96px_66px] relative max-[375px]:px-[1.5rem] max-[768px]:px-[1.5rem]">
       {/* header */}
       <div className="flex justify-center">
         <header className="text-[32px] leading-[38.4px] relative w-fit font-bold">
@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
 
       {/* contents */}
       <div>
-        <div className="absolute top-[14%] right-[8%] z-[-50] md:left-[5%] max-[480px]:hidden">
+        <div className="absolute top-[14%] right-[8%] z-[-50] md:left-[5%] max-[375px]:hidden">
           <img src="src/assets/icons/whychooseus_dots.svg" className="w-[185px]"/>
         </div>
         <div className="absolute top-[18%] right-0 z-[-40] hidden md:block" data-aos="fade-left" data-aos-delay="50">
@@ -74,7 +74,7 @@ export default function WhyChooseUs() {
             </svg>
           </div>
         </div>
-        <ul className="p-[84px_68px] space-y-[32px] max-[480px]:px-0 max-[768px]:px-[2rem]">
+        <ul className="p-[84px_68px] space-y-[32px] max-[375px]:px-0 max-[768px]:px-[2rem]">
           {
             list.map((item, index) => (
               <li key={index} className="flex gap-x-[24px] items-start" data-aos="fade-up-right">
