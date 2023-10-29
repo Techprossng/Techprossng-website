@@ -13,11 +13,11 @@ const LandingPage = () => {
   return (
     <>
       <Navbar />
-      <Sponsor />
+      <Identity />
       <Services />
       <WhyChooseUs />
+      <Sponsor />
       <Testimonial />
-      <Identity />
       <OurTeam />
       <Newsletter />
       <CTA />
