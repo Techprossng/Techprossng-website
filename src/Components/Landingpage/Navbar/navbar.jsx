@@ -5,15 +5,21 @@ import "../../Landingpage/Navbar/Styles/navbar.css";
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "Courses", link: "/" },
-    { name: "Mentorship", link: "/" },
-    { name: "Resources", link: "/" },
-    { name: "Pricing", link: "/" },
-    { name: "Library", link: "/" },
-    { name: "About Us", link: "/" },
+    { name: "Courses", link: "/courses" },
+    { name: "Mentorship", link: "/mentorship" },
+    { name: "Resources", link: "/resources" },
+    { name: "Pricing", link: "/pricing" },
+    { name: "Library", link: "/library" },
+    { name: "About Us", link: "/about" },
   ];
 
   let [open, setOpen] = useState(false);
+
+  const [activeLink, setActiveLink] = useState("Home"); // Set the default active link
+
+  const handleLinkClick = (linkName) => {
+    setActiveLink(linkName);
+  };
 
   return (
     <nav
@@ -24,7 +30,12 @@ const Navbar = () => {
         <img
           src="../../src/assets/images/Logo.svg"
           alt="Logo"
-          className="custom-image-small"
+          className="custom-image-large"
+        />
+        <img
+          src="../../src/assets/images/Logo2.svg"
+          alt="Logo"
+          className="custom-image-small md:hidden"
         />
       </div>
 
@@ -34,7 +45,9 @@ const Navbar = () => {
         className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
       >
         <img
-          src={open ? "src/assets/icons/menu.png" : "src/assets/icons/menu.png"}
+          src={
+            open ? "src/assets/icons/close.svg" : "src/assets/icons/menu.svg"
+          }
           alt={open ? "Close Menu" : "Open Menu"}
           className="menu"
         />
@@ -43,27 +56,35 @@ const Navbar = () => {
       {/* Mobile Menu */}
 
       <div
-        className={`md:hidden
-        md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-10 pt-10 transition-all duration-500 ease-in ${
-          open ? "top-20 " : "top-[-490px]"
-        }`}
+        className={`md:hidden 
+  md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in menu-color ${
+    open ? "top-24 " : "top-[-690px]"
+  }`}
+        style={{ textAlign: "center", alignItems: "center" }}
       >
-        <div className="flex flex-col space-y-5 ">
+        <div className="flex flex-col space-y-10">
           {Links.map((link) => (
             <a
               key={link.name}
-              href={link.link}
-              className="text-gray-800 hover:text-gray-400 duration-500 custom-font"
+              href={`/${link.link}`}
+              className={`text-gray-800  duration-500 ${
+                activeLink === link.name ? "active-link" : ""
+              }`}
+              style={{ fontSize: "20px", fontWeight: "500" }}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick(link.name);
+              }}
             >
               {link.name}
             </a>
           ))}
         </div>
-        <div className="flex space-x-4 mt-5">
-          <button className="w-32 h-[44px] px-3 py-3 font-[Work Sans] button-2">
-            Login
+        <div className=" flex flex-wrap space-y-4 pr-5 pl-5 mt-10 ">
+          <button className="w-full h-[48px] px-5 py-3 rounded-md  button-2-small">
+            Log in
           </button>
-          <button className="w-32 h-[44px] px-3 py-3 text-white button-1">
+          <button className="w-full h-[48px] px-5 py-3 rounded-md  text-white button-1">
             Signup
           </button>
         </div>
@@ -73,20 +94,24 @@ const Navbar = () => {
       <div className="hidden md:flex custom-space-x">
         {Links.map((link) => (
           <a
-            href={link.link}
+            href={`/${link.link}`}
             key={link.name}
-            className="text-gray-800 hover:text-gray-400 duration-500 custom-font"
+            className={`text-gray-800  duration-500 custom-font ${
+              activeLink === link.name ? "active-link" : ""
+            }`}
+            onClick={(e) => {
+              e.preventDefault();
+              handleLinkClick(link.name);
+            }}
           >
             {link.name}
           </a>
         ))}
       </div>
       <div className="hidden md:flex space-x-4">
-        <button className="w-32 h-[44px] px-3 py-3 font-[Work Sans] button-2">
-          Login
-        </button>
-        <button className="w-32 h-[44px] px-3 py-3 text-white button-1">
-          Signup
+        <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
+        <button className="w-32 h-[48px] px-5 py-3 rounded-md  text-white button-1">
+          Sign In
         </button>
       </div>
     </nav>
