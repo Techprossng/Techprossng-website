@@ -5,7 +5,7 @@ const Mission = () => {
   return (
     <section className="mission-container flex justify-around">
       <div className="texts-container flex flex-col justify-center items-center gap-20">
-        <div className="absolute top-[140%] left-[1%] z-[-50]">
+        <div className="absolute top-[140%] left-[1%] z-[-50] mission">
           <img
             src="src/assets/icons/whychooseus_dots.svg"
             className="w-[185px]"
