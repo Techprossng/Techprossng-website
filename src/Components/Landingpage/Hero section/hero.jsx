@@ -24,7 +24,7 @@ const Hero = () => {
               era. Start your transformative journey with us now.
             </p>
 
-            <button class="inline-flex items-center px-6 py-2 bg-transparent hover:bg-blue-900 text-red-500 font-semibold hover:text-white py-2 px-8 border border-red-700 hover:border-transparent rounded-full mt-5">
+            <button className="inline-flex items-center px-6 py-2 bg-transparent hover:bg-blue-900 text-red-500 font-semibold hover:text-white py-2 px-8 border border-red-700 hover:border-transparent rounded-full mt-5">
               <span>See Courses</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
