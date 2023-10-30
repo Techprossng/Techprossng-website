@@ -57,13 +57,16 @@ const OurTeam = () => {
             </div>
             <div className="bgImg">
               <div className="rounded-b-2xl px-5 h-fit py-10 flex flex-col gap-2 items-center shadow-md">
-                <p style={{ color: "#001975" }} className="text-3xl">
+                <p style={{ color: "#001975" }} className="text-3xl name">
                   {item.name}
                 </p>
-                <p style={{ color: "#656565" }} className="text-base uppercase">
+                <p
+                  style={{ color: "#656565" }}
+                  className="text-base uppercase role"
+                >
                   {item.role}
                 </p>
-                <p style={{ color: "#272727" }} className="text-sm">
+                <p style={{ color: "#272727" }} className="text-sm desc">
                   {item.description}
                 </p>
               </div>
