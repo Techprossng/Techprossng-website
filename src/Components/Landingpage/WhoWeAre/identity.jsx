@@ -6,8 +6,8 @@ import "./styles/style.css";
 
 const Identity = () => {
   return (
-    <section className="identity-container">
-      <div className="border-container">
+    <section className="identity-container w-[1.5rem]">
+      <div className="border-container mt-6 mb-6">
         <div className="flex justify-between items-center">
           <div
             className="flex flex-col items-start gap-[16px]"
