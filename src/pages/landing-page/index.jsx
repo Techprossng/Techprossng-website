@@ -15,7 +15,7 @@ const LandingPage = () => {
       <Testimonial />
       <OurTeam />
       <CTA />
-     
+      <WhyChooseUs />
       <Footer />
     </>
   );
