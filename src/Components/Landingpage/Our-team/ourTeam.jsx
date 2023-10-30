@@ -35,14 +35,14 @@ const OurTeam = () => {
     <div className="flex flex-col  items-center justify-center gap-16 py-11">
       <div data-aos="zoom-in-left">
         <h4
-          className="text-3xl ml-24 mr-24 uppercase"
+          className="text-3xl ml-24 mr-24 uppercase ourTeam"
           style={{ color: "#272727" }}
         >
           our team
         </h4>
         <Blue />
       </div>
-      <div className="flex gap-10 items-center justify-center mx-24 ">
+      <div className="flex gap-10 items-center justify-center mx-24 cardSection">
         {team.map((item, index) => (
           <div key={index} data-aos={item.fade}>
             <div className="rounded-t-2xl">
