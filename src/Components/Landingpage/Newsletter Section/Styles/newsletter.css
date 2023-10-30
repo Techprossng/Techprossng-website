@@ -68,8 +68,9 @@
   color: gray;
   margin-bottom: 20px;
   text-align: center;
-  width: 550px;
-  padding-left: 10px;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .news-box p a {
@@ -103,8 +104,9 @@
 
   .news-box p {
     text-align: left;
-    padding-right: 200px;
-    margin-left: 180px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -145,7 +147,8 @@
 
   .news-box p {
     text-align: left;
-    padding-right: 5px;
-    margin-left: 0;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
