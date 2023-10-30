@@ -1,5 +1,4 @@
 // import React from "react";
-import Navbar from "../../Components/Landingpage/Navbar/navbar";
 import Mission from "../../Components/Landingpage/Mission/mission-vision";
 import Services from "../../Components/Landingpage/Services/services";
 import Identity from "../../Components/Landingpage/WhoWeAre/identity";
@@ -13,7 +12,6 @@ import Newsletter from "../../Components/Landingpage/Newsletter Section/newslett
 const LandingPage = () => {
   return (
     <>
-      <Navbar />
       <Identity />
       <Services />
       <WhyChooseUs />
