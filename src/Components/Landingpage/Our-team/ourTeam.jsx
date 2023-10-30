@@ -1,6 +1,7 @@
 // import React from "react";
 import team_avi from "../../../assets/team_avi.png";
 import "./styles/team.css";
+import Blue from "../Blueline/blue";
 
 export const team = [
   {
@@ -39,10 +40,7 @@ const OurTeam = () => {
         >
           our team
         </h4>
-        <div
-          style={{ backgroundColor: "#2B3F8C" }}
-          className="w-16 h-1 rounded-xl ml-24 mr-24 mt-1 mb-3"
-        ></div>
+        <Blue />
       </div>
       <div className="flex gap-10 items-center justify-center mx-24 ">
         {team.map((item, index) => (

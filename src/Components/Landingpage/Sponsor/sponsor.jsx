@@ -29,7 +29,7 @@ const Sponsor = () => {
     Sponsor12,
   ];
   return (
-    <div className="bg-contain w-full bg-center py-40 background-color sponsor-contain">
+    <div className="px-6 bg-contain w-full bg-center py-40 background-color sponsor-contain">
       <div className="flex justify-center" style={{ zIndex: 1 }}>
         <h2 className="text-[32px] leading-[38.4px] relative w-fit header-text  ">
           PARTNERSHIPS

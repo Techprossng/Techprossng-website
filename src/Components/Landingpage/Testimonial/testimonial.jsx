@@ -1,6 +1,7 @@
 // import React from "react";
 import avi from "../../../assets/avi.png";
 import Card from "./card";
+import Blue from "../Blueline/blue";
 
 export const cards = [
   {
@@ -43,10 +44,7 @@ const Testimonial = () => {
         >
           testimonials
         </h4>
-        <div
-          style={{ backgroundColor: "#2B3F8C" }}
-          className="w-20 h-1 rounded-xl ml-24 mr-24 mt-1 mb-3"
-        ></div>
+        <Blue />
       </div>
       <div className="flex gap-16 items-center justify-center mx-24 flex-col px-32 ">
         {cards.map((item, index) => (
