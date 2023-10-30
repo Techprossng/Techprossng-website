@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   position: relative;
-  bottom: 0;
+  top: 24px;
   background: #000d3b;
   color: white;
   /* padding: 80px 0 30px; */
@@ -104,11 +104,17 @@ hr {
 }
 
 
-@media (max-width: 700px) {
-  .footer {
-    bottom: unset;
-  }
+@media (max-width: 480px) {
   .col {
     flex-basis: 100%;
   }
+  .footer{
+    width: 100%;
+  }
+  .first-container{
+
+  }
+}
+@media (max-width: 768px) {
+
 }

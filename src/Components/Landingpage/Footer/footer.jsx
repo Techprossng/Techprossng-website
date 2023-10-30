@@ -1,7 +1,6 @@
 import React from "react";
 import "../Footer/Styles/footer.css";
 
-
 function Footer() {
   return (
     <footer className="footer">
@@ -118,10 +117,8 @@ function Footer() {
       </div>
       <hr className="w-[85%]" />
       <div className="copyright flex justify-between p-5 w-[87%] m-auto">
-            <span>
-                &copy; 2023 TechPros Ng. All Rights Reserved{" "}
-            </span>
-            <a href="">Cookie Policy</a>
+        <span>&copy; 2023 TechPros Ng. All Rights Reserved </span>
+        <a href="">Cookie Policy</a>
       </div>
     </footer>
   );
