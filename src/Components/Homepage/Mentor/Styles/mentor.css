@@ -75,4 +75,51 @@
 [dir="rtl"] .slick-next:before {
   content: "←";
 }
+/*cards */
 
+.card{
+  width: 400px;
+  height: 493px;
+}
+.card-content{
+  width: 312px;
+  
+}
+.full-content{
+  width: 312px;
+}
+.full-card{
+  width: 330px;
+  height: 493px;
+}
+@media only screen and (min-width: 360px) and (max-width: 880px) {
+    .header-box h2{
+      font-size: 19px;
+      padding: 5px;
+    }
+    .Mentors-box{
+      padding: 12px;
+      margin-top: 25%;
+    }
+
+    .your-slider {
+        width: 100% ; 
+      
+    }
+    .slick-prev:before {
+      display: none;
+    }
+    
+    .slick-next:before {
+       display: none;
+    }
+    .card{
+      width: 340px;
+      height: 493px;
+    }
+    .card-content{
+      width: 314px;
+      left: 13px;
+    }
+   
+}

@@ -1,73 +1,67 @@
-import React, { useState , useEffect} from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../Homepage/Mentor/Styles/mentor.css";
 
 function MentorsSection() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+  };
 
   const [showFullList, setShowFullList] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 880);
 
-  
   const toggleFullList = () => {
     setShowFullList(!showFullList);
   };
   const cardClass = showFullList ? "full-list-card" : "slider-card";
-  
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 880);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <div className="container mx-auto mt-10 p-20 Mentors-box">
-    <div className="flex items-center justify-between header-box">
+    <div className="container mx-auto mt-10 p-4 md:p-20">
+    <div className="flex items-center justify-between">
       <div className="flex items-center">
-        <h2 className="text-2xl font-bold">Explore Mentors</h2>
+        <h2 className="text-xl md:text-2xl font-bold">Explore Mentors</h2>
       </div>
     </div>
   
-    <div className="mt-8">
+    <div className="mt-4 md:mt-8">
       {showFullList ? (
-        /* Full Card Lists */
-        <div className="full-list flex col-3 flex-wrap gap-4">
+        /* full-card-lists */
+        <div className="full-list flex flex-col md:flex-row flex-wrap gap-4">
           {mentor.map((mentor, index) => (
-            <div key={index} className={`full-list-card ${isMobile ? "mobile-card" : "desktop-card"}`}>
+            <div key={index} className={`full-list-card ${cardClass}`}>
               <div className="relative flex">
                 <div
-                  className="bg-cover bg-center h-48 rounded-lg p-4 border border-opacity-20 full-card"
+                  className="bg-cover bg-center h-36 md:h-48 rounded-lg p-2 md:p-4 border border-opacity-20 full-card"
                   style={{
                     backgroundImage: `url(${mentor.imageURL})`,
                     borderRadius: "20px",
                   }}
                 >
                   <div
-                    className="absolute top-64 left-2 h-auto p-2 pt-8 pb-3 rounded-8 gap-0 bg-black bg-opacity-70 flex flex-wrap items-center text-white full-content"
+                    className="absolute top-44 md:top-64 left-2 w-full md:w-full h-auto p-2 pt-6 pb-2 md:p-3 rounded-8 gap-0 bg-black bg-opacity-70 flex flex-wrap items-center text-white card-content"
                     style={{
                       borderRadius: "10px",
                     }}
                   >
-                    <ul className="list-disc relative bottom-5">
-                      <h2 className="text-[16px] pb-2 flex">
+                    <ul className="list-disc relative bottom-3 md:bottom-5">
+                      <h2 className="text-base md:text-lg pb-1 md:pb-2 flex">
                         {" "}
                         {mentor.name}
                       </h2>
-                      <li className="text-[12px] ml-5">{mentor.jobTitle}</li>
-                      <li className="text-[12px] ml-5 mt-2">
+                      <li className="text-[10px] md:text-[12px] ml-2 md:ml-4">
+                        {mentor.jobTitle}
+                      </li>
+                      <li className="text-[10px] md:text-[12px] ml-2 md:ml-4 mt-1 md:mt-2">
                         {mentor.certifications}
                       </li>
-                      <p className="flex gap-3 mt-4 mr-10 text-[11px]">
+                      <p className="flex gap-1 md:gap-3 mt-2 md:mt-4 ml-4 md:ml-10 text-[10px] md:text-[11px]">
                         <img
                           src={mentor.starIcon}
-                          style={{ width: "16px", height: "16px" }}
+                          style={{ width: "14px", height: "14px" }}
                         />
                         {mentor.starRating}
                         <span>{mentor.starPublish}</span>
@@ -75,13 +69,12 @@ function MentorsSection() {
                     </ul>
   
                     <button
-                      className={`mt-2 bg-[rgba(15,27,99,1)] w-full md:w-full text-white px-2 md:px-3 py-2 md:py-3 ${isMobile ? "mobile-button" : "desktop-button"}`}
+                      className="mt-2 bg-[rgba(15,27,99,1)] w-full md:w-auto text-white px-2 md:px-3 py-2 md:py-3"
                       style={{
                         borderRadius: "10px",
-                        fontSize: "16px",
+                        fontSize: "11px",
                         fontWeight: "600",
                       }}
-                    
                     >
                       View Mentor
                     </button>
@@ -92,73 +85,70 @@ function MentorsSection() {
           ))}
         </div>
       ) : (
-        /* Slider Card Lists */
-        <div className={`your-slider ${isMobile ? "mobile-slider" : "desktop-slider"}`}>
-          <Slider
-            dots={false}
-            infinite={true}
-            speed={500}
-            slidesToShow={isMobile ? 1 : 4}
-            slidesToScroll={isMobile ? 2 : 3}
-          >
-            {mentor.map((mentor, index) => (
-              <div key={index} className="w-full p-2">
-                <div className="relative flex card-house">
+        /* full-card-lists */
+        
+        /* slider-card-list */
+        <Slider {...settings}>
+          {mentor.map((mentor, index) => (
+            <div key={index} className="w-full md:w-1/4 p-2 md:p-4">
+              <div className="relative flex">
+                <div
+                  className="bg-cover bg-center h-36 md:h-48 rounded-lg p-2 md:p-4 border border-opacity-20 card"
+                  style={{
+                    backgroundImage: `url(${mentor.imageURL})`,
+                    borderRadius: "20px",
+                  }}
+                >
                   <div
-                    className="bg-cover bg-center rounded-lg p-4 border border-opacity-20 card"
+                    className="absolute top-44 md:top-64 left-2 w-full md:w-auto h-auto p-2 pt-6 pb-2 md:p-3 rounded-8 gap-0 bg-black bg-opacity-70 flex flex-wrap items-center text-white card-content"
                     style={{
-                      backgroundImage: `url(${mentor.imageURL})`,
-                      borderRadius: "20px",
+                      borderRadius: "10px",
                     }}
                   >
-                    <div
-                      className="absolute top-64 left-2 h-auto p-2 pt-8 pb-3  gap-0 bg-black bg-opacity-70 flex flex-wrap items-center text-white card-content"
+                    <ul className="list-disc relative bottom-3 md:bottom-5">
+                      <h2 className="text-base md:text-lg pb-1 md:pb-2 flex">
+                        {" "}
+                        {mentor.name}
+                      </h2>
+                      <li className="text-[10px] md:text-[12px] ml-2 md:ml-4">
+                        {mentor.jobTitle}
+                      </li>
+                      <li className="text-[10px] md:text-[12px] ml-2 md:ml-4 mt-1 md:mt-2">
+                        {mentor.certifications}
+                      </li>
+                      <p className="flex gap-1 md:gap-3 mt-2 md:mt-4 ml-4 md:ml-10 text-[10px] md:text-[11px]">
+                        <img
+                          src={mentor.starIcon}
+                          style={{ width: "14px", height: "14px" }}
+                        />
+                        {mentor.starRating}
+                        <span>{mentor.starPublish}</span>
+                      </p>
+                    </ul>
+  
+                    <button
+                      className="mt-2 bg-[rgba(15,27,99,1)] w-full md:w-auto text-white px-2 md:px-3 py-2 md:py-3"
                       style={{
                         borderRadius: "10px",
+                        fontSize: "11px",
+                        fontWeight: "600",
                       }}
                     >
-                      <ul className="list-disc relative bottom-5">
-                        <h2 className="text-[16px] pb-2 flex">
-                          {" "}
-                          {mentor.name}
-                        </h2>
-                        <li className="text-[12px] ml-5">{mentor.jobTitle}</li>
-                        <li className="text-[12px] ml-5 mt-2">
-                          {mentor.certifications}
-                        </li>
-                        <p className="flex gap-3 mt-4 mr-10 text-[11px]">
-                          <img
-                            src={mentor.starIcon}
-                            style={{ width: "16px", height: "16px" }}
-                          />
-                          {mentor.starRating}
-                          <span>{mentor.starPublish}</span>
-                        </p>
-                      </ul>
-  
-                      <button className={`mt-2 bg-[rgba(15,27,99,1)] w-full md:w-full text-white px-2 md:px-3 py-2 md:py-3 ${isMobile ? "mobile-button" : "desktop-button"}`}
-                         style={{
-                          borderRadius: "10px",
-                          fontSize: "16px",
-                          fontWeight: "600",
-                        }}
-                      
-                      >
-                        View Mentor
-                      </button>
-                    </div>
+                      View Mentor
+                    </button>
                   </div>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
+            </div>
+          ))}
+        </Slider>
+        /* slider-card-list */
       )}
     </div>
   
-    <div className="mt-4 flex justify-end items-center">
+    <div className="mt-4 md:mt-8 flex justify-center md:justify-end items-center">
       <button
-        className="bg-none px-4 py-2 rounded flex gap-5"
+        className="bg-none px-4 py-2 rounded flex gap-2 md:gap-5"
         onClick={toggleFullList}
         style={{
           color: "red",
@@ -178,8 +168,9 @@ function MentorsSection() {
       </button>
     </div>
   </div>
+  
   );
-  }
+}
 
 const mentor = [
   {
