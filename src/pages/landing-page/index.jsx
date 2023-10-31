@@ -28,7 +28,6 @@ const LandingPage = () => {
       <OurTeam />
       <Newsletter />
       <CTA />
-      <WhyChooseUs />
       <Footer />
     </>
   );
