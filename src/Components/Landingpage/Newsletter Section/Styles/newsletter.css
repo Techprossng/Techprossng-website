@@ -84,7 +84,7 @@
   }
 
   .news-box .email {
-    position: left;
+    position: relative;
   }
 
   .news-box .email input {
@@ -116,7 +116,7 @@
   }
 
   .news-box .email {
-    position: center;
+    position: relative;
     margin-right: 120px;
   }
 
