@@ -24,7 +24,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="w-[85%]" />
+      <hr className="w-[85%] horizontal-line" />
       <div className="row">
         <div className="col">
           <h4>
