@@ -5,9 +5,11 @@
   align-items: center;
   justify-content: center;
 }
-.news-box .mobile-view{
+
+.news-box .mobile-view {
   display: none;
 }
+
 .news-box h1 {
   font-size: 30px;
   color: black;
@@ -82,31 +84,35 @@
 }
 
 @media only screen and (min-width: 360px) and (max-width: 479px) {
-.news-box h1{
-  width: 90%;
-}
-  .news-box .email{
-    display: none;
-}
-.news-box .mobile-view{
-  display: contents;
-}
+  .news-box h1 {
+    width: 90%;
+  }
 
-.news-box .email-mobile{
-  position: relative;
-  color: gray;
-  height: 50px;
-  width: 90%;
-  font-size: 12px;
-  outline: none;
-  border-radius: 15px;
-  border: 2px solid grey;
-}
-.news-box .email-mobile input{
-  padding: 12px 15px;
-  font-weight: bold;
-}
-  .news-box .mobile-button{
+  .news-box .email {
+    display: none;
+  }
+
+  .news-box .mobile-view {
+    display: contents;
+  }
+
+  .news-box .email-mobile {
+    position: relative;
+    color: gray;
+    height: 50px;
+    width: 90%;
+    font-size: 12px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid grey;
+  }
+
+  .news-box .email-mobile input {
+    padding: 12px 15px;
+    font-weight: bold;
+  }
+
+  .news-box .mobile-button {
     text-align: center;
     padding: 12px;
     margin-top: 3%;
@@ -118,62 +124,72 @@
     color: white;
     width: 90%;
     transition: 0.3s;
-}
-.news-box .mobile-button:hover{
-  background: #001999;
-}
-.news-box h4 {
+  }
+
+  .news-box .mobile-button:hover {
+    background: #001999;
+  }
+
+  .news-box h4 {
     text-align: left;
     margin: 0;
     width: 90%;
     margin-bottom: 3%;
-}
-  .news-box .mobile-view .text-mobile{
+  }
+
+  .news-box .mobile-view .text-mobile {
     color: black;
     text-align: left;
     width: 90%;
     margin-bottom: 1.5%;
-}
-.news-box p{
-  text-align: left;
-  margin: 0;
-  width: 90%;
-}
+  }
+
+  .news-box p {
+    text-align: left;
+    margin: 0;
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .news-box{
+  .news-box {
     padding: 5.5rem;
   }
+
   .news-box h1 {
     margin: 0;
     font-size: 1.5rem;
     width: 100%;
     margin-bottom: 2%;
   }
+
   .news-box h4 {
     text-align: left;
     margin: 0;
     width: 100%;
     margin-bottom: 3%;
   }
-  .news-box .email{
+
+  .news-box .email {
     position: relative;
     margin: 0;
     width: 100%;
     margin-bottom: 3%;
   }
-.news-box .email button{
+
+  .news-box .email button {
     margin: 0;
     margin-right: 7%;
-}  
-.news-box .email .input{
-  margin: 0;
-}
-.news-box p {
-  text-align: left;
-  margin: 0;
-  width: 90%;
-  margin-right:10%;
-}
+  }
+
+  .news-box .email .input {
+    margin: 0;
+  }
+
+  .news-box p {
+    text-align: left;
+    margin: 0;
+    width: 90%;
+    margin-right: 10%;
+  }
 }
