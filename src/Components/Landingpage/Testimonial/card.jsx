@@ -5,10 +5,10 @@ const Card = ({ image, heading, subHeading, content, even }) => {
   return (
     <div className="flex gap-8 justify-center items-center px-16 transform hover:scale-110 cardSection1">
       {even ? (
-        <div className="flex gap-9" data-aos="zoom-in-left">
+        <div className="flex gap-9 even1" data-aos="zoom-in-left">
           <img src={image} alt="avi" className="w-40 h-40" />
 
-          <div className="rounded-lg px-4 py-6 shadow-2xl">
+          <div className="rounded-lg px-4 py-6 shadow-2xl even1child">
             <p
               style={{
                 color: "#001975",
@@ -31,7 +31,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
           </div>
         </div>
       ) : (
-        <div className="flex gap-9" data-aos="zoom-in-right">
+        <div className="flex gap-9 odd1" data-aos="zoom-in-right">
           <div className="rounded-lg px-4 py-6 shadow-lg">
             <p
               style={{
