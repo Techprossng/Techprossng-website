@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroImage from '../../../assets/images/hero-img.png'
 import 'aos'
 
@@ -16,15 +15,15 @@ const Hero = () => {
               <br />
               TechProsNG
             </h2>
-            <p className="text-xl text-justify-start text-black">
+            <p className="text-xl text-justify text-black">
               We are Tech Education Company dedicated to empowering the next
               generation of tech innovators in Nigeria. Explore our cutting-edge
               courses, join a supportive tech community, and become confident in
-              your tech skills. Together we're driving progress in the digital
+              your tech skills. Together were driving progress in the digital
               era. Start your transformative journey with us now.
             </p>
 
-            <button class="inline-flex items-center px-6 py-2 bg-transparent hover:bg-blue-900 text-red-500 font-semibold hover:text-white py-2 px-8 border border-red-700 hover:border-transparent rounded-full mt-5">
+            <button className="inline-flex items-center px-6 py-2 bg-transparent hover:bg-blue-900 text-red-500 font-semibold hover:text-white py-2 px-8 border border-red-700 hover:border-transparent rounded-full mt-5">
               <span>See Courses</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

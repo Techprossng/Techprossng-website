@@ -5,6 +5,7 @@ import Mission from "../../Components/Landingpage/Mission/mission-vision";
 import Services from "../../Components/Landingpage/Services/services";
 import Identity from "../../Components/Landingpage/WhoWeAre/identity";
 import Sponsor from "../../Components/Landingpage/Sponsor/sponsor";
+import Values from "../../Components/Landingpage/Our-values/Values";
 import Testimonial from "../../Components/Landingpage/Testimonial/testimonial";
 import OurTeam from "../../Components/Landingpage/Our-team/ourTeam";
 import CTA from "../../Components/Landingpage/CTA";
@@ -22,6 +23,7 @@ const LandingPage = () => {
       <WhyChooseUs />
       <Sponsor />
       <Mission />
+      <Values />
       <Testimonial />
       <OurTeam />
       <Newsletter />
