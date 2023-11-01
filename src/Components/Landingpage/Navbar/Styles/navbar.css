@@ -10,12 +10,13 @@
 .shadow {
   box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1);
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 8.59%,
-    #f4050a 49.81%,
-    rgba(0, 0, 0, 0) 89.96%
-  );
+  border-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 8.59%,
+      #f4050a 49.81%,
+      rgba(0, 0, 0, 0) 89.96%
+    );
   border-image-slice: 1;
 }
 
@@ -83,6 +84,7 @@
     right: 27px;
     bottom: 0;
   }
+
   .active-link::before {
     width: 79px;
     left: 50%;
@@ -127,10 +129,12 @@
   .custom-image-large {
     display: none;
   }
- .custom-image-small{
-  position: relative;
-  right: 2rem;
- }
+
+  .custom-image-small {
+    position: relative;
+    right: 2rem;
+  }
+
   .active-link {
     position: relative;
   }
@@ -142,6 +146,7 @@
     height: 3px;
     background: rgba(0, 25, 117, 1);
   }
+
   .button-2-small {
     background: white;
     color: rgba(0, 25, 117, 1);
@@ -153,7 +158,6 @@
     border: none;
     transition: 0.8s;
   }
-
 
   .button-1 {
     background: rgba(0, 25, 117, 1);
@@ -169,7 +173,6 @@
 }
 
 @media (min-width: 768px)  and (max-width: 1200px) {
-
   .button-2-small {
     background: white;
     color: rgba(0, 25, 117, 1);
@@ -181,38 +184,45 @@
     border: none;
     transition: 0.8s;
   }
-  .mobile-menu{
+
+  .mobile-menu {
     display: block;
     width: 100%;
     position: absolute;
     height: 700%;
-
   }
-  .menu{
+
+  .menu {
     position: relative;
     top: 4px;
   }
-  .desktop{
+
+  .desktop {
     display: none;
   }
-  .custom-image-small{ 
+
+  .custom-image-small {
     display: flex;
     position: relative;
     right: 5rem;
-    
   }
-  .logo-container{
+
+  .logo-container {
     display: flex;
   }
-  .custom-image-large{
+
+  .custom-image-large {
     display: none;
   }
+
   .menu-container {
     display: flex;
   }
-  .desktop-button{
+
+  .desktop-button {
     display: none;
   }
+
   .button-1 {
     background: rgba(0, 25, 117, 1);
     width: 60%;
@@ -224,6 +234,7 @@
     border: none;
     transition: 0.8s;
   }
+
   .active-link {
     position: relative;
   }
@@ -235,8 +246,4 @@
     height: 3px;
     background: rgba(0, 25, 117, 1);
   }
- 
-
- 
 }
-
