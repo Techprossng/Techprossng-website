@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-import HeroImage from '../../../assets/images/hero-img.png'
-import 'aos'
-=======
 import React from "react";
 import HeroImage from "../../../assets/images/hero-image.svg";
 import "aos";
->>>>>>> 23ff4f0722b3cd340401a0935b440962da5b0ca0
 
 const Hero = () => {
   return (
@@ -21,13 +16,8 @@ const Hero = () => {
             <h1 className="text-5xl flex font-primary md:text-4xl font-primary xl:font-primary text-6xl font-semibold tracking-tight mb-12 text-[#001975] animate-text text-5xl">
               <br />
               TechProsNG
-<<<<<<< HEAD
-            </h2>
-            <p className="text-xl text-justify text-black">
-=======
             </h1>
             <p className="text-xl text-justify text-black">
->>>>>>> 23ff4f0722b3cd340401a0935b440962da5b0ca0
               We are Tech Education Company dedicated to empowering the next
               generation of tech innovators in Nigeria. Explore our cutting-edge
               courses, join a supportive tech community, and become confident in
@@ -35,11 +25,7 @@ const Hero = () => {
               era. Start your transformative journey with us now.
             </p>
 
-<<<<<<< HEAD
-            <button className="inline-flex items-center px-6 py-2 bg-transparent hover:bg-blue-900 text-red-500 font-semibold hover:text-white py-2 px-8 border border-red-700 hover:border-transparent rounded-full mt-5">
-=======
             <button class="inline-flex hidden sm:hidden md:hidden lg:block items-center px-6 py-2 bg-transparent hover:bg-blue-900 text-red-500 font-semibold hover:text-white py-2 px-8 border border-red-700 hover:border-transparent rounded-full mt-5">
->>>>>>> 23ff4f0722b3cd340401a0935b440962da5b0ca0
               <span>See Courses</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
