@@ -4,7 +4,6 @@
   top: 24px;
   background: #000d3b;
   color: white;
-
   /* padding: 80px 0 30px; */
   font-size: 10px;
   line-height: 20px;
@@ -105,12 +104,46 @@ form select {
   margin: 20px auto;
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 360px) and (max-width: 479px){
   .col {
-    flex-basis: 100%;
+    flex-basis: 50%;
   }
-
   .footer {
     width: 100%;
   }
+  .first-container img{
+    display: flex;
+    margin-left: -10%;
+      }
+  h4{
+    color: white;
+  }
+  .footer .copyright{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .social-icons{
+    margin-left: -25%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .first-container img{
+  display: flex;
+  margin-left: -4%;
+    }
+  h4{
+    color: white;
+  }
+.footer .copyright{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+} 
+.horizontal-line{
+  width: 85%;
+  border: 0;
+  border-bottom: 1px solid;
+  margin: 20px auto;
+}
 }
