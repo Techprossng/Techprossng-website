@@ -36,7 +36,7 @@ export const cards = [
 
 const Testimonial = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-16 py-11">
+    <div className="flex flex-col items-center justify-center gap-16 py-12">
       <div data-aos="zoom-in-left">
         <h4
           className="text-3xl ml-24 mr-24 uppercase testimonial"
@@ -46,7 +46,7 @@ const Testimonial = () => {
         </h4>
         <Blue />
       </div>
-      <div className="flex gap-16 items-center justify-center mx-24 flex-col px-32 mainSection">
+      <div className="flex gap-16 items-center justify-center flex-col px-32 mainSection">
         {cards.map((item, index) => (
           <Card
             key={index}
