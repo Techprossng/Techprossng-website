@@ -6,7 +6,7 @@
 
 @media only screen and (min-width: 360px) and (max-width: 640px) {
   .ourTeam {
-    font-size: 17px;
+    font-size: 24px;
     font-weight: 700;
   }
   .ourTeamMb {
@@ -17,6 +17,9 @@
     flex-direction: column;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .singleCard {
+    width: 100%;
   }
   .name {
     font-size: 24px;
@@ -33,9 +36,9 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
   .ourTeam {
-    font-size: 17px;
+    font-size: 24px;
     font-weight: 700;
   }
   .ourTeamMb {
@@ -43,9 +46,12 @@
   }
   .cardSection {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .singleCard {
+    width: 40%;
   }
   .name {
     font-size: 24px;

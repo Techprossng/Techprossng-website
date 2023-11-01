@@ -42,9 +42,9 @@ const OurTeam = () => {
         </h4>
         <Blue />
       </div>
-      <div className="flex gap-10 items-center justify-center mx-24 cardSection">
+      <div className="flex flex-wrap gap-10 items-center justify-center mx-24 cardSection">
         {team.map((item, index) => (
-          <div key={index} data-aos={item.fade}>
+          <div key={index} data-aos={item.fade} className="w-1/4 singleCard">
             <div className="rounded-t-2xl">
               <img
                 src={item.img}

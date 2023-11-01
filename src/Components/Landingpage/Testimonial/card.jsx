@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types';
-
+import PropTypes from "prop-types";
+import "./Styles/testimonial.css";
 
 const Card = ({ image, heading, subHeading, content, even }) => {
   return (
-    <div className="flex gap-8 justify-center items-center px-16 transform hover:scale-110">
+    <div className="flex gap-8 justify-center items-center px-16 transform hover:scale-110 cardSection1">
       {even ? (
         <div className="flex gap-9" data-aos="zoom-in-left">
           <img src={image} alt="avi" className="w-40 h-40" />
