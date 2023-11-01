@@ -29,6 +29,7 @@
     "@babel/preset-react": "^7.22.15",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/react-slick": "^0.23.11",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.16",
     "eslint": "^7.32.0",
