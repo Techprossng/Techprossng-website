@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
       {/* contents */}
       <div>
         <div className="absolute top-[14%] right-[8%] z-[-50] md:left-[5%] max-[375px]:hidden">
-          <img src="src/assets/icons/whychooseus_dots.svg" className="w-[185px]"/>
+          <img src="src/assets/icons/whychooseus_dots.svg" className="w-[185px] "/>
         </div>
         <div className="absolute top-[18%] right-0 z-[-40] hidden md:block" data-aos="fade-left" data-aos-delay="50">
           <img src="src/assets/images/whychooseus_image.png" className="w-[1135px]"/>
