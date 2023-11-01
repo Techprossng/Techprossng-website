@@ -24,7 +24,7 @@ const Hero = () => {
               <br />
               TechProsNG
             </h1>
-            <p className="text-xl text-justify-start text-black">
+            <p className="text-xl text-justify text-black">
               We are Tech Education Company dedicated to empowering the next
               generation of tech innovators in Nigeria. Explore our cutting-edge
               courses, join a supportive tech community, and become confident in

@@ -1,4 +1,3 @@
-// import React from "react";
 import avi from "../../../assets/avi.png";
 import Card from "./card";
 import Blue from "../Blueline/blue";
