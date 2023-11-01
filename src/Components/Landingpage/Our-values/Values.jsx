@@ -1,4 +1,3 @@
-import React from 'react'
 import 'aos'
 import ValuesImg from '../../../assets/images/values/values.jpg'
 const Values = () => {
@@ -20,7 +19,7 @@ const Values = () => {
           >
             These values serve as a compass, directing the company's decisions,
             behaviors, and interactions both internally and externally. Tech
-            company values typically reflect the organization's commitment to
+            company values typically reflect the organizations commitment to
             innovation, customer-centricity, and ethical practices.
           </p>
         </div>
