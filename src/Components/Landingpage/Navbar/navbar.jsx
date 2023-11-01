@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bg-white p-4 flex fixed top-0 left-50 bg-cover py-0 md:px-10 px-7 bg-center w-full justify-between md:justify-around custom-height items-center shadow max-w-7xl"
+      className="bg-white p-4 flex fixed top-0 left-0 bg-cover py-0 md:px-10 px-7 bg-center w-full justify-between md:justify-around custom-height items-center shadow"
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center">
