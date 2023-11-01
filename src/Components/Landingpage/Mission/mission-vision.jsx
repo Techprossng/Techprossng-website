@@ -5,12 +5,6 @@ const Mission = () => {
   return (
     <section className="mission-container flex justify-around">
       <div className="texts-container flex flex-col justify-center items-center gap-20">
-        <div className="absolute top-[140%] left-[1%] z-[-50]">
-          <img
-            src="src/assets/icons/whychooseus_dots.svg"
-            className="w-[185px]"
-          />
-        </div>
         <div className="vision-container">
           <h4 className="text-heading text-3xl font-primary mb-3 font-normal uppercase">
             Our Vision
