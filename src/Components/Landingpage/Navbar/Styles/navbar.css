@@ -194,7 +194,7 @@
 
   .menu {
     position: relative;
-    top: 4px;
+    top:5px;
   }
 
   .desktop {
@@ -204,7 +204,7 @@
   .custom-image-small {
     display: flex;
     position: relative;
-    right: 5rem;
+    right: 10rem;
   }
 
   .logo-container {
