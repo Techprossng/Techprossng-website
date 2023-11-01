@@ -3,3 +3,67 @@
   background-size: cover;
   background-position: center;
 }
+
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+  .ourTeam {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .ourTeamMb {
+    margin-bottom: 0.1rem;
+  }
+  .cardSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .singleCard {
+    width: 100%;
+  }
+  .name {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .role {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .desc {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .ourTeam {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .ourTeamMb {
+    margin-bottom: 0.1rem;
+  }
+  .cardSection {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .singleCard {
+    width: 40%;
+  }
+  .name {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .role {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .desc {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
