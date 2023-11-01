@@ -9,7 +9,7 @@
   color: #272727;
 }
 
-hr {
+.Horizontal-line {
   width: 80px;
   height: 6px;
   border-radius: 12px;
@@ -27,7 +27,7 @@ hr {
     background-color: #ccd1e3;
   }
 
-  .absolute {
+  .mission {
     display: none;
   }
 
@@ -85,7 +85,7 @@ hr {
     color: #001975;
   }
 
-  .absolute {
+  .mission {
     display: none;
   }
 }

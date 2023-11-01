@@ -33,12 +33,12 @@ const Sponsor = () => {
       <div className="flex justify-center" style={{ zIndex: 1 }}>
         <h2 className="text-[32px] leading-[38.4px] relative w-fit header-text  ">
           PARTNERSHIPS
-          <p className="absolute bottom-[-8px] left-0 w-[83px] h-[6px] color rounded-[12px] under-line"></p>
+          <p className="absolute bottom-[80px] left-0 w-[83px] h-[6px] color rounded-[12px] under-line"></p>
         </h2>
       </div>
 
       <div
-        className="container mt-20 mx-auto grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-20 pl-0 sponsor-small"
+        className="container mt-0 mx-auto grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-20 pl-0 sponsor-small"
         data-aos="zoom-in-up"
         data-aos-anchor="#example-anchor"
         data-aos-offset="500"
