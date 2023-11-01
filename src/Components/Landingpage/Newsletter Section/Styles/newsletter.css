@@ -93,7 +93,24 @@
   }
 
   .news-box .mobile-view {
-    display: contents;
+    display: block;
+  }
+
+  .news-box .mobile-view {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .email-mobile > input {
+    width: 70%;
+    padding: 12px 15px;
+  }
+
+  .news-box .email-mobile input {
+    display: flex;
+    justify-content: center;
   }
 
   .news-box .email-mobile {
@@ -105,11 +122,6 @@
     outline: none;
     border-radius: 15px;
     border: 2px solid grey;
-  }
-
-  .news-box .email-mobile input {
-    padding: 12px 15px;
-    font-weight: bold;
   }
 
   .news-box .mobile-button {
@@ -153,7 +165,7 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .news-box {
-    padding: 5.5rem;
+    padding: 1.5rem;
   }
 
   .news-box h1 {

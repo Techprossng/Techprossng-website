@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
 
       {/* contents */}
       <div>
-        <div className="absolute top-[14%] right-[8%] z-[-50] md:left-[5%] max-[375px]:hidden">
+        <div className="absolute top-[14%] right-[8%] z-[-50] sm:hidden md:left-[5%] max-[375px]:hidden lg:block">
           <img src="src/assets/icons/whychooseus_dots.svg" className="w-[185px]"/>
         </div>
         <div className="absolute top-[18%] right-0 z-[-40] hidden md:block" data-aos="fade-left" data-aos-delay="50">
@@ -80,7 +80,7 @@ export default function WhyChooseUs() {
               <li key={index} className="flex gap-x-[24px] items-start" data-aos="fade-up-right">
                 <img src="src/assets/icons/whychooseus_frame.svg" alt="" width={64} height={64} />
                 <div className="max-w-[392px] space-y-[6px]">
-                  <p className="font-semibold text-[24px] break-words">{item.title}</p>
+                  <p className="font-semibold text-[#000] text-[24px] break-words">{item.title}</p>
                   <p className="font-secondary text-[#656565]">{item.description}</p>
                 </div>
               </li>
