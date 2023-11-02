@@ -88,7 +88,6 @@
     right: 27px;
     bottom: 0;
   }
-
   .active-nav::before {
     width: 79px;
     left: 50%;
@@ -138,7 +137,6 @@
     position: relative;
     right: 2rem;
   }
-
   .active-nav {
     position: relative;
   }
@@ -198,7 +196,7 @@
 
   .menu {
     position: relative;
-    top: 4px;
+    top:5px;
   }
 
   .desktop {
@@ -209,6 +207,7 @@
     display: flex;
     position: relative;
     right: 5rem;
+
   }
 
   .logo-container {
@@ -238,7 +237,6 @@
     border: none;
     transition: 0.8s;
   }
-
   .active-nav {
     position: relative;
   }
