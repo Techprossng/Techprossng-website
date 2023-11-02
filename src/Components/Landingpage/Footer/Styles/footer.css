@@ -4,6 +4,7 @@
   top: 24px;
   background: #000d3b;
   color: white;
+
   /* padding: 80px 0 30px; */
   font-size: 10px;
   line-height: 20px;
@@ -108,25 +109,27 @@ form select {
   .col {
     flex-basis: 50%;
   }
+
   .footer {
     width: 100%;
   }
+
   .first-container img {
     display: flex;
-    margin-left: -10%;
+    margin-left: -2.5rem;
   }
+
   h4 {
     color: white;
   }
+
   .footer .copyright {
     display: flex;
     justify-content: space-between;
     width: 95%;
   }
-  .social-icons {
-    margin-left: -25%;
-  }
 }
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .first-container img {
     display: flex;
