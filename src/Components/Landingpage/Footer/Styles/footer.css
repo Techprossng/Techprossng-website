@@ -116,9 +116,8 @@ form select {
 
   .first-container img {
     display: flex;
-    margin-left: -2.5rem;
+    margin-left: -10%;
   }
-
   h4 {
     color: white;
   }
