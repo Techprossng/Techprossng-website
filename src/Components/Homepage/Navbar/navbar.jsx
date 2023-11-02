@@ -1,8 +1,16 @@
 // src/components/Navbar.js
 import { useState } from "react";
-import {  BiHome , BiGroup , BiImages , BiLibrary , BiFace , BiUser , BiSearch } from 'react-icons/bi';
-import {AiOutlineSetting  } from 'react-icons/ai';
-import {GoSignOut  } from 'react-icons/go';
+import {
+  BiHome,
+  BiGroup,
+  BiImages,
+  BiLibrary,
+  BiFace,
+  BiUser,
+  BiSearch,
+} from "react-icons/bi";
+import { AiOutlineSetting } from "react-icons/ai";
+import { GoSignOut } from "react-icons/go";
 import "../../Homepage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
@@ -71,7 +79,7 @@ const Navbar = () => {
         className={`md:hidden md:pb-0 pb-12  absolute md:static md:z-auto right-0 w-full h-screen md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in menu-color mobile-menu ${
           open ? "top-0 translate-x-0" : "top-0 translate-x-full"
         }`}
-        style={{ borderRadius:"8px" }}
+        style={{ borderRadius: "8px", maxHeight: "100vh", overflowY: "scroll"  }}
       >
         <div className="text-3xl relative pl-7 mt-10 right-0 top-0 cursor-pointer menu-container">
           {open && (
@@ -91,27 +99,48 @@ const Navbar = () => {
               href={`/${link.link}`}
               className={`text-gray-800 flex duration-500  p-8  ${
                 activeLink === link.name ? "active-link" : ""
-              }`}
-              style={{ fontSize: "19px", fontWeight: "700", border: "1px solid rgba(204, 209, 227, 1)"}}
+              } ${link.name.toLowerCase().replace(/\s/g, "-")}`}
+              style={{
+                fontSize: "19px",
+                fontWeight: "700",
+                border: "1px solid rgba(204, 209, 227, 1)",
+              }}
               onClick={(e) => {
                 e.preventDefault();
                 handleLinkClick(link.name);
               }}
             >
-              {link.name === "Search" && <BiSearch size={25} className="mr-5 p-0" />} 
-              {link.name === "Home" && <BiHome size={25} className="mr-5 p-0" />} 
-              {link.name === "Catalog" && <BiImages size={25} className="mr-5 p-0" />} 
-              {link.name === "Library" && <BiLibrary size={25} className="mr-5 p-0" />} 
-              {link.name === "Community" && <BiGroup size={25} className="mr-5 p-0" />} 
-              {link.name === "Mentors" && <BiFace size={25} className="mr-5 p-0" />} 
-              {link.name === "Profile" && <BiUser size={25} className="mr-5 p-0" />} 
-              {link.name === "Settings" && <AiOutlineSetting size={25} className="mr-5 p-0" />} 
-              {link.name === "Logout" && <GoSignOut  size={25} className="mr-5 p-0" />} 
+              {link.name === "Search" && (
+                <BiSearch size={25} className="mr-5 p-0" />
+              )}
+              {link.name === "Home" && (
+                <BiHome size={25} className="mr-5 p-0" />
+              )}
+              {link.name === "Catalog" && (
+                <BiImages size={25} className="mr-5 p-0" />
+              )}
+              {link.name === "Library" && (
+                <BiLibrary size={25} className="mr-5 p-0" />
+              )}
+              {link.name === "Community" && (
+                <BiGroup size={25} className="mr-5 p-0" />
+              )}
+              {link.name === "Mentors" && (
+                <BiFace size={25} className="mr-5 p-0" />
+              )}
+              {link.name === "Profile" && (
+                <BiUser size={25} className="mr-5 p-0" />
+              )}
+              {link.name === "Settings" && (
+                <AiOutlineSetting size={25} className="mr-5 p-0" />
+              )}
+              {link.name === "Logout" && (
+                <GoSignOut size={25} className="mr-5 p-0" />
+              )}
               {link.name}
             </a>
           ))}
         </div>
-        
       </div>
 
       {/* Tablet and Desktop Menu */}
@@ -131,7 +160,7 @@ const Navbar = () => {
             {link.name}
           </a>
         ))}
-        <BiSearch size={25} className="mr-5 p-0"/>
+        <BiSearch size={25} className="mr-5 p-0" />
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
         <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
