@@ -1,13 +1,11 @@
-
-import Sample from "../../Components/Homepage/Sample/sample";
-
+import Progress from "../../Components/Homepage/InProgress/progress";
 
 const Homepage = () => {
-    return (
-        <>
-        <Sample />
-        </>
-    );
-    }
+  return (
+    <>
+      <Progress />
+    </>
+  );
+};
 
 export default Homepage;

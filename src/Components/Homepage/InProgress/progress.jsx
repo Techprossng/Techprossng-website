@@ -4,7 +4,7 @@ import starfull from "./images/star.svg";
 import starhalf from "./images/Vector.svg";
 import watchlater from "./images/watch_later.svg";
 import book from "./images/book.svg";
-import arrow from "./images/arrow-right.svg";
+import arrow from "./images/arrow_right.svg";
 import sharebutton from "./images/share.svg";
 import Progressbar from "./progress-bar/Progressbar";
 import "./styles/progress.css";
