@@ -10,12 +10,13 @@
 .shadow {
   box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1);
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 8.59%,
-    #f4050a 49.81%,
-    rgba(0, 0, 0, 0) 89.96%
-  );
+  border-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 8.59%,
+      #f4050a 49.81%,
+      rgba(0, 0, 0, 0) 89.96%
+    );
   border-image-slice: 1;
 }
 
@@ -53,6 +54,7 @@
   height: 38px;
   width: 38px;
 }
+
 .menu-back {
   height: 28px;
   width: 28px;
@@ -81,48 +83,53 @@
   background-color: rgba(0, 25, 117, 1);
 }
 
-
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .custom-image-large {
-    display: none;
+    display: block;
   }
-  .search{
+
+  .search {
     position: relative;
     bottom: 20px;
     border: none !important;
     background: transparent !important;
-    
   }
-  .profile{
+
+  .profile {
     padding-top: 6rem;
     background: transparent !important;
-    
-  
   }
-  .logout{
+
+  .logout {
     padding-top: 5rem;
     background: transparent !important;
     color: #f4050a;
   }
+
   .custom-image-small {
+    display: none;
     position: relative;
     right: 27px;
     bottom: 0;
   }
+
   .active-link::before {
     display: none;
   }
+
   .mobile-font {
     font-size: 10px;
   }
+
   .active-link {
     width: 100%;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         0deg,
         rgba(255, 204, 204, 0.6),
         rgba(255, 204, 204, 0.6)
       ),
-      linear-gradient(0deg, #ffcccc, #ffcccc);
+      linear-gradient(0deg, #fcc, #fcc);
     color: #f4050a;
   }
 
@@ -156,6 +163,7 @@
   .button-2-small:hover {
     color: rgba(254, 0, 0, 1);
   }
+
   .Close-Menu {
     z-index: 2;
     position: relative;
@@ -164,27 +172,29 @@
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .custom-image-large {
-    display: none;
+    display: block;
   }
-  .search{
+
+  .search {
     position: relative;
     bottom: 20px;
     border: none !important;
     background: transparent !important;
-    
   }
-  .profile{
+
+  .profile {
     padding-top: 5rem;
     background: transparent !important;
-  
   }
-  .logout{
+
+  .logout {
     padding-top: 5rem;
     background: transparent !important;
     color: #f4050a;
   }
-  
+
   .custom-image-small {
+    display: none;
     position: relative;
     right: 2rem;
   }
@@ -195,12 +205,13 @@
 
   .active-link {
     width: 100%;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         0deg,
         rgba(255, 204, 204, 0.6),
         rgba(255, 204, 204, 0.6)
       ),
-      linear-gradient(0deg, #ffcccc, #ffcccc);
+      linear-gradient(0deg, #fcc, #fcc);
     color: #f4050a;
   }
 
@@ -241,24 +252,25 @@
     border: none;
     transition: 0.8s;
   }
-  .search{
+
+  .search {
     position: relative;
     bottom: 20px;
     border: none !important;
     background: transparent !important;
-    
   }
-  
-  .profile{
+
+  .profile {
     padding-top: 5rem;
     background: transparent !important;
-  
   }
-  .logout{
+
+  .logout {
     padding-top: 5rem;
     background: transparent !important;
     color: #f4050a;
   }
+
   .mobile-menu {
     display: block;
     width: 100%;
@@ -277,7 +289,7 @@
   }
 
   .custom-image-small {
-    display: flex;
+    display: none;
     position: relative;
     right: 5rem;
   }
@@ -287,7 +299,9 @@
   }
 
   .custom-image-large {
-    display: none;
+    display: block;
+    position: relative;
+    right: 3rem;
   }
 
   .menu-container {
@@ -316,12 +330,13 @@
 
   .active-link {
     width: 100%;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         0deg,
         rgba(255, 204, 204, 0.6),
         rgba(255, 204, 204, 0.6)
       ),
-      linear-gradient(0deg, #ffcccc, #ffcccc);
+      linear-gradient(0deg, #fcc, #fcc);
     color: #f4050a;
   }
 }

@@ -9,26 +9,32 @@
     font-size: 24px;
     font-weight: 700;
   }
+
   .ourTeamMb {
     margin-bottom: 0.1rem;
   }
+
   .cardSection {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
     margin-right: 2rem;
   }
+
   .singleCard {
     width: 100%;
   }
+
   .name {
     font-size: 24px;
     font-weight: 700;
   }
+
   .role {
     font-size: 16px;
     font-weight: 500;
   }
+
   .desc {
     font-size: 15px;
     font-weight: 500;
@@ -41,26 +47,32 @@
     font-size: 24px;
     font-weight: 700;
   }
+
   .ourTeamMb {
     margin-bottom: 0.1rem;
   }
+
   .cardSection {
     display: flex;
     flex-direction: row;
     margin-left: 2rem;
     margin-right: 2rem;
   }
+
   .singleCard {
     width: 40%;
   }
+
   .name {
     font-size: 24px;
     font-weight: 700;
   }
+
   .role {
     font-size: 16px;
     font-weight: 500;
   }
+
   .desc {
     font-size: 15px;
     font-weight: 500;

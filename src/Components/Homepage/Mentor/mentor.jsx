@@ -7,17 +7,16 @@ import "../../Homepage/Mentor/Styles/mentor.css";
 function MentorsSection() {
 
   const [showFullList, setShowFullList] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 880);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 980);
 
   
   const toggleFullList = () => {
     setShowFullList(!showFullList);
   };
-  const cardClass = showFullList ? "full-list-card" : "slider-card";
   
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 880);
+      setIsMobile(window.innerWidth <= 980);
     };
 
     window.addEventListener("resize", handleResize);
@@ -30,7 +29,7 @@ function MentorsSection() {
   return (
     <div className="container mx-auto mt-10 p-20 Mentors-box">
     <div className="flex items-center justify-between header-box">
-      <div className="flex items-center">
+      <div className="flex items-center ">
         <h2 className="text-2xl font-bold">Explore Mentors</h2>
       </div>
     </div>
@@ -99,7 +98,7 @@ function MentorsSection() {
             infinite={true}
             speed={500}
             slidesToShow={isMobile ? 1 : 4}
-            slidesToScroll={isMobile ? 2 : 3}
+            slidesToScroll={isMobile ? 1 : 3}
           >
             {mentor.map((mentor, index) => (
               <div key={index} className="w-full p-2">
@@ -136,7 +135,7 @@ function MentorsSection() {
                         </p>
                       </ul>
   
-                      <button className={`mt-2 bg-[rgba(15,27,99,1)] w-full md:w-full text-white px-2 md:px-3 py-2 md:py-3 ${isMobile ? "mobile-button" : "desktop-button"}`}
+                      <button className={`mt-2 bg-[rgba(15,27,99,1)] w-full md:w-full text-white px-2 md:px-3 py-2 md:py-3 all-button ${isMobile ? "mobile-button" : "desktop-button"}`}
                          style={{
                           borderRadius: "10px",
                           fontSize: "16px",

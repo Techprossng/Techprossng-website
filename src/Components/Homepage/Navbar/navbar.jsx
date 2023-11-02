@@ -97,13 +97,14 @@ const Navbar = () => {
             <a
               key={link.name}
               href={`/${link.link}`}
-              className={`text-gray-800 flex duration-500  p-8  ${
+              className={`text-blue-900 flex duration-500  p-8  ${
                 activeLink === link.name ? "active-link" : ""
               } ${link.name.toLowerCase().replace(/\s/g, "-")}`}
               style={{
                 fontSize: "19px",
                 fontWeight: "700",
                 border: "1px solid rgba(204, 209, 227, 1)",
+                
               }}
               onClick={(e) => {
                 e.preventDefault();
@@ -160,7 +161,7 @@ const Navbar = () => {
             {link.name}
           </a>
         ))}
-        <BiSearch size={25} className="mr-5 p-0" />
+        <BiSearch size={25} className="mr-5 p-0" style={{ cursor:"pointer"}}/>
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
         <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
