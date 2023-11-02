@@ -56,16 +56,16 @@
   margin-right: 40px;
 }
 
-.menu-color {
+.nav-color {
   background-color: rgba(204, 204, 204, 1);
 }
 
-.active-link {
+.active-nav{
   position: relative;
   color: rgba(0, 25, 117, 1);
 }
 
-.active-link::before {
+.active-nav::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -85,7 +85,7 @@
     right: 27px;
     bottom: 0;
   }
-  .active-link::before {
+  .active-nav::before {
     width: 79px;
     left: 50%;
     transform: translateX(-50%);
@@ -133,11 +133,11 @@
   position: relative;
   right: 2rem;
  }
-  .active-link {
+  .active-nav {
     position: relative;
   }
 
-  .active-link::before {
+  .active-nav::before {
     width: 79px;
     left: 50%;
     transform: translateX(-50%);
@@ -226,11 +226,11 @@
     border: none;
     transition: 0.8s;
   }
-  .active-link {
+  .active-nav {
     position: relative;
   }
 
-  .active-link::before {
+  .active-nav::before {
     width: 79px;
     left: 50%;
     transform: translateX(-50%);
