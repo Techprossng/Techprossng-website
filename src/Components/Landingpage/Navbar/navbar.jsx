@@ -30,12 +30,12 @@ const Navbar = () => {
         <img
           src="../../src/assets/images/Logo.svg"
           alt="Logo"
-          className="custom-image-large"
+          className="custom-large"
         />
         <img
           src="../../src/assets/images/Logo2.svg"
           alt="Logo"
-          className="custom-image-small md:hidden "
+          className="custom-small md:hidden "
         />
       </div>
 

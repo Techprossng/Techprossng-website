@@ -1,4 +1,5 @@
-import React, { useState , useEffect} from "react";
+import { useState , useEffect} from "react";
+import mentor from "../Mentor/Data/mentor";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -92,7 +93,6 @@ function MentorsSection() {
         </div>
       ) : (
         /* Slider Card Lists */
-        <div className={`your-slider ${isMobile ? "mobile-slider" : "desktop-slider"}`}>
           <Slider
             dots={false}
             infinite={true}
@@ -151,7 +151,6 @@ function MentorsSection() {
               </div>
             ))}
           </Slider>
-        </div>
       )}
     </div>
   
@@ -180,150 +179,6 @@ function MentorsSection() {
   );
   }
 
-const mentor = [
-  {
-    name: "Alice ",
-    jobTitle: "UI/UX Designer, Product Manager",
-    certifications: "Machine Learning Expert",
-    starRating: 4.8,
-    starPublish: "(13) ",
-    imageURL: "../../src/assets/images/tutor1.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Bob ",
-    jobTitle: "Full Stack Developer",
-    certifications: "IBM Full Stack Development Certification",
-    starRating: 4.2,
-    starPublish: "(18) ",
-    imageURL: "../../src/assets/images/tutor2.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Eva ",
-    jobTitle: "Graphic Designer",
-    certifications: "Creative Illustrator",
-    starRating: 4.6,
-    starPublish: "(43) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Michael ",
-    jobTitle: "Product Manager",
-    certifications: "Agile Certified",
-    starRating: 4.4,
-    starPublish: "(23) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Sarah ",
-    jobTitle: "Marketing Manager",
-    certifications: "Digital Marketing Pro",
-    starRating: 4.7,
-    starPublish: "(13) ",
-    imageURL: "../../src/assets/images/tutor2.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Liam ",
-    jobTitle: "Software Architect",
-    certifications: "Architectural Master",
-    starRating: 4.9,
-    imageURL: "../../src/assets/images/tutor2.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Olivia",
-    jobTitle: "UX Designer",
-    certifications: "User Experience Guru",
-    starRating: 4.5,
-    starPublish: "(10) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Daniel ",
-    jobTitle: "Network Engineer",
-    certifications: "Cisco Certified Professional",
-    starRating: 4.1,
-    starPublish: "(14) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Sophia ",
-    jobTitle: "Database Administrator",
-    certifications: "Database Expert",
-    starRating: 4.3,
-    starPublish: "(13) ",
-    imageURL: "../../src/assets/images/Logo.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Jackson ",
-    jobTitle: "Project Manager",
-    certifications: "Certified Project Manager",
-    starRating: 4.6,
-    starPublish: "(33) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Emma",
-    jobTitle: "Content Writer",
-    certifications: "Content Marketing Specialist",
-    starRating: 4.7,
-    starPublish: "(42) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Matthew",
-    jobTitle: "System Administrator",
-    certifications: "System Admin Pro",
-    starRating: 4.4,
-    starPublish: "(12) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Isabella",
-    jobTitle: "UI Designer",
-    certifications: "UI/UX Specialist",
-    starRating: 4.8,
-    starPublish: "(11) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Logan",
-    jobTitle: "DevOps Engineer",
-    certifications: "DevOps Pro",
-    starRating: 4.2,
-    starPublish: "(10) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Ava",
-    jobTitle: "Quality Assurance Analyst",
-    certifications: "QA Expert",
-    starRating: 4.5,
-    starPublish: "(13) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-  {
-    name: "Noah",
-    jobTitle: "Business Analyst",
-    certifications: "Business Analysis Master",
-    starRating: 4.6,
-    starPublish: "(11) ",
-    imageURL: "../../src/assets/images/tutor3.svg",
-    starIcon: "../../src/assets/icons/star.png",
-  },
-];
+
 
 export default MentorsSection;

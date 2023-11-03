@@ -79,11 +79,11 @@
 }
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
-  .custom-image-large {
+  .custom-large {
     display: none;
   }
 
-  .custom-image-small {
+  .custom-small {
     position: relative;
     right: 27px;
     bottom: 0;
@@ -130,11 +130,11 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  .custom-image-large {
+  .custom-large {
     display: none;
   }
 
-  .custom-image-small {
+  .custom-small {
     position: relative;
     right: 2rem;
   }
@@ -205,7 +205,7 @@
     display: none;
   }
 
-  .custom-image-small {
+  .custom-small {
     display: flex;
     position: relative;
     right: 5rem;
@@ -215,7 +215,7 @@
     display: flex;
   }
 
-  .custom-image-large {
+  .custom-large {
     display: none;
   }
 
