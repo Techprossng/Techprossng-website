@@ -116,7 +116,7 @@ form select {
 
   .first-container img {
     display: flex;
-    margin-left: -10%;
+    margin-left: -2.5rem;
   }
   h4 {
     color: white;
@@ -126,6 +126,9 @@ form select {
     display: flex;
     justify-content: space-between;
     width: 95%;
+  }
+  .social-icons {
+    margin-left: -25%;
   }
 }
 

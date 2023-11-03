@@ -30,12 +30,12 @@ const Navbar = () => {
         <img
           src="../../src/assets/images/Logo.svg"
           alt="Logo"
-          className="custom-image-large"
+          className="custom-large"
         />
         <img
           src="../../src/assets/images/Logo2.svg"
           alt="Logo"
-          className="custom-image-small md:hidden "
+          className="custom-small md:hidden "
         />
       </div>
 
@@ -55,10 +55,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
 
-      <div className={`md:hidden  md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in menu-color mobile-menu ${open ? "top-24 " : "top-[-690px]"}`} style={{ textAlign: "center", alignItems: "center" }}>
+      <div className={`md:hidden  md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in nav-color mobile-menu ${open ? "top-24 " : "top-[-690px]"}`} style={{ textAlign: "center", alignItems: "center" }}>
         <div className="flex flex-col space-y-10">
           {Links.map((link) => (
-            <a key={link.name} href={`/${link.link}`} className={`text-gray-800 duration-500 ${activeLink === link.name ? "active-link" : ""}`} style={{ fontSize: "20px", fontWeight: "500" }} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
+            <a key={link.name} href={`/${link.link}`} className={`text-gray-800 duration-500 ${activeLink === link.name ? "active-nav" : ""}`} style={{ fontSize: "20px", fontWeight: "500" }} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
               {link.name}
             </a>
           ))}
@@ -76,7 +76,7 @@ const Navbar = () => {
       {/* Tablet and Desktop Menu */}
       <div className="hidden  md:flex  custom-space-x desktop">
         {Links.map((link) => (
-          <a href={`/${link.link}`} key={link.name} className={`text-gray-800 duration-500 custom-font ${activeLink === link.name ? "active-link" : ""}`} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
+          <a href={`/${link.link}`} key={link.name} className={`text-gray-800 duration-500 custom-font ${activeLink === link.name ? "active-nav" : ""}`} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
             {link.name}
           </a>
         ))}
