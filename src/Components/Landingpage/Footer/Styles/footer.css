@@ -116,8 +116,7 @@ form select {
 
   .first-container img {
     display: flex;
-    margin-left: -2.5rem
-
+    margin-left: -2.5rem;
   }
 
   h4 {
@@ -129,10 +128,10 @@ form select {
     justify-content: space-between;
     width: 95%;
   }
+
   .social-icons {
     margin-left: -25%;
   }
-
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -140,14 +139,17 @@ form select {
     display: flex;
     margin-left: -4%;
   }
+
   h4 {
     color: white;
   }
+
   .footer .copyright {
     display: flex;
     justify-content: space-between;
     width: 90%;
   }
+
   .horizontal-line {
     width: 85%;
     border: 0;
