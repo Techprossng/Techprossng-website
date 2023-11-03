@@ -193,7 +193,7 @@
     display: block;
     width: 100%;
     position: absolute;
-    height: 700%;
+    height: 680px !important;
   }
 
   .menu {

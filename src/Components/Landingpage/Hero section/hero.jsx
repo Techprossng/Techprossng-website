@@ -15,7 +15,7 @@ const Hero = () => {
             data-aos-duration="2000"
           >
             <img  src="../../src/assets/images/Vector.svg" className="Vector-img"/>
-            <h1 className=" text-6xl md:text-6xl lg:text-5xl xl:text-7xl flex font-primary font-primary xl:font-primary  font-bold tracking-tight mb-12 text-[#001975] animate-text "
+            <h1 className=" text-5xl md:text-6xl lg:text-5xl xl:text-7xl flex font-primary font-primary xl:font-primary  font-bold tracking-tight mb-12 text-[#001975] animate-text "
              style={{
            
             fontWeight:"900px"
