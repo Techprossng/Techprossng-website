@@ -7,8 +7,8 @@ const Homepage = () => {
     return (
         <>
         <Navbar/>
-        <Mentor/>
         <Progress/>
+        <Mentor/>
         </>
     );
     }
