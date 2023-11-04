@@ -1,9 +1,13 @@
-import React from 'react';
-import Sample from "../../Components/Coursecatalog/sample"
+import Navbar from "../../Components/Landingpage/Navbar/navbar";
+import Footer from "../../Components/Landingpage/Footer/footer";
+
 
 const Catalog = () => {
     return (
-      <Sample />
+      <>
+      <Navbar />
+      <Footer />
+      </>
     )
   }
   

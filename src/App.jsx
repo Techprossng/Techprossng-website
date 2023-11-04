@@ -4,10 +4,10 @@ import AosInitializer from "./assets/aosInitializer";
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/landing-page";
 import Homepage from "./pages/homepage/homepage";
-import Layout from "./Components/layout";
-import Profilepage from "./pages/Profilepage/profilepage/";
+import ProfilePage from "./pages/Profilepage/profilepage";
 import Pricing from "./pages/Pricing/pricing";
 import Catalog from "./pages/Coursecatalog/course";
+import Layout from "./Components/layout";
 
 function App() {
   useEffect(() => {
@@ -37,7 +37,7 @@ function App() {
           path="/profile"
           element={
             <Layout>
-              <Profilepage />
+              <ProfilePage />
             </Layout>
           }
         />

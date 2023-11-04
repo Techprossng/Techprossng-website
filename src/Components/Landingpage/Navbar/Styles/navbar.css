@@ -88,6 +88,7 @@
     right: 27px;
     bottom: 0;
   }
+
   .active-nav::before {
     width: 79px;
     left: 50%;
@@ -105,7 +106,6 @@
     box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1);
     border-bottom: none;
     border-image: none;
-    border-image-slice: none;
   }
 
   .custom-move {
@@ -137,6 +137,7 @@
     position: relative;
     right: 2rem;
   }
+
   .active-nav {
     position: relative;
   }
@@ -191,12 +192,12 @@
     display: block;
     width: 100%;
     position: absolute;
-    height: 700%;
+    height: 680px !important;
   }
 
   .menu {
     position: relative;
-    top:5px;
+    top: 5px;
   }
 
   .desktop {
@@ -206,8 +207,7 @@
   .custom-small {
     display: flex;
     position: relative;
-    right: 5rem;
-
+    right: 10rem;
   }
 
   .logo-container {
@@ -237,6 +237,7 @@
     border: none;
     transition: 0.8s;
   }
+
   .active-nav {
     position: relative;
   }

@@ -127,6 +127,7 @@ form select {
     justify-content: space-between;
     width: 95%;
   }
+
   .social-icons {
     margin-left: -25%;
   }
@@ -137,14 +138,17 @@ form select {
     display: flex;
     margin-left: -4%;
   }
+
   h4 {
     color: white;
   }
+
   .footer .copyright {
     display: flex;
     justify-content: space-between;
     width: 90%;
   }
+
   .horizontal-line {
     width: 85%;
     border: 0;
