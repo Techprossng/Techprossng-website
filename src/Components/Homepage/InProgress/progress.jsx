@@ -73,7 +73,7 @@ const Progress = () => {
                         Introduction To Javascript and Typescript
                       </div>
                     </div>
-                    <div className="flex gap-3">
+                    <div className="flex gap-1">
                       <img src={watchlater} alt="watchlater icon" />
                       <div className="time font-secondary text-base font-medium text-[#272727]">
                         50 Minutes

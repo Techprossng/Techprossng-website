@@ -6,6 +6,10 @@
   min-height: 100vh;
 }
 
+.border-box-container {
+  border-radius: 16px;
+}
+
 .course-image-desktop > img {
   max-width: none;
   border-radius: 8px;
@@ -29,12 +33,18 @@
   flex-direction: row;
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .time,
+  .course-title {
+    font-size: 9px;
+  }
+
   .progress {
     width: 100%;
   }
 
   .progress-title {
+    width: 100%;
     font-size: 17px;
   }
 
@@ -58,14 +68,11 @@
     width: 108%;
   }
 
-  .course-image-desktop {
-    display: none;
-  }
-
   .mobile-container {
     gap: 10px;
   }
 
+  .percentage,
   .mobile-view-image {
     display: block;
   }
@@ -80,31 +87,20 @@
     margin-top: 10px;
   }
 
-  .percentage {
-    display: block;
-  }
-
   .percentage > .thirty-five {
     display: flex;
     justify-content: flex-end;
   }
 
-  .one-hundred {
-    display: none;
-  }
-
-  .mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
+  .mobile,
   .intro-mobile {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
+  .course-image-desktop,
+  .one-hundred,
   .continue-button {
     display: none;
   }
