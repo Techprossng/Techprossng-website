@@ -6,6 +6,11 @@
   min-height: 100vh;
 }
 
+.progress-title {
+  width: 100%;
+  font-size: 20px;
+}
+
 .border-box-container {
   border-radius: 16px;
 }
@@ -33,7 +38,7 @@
   flex-direction: row;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .time,
   .course-title {
     font-size: 9px;
@@ -45,7 +50,7 @@
 
   .progress-title {
     width: 100%;
-    font-size: 17px;
+    font-size: larger;
   }
 
   .percentage-numbers {
