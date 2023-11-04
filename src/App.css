@@ -19,4 +19,5 @@
 
 #root {
   font-family: 'Craftwork Grotesk', sans-serif;
+  overflow: hidden;
 }

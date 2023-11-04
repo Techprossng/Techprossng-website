@@ -9,39 +9,244 @@
 
 .shadow {
   box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1);
+  border-bottom: 1px solid transparent;
+  border-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 8.59%,
+      #f4050a 49.81%,
+      rgba(0, 0, 0, 0) 89.96%
+    );
+  border-image-slice: 1;
+}
+
+.header-font {
+  font-size: 80px;
 }
 
 .button-1 {
   background: rgba(0, 25, 117, 1);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
-  border-radius: 8px;
   text-align: center;
+  transition: 0.8s;
+}
+
+.button-1:hover {
+  background-color: rgba(254, 0, 0, 1);
 }
 
 .button-2 {
-  background: #fff;
-  color: rgba(0, 0, 0, 1);
-  font-size: 13px;
-  border-radius: 8px;
+  background: none;
+  color: rgba(0, 25, 117, 1);
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 1);
+  border: none;
+  transition: 0.8s;
+}
+
+.button-2:hover {
+  color: rgba(254, 0, 0, 1);
 }
 
 .menu {
-  height: 30px;
-  width: 30px;
+  height: 38px;
+  width: 38px;
 }
 
 .custom-space-x > * {
-  margin-right: 65px;
+  margin-right: 40px;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 880px) {
-  .custom-image-small {
+.nav-color {
+  background-color: rgba(204, 204, 204, 1);
+}
+
+.active-nav {
+  position: relative;
+  color: rgba(0, 25, 117, 1);
+}
+
+.active-nav::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 25, 117, 1);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .custom-large {
+    display: none;
+  }
+
+  .custom-small {
     position: relative;
-    right: 30px;
-    bottom: 5px;
+    right: 27px;
+    bottom: 0;
+  }
+
+  .active-nav::before {
+    width: 79px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: rgba(0, 25, 117, 1);
+  }
+
+  .menu {
+    position: relative;
+    top: 5px;
+  }
+
+  .shadow {
+    box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1);
+    border-bottom: none;
+    border-image: none;
+  }
+
+  .custom-move {
+    position: relative;
+    right: 35px;
+  }
+
+  .button-2-small {
+    background: white;
+    color: rgba(0, 25, 117, 1);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    transition: 0.8s;
+  }
+
+  .button-2-small:hover {
+    color: rgba(254, 0, 0, 1);
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .custom-large {
+    display: none;
+  }
+
+  .custom-small {
+    position: relative;
+    right: 2rem;
+  }
+
+  .active-nav {
+    position: relative;
+  }
+
+  .active-nav::before {
+    width: 79px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: rgba(0, 25, 117, 1);
+  }
+
+  .button-2-small {
+    background: white;
+    color: rgba(0, 25, 117, 1);
+    width: 60%;
+    font-size: 16px;
+    transform: translateX(33%);
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    transition: 0.8s;
+  }
+
+  .button-1 {
+    background: rgba(0, 25, 117, 1);
+    width: 60%;
+    color: white;
+    font-size: 16px;
+    transform: translateX(33%);
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    transition: 0.8s;
+  }
+}
+
+@media (min-width: 768px)  and (max-width: 1200px) {
+  .button-2-small {
+    background: white;
+    color: rgba(0, 25, 117, 1);
+    width: 60%;
+    font-size: 16px;
+    transform: translateX(33%);
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    transition: 0.8s;
+  }
+
+  .mobile-menu {
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 680px !important;
+  }
+
+  .menu {
+    position: relative;
+    top: 5px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .custom-small {
+    display: flex;
+    position: relative;
+    right: 10rem;
+  }
+
+  .logo-container {
+    display: flex;
+  }
+
+  .custom-large {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+  }
+
+  .desktop-button {
+    display: none;
+  }
+
+  .button-1 {
+    background: rgba(0, 25, 117, 1);
+    width: 60%;
+    color: white;
+    font-size: 16px;
+    transform: translateX(33%);
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    transition: 0.8s;
+  }
+
+  .active-nav {
+    position: relative;
+  }
+
+  .active-nav::before {
+    width: 79px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: rgba(0, 25, 117, 1);
   }
 }

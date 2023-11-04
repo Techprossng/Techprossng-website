@@ -11,9 +11,18 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "framer-motion": "^10.16.4",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.17.0"
+    "react-horizontal-scrolling-menu": "^4.1.1",
+    "react-icons": "^4.11.0",
+    "react-responsive": "^9.0.2",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.17.0",
+    "react-scroll": "^1.9.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
@@ -23,6 +32,7 @@
     "@babel/preset-react": "^7.22.15",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/react-slick": "^0.23.11",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.16",
     "eslint": "^7.32.0",

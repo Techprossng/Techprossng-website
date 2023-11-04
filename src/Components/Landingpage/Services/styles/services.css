@@ -1,0 +1,37 @@
+.services {
+  background-image: url("../images/union.svg");
+  margin-top: 1rem;
+}
+
+.header {
+  color: #272727;
+}
+
+.title {
+  color: #001975;
+}
+
+.paragraph {
+  color: #656565;
+}
+
+@media (max-width: 480px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-header {
+    margin-top: 11rem;
+    font-size: 17px;
+  }
+
+  .paragraph {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+}
