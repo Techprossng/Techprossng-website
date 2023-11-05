@@ -11,13 +11,13 @@ import "./styles/progress.css";
 
 const Progress = () => {
   return (
-    <section className="inprogress-container">
-      <div className="progress mobile-inprogress sm:w-[100%] md:w-[100%] lg:w-[83%] p-5 bg-[#fff] text-[#00114E]">
+    <section className="inprogress-container mt-28">
+      <div className="progress mobile-inprogress sm:w-[100%] md:w-[100%] lg:w-[92%] p-5 bg-[#fff] text-[#00114E]">
         <h5 className="progress-title font-primary font-bold font-bold w-[143px] h-[36px]">
           In Progress
         </h5>
       </div>
-      <div className="border-box-container p-5 bg-[#CCD1E3] sm:w-[100%] md:[80%] lg:w-[80%]">
+      <div className="border-box-container p-5 bg-[#CCD1E3] sm:w-[100%] md:[89%] lg:w-[89%]">
         <div className="progress-container flex justify-between">
           <div className="total-mobile-view flex gap-5 sm:w-[100%] md:[80%] lg:w-[80%]">
             <div className="course-image-desktop">
