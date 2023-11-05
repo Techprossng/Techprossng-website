@@ -1,0 +1,8 @@
+.bg-image {
+  background-image: url("../../../../assets/images/values/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.color {
+  background: rgba(43, 63, 140, 1);
+}

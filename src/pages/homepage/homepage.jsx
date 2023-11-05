@@ -1,12 +1,18 @@
-// import React from "react";
+import Library from "../../Components/Homepage/Resource Library/library";
+import Navbar from "../../Components/Homepage/Navbar/navbar";
+import Mentor from "../../Components/Homepage/Mentor/mentor";
+import Progress from "../../Components/Homepage/InProgress/progress";
 import FromOurCommunity from "../../Components/Homepage/FromOurCommunity";
-import Sample from "../../Components/Homepage/Sample/sample";
+
 
 const Homepage = () => {
     return (
         <>
-        {/* <Sample /> */}
+        <Navbar/>
+        <Progress/>
         <FromOurCommunity />
+        <Mentor/>
+        <Library />
         </>
     );
     }

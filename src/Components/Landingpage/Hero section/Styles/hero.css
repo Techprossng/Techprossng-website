@@ -1,0 +1,30 @@
+.hero-background {
+  background-image: url(../../../../assets/images/Union.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 80%;
+  background-position-y: 29%;
+}
+
+.Vector-img {
+  width: 240px;
+  height: 48px;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 788px) {
+  .hero-background {
+    background-image: url(../../../../assets/images/Union.svg);
+    background-position-y: 10%;
+    background-position-x: 60%;
+    background-size: 190%;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 639px) {
+  .hero-background {
+    background-image: url(../../../../assets/images/Union.svg);
+    background-position-y: 98%;
+    background-position-x: 60%;
+    background-size: 140%;
+  }
+}

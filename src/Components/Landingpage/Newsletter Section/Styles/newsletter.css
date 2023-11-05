@@ -1,0 +1,203 @@
+.news-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-box .mobile-view {
+  display: none;
+}
+
+.news-box h1 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.news-box h4 {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.news-box .email {
+  height: 50px;
+  position: relative;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.news-box .email input {
+  height: 100%;
+  width: 550px;
+  padding-left: 50px;
+  font-size: 12px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: 2px solid #001975;
+}
+
+.news-box .email .icon {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+.news-box .email button {
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  transform: translate(-50%, -50%);
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  background: #001975;
+  color: white;
+  width: 150px;
+  transition: 0.3s;
+}
+
+.news-box .email button:hover {
+  background: #001999;
+}
+
+.news-box p {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.news-box p a {
+  text-decoration: none;
+  color: #001999;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .news-box h1 {
+    width: 90%;
+  }
+
+  .news-box .email {
+    display: none;
+  }
+
+  .news-box .mobile-view {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .email-mobile > input {
+    width: 70%;
+    padding: 12px 15px;
+  }
+
+  .news-box .email-mobile input {
+    display: flex;
+    justify-content: center;
+  }
+
+  .news-box .email-mobile {
+    position: relative;
+    color: gray;
+    height: 50px;
+    width: 90%;
+    font-size: 12px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid grey;
+  }
+
+  .news-box .mobile-button {
+    text-align: center;
+    padding: 12px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    background: #001975;
+    color: white;
+    width: 90%;
+    transition: 0.3s;
+  }
+
+  .news-box .mobile-button:hover {
+    background: #001999;
+  }
+
+  .news-box h4 {
+    text-align: left;
+    margin: 0;
+    width: 90%;
+    margin-bottom: 3%;
+  }
+
+  .news-box .mobile-view .text-mobile {
+    color: black;
+    text-align: left;
+    width: 90%;
+    margin-bottom: 1.5%;
+  }
+
+  .news-box p {
+    text-align: left;
+    margin: 0;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .news-box {
+    padding: 1.5rem;
+  }
+
+  .news-box h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+
+  .news-box h4 {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .news-box .email {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .news-box .email button {
+    margin: 0;
+    margin-right: 7%;
+  }
+
+  .news-box .email .input {
+    margin: 0;
+  }
+
+  .news-box p {
+    text-align: left;
+    margin: 0;
+    width: 90%;
+    margin-right: 10%;
+  }
+}
