@@ -1,0 +1,124 @@
+.inprogress-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: 100vh; */
+}
+
+.progress-title {
+  width: 100%;
+  font-size: 20px;
+}
+
+.border-box-container {
+  border-radius: 16px;
+}
+
+.course-image-desktop > img {
+  max-width: none;
+  border-radius: 8px;
+}
+
+.mobile-view-image {
+  display: none;
+}
+
+.button-border {
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #0f1b63;
+}
+
+.button-border > button {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .time,
+  .course-title {
+    font-size: 9px;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .progress-title {
+    width: 100%;
+    font-size: larger;
+  }
+
+  .percentage-numbers {
+    font-size: 12px;
+  }
+
+  .current-timing .percentage-numbers,
+  .next-lesson,
+  .time {
+    font-size: 11px;
+  }
+
+  .continue-button {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-inprogress {
+    width: 108%;
+  }
+
+  .mobile-container {
+    gap: 10px;
+  }
+
+  .percentage,
+  .mobile-view-image {
+    display: block;
+  }
+
+  .mobile-view {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .watch-later {
+    margin-top: 10px;
+  }
+
+  .percentage > .thirty-five {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .mobile,
+  .intro-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .course-image-desktop,
+  .one-hundred,
+  .continue-button {
+    display: none;
+  }
+
+  .percentage-numbers {
+    font-size: 11px;
+  }
+
+  .current-timing,
+  .course-title,
+  .percentage-numbers,
+  .next-lesson,
+  .time {
+    font-size: 15px;
+  }
+}

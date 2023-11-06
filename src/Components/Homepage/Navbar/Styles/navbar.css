@@ -276,7 +276,7 @@
     width: 100%;
     position: absolute;
     scroll-behavior: smooth;
-    height: auto;
+    height: auto !important;
   }
 
   .menu {
