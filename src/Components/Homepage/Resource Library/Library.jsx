@@ -27,6 +27,7 @@ function Library() {
                 <a href="#" class="btn">Explore Now</a>
             </div>
         </div>
+        <div class="mobile-resourse-link"><a href="#">View Resource Library</a> <i class="fa-solid fa-arrow-right-long"></i></div>
     </div>
   )
 }
