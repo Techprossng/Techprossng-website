@@ -10,6 +10,7 @@ const Homepage = () => {
         <Progress/>
         <Mentor/>
         <Sample />
+        <Library />
         </>
     );
     }
