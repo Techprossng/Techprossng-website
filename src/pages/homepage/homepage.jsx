@@ -10,7 +10,7 @@ const Homepage = () => {
         <Navbar/>
         <Progress/>
         <Mentor/>
-         <Library />
+        <Library />
         </>
     );
     }
