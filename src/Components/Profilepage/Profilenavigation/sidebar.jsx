@@ -20,7 +20,7 @@ const Sidebar = () => {
         return (
           <div
             key={index}
-            className="sidebar-item flex flex-col items-center py-10"
+            className="sidebar-item flex flex-col items-center py-12 px-5"
           >
             <div className="sidebar-image">
                 <i className="color-[red]">
