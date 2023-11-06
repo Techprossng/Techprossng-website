@@ -1,11 +1,11 @@
-
-import Sample from "../../Components/Homepage/Sample/sample";
+import Hero from "../../Components/Homepage/home hero/HomeHero";
 
 
 const Homepage = () => {
     return (
         <>
-        <Sample />
+        <Hero />
+        
         </>
     );
     }
