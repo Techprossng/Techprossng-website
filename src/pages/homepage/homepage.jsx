@@ -1,16 +1,14 @@
-
-import Sample from "../../Components/Homepage/Sample/sample";
+import Library from "../../Components/Homepage/Resource Library/library";
 import Navbar from "../../Components/Homepage/Navbar/navbar";
 import Mentor from "../../Components/Homepage/Mentor/mentor";
-import Library from "../../Components/Homepage/Resource Library/Library";
 
 
 const Homepage = () => {
     return (
         <>
         <Navbar/>
+        <Progress/>
         <Mentor/>
-        <Library/>
         <Sample />
         </>
     );
