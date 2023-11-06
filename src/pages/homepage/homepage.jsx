@@ -1,4 +1,4 @@
-import Library from "../../Components/Homepage/Resource Library/library";
+import Library from "../../Components/Homepage/Resource Library/Library";
 import Navbar from "../../Components/Homepage/Navbar/navbar";
 import Mentor from "../../Components/Homepage/Mentor/mentor";
 
