@@ -5,8 +5,9 @@
      padding-right: 0.75rem;
 }
 h1{
-     font-size: 2.5rem;
+     font-size: 2rem;
      font-weight: bold;
+     margin-bottom: 0.8rem;
 }
 h2{
      font-weight: bold;
@@ -96,6 +97,7 @@ h5{
      align-items: left;
      gap: 2rem;
      width: 100%;
+     margin-bottom: 2rem;
 }
 .resource .faq .col2 .tab h6{
      width: 60%;
@@ -106,4 +108,47 @@ h5{
 .resource .faq .col2 .tab h5{
      width: 60%;
      margin-left: -42%;
+}
+.resource .contact-us .col3{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+     width: 100%;
+     margin-bottom: 2rem;
+}
+.resource .contact-us h6{
+     width: 47%;
+     margin-bottom: 2rem;
+}
+.resource .contact-us .col3 .tab h6{
+     width: 80%;
+}
+.resource .guide .col4{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+     width: 100%;
+     margin-bottom: 2rem;
+}
+.resource .guide h6{
+     width: 47%;
+     margin-bottom: 2rem;
+}
+.resource .guide .col4 .tab h6{
+     width: 90%;
+}
+.resource .guide .col5 .tab h6{
+     width: 22%;
+     margin-bottom: 4rem;
+}
+.resource .bottom{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 3rem;
+}
+.resource .bottom h6{
+     width: 80%;
 }
