@@ -1,0 +1,176 @@
+.library{
+     background: #aab2d1;
+     padding: 15px 9%;
+     
+}
+.library .heading{
+     /* text-align: left; 
+     padding-left: 30px;
+     padding-bottom: 15px;
+     color: #2a3fac;
+     text-shadow: 0 5px 10px;
+     font-size: 20px; */
+     display: flex;
+     justify-content: space-between;
+     color: #2a3fac;
+     text-shadow: 0 5px 10px;
+     font-size: 20px;
+     align-items: center;
+     margin: 0;
+     padding: 1.5rem;
+     padding-left: 2rem;
+     width: 102%;
+     font-weight: bold;
+}
+.library .heading .resourse-link{
+ text-align: right;
+ font-size: 12px;
+ padding-right: 35px;
+}
+.library .mobile-resourse-link{
+     display: none;
+}
+.library .heading .resourse-link a{
+     color: red;
+     text-decoration: underline;
+}
+.library .heading .resourse-link .fa-solid{
+     color: red;
+     margin-left: 0.5rem;
+}
+.library .box-container{
+     display: flex;
+     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+     gap: 15px;
+}
+.library .box-container .box{
+     background: #aab2d1;
+     text-align: center;
+     padding: 0px 30px;
+}
+.library .box-container .box img{
+     border-radius: 20px;
+}
+.library .box-container .box h3{
+ color: #2a3fac;
+ font-size: 15px;
+ padding: 10px 0;
+}
+.library .box-container .box .btn{
+     margin-top: 10px;
+     display: inline-block;
+     background: white;
+     color: #2a3fac;
+     font-size: 12px;
+     border-radius: 8px;
+     cursor: pointer;
+     padding: 8px 30px;
+     border: 1px solid #2a3fac;
+     margin-left: 5px;
+}
+ 
+.library .box-container .box .btn:hover{
+         letter-spacing: 1px;
+         transition: .2s;
+}
+@media only screen and (min-width: 360px) and (max-width: 479px){
+    .library .heading{
+     font-size: 15px;
+}
+     .library .heading .resourse-link{
+        display: none;
+    }
+.library .mobile-resourse-link{
+     display: contents;
+     font-size: 10px;
+     font-weight: bold;
+     
+}
+.library .mobile-resourse-link a{
+     color: red;
+     padding-left: 2rem;
+}
+.library .mobile-resourse-link .fa-solid{
+     color: red;
+    
+}
+
+    .library .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+        gap: 5px;
+   }
+   .library .box-container .box img{
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
+   }
+   .library .box-container .box h3{
+    color: #2a3fac;
+    font-size: 10px;
+    padding: 10px 0;
+    padding-left: 6px; 
+    margin-bottom: -15px;
+    margin-right: 2.5rem;
+}
+.library .box-container .box .btn{
+    margin-bottom: 15px;
+    display: inline-block;
+    background: white;
+    color: #2a3fac;
+    font-size: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 3px 5px;
+    border: 1px solid #2a3fac;
+    margin-right: 2.5rem;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+     .library .heading{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 116%;
+     }
+     .library .heading .resourse-link{
+        font-size: 12px;
+    }
+    .library .mobile-resourse-link{
+     display: none;
+}
+    .library .box-container .box h3{
+        color: #2a3fac;
+        font-size: 12px;
+    }
+    .library .box-container .box img{
+        
+        border-radius: 10px;
+   }
+   .library .box-container{
+    justify-content: space-between;
+    gap: 0;
+   }
+   .library .box-container .box{
+     width: 100%;
+     gap: -1rem;
+   }
+   .library .box-container .box .btn{
+    margin-top: 5px;
+    display: flex;
+    background: white;
+    color: #2a3fac;
+    font-size: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 5px;
+    border: 1px solid #2a3fac;
+    width: 5rem;
+    justify-content: center;
+    
+}
+.library .box-container .box .btn:hover{
+     letter-spacing: 1px;
+     transition: .2s;
+}
+}
