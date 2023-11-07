@@ -1,0 +1,109 @@
+.resource{
+     margin: 5rem;
+     padding-top: 5rem;
+     padding-left: 0.75rem;
+     padding-right: 0.75rem;
+}
+h1{
+     font-size: 2.5rem;
+     font-weight: bold;
+}
+h2{
+     font-weight: bold;
+}
+h3{
+     font-weight: bold;
+}
+h6{
+     font-size: 0.8rem;
+}
+h5{
+     font-size: 0.8rem;
+}
+.resource .hero-header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 7rem;
+}
+.resource .hero-header .hero-text h1{
+     margin-bottom: 1.5rem;
+}
+.resource .hero-header .hero-text h6{
+     margin-bottom: 1.5rem;
+     width: 70%;
+}
+.resource .hero-header .hero-text .search-box{
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     height: 2rem;
+}
+.resource .hero-header .hero-text .search-box input{
+     border: 1px solid grey;
+     padding-left: 2rem;
+     border-radius: 0.7rem;
+     width: 70%;
+     padding-top: 0.5rem;
+     padding-bottom: 0.5rem;
+     outline: none;
+}
+.resource .hero-header .hero-text .search-box .fa-solid{
+     position: absolute;
+     margin-top: 1rem;
+     margin-left: 1rem;
+     transform: translate(-50%, -50%);
+     color: grey;     
+}
+.resource .hero-header .hero-text .search-box button{
+     position: absolute;
+     margin-top: 2.1rem;
+     margin-left: 22.5rem;
+     transform: translate(-50%, -50%);
+     padding: 5px 12px;
+     cursor: pointer;
+     outline: none;
+     border-radius: 0.5rem;
+     background: #001975;
+     color: white;
+     width: 150px;
+     transition: 0.8s;
+}
+.resource .hero-header .hero-text .search-box button:hover{
+     background: blueviolet;
+}
+.resource .hero-header .hero-image{
+     width: 70rem;
+     height: 22rem;
+}
+.resource .faq h6{
+     margin-bottom: 3rem;
+}
+.resource .faq .col1{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+     width: 100%;
+     margin-bottom: 2rem;
+}
+.resource .faq .col1 .tab h6{
+     width: 80%;
+}
+.resource .faq .col2{
+     display: flex;
+     justify-content: space-between;
+     align-items: left;
+     gap: 2rem;
+     width: 100%;
+}
+.resource .faq .col2 .tab h6{
+     width: 60%;
+}
+.resource .faq .col2 .tab h3{
+     margin-left: -42%;
+}
+.resource .faq .col2 .tab h5{
+     width: 60%;
+     margin-left: -42%;
+}
