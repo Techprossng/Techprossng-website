@@ -21,11 +21,20 @@ h6{
 h5{
      font-size: 0.8rem;
 }
+.resource .faq-mobile{
+     display: none;
+}
+.resource .contact-us-mobile{
+     display: none;
+}
 .resource .hero-header{
      display: flex;
      justify-content: space-between;
      align-items: center;
      margin-bottom: 7rem;
+}
+.resource .tablet-hero-image{
+     display: none;
 }
 .resource .hero-header .hero-text h1{
      margin-bottom: 1.5rem;
@@ -187,9 +196,134 @@ h5{
      letter-spacing: 0.05rem;
      transition: 0.5s;
 }
-@media only screen and (min-width: 360px) and (max-width: 479px){
-     
+.resource .tablet-community-forum{
+     display: none;
 }
-@media only screen and (min-width: 480px) and (max-width: 479px){
+@media only screen and (min-width: 360px) and (max-width: 479px){
+     .resource{
+          margin-left: 0;
+          margin-right: 0;
+     }
+     .resource .hero-header .hero-image{
+          display: none;
+     }
+     .resource .tablet-hero-image{
+          display: contents;
+     }
+     .resource .hero-header .hero-text .search-box input{
+          width: 21rem;
+     }
+     .resource .hero-header .hero-text .search-box button{
+          margin-left: 16rem;
+          margin-top: 2.1rem;
+     }
+     .resource .hero-header .hero-text h1{
+          width: 75%;
+     }
+     .resource .hero-header .hero-text h6{
+          width: 62%;
+     }
+     .resource .tablet-hero-image img{
+          width: 26rem;
+          height: 20rem;
+     }
+     .resource .hero-header .hero-text .search-box{
+          width: 35rem;
+     }
+     .resource .faq{
+          display: none;
+     }
+     .resource .faq-mobile{
+          display: contents;
+     }
+     .resource .faq-mobile h1{
+          margin-top: 3rem;
+     }
+     .resource .faq-mobile .col1 .tab{
+          margin-top: 3rem;
+     }
+     .resource .faq-mobile .col2 .tab{
+          margin-top: 3rem;
+     }
+     .resource .faq-mobile .faq-link{
+          margin-top: 2rem;
+     }
+     .resource .contact-us{
+          display: none;
+     }
+     .resource .contact-us-mobile{
+          display: contents;
+     }
+     .resource .contact-us-mobile h1{
+          margin-top: 3rem;
+     }
+     .resource .contact-us-mobile .col3 .tab{
+          margin-top: 3rem;
+     }
+     .resource .contact-us-mobile .contact-us-link{
+          margin-top: 2rem;
+     }
 
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+     .resource .faq-mobile{
+          display: none;
+     }
+     .resource .contact-us-mobile{
+          display: none;
+     }
+     .resource{
+          margin-left: 0;
+          margin-right: 0;
+     }
+     .resource .hero-header .hero-image{
+          display: none;
+     }
+     .resource .tablet-hero-image{
+          display: contents;
+     }
+     .resource .hero-header .hero-text .search-box{
+          width: 35rem;
+     }
+     .resource .hero-header .hero-text .search-box button{
+          margin-left: 19.5rem;
+          margin-top: 2.2rem;
+     }
+     .resource .hero-header .hero-text h6{
+          width: 80%;
+     }
+     .resource .faq .col1 .tab h6{
+          width: 90%;
+     }
+     .resource .faq .col2 .tab h5{
+          margin-left: -35%;
+     }
+     .resource .faq .col2 .tab h3{
+          margin-left: -35%;
+     }
+     .resource .contact-us h6{
+          width: 85%;
+     }
+     .resource .contact-us .col3 .tab h6{
+          width: 90%;
+     }
+     .resource .guide h6{
+          width: 80%;
+     }
+     .resource .guide .col4 .tab h6{
+          width: 100%;
+     }
+     .resource .guide .col5 .tab h6{
+          width: 40%;
+     }
+     .resource .community-forum{
+          display: none;
+     }
+     .resource .tablet-community-forum{
+          display: contents;
+     }
+     .resource .tablet-community-forum .tablet-bottom-link{
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+     }
 }
