@@ -21,6 +21,9 @@ h6{
 h5{
      font-size: 0.8rem;
 }
+a{
+     color: black;
+}
 .resource .hero-header{
      display: flex;
      justify-content: space-between;
