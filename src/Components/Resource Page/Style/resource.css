@@ -21,9 +21,6 @@ h6{
 h5{
      font-size: 0.8rem;
 }
-a{
-     color: black;
-}
 .resource .hero-header{
      display: flex;
      justify-content: space-between;
@@ -74,7 +71,8 @@ a{
      transition: 0.8s;
 }
 .resource .hero-header .hero-text .search-box button:hover{
-     background: blueviolet;
+     letter-spacing: 0.1rem;
+     transition: 0.5s;
 }
 .resource .hero-header .hero-image{
      width: 70rem;
@@ -100,7 +98,6 @@ a{
      align-items: left;
      gap: 2rem;
      width: 100%;
-     margin-bottom: 2rem;
 }
 .resource .faq .col2 .tab h6{
      width: 60%;
@@ -154,4 +151,45 @@ a{
 }
 .resource .bottom h6{
      width: 80%;
+}
+.resource a{
+     padding: 0.5rem;
+     border: 1px solid grey;
+     border-radius: 0.5rem;
+     background: #001975;
+}
+.resource .faq .faq-link{
+     margin-bottom: 3rem;
+}
+.resource .faq .faq-link:hover{
+     letter-spacing: 0.05rem;
+     transition: 0.5s;
+}
+.resource .contact-us .contact-us-link{
+     margin-bottom: 3rem;
+}
+.resource .contact-us .contact-us-link:hover{
+     letter-spacing: 0.05rem;
+     transition: 0.5s;
+}
+.resource .guide .guide-link{
+     margin-bottom: 3rem;
+}
+.resource .guide .guide-link:hover{
+     letter-spacing: 0.05rem;
+     transition: 0.5s;
+}
+.resource .bottom .bottom-link{
+     margin-top: 2rem;
+     margin-bottom: 3rem;
+}
+.resource .bottom .bottom-link:hover{
+     letter-spacing: 0.05rem;
+     transition: 0.5s;
+}
+@media only screen and (min-width: 360px) and (max-width: 479px){
+     
+}
+@media only screen and (min-width: 480px) and (max-width: 479px){
+
 }
