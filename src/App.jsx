@@ -8,6 +8,7 @@ import ProfilePage from './pages/Profilepage/profilepage';
 import Pricing from './pages/Pricing/pricing';
 import Catalog from './pages/Coursecatalog/course';
 import Layout from './Components/layout';
+import { ProfileCourses } from './Components/Profilepage/Courses';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Layout><LandingPage /></Layout>} />
         <Route path="/home" element={<Layout><Homepage /></Layout>} /> 
         <Route path="/profile" element={<Layout><ProfilePage/></Layout>} />
+        <Route path="/profile/courses" element={<ProfileCourses />} />
         <Route path="/pricing" element={<Layout><Pricing /></Layout>} />
         <Route path="/course-catalog" element={<Layout><Catalog /></Layout>} />
       </Routes>
