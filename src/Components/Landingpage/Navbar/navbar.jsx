@@ -9,7 +9,6 @@ const Navbar = () => {
     { name: "Mentorship", link: "/mentorship" },
     { name: "Resources", link: "/resources" },
     { name: "Pricing", link: "/pricing" },
-    { name: "Library", link: "/library" },
     { name: "About Us", link: "/about" },
   ];
 
@@ -23,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bg-white p-4 flex fixed top-0 left-0 bg-cover py-0 md:px-40 px-7 bg-center w-full justify-between custom-height items-center shadow "
+      className="bg-white p-4 flex fixed top-0 left-0 bg-cover py-0 md:px-20 px-7 bg-center w-full justify-between custom-height items-center  shadow "
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center logo-container">
@@ -74,9 +73,9 @@ const Navbar = () => {
       </div>
 
       {/* Tablet and Desktop Menu */}
-      <div className="hidden  md:flex  custom-space-x desktop">
+      <div className="hidden  md:flex  custom-space-landing   desktop">
         {Links.map((link) => (
-          <a href={`/${link.link}`} key={link.name} className={`text-gray-800 duration-500 custom-font ${activeLink === link.name ? "active-nav" : ""}`} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
+          <a href={`/${link.link}`} key={link.name} className={`text-gray-800 duration-500  custom-font-small ${activeLink === link.name ? "active-nav" : ""}`} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
             {link.name}
           </a>
         ))}
