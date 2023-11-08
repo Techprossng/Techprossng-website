@@ -18,7 +18,7 @@ function Library() {
             </div>
             <div className="box">
                 <img src="../../../src/assets/images/image5.png" alt=""/>
-                <h3>Projects</h3>
+                <h3>Project</h3>
                 <a href="#" class="btn">Explore Now</a>
             </div>
             <div className="box">
