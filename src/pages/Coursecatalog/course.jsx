@@ -1,10 +1,45 @@
-import React from 'react';
-import Sample from "../../Components/Coursecatalog/sample"
+import React, { useState } from "react";
+import PersonalInfoForm from "../../Components/Coursecatalog/personal/PersonalInfoForm";
+import View from "../../Components/Coursecatalog/personal/View";
 
-const Catalog = () => {
-    return (
-      <Sample />
-    )
-  }
-  
-  export default Catalog;
+function Catalog() {
+  const [userData, setUserData] = useState({
+    firstName: "",
+    lastName: "",
+    bio: "",
+    email: "",
+    workHistory: [],
+    educationHistory: [],
+    profileImage: null,
+  });
+
+  const [isEditing, setIsEditing] = useState(false);
+
+  const handleSaveUserInfo = (data) => {
+    setUserData(data);
+    setIsEditing(false);
+  };
+
+  const handleEditUserInfo = () => {
+    setIsEditing(true);
+  };
+
+  return (
+    <div className="flex p-40">
+      <div className="w-1/2">
+        <PersonalInfoForm
+          userData={userData}
+          onSaveUserInfo={handleSaveUserInfo}
+          onEditUserInfo={handleEditUserInfo}
+          isEditing={isEditing} // Pass the isEditing state
+        />
+      </div>
+      <div className="w-1/2">
+        <View userData={userData} onEditUserInfo={handleEditUserInfo} />
+      </div>
+    </div>
+  );
+}
+
+export default Catalog;
+
