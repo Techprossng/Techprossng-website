@@ -2,9 +2,9 @@
   height: 98px;
 }
 
-.custom-font {
+.custom-font-small {
   font-weight: 640;
-  font-size: 16px;
+  font-size: 14.5px !important;
 }
 
 .shadow {
@@ -55,8 +55,8 @@
   width: 38px;
 }
 
-.custom-space-x > * {
-  margin-right: 40px;
+.custom-space-landing > * {
+  margin-right: 30px !important;
 }
 
 .nav-color {
@@ -71,7 +71,7 @@
 .active-nav::before {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -2px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -85,7 +85,7 @@
 
   .custom-small {
     position: relative;
-    right: 27px;
+    right: 2.5rem;
     bottom: 0;
   }
 
@@ -135,7 +135,8 @@
 
   .custom-small {
     position: relative;
-    right: 2rem;
+    right: 2.5rem;
+    
   }
 
   .active-nav {
@@ -175,7 +176,7 @@
   }
 }
 
-@media (min-width: 768px)  and (max-width: 1200px) {
+@media (min-width: 768px)  and (max-width: 1024px) {
   .button-2-small {
     background: white;
     color: rgba(0, 25, 117, 1);
@@ -207,7 +208,7 @@
   .custom-small {
     display: flex;
     position: relative;
-    right: 10rem;
+    right: 5.5rem;
   }
 
   .logo-container {
@@ -250,3 +251,101 @@
     background: rgba(0, 25, 117, 1);
   }
 }
+@media (min-width: 1024px)  and (max-width: 1025px) {
+  .button-2-small {
+    background: white;
+    color: rgba(0, 25, 117, 1);
+    width: 60%;
+    font-size: 16px;
+    transform: translateX(33%);
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    transition: 0.8s;
+  }
+
+  .mobile-menu {
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 680px !important;
+  }
+
+  .menu {
+    position: relative;
+    top: 5px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .custom-small {
+    display: flex;
+    position: relative;
+    right:5.5rem;
+  }
+
+  .logo-container {
+    display: flex;
+  }
+
+  .custom-large {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+  }
+
+  .desktop-button {
+    display: none;
+  }
+
+  .button-1 {
+    background: rgba(0, 25, 117, 1);
+    width: 60%;
+    color: white;
+    font-size: 16px;
+    transform: translateX(33%);
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    transition: 0.8s;
+  }
+
+  .active-nav {
+    position: relative;
+  }
+
+  .active-nav::before {
+    width: 79px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: rgba(0, 25, 117, 1);
+  }
+
+}
+@media (min-width: 1025px) and (max-width: 1350px)  {
+
+  .menu{
+   display: none;
+  }
+  .desktop-button {
+   display: flex;
+ }
+ nav{
+  display: flex !important;
+  justify-content: space-between!important
+ }
+ .custom-font-small{
+   font-size: 13px !important;
+ }
+
+.custom-space-landing > * {
+  margin-right: 20px !important;
+}
+
+}
+
