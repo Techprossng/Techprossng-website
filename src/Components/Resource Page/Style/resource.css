@@ -27,6 +27,9 @@ h5{
 .resource .contact-us-mobile{
      display: none;
 }
+.resource .guide-mobile{
+     display: none;
+}
 .resource .hero-header{
      display: flex;
      justify-content: space-between;
@@ -262,6 +265,38 @@ h5{
      }
      .resource .contact-us-mobile .contact-us-link{
           margin-top: 2rem;
+     }
+     .resource .guide{
+          display: none;
+     }
+     .resource .guide-mobile{
+          display: contents;
+     }
+     .resource .guide-mobile h1{
+          margin-top: 3rem;
+     }
+     .resource .guide-mobile .col4 .tab{
+          margin-top: 3rem;
+     }
+     .resource .guide-mobile .col5 .tab{
+          margin-top: 3rem;
+     }
+     .resource .guide-mobile .guide-link{
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+     }
+     .resource .community-forum{
+          display: none;
+     }
+     .resource .tablet-community-forum{
+          display: contents;
+     }
+     .resource .tablet-community-forum h1{
+          margin-top: -3rem;
+     }
+     .resource .tablet-community-forum .tablet-bottom-link{
+          margin-top: 2rem;
+          margin-bottom: 2rem;
      }
 
 }

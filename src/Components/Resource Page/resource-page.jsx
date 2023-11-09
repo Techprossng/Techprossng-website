@@ -157,6 +157,35 @@ const Resource = () => {
                   <a href="#">Visit the Library</a>
                 </div>
           </div>
+
+          <div className="guide-mobile">
+            <h1>User Guide and Resources</h1>
+              <h6>Explore our library of user guides and resources to make the most of your learning journey:</h6>
+                <div className="col4">
+                  <div className="tab">
+                    <h2>Getting Started Guide</h2>
+                      <h6>New to Tech Pros Ng? Check our guide for a smooth start.</h6>
+                  </div>
+                  <div className="tab">
+                    <h2>Technical Troubleshooting</h2>
+                      <h6>Our live chat support is available from 9am - 3pm to provide real-time assistance.</h6>
+                  </div>
+                  <div className="tab">
+                    <h2>Learning Process</h2>
+                      <h6>Discover additional resources to enhance your understanding of the course material.</h6>
+                  </div>
+                </div>
+                <div className="col5">
+                <div className="tab">
+                    <h2>Tips for Success</h2>
+                      <h6>Get tips and strategies for successful online learning.</h6>
+                  </div>
+                </div>
+                <div className="guide-link">
+                  <a href="#">Visit the Library</a>
+                </div>
+          </div>
+
           <div className="bottom">
             <div className="feedback">
               <h1>Feedback and Suggestions</h1>
