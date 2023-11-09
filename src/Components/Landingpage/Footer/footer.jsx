@@ -1,4 +1,5 @@
 import "../Footer/Styles/footer.css";
+import Logo  from "../../../assets/images/Logo.png";
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
           className="first-container
             "
         >
-          <img src="../../../src/assets/images/Logo.png" />
+          <img src={Logo} />
 
           <div>
             <div className="social-icons">
