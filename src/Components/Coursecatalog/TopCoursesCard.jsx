@@ -24,7 +24,7 @@ const TopCoursesCard = (props) => {
           <span className="text-black-900">(5.0 / 3)</span>
         </div>
         <div className="flex flex-col sm:flex-row mt-4 justify-around">
-          <button className="inline-flex items-center sm:mr-2 sm:mb-0 mb-2 text-blue-900 hover:bg-blue-900 hover:text-white ring-2 ring-blue-700 text-sm px-4 py-2 font-semibold rounded-md w-[45%]">
+          <button className="inline-flex items-center sm:mr-2 sm:mb-0 mb-2 text-blue-900 hover:bg-blue-900 hover:text-white ring-2 ring-blue-700 text-sm px-4 py-2 font-semibold rounded-md">
             <MdBookmarks />
             <span className="ml-2">Add To List</span>
           </button>
