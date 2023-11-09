@@ -1,4 +1,5 @@
 import HeroImage from "../../../assets/images/hero-image.svg";
+import Vector from "../../../assets/images/Vector.svg";
 import "../../Landingpage/Hero Section/Styles/hero.css";
 import "aos";
 
@@ -14,7 +15,7 @@ const Hero = () => {
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <img  src="../../src/assets/images/Vector.svg" className="Vector-img"/>
+            <img  src={Vector} className="Vector-img"/>
             <h1 className=" text-5xl md:text-6xl lg:text-5xl xl:text-7xl flex font-primary font-primary xl:font-primary  font-bold tracking-tight mb-12 text-[#001975] animate-text "
              style={{
            
