@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "../Profilenavigation/navigation";
 import Sidebar from "../Profilenavigation/sidebar";
 import person from "../../../assets/icons/person.svg";
+import book from "../../../assets/icons/book.svg";
 import "../Profilenavigation/styles/style.css";
 const Dashboard = () => {
   return (
@@ -58,8 +59,68 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="columns two bg-[red]">2</div>
-            <div className="columns three bg-[red]">3</div>
-            <div className="columns four bg-[red]">4</div>
+            <div className="columns three">
+              <div className="title-border bg-[#fff] flex flex-col gap-y-6">
+                <div className="flex gap-3">
+                  <img src={book} alt="courses" />
+                  <h1>Courses</h1>
+                </div>
+                <div className="flex flex-col">
+                  <div className="title-border bg-[#fff] flex justify-between items-center">
+                    <div className="flex flex-col">
+                      <h5>Ongoing</h5>
+                      <figure>0</figure>
+                    </div>
+                    <figure className="text-4xl font-semibold">0</figure>
+                  </div>
+                  <div className="title-border bg-[#fff] flex justify-between items-center">
+                    <div className="flex flex-col">
+                      <h5>Completed</h5>
+                      <figure>0</figure>
+                    </div>
+                    <figure className="text-4xl font-semibold">0</figure>
+                  </div>
+                  <div className="title-border bg-[#fff] flex justify-between items-center">
+                    <div className="flex flex-col">
+                      <h5>Attendance</h5>
+                      <figure>Total-100%</figure>
+                    </div>
+                    <figure className="text-4xl font-semibold">0</figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="columns four">
+            <div className="title-border bg-[#fff] flex flex-col gap-y-6">
+                <div className="flex gap-3">
+                  <img src={book} alt="courses" />
+                  <h1>Courses</h1>
+                </div>
+                <div className="flex flex-col">
+                  <div className="title-border bg-[#fff] flex justify-between items-center">
+                    <div className="flex flex-col">
+                      <h5>Ongoing</h5>
+                      <figure>0</figure>
+                    </div>
+                    <figure className="text-4xl font-semibold">0</figure>
+                  </div>
+                  <div className="title-border bg-[#fff] flex justify-between items-center">
+                    <div className="flex flex-col">
+                      <h5>Completed</h5>
+                      <figure>0</figure>
+                    </div>
+                    <figure className="text-4xl font-semibold">0</figure>
+                  </div>
+                  <div className="title-border bg-[#fff] flex justify-between items-center">
+                    <div className="flex flex-col">
+                      <h5>Attendance</h5>
+                      <figure>Total-100%</figure>
+                    </div>
+                    <figure className="text-4xl font-semibold">0</figure>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="columns five bg-[red] ">5</div>
           </main>
         </div>
