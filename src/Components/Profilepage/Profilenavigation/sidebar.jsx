@@ -3,7 +3,7 @@ import React from "react";
 import { MdOutlineDashboard } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlineBook } from "react-icons/ai";
-import { GrAchievement } from "react-icons/gr";
+import achievement from "../../../assets/icons/hotel_class.svg";
 import { LuSettings } from "react-icons/lu";
 
 // const dashboardicon = <FaBeer />;
@@ -12,7 +12,7 @@ const sidebar = [
   { icon: <MdOutlineDashboard />, title: "Dashboard" },
   { icon: <BsPerson />, title: "Personal" },
   { icon: <AiOutlineBook />, title: "Courses" },
-  { icon: <GrAchievement />, title: "Achievements" },
+  { icon: <img src={achievement} alt="achievement-icon" />, title: "Achievements" },
   { icon: <LuSettings />, title: "Settings" },
 ];
 
@@ -35,7 +35,7 @@ const Sidebar = () => {
                 {item.icon}
               </i>
             </div>
-            <div className="text-[#001975]">
+            <div className="text-[#001975] font-semibold">
               <p>{item.title}</p>
             </div>
           </div>

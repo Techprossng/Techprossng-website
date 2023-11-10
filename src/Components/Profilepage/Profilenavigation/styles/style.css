@@ -1,12 +1,10 @@
 .first-border-box {
-  border: 1px solid black;
   border-radius: 5px;
   padding: 1rem;
   margin: 1rem;
 }
 
 .dashboard-box {
-  border: 3px solid black;
   border-radius: 5px;
   padding: 1rem;
   margin: 1rem;
@@ -27,14 +25,17 @@
 }
 
 .columns:last-child {
-  background-color: aqua;
   grid-column-start: 1;
   grid-column: span 2;
 }
 
-.title-border {
-  border: 1px solid black;
+.parent-border {
   border-radius: 5px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.inner-border-margin {
   padding: 1rem;
   margin: 1rem;
 }
@@ -50,10 +51,4 @@
   font-size: 20px;
   color: black;
   cursor: pointer;
-}
-
-.inner-boxes {
-  border: 1px solid aqua;
-  border-radius: 24px;
-  padding: 1rem;
 }
