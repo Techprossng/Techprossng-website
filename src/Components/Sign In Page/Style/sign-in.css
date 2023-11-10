@@ -59,6 +59,11 @@
      border-radius: 12px;
      color: #fff;
      padding-top: 0.6rem;
+     cursor: pointer;
+}
+.sign-in .login-button:hover{
+     background-color: #294ac2;
+     transition: 0.5s;
 }
 .sign-in .sign-up a{
      color: #001975;
