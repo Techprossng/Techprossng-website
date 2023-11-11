@@ -7,8 +7,30 @@
 }
 
 .Vector-img {
-  width: 240px;
+  width: 70px;
   height: 48px;
+  position: relative;
+  bottom: 20px;
+ 
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+      .Vector-img{
+        display: none;
+      }
+      .mini-logo{
+        display: none;
+      }
+
+}
+@media only screen and (min-width: 480px) and (max-width: 890px) {
+  .Vector-img{
+    display: none;
+  }
+  .mini-logo{
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 640px) and (max-width: 788px) {
@@ -26,5 +48,12 @@
     background-position-y: 98%;
     background-position-x: 60%;
     background-size: 140%;
+  }
+  .hero-text{
+    display: block;
+    text-align: start;
+    line-height: 50px !important;
+    margin-top: -10%;
+    
   }
 }
