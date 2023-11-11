@@ -44,7 +44,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className="bg-white p-4 flex fixed top-0 left-0 bg-cover py-0 md:px-10 px-7 bg-center w-full justify-around md:justify-around custom-height items-center"
+      className="bg-white p-4 flex fixed top-0 left-0 bg-cover py-0 md:px-10 px-7 bg-center w-full flex justify-between custom-height items-center"
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center">
@@ -73,8 +73,6 @@ const Navigation = () => {
       </div>
 
       {/* Mobile Menu */}
-
-      
       <div
         className={`md:hidden md:pb-0 pb-12  absolute md:static md:z-auto right-0 w-full h-screen md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in menu-color mobile-menu ${
           open ? "top-0 translate-x-0" : "top-0 translate-x-full"
@@ -145,7 +143,7 @@ const Navigation = () => {
       </div>
 
       {/* Tablet and Desktop Menu */}
-      <div className="hidden md:flex custom-space-x">
+      <div className="hidden lg:flex custom-space-x">
         {Links.map((link) => (
           <a
             href={`/${link.link}`}
@@ -155,7 +153,7 @@ const Navigation = () => {
           </a>
         ))}
       </div>
-      <div className="hidden md:flex justify-between items-center gap-8">
+      <div className="hidden md: justify-between items-center gap-8 lg:flex">
         <div>
             <img src="../../src/assets/icons/Search.svg" alt="search-icon" />
         </div>
