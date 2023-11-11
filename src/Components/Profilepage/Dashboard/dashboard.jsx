@@ -9,14 +9,17 @@ import events from "../../../assets/icons/event.svg";
 import "../Profilenavigation/styles/style.css";
 const Dashboard = () => {
   return (
-    <section className="flex w-full">
+    <section className="flex">
       <Navigation />
       {/* sidebar */}
-      <div className="bg-[#fff] flex justify-end border border-r-1 w-1/6 h-screen mt-24">
+      <div
+        className="sidebar bg-[#fff] flex justify-end border border-r-1 w-1/6 h-screen mt-24 xs: w-auto  md: w-auto
+      "
+      >
         <Sidebar />
       </div>
       {/* main content */}
-      <div className="flex grow mt-24 flex-col bg-[#F6F6F6]">
+      <div className="flex grow mt-24 flex-col bg-[#F6F6F6] overflow-y-auto">
         <div className="first-border-box">
           <h1 className="font-bold text-2xl font-primary text-[#00114E]">
             Overview
@@ -33,20 +36,20 @@ const Dashboard = () => {
                   </h1>
                 </div>
                 <div className="flex gap-3">
-                  <div className="social-icons">
-                    <i className="fa-brands fa-discord"></i>
-                  </div>
                   <div className="flex flex-col gap-3">
-                    <h5 className="text-[#000] text-base font-bold font-secondary">
-                      Bukayo Saka
-                    </h5>
+                    <div className="flex gap-3 social-icon">
+                      <i className="fa-brands fa-discord"></i>
+                      <h5 className="text-[#000] text-base font-bold font-secondary">
+                        Bukayo Saka
+                      </h5>
+                    </div>
                     <p className="text-[#656565] text-base font-medium">
                       This area contains Bio. This area contains Bio. This area
                       contains Bio. This area contains Bio. This area contains
                       Bio. This area contains Bio. This area contains Bio. This
                       area contains Bio. This area contains Bio.
                     </p>
-                    <div className="flex">
+                    <div className="flex info-mobile-dashboard">
                       <div className="w-[50%] text-[#000] font-semibold font-medium font-secondary">
                         <h5>Phone Number</h5>
                       </div>
@@ -64,7 +67,7 @@ const Dashboard = () => {
             </div>
             <div className="columns two bg-[red]">2</div>
             <div className="columns">
-              <div className="parent-border bg-[#fff] flex flex-col gap-y-6">
+              <div className="parent-border three bg-[#fff] flex flex-col gap-y-6">
                 <div className="flex gap-3">
                   <img src={book} alt="courses" />
                   <h1 className="text-[#2B3F8C] text-base font-bold font-secondary">
@@ -115,7 +118,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="columns">
-              <div className="parent-border bg-[#fff] flex flex-col gap-y-6">
+              <div className="parent-border four bg-[#fff] flex flex-col gap-y-6">
                 <div className="flex gap-3">
                   <img src={achievement} alt="achievement-icon" />
                   <h1 className="text-[#2B3F8C] text-base font-bold font-secondary">
@@ -159,7 +162,7 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-            <div className="columns parent-border bg-[#fff] ">
+            <div className="columns parent-border bg-[#fff] sm: bg-[blue] grid-col-span-2 ">
               <div className="flex gap-3">
                 <img src={events} alt="events" />
                 <h1 className="text-[#2B3F8C] text-base font-bold font-secondary">

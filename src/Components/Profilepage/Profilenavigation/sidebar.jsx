@@ -29,7 +29,7 @@ const Sidebar = () => {
               <i
                 style={{
                   color: "#001975",
-                  fontSize: "20px",
+                  fontSize: "15px",
                 }}
               >
                 {item.icon}
