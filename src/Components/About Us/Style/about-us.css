@@ -43,14 +43,21 @@ p{
      font-weight: bold;
 }
 .about-us .why-us{
-     padding: 4rem 4rem;
      display: flex;
      justify-content: space-around;
      align-items: center;
 }
+.about-us .why-us .impact-video{
+     padding: 0 5.7rem;
+}
 .about-us .why-us .impact-video h2{
      color: #001975;
      font-size: x-large;
+     margin-bottom: 1rem;
+}
+.about-us .why-us .impact-video p{
+     margin-bottom: 1rem;
+     font-size: small;
 }
 .about-us .why-us .merit ul{
      background: #000517;
@@ -59,6 +66,11 @@ p{
      display: flex;
      justify-content: space-between;
      align-items: center;
+     padding: 2rem;
+     
+}
+.about-us .why-us .merit ul li img{
+     padding-right: 1rem;
 }
 .about-us .our-team{
      background: #aab2d1;
@@ -70,8 +82,32 @@ p{
 }
 .about-us .blog-cards{
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
+}
+.about-us .blog h1{
+     text-align: center;
+     margin-bottom: 3rem;
+}
+.about-us .blog .blog-cards .blog-card .blog-topic{
+     color: #001975;
+     font-weight: bold;
+     font-size: large;
+     margin-bottom: 0.5rem;
+}
+.about-us .blog .blog-cards .blog-card .blog-text p{
+     font-size: small;
+     margin-bottom: 1rem;
+}
+.about-us .blog .blog-cards .blog-card .author{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 2rem;
+     gap: 10rem;
+}
+.about-us .blog .blog-cards .blog-card .author .name{
+     font-weight: bold;
 }
 .about-us .blog .blog-link{
      border: 2px solid #001975;
@@ -80,6 +116,9 @@ p{
      text-align: center;
      font-size: x-small;
      font-weight: bold;
+     margin: 0 3rem;
+     height: 3rem;
+     padding-top: 1rem;
 }
 .about-us .blog .blog-link a{
      color: #001975;
@@ -93,11 +132,15 @@ p{
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     margin-top: 2rem;
+     margin-bottom: 5rem;
 }
 .about-us .careers{
      display: flex;
      justify-content: space-around;
      align-items: center;
+     margin-bottom: 3rem;
+     padding: 0 7rem;
 }
 .about-us .careers .careers-text h4{
      margin-bottom: 1rem;
@@ -105,6 +148,7 @@ p{
 }
 .about-us .careers .careers-text p{
      margin-bottom: 2rem;
+     font-size: small;
 }
 .about-us .careers .careers-text a{
      color: #001975;
@@ -116,4 +160,75 @@ p{
 }
 .about-us .careers .careers-text a .fa-solid{
      padding-left: 1.5rem;
+}
+.about-us .contact-us{
+     margin-bottom: 5rem;
+}
+.about-us .contact-us h1{
+     text-align: center;
+     padding-top: 2rem;
+}
+.about-us .contact-us h4{
+     text-align: center;
+     margin-bottom: 3rem;
+}
+.about-us .contact-us .contact-form{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.about-us .contact-us .contact-form p{
+     font-size: small;
+}
+.about-us .contact-us .contact-form .name{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 2rem;
+     margin-bottom: 3rem;
+}
+.about-us .contact-us .contact-form .query{
+     margin-bottom: 1rem;
+     width: 52rem;
+}
+.about-us .contact-us .contact-form .query .option{
+     border: 1px solid #001975;
+     height: 3rem;
+     border-radius: 0.5rem;
+     padding: 0.5rem;
+}
+.about-us .contact-us .contact-form .mail{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+}
+.about-us .contact-us .contact-form .mail .website{
+     margin-top: 2.5rem;
+}
+.about-us .contact-us .contact-form input{
+     width: 25rem;
+     border: 1px solid #001975;
+     height: 3rem;
+     border-radius: 0.5rem;
+}
+.about-us .contact-us .contact-form .send-button{
+     margin-top: 3rem;
+     border: 1px solid #001975;
+     background: #001975;
+     cursor: pointer;
+     width: 52rem;
+     text-align: center;
+     height: 3rem;
+     border-radius: 0.5rem;
+     padding-top: 0.6rem;
+     color: #fff;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px){
+
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
 }

@@ -50,7 +50,7 @@ const AboutUs = () => {
             <div className="impact-video">
               <h2>Why Us?</h2>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Soluta doloribus repellendus qui itaque, eum voluptatem, 
+                Soluta doloribus <br />repellendus qui itaque, eum voluptatem, 
                 placeat culpa quasi beatae consectetur maxime.</p>
                 <img src="../../../src/assets/images/impact-video.png" alt="" />
             </div>
@@ -82,7 +82,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="blog">
-            <h1>Blog</h1>
+            <h1>Our Blog</h1>
             <div className="blog-cards">
             <div className="blog-card">
               <div className="blog-photo">
@@ -169,26 +169,42 @@ const AboutUs = () => {
           </div>
           <div className="contact-us">
             <h1>Contact Us</h1>
-            <h4>Please fill out the form below, and our team will get back to you as soon as possible. </h4>
-            <form className="contact-us">
+            <h4>Please fill out the form below, and our team will get back to you as <br /> soon as possible. </h4>
+            <form className="contact-form">
               <div className="name">
-                <div className="firstname">
-                  <h4>First Name</h4>
+              <div className="firstname">
+                  <p>First Name</p>
                   <input type="name" />
-                </div>
-                <div className="lastname">
-                  <h4>Last Name</h4>
+              </div>
+              <div className="lastname">
+                  <p>Last Name</p>
                   <input type="name" />
+              </div>
+              </div>
+              <div className="query">
+                <p>How can we help?</p>
+                <div className="option">
+                  <select id="choose-question">
+                    <option value="#">------</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="lorem">Lorem</option>
+                  </select>
                 </div>
               </div>
-              <form action="#">
-                <select id="faq">
-                  <option value="english">English</option>
-                  <option value="french">French</option>
-                  <option value="german">German</option>
-                  <option value="spanish">Spanish</option>
-                </select>
-              </form>
+              <div className="mail">
+              <div className="email">
+                  <p>Email</p>
+                  <input type="name" />
+              </div>
+              <div className="website">
+                  <p>Website (Optional)</p>
+                  <input type="name" />
+              </div>
+              </div>
+              <div className="send-button">
+                <button type="submit">Send</button>
+              </div>
             </form>
           </div>
         </div>
