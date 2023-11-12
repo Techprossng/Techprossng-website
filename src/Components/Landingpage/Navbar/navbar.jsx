@@ -103,7 +103,7 @@ const Navbar = () => {
       <div className="hidden md:flex space-x-4 desktop-button">
         <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
         <button className="w-32 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          Sign Up
+          <a href="/sign-up">Sign Up</a>
         </button>
       </div>
     </nav>
