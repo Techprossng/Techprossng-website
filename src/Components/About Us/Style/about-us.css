@@ -43,9 +43,14 @@ p{
      font-weight: bold;
 }
 .about-us .why-us{
+     padding: 4rem 4rem;
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
+}
+.about-us .why-us .impact-video h2{
+     color: #001975;
+     font-size: x-large;
 }
 .about-us .why-us .merit ul{
      background: #000517;
@@ -54,4 +59,61 @@ p{
      display: flex;
      justify-content: space-between;
      align-items: center;
+}
+.about-us .our-team{
+     background: #aab2d1;
+     padding: 4rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.about-us .blog-cards{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.about-us .blog .blog-link{
+     border: 2px solid #001975;
+     border-radius: 0.5rem;
+     padding: 0.5rem;
+     text-align: center;
+     font-size: x-small;
+     font-weight: bold;
+}
+.about-us .blog .blog-link a{
+     color: #001975;
+}
+.about-us .blog .blog-link a .fa-solid{
+     padding-left: 1.5rem;
+}
+.about-us .bts{
+     padding: 4rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.about-us .careers{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.about-us .careers .careers-text h4{
+     margin-bottom: 1rem;
+     font-size: xx-large;
+}
+.about-us .careers .careers-text p{
+     margin-bottom: 2rem;
+}
+.about-us .careers .careers-text a{
+     color: #001975;
+     border: 2px solid #001975;
+     border-radius: 0.8rem;
+     padding: 0.5rem;
+     text-align: center;
+     padding: 0.5rem 3rem;
+}
+.about-us .careers .careers-text a .fa-solid{
+     padding-left: 1.5rem;
 }
