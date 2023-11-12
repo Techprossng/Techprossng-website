@@ -1,5 +1,9 @@
 // src/components/Navbar.js
 import { useState } from "react";
+import Logo from "../../../assets/images/Logo.svg";
+import Logo2 from "../../../assets/images/Logo2.svg";
+import close from "../../../assets/icons/close.svg";
+import Menu from "../../../assets/icons/menu.svg";
 import "../../Landingpage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
@@ -26,16 +30,10 @@ const Navbar = () => {
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center logo-container">
-        <img
-          src="../../src/assets/images/Logo.svg"
-          alt="Logo"
-          className="custom-large"
-        />
-        <img
-          src="../../src/assets/images/Logo2.svg"
-          alt="Logo"
-          className="custom-small md:hidden "
-        />
+        <a href="/">
+          <img src={Logo} alt="Logo" className="custom-large" />
+          <img src={Logo2} alt="Logo" className="custom-small md:hidden " />
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -44,9 +42,7 @@ const Navbar = () => {
         className="text-3xl absolute right-8 top-6 cursor-pointer menu-container md:hidden"
       >
         <img
-          src={
-            open ? "src/assets/icons/close.svg" : "src/assets/icons/menu.svg"
-          }
+          src={open ? close : Menu}
           alt={open ? "Close Menu" : "Open Menu"}
           className="menu"
         />
@@ -54,10 +50,26 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
 
-      <div className={`md:hidden  md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in nav-color mobile-menu ${open ? "top-24 " : "top-[-690px]"}`} style={{ textAlign: "center", alignItems: "center" }}>
+      <div
+        className={`md:hidden  md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in nav-color mobile-menu ${
+          open ? "top-24 " : "top-[-690px]"
+        }`}
+        style={{ textAlign: "center", alignItems: "center" }}
+      >
         <div className="flex flex-col space-y-10">
           {Links.map((link) => (
-            <a key={link.name} href={`/${link.link}`} className={`text-gray-800 duration-500 ${activeLink === link.name ? "active-nav" : ""}`} style={{ fontSize: "20px", fontWeight: "500" }} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
+            <a
+              key={link.name}
+              href={`/${link.link}`}
+              className={`text-gray-800 duration-500 ${
+                activeLink === link.name ? "active-nav" : ""
+              }`}
+              style={{ fontSize: "20px", fontWeight: "500" }}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick(link.name);
+              }}
+            >
               {link.name}
             </a>
           ))}
@@ -75,20 +87,31 @@ const Navbar = () => {
       {/* Tablet and Desktop Menu */}
       <div className="hidden  md:flex  custom-space-landing   desktop">
         {Links.map((link) => (
-          <a href={`/${link.link}`} key={link.name} className={`text-gray-800 duration-500  custom-font-small ${activeLink === link.name ? "active-nav" : ""}`} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
+          <a
+            href={`/${link.link}`}
+            key={link.name}
+            className={`text-gray-800 duration-500  custom-font-small ${
+              activeLink === link.name ? "active-nav" : ""
+            }`}
+            onClick={(e) => {
+              e.preventDefault();
+              handleLinkClick(link.name);
+            }}
+          >
             {link.name}
           </a>
         ))}
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
-        <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
+        <button className="w-32 h-[44px] px-3 py-3 button-2">
+          <a href="/sign-in">
+            <span className="text-[#001975]">Log in</span>
+          </a>
+        </button>
         <button className="w-32 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          Sign Up
+          <a href="/sign-up">Sign Up</a>
         </button>
       </div>
-
-
-    
     </nav>
   );
 };
