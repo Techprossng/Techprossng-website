@@ -101,19 +101,6 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col">
-          <br />
-          <br />
-          <form action="#">
-            <i className="fa-solid fa-globe"></i>
-            <select id="lang">
-              <option value="english">English</option>
-              <option value="french">French</option>
-              <option value="german">German</option>
-              <option value="spanish">Spanish</option>
-            </select>
-          </form>
-        </div>
       </div>
       <hr className="w-[85%] horizontal-line" />
       <div className="copyright flex justify-between p-5 w-[87%] m-auto">

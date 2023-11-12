@@ -48,31 +48,6 @@ ul li {
   text-decoration: none;
 }
 
-form {
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  background: white;
-}
-
-form .fa-solid {
-  font-size: 12px;
-  margin-right: 0;
-  color: #000d3b;
-}
-
-form select {
-  width: 100%;
-  color: #000d3b;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-}
-
 .social-icons {
   display: flex;
   gap: 10px;
