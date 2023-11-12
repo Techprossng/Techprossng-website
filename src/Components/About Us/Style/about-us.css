@@ -1,0 +1,57 @@
+h1{
+     font-size: 2.5rem;
+     color: #001975;
+}
+h2{
+     font-size: large;
+}
+p{
+     font-size: x-small;
+}
+.about-us .hero-text{
+     margin-top: 10rem;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 2rem;
+}
+.about-us .hero-text h2 p{
+     margin-top: 0.5rem;
+}
+.about-us .hero-image{
+     margin-bottom: 2rem;
+}
+.about-us .mission{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 2rem;
+}
+.about-us .mission span h2{
+     margin-bottom: 0.5rem;
+}
+.about-us .mission span p{
+     margin-bottom: 1.5rem;
+     font-size: small;
+}
+.about-us .founder{
+     display: flex;
+     flex-direction: column;
+     padding: 4rem 18rem;
+     background: #aab2d1;
+     color: #001975;
+     font-weight: bold;
+}
+.about-us .why-us{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.about-us .why-us .merit ul{
+     background: #000517;
+}
+.about-us .why-us .merit ul li{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}

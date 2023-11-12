@@ -9,6 +9,7 @@ import Pricing from './pages/Pricing/pricing';
 import Catalog from './pages/Coursecatalog/course';
 import Layout from './Components/layout';
 import ResourcePage from './pages/Resource-Page/resource';
+import AboutUsPage from './pages/About-Us/about';
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/pricing" element={<Layout><Pricing /></Layout>} />
         <Route path="/course-catalog" element={<Layout><Catalog /></Layout>} />
         <Route path="/resource-page" element={<Layout><ResourcePage /></Layout>} />
+        <Route path="/about-us" element={<Layout><AboutUsPage /></Layout>} />
       </Routes>
      </> 
   )
