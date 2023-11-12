@@ -3,7 +3,7 @@ import "../../Components/Sign Up Page/Style/sign-up.css"
 const SignUp = () => {
      return (
        <>
-         <div className="sign-up">
+         <form className="sign-up">
                <div className="image">
                     <img src="../../../src/assets/images/Logo-Sign-Up.png" alt="" />
                </div>
@@ -43,7 +43,7 @@ const SignUp = () => {
                <div className="google">
                     <a href="#"><img src="../../../src/assets/images/google-logo.png" alt="" /></a>
                </div>
-         </div>
+         </form>
        </>
      );
    };

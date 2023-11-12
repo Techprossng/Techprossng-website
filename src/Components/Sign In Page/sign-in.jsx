@@ -3,7 +3,7 @@ import "../../Components/Sign In Page/Style/sign-in.css"
 const SignIn = () => {
      return (
        <>
-         <div className="sign-in">
+         <form className="sign-in" method="GET">
                <div className="image">
                     <img src="../../../src/assets/images/Logo-Sign-In.png" alt="" />
                </div>
@@ -29,9 +29,9 @@ const SignIn = () => {
                     <img src="../../../src/assets/images/line.png" alt="" />
                </div>
                <div className="google">
-                    <a href="#"><img src="../../../src/assets/images/google-logo.png" alt="" /></a>
+                    <a href="/auth" role="button"><img src="../../../src/assets/images/google-logo.png" alt="" /></a>
                </div>
-         </div>
+         </form>
        </>
      );
    };
