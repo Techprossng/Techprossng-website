@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { BiImageAdd, BiTrash, BiEdit } from "react-icons/bi";
+import { BiImageAdd,  BiEdit } from "react-icons/bi";
+import { ImPencil } from "react-icons/im";
+import { FaTrash } from "react-icons/fa";
 import "../personal/Styles/profileimage.css";
 
 
@@ -49,9 +51,9 @@ function ProfileImageUpload({ userData, onSaveUserInfo }) {
       ...userData,
       profileImage: null,
     });
-    setBlurAmount(80); // Reset blur amount when deleting
-    setLoadingProgress(0); // Reset loading progress when deleting
-    setIsEditing(false); // Exit edit mode when deleting
+    setBlurAmount(80); 
+    setLoadingProgress(0); 
+    setIsEditing(false); 
   };
 
   const handleCancelEdit = () => {
@@ -78,13 +80,16 @@ function ProfileImageUpload({ userData, onSaveUserInfo }) {
   };
 
   return (
-    <div className="image-upload-container">
+    <div className="image-upload-container flex ">
       <div
         style={{
           background: "#fff",
-          boxShadow: "10px 20px 20px grey",
+          border: " 2px solid rgba(230, 230, 230, 1) ",
+          width:"180px",
+          height: "200px",
           position: "relative",
           overflow: "hidden",
+          borderRadius: "10px"
         }}
       >
         <input
@@ -100,8 +105,9 @@ function ProfileImageUpload({ userData, onSaveUserInfo }) {
           htmlFor="fileInput"
           disabled={isEditing}
         >
-          <BiImageAdd size="50px" style={{ color: "black" }} />
+          <BiImageAdd size="50px" style={{ color: "black" , marginTop: "60px"}} />
         </label>
+        <p className="text-center mt-5 font-bold">Click to upload</p>
         <div className="image-container">
           {userData.profileImage && (
             <div
@@ -137,16 +143,16 @@ function ProfileImageUpload({ userData, onSaveUserInfo }) {
                 src={userData.profileImage}
                 className="image-view"
                 alt="Profile"
-                style={{ filter: `blur(${blurAmount}px)`, borderRadius: "25px" }}
+                style={{ filter: `blur(${blurAmount}px)`, borderRadius: "5px" }}
               />
             </div>
           )}
         </div>
       </div>
       {userData.profileImage && !isEditing && (
-        <div className="edit-delete-buttons">
-          <BiEdit size="20px" onClick={handleEditImage} />
-          <BiTrash size="20px" onClick={handleDeleteImage} />
+        <div className="edit-delete-buttons flex-wrap ml-10 ">
+          <ImPencil size="20px" onClick={handleEditImage} />
+          <FaTrash size="20px" onClick={handleDeleteImage}  className="mt-40" color="red"/>
         </div>
       )}
       {isEditing && (

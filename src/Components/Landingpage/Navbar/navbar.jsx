@@ -76,14 +76,14 @@ const Navbar = () => {
       </div>
 
       {/* Tablet and Desktop Menu */}
-      <div className="hidden  md:flex  custom-space-x desktop">
+      <div className=" md:flex  custom-space-x desktop">
         {Links.map((link) => (
           <a href={`/${link.link}`} key={link.name} className={`text-gray-800 duration-500 custom-font ${activeLink === link.name ? "active-link" : ""}`} onClick={(e) => { e.preventDefault(); handleLinkClick(link.name); }}>
             {link.name}
           </a>
         ))}
       </div>
-      <div className="hidden md:flex space-x-4 desktop-button">
+      <div className=" md:flex space-x-4 desktop-button">
         <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
         <button className="w-32 h-[48px] px-5 py-3 rounded-md text-white button-1">
           Sign Up

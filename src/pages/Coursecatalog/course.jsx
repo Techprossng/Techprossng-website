@@ -25,8 +25,8 @@ function Catalog() {
   };
 
   return (
-    <div className="flex p-40">
-      <div className="w-1/2">
+    <div className="flex p-40 justify-between">
+      <div className="w-full">
         <PersonalInfoForm
           userData={userData}
           onSaveUserInfo={handleSaveUserInfo}

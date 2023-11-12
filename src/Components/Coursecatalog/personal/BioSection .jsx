@@ -1,6 +1,8 @@
 import React from "react";
 import countries from "./Data/Countries";
 import countryCodes from "./Data/CountryCodes";
+import { BiUser } from "react-icons/bi";
+import "../personal/Styles/biosection.css";
 
 function BioSection({ userData, onSaveUserInfo }) {
   const handleBioChange = (e) => {
@@ -24,10 +26,16 @@ function BioSection({ userData, onSaveUserInfo }) {
   };
 
   return (
-    <div className="mb-4">
-      <h2 className="text-lg mb-2">Bio</h2>
-      <div className="mb-2">
-        <label htmlFor="firstName">First Name:</label>
+    <div className="mt-10 w-full bio-container p-5">
+      <div className="flex">
+      <BiUser size={25} style={{ color:"red"}}/>
+      <h2 className="text-lg mb-2 font-bold text-[#001975] ml-2">Bio</h2>
+      </div>
+       <div className="flex justify-between mt-5">
+      <div className="mb-2 flex w-full p-5 input-container">
+      <BiUser size={20} className="mt-2"/>
+       <div className="name-input ml-5">
+        <label htmlFor="firstName" className=" label-text">First Name:</label>
         <input
           type="text"
           id="firstName"
@@ -36,9 +44,13 @@ function BioSection({ userData, onSaveUserInfo }) {
           onChange={handleBioChange}
           className="input"
         />
+        </div>
       </div>
-      <div className="mb-2">
-        <label htmlFor="lastName">Last Name:</label>
+      
+      <div className="mb-2 flex w-full p-5 input-container">
+      <BiUser size={20}  className="mt-2"/>
+      <div className="name-input ml-5">
+        <label htmlFor="lastName" className=" label-text">Last Name:</label>
         <input
           type="text"
           id="lastName"
@@ -47,6 +59,9 @@ function BioSection({ userData, onSaveUserInfo }) {
           onChange={handleBioChange}
           className="input"
         />
+       </div> 
+    
+      </div>
       </div>
       <div className="mb-2">
         <label htmlFor="bio">Bio:</label>
