@@ -109,7 +109,7 @@ const Navbar = () => {
           </a>
         </button>
         <button className="w-32 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          Sign Up
+          <a href="/sign-up">Sign Up</a>
         </button>
       </div>
     </nav>
