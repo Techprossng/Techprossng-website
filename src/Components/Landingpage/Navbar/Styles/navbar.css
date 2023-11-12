@@ -80,13 +80,16 @@
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .custom-large {
-    display: none;
+    position: relative;
+    right: 1rem;
+    bottom: 0;
   }
 
   .custom-small {
     position: relative;
     right: 2.5rem;
     bottom: 0;
+    display: none;
   }
 
   .active-nav::before {
@@ -130,12 +133,14 @@
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .custom-large {
-    display: none;
+    position: relative;
+    right: 1rem;
   }
 
   .custom-small {
     position: relative;
     right: 2.5rem;
+    display: none;
     
   }
 
@@ -209,6 +214,7 @@
     display: flex;
     position: relative;
     right: 5.5rem;
+    display: none;
   }
 
   .logo-container {
@@ -216,7 +222,9 @@
   }
 
   .custom-large {
-    display: none;
+    display: flex;
+    position: relative;
+    right: 3.5rem;
   }
 
   .menu-container {
@@ -284,6 +292,7 @@
     display: flex;
     position: relative;
     right:5.5rem;
+    display: none;
   }
 
   .logo-container {
@@ -291,7 +300,9 @@
   }
 
   .custom-large {
-    display: none;
+    display: flex;
+    position: relative;
+    right:5.5rem;
   }
 
   .menu-container {
