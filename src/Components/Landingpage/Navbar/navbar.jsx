@@ -30,8 +30,10 @@ const Navbar = () => {
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center logo-container">
-        <img src={Logo} alt="Logo" className="custom-large" />
-        <img src={Logo2} alt="Logo" className="custom-small md:hidden " />
+        <a href="/">
+          <img src={Logo} alt="Logo" className="custom-large" />
+          <img src={Logo2} alt="Logo" className="custom-small md:hidden " />
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -101,7 +103,11 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
-        <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
+        <button className="w-32 h-[44px] px-3 py-3 button-2">
+          <a href="/sign-in">
+            <span className="text-[#001975]">Log in</span>
+          </a>
+        </button>
         <button className="w-32 h-[48px] px-5 py-3 rounded-md text-white button-1">
           Sign Up
         </button>
