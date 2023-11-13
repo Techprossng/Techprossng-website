@@ -11,10 +11,11 @@ function BioSection({ userData, onSaveUserInfo }) {
     onSaveUserInfo({ ...userData, [name]: value });
   };
 
-  const handleCountryCodeChange = (e) => {
-    const countryCode = e.target.value;
+  const handleCountryCodeChange = (selectedOption) => {
+    const countryCode = selectedOption.value;
     onSaveUserInfo({ ...userData, countryCode });
   };
+  
 
   const handlePhoneNumberChange = (e) => {
     const phoneNumber = e.target.value;
@@ -29,6 +30,16 @@ function BioSection({ userData, onSaveUserInfo }) {
     const email = e.target.value;
     onSaveUserInfo({ ...userData, email });
   };
+
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      outline: "none",
+      padding: "8px",
+      // Add any other custom styles you want for the control
+    }),
+  };
+  
 
   return (
     <div className="mt-10 w-full bio-container p-5">
@@ -78,7 +89,9 @@ function BioSection({ userData, onSaveUserInfo }) {
           <div className=" flex p-5">
             <BiDetail size={20} className="mt-5" />
             <div className="ml-5 bio-text w-full">
-              <label htmlFor="bio" className="label-text">Bio</label>
+              <label htmlFor="bio" className="label-text">
+                Bio
+              </label>
               <textarea
                 id="bio"
                 name="bio"
@@ -91,8 +104,8 @@ function BioSection({ userData, onSaveUserInfo }) {
           </div>
         </div>
         <div className="flex">
-        <div className="mb-2 w-1/2">
-           <Select
+          <div className="mb-2 w-1/2">
+            <Select
               id="countryCode"
               name="countryCode"
               value={{
@@ -104,31 +117,32 @@ function BioSection({ userData, onSaveUserInfo }) {
                 value: country.code,
                 label: `${country.code} (${country.name})`,
               }))}
-              className="select"
+              className="select  w-1/2 "
+              styles={customStyles} 
             />
+          </div>
+          <div className="mb-2">
+            <label htmlFor="phoneNumber">Phone Number:</label>
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={userData.phoneNumber}
+              onChange={handlePhoneNumberChange}
+              className="input"
+            />
+          </div>
+          <div className="mb-2">
+            <label htmlFor="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              value={userData.email}
+              onChange={handleEmailChange}
+              className="input"
+            />
+          </div>
         </div>
-        <div className="mb-2">
-          <label htmlFor="phoneNumber">Phone Number:</label>
-          <input
-            type="text"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={userData.phoneNumber}
-            onChange={handlePhoneNumberChange}
-            className="input"
-          />
-        </div>
-        <div className="mb-2">
-        <label htmlFor="email">Email Address:</label>
-        <input
-          type="email"
-          id="email"
-          value={userData.email}
-          onChange={handleEmailChange}
-          className="input"
-        />
-      </div>
-      </div>
         <div className="mb-2">
           <label htmlFor="country">Country:</label>
           <select
