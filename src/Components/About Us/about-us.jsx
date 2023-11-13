@@ -161,7 +161,9 @@ const AboutUs = () => {
               Incidunt eos, doloremque voluptatibus reprehenderit 
               reiciendis labore corporis. <br />
               adipisicing elit Incidunt eos, doloremque</p>
-              <a href="#">See Openings <i class="fa-solid fa-arrow-right-long"></i></a>
+              <div className="careers-link">
+                <a href="#">See Openings <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
             </div>
             <div className="careers-image">
               <img src="../../../src/assets/images/careers.png" alt="" />
