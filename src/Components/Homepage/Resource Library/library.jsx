@@ -9,7 +9,7 @@ import image6 from "../../../assets/images/image6.png"
 function Library() {
   return (
     <div className="libraries">
-        <h1 className="heading">Resource Library <div class="resourse-link"><a href="#">View Resource Library</a> <i class="fa-solid fa-arrow-right-long"></i></div></h1> 
+        <h1 className="heading">Resource Library <div class="resourse-link"><a href="">View Resource Library</a> <i class="fa-solid fa-arrow-right-long"></i></div></h1> 
         <div className="box-container">
             <div className="box">
                 <img src={image1} alt=""/>
