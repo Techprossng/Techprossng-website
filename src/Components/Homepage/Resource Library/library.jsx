@@ -29,7 +29,7 @@ function Library() {
         </div>
         <div class="mobile-resourse-link"><a href="#">View Resource Library</a> <i class="fa-solid fa-arrow-right-long"></i></div>
     </div>
-  )
+)
 }
 
 export default Library;
