@@ -81,6 +81,12 @@ const AboutUs = () => {
               <img src="../../../src/assets/images/team-frame.png" alt="" />
             </div>
           </div>
+          <div className="our-team-mobile">
+            <h1>Our Team</h1>
+            <div className="team-image-mobile">
+              <img src="../../../src/assets/images/team-frame-mobile.png" alt="" />
+            </div>
+          </div>
           <div className="blog">
             <h1>Our Blog</h1>
             <div className="blog-cards">
@@ -152,10 +158,16 @@ const AboutUs = () => {
               <img src="../../../src/assets/images/behind-the-scene.png" alt="" />
             </div>
           </div>
+          <div className="bts-mobile">
+            <h1>Behind The Scene</h1>
+            <div className="bts-image-mobile">
+              <img src="../../../src/assets/images/behind-the-scene-mobile.png" alt="" />
+            </div>
+          </div>
           <div className="careers">
             <div className="careers-text">
               <h1>Careers</h1>
-              <h4>Lorem ipsum dolor sit <br />amet consectetur adipisicing <br />elit. Ad.</h4>
+              <h4>Lorem ipsum dolor sit amet consectetur. <br /> Adipisicing elit ad.</h4>
               <p>Lorem ipsum dolor sit amet 
                 consectetur adipisicing elit. <br /> 
               Incidunt eos, doloremque voluptatibus reprehenderit 

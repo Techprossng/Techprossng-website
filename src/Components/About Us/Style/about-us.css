@@ -1,4 +1,4 @@
-h1{
+.about-us h1{
      font-size: 2.5rem;
      color: #001975;
 }
@@ -80,6 +80,17 @@ p{
      justify-content: center;
      align-items: center;
 }
+.about-us .our-team-mobile{
+     background: #aab2d1;
+     padding: 4rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.about-us .our-team-mobile{
+     display: none;
+}
 .about-us .blog-cards{
      display: flex;
      justify-content: space-around;
@@ -90,10 +101,12 @@ p{
      margin-bottom: 3rem;
 }
 .about-us .blog .blog-cards .blog-card .blog-topic{
-     color: #001975;
      font-weight: bold;
      font-size: large;
      margin-bottom: 0.5rem;
+}
+.about-us .blog .blog-cards .blog-card .blog-topic h4{
+     color: #001975;
 }
 .about-us .blog .blog-cards .blog-card .blog-text p{
      font-size: small;
@@ -143,6 +156,9 @@ p{
      margin-top: 2rem;
      margin-bottom: 5rem;
 }
+.about-us .bts-mobile{
+     display: none;
+}
 .about-us .careers{
      display: flex;
      justify-content: space-around;
@@ -153,6 +169,7 @@ p{
 .about-us .careers .careers-text h4{
      margin-bottom: 1rem;
      font-size: xx-large;
+     color: #000;
 }
 .about-us .careers .careers-text p{
      margin-bottom: 2rem;
@@ -164,6 +181,7 @@ p{
      border-radius: 0.8rem;
      text-align: center;
      padding: 0.5rem 3rem;
+     cursor: pointer;
 }
 .about-us .careers .careers-text .careers-link:hover{
      background: #001975;
@@ -188,6 +206,7 @@ p{
 .about-us .contact-us h4{
      text-align: center;
      margin-bottom: 3rem;
+     color: #000;
 }
 .about-us .contact-us .contact-form{
      display: flex;
@@ -241,7 +260,106 @@ p{
 }
 
 @media only screen and (min-width: 360px) and (max-width: 479px){
-
+     .about-us .hero-text{
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          padding: 1.5rem;
+     }
+     .about-us .mission{
+          display: flex;
+          flex-direction: column;
+          padding: 1.5rem;
+     }
+     .about-us .founder{
+          padding: 2rem;
+     }
+     .about-us .why-us{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+     }
+     .about-us .why-us .impact-video{
+          padding: 1rem;
+     }
+     .about-us .our-team h1{
+          font-size: 1.5rem;
+          margin-top: -3rem;
+     }
+     .about-us .our-team{
+          display: none;
+     }
+     .about-us .our-team-mobile{
+          display: content;
+     }
+     .about-us .our-team-mobile{
+          background: #aab2d1;
+          padding: 4rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+     .about-us .blog-cards{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          padding: 1.5rem;
+     }
+     .about-us .blog .blog-cards .blog-card .blog-topic{
+          color: #001975;
+     }
+     .about-us .bts{
+          display: none;
+     }
+     .about-us .bts-mobile{
+          display: contents;
+     }
+     .about-us .bts-mobile{
+          text-align: center;
+          margin-top: 4rem;
+          margin-bottom: 5rem;
+     }
+     .about-us .bts-mobile h1{
+          margin-top: 2rem;
+     }
+     .about-us .bts-image-mobile{
+          padding: 1.5rem;
+     }
+     .about-us .careers{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 3rem;
+          padding: 1.5rem;
+     }
+     .about-us .careers .careers-image{
+          margin-top: 2rem;
+     }
+     .about-us .contact-us{
+          padding: 0;
+     }
+     .about-us .contact-us .contact-form .send-button{
+          width: 20rem;
+     }
+     .about-us .contact-us .contact-form input{
+          width: 20rem;
+     }
+     .about-us .contact-us .contact-form .mail{
+          display: flex;
+          flex-direction: column;
+     }
+     .about-us .contact-us .contact-form .name{
+          display: flex;
+          flex-direction: column;
+     }
+     .about-us .contact-us .contact-form .query{
+          width: 20rem;
+     }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
 
