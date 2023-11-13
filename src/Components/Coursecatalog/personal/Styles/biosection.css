@@ -2,9 +2,15 @@
     border: 3px solid rgba(230, 230, 230, 1);
     border-radius: 16px;
 }
+.bio-text-container{
+    border: 3px solid rgba(230, 230, 230, 1);
+    border-radius: 16px; 
+}
 .label-text{
-    font-size: 17px;
+    font-size: 12px;
     font-weight: bold;
+    position: relative;
+    bottom: 8px;
 }
 .name-input{
     display: flex;
@@ -14,5 +20,13 @@
 .input-container{
     border: 3px solid rgba(230, 230, 230, 1);
     border-radius: 16px;
-
+}
+.input{
+  padding: 0px;
+  outline: none;
+  font-size: 15px;
+}
+.textarea{
+    outline: none;
+    margin-top: 5px;
 }

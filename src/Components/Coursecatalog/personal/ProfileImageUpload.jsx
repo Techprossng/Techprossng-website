@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BiImageAdd,  BiEdit } from "react-icons/bi";
+import { BiImageAdd } from "react-icons/bi";
 import { ImPencil } from "react-icons/im";
 import { FaTrash } from "react-icons/fa";
 import "../personal/Styles/profileimage.css";

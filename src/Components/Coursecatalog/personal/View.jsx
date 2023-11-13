@@ -1,8 +1,37 @@
+
 import React, { useState } from "react";
 
-function View ({ userData, onEditUserInfo }) {
+function View({ userData, onEditUserInfo }) {
+const renderWorkHistory = () => {
+    return userData.workHistory.map((work) => (
+      <div key={work.id}>
+        <p>
+          <strong>Job Title:</strong> {work.jobTitle}
+        </p>
+        <p>
+          <strong>Company:</strong> {work.company}
+        </p>
+        {/* Add more work history fields here */}
+      </div>
+    ));
+  };
+
+  const renderEducationHistory = () => {
+    return userData.educationHistory.map((education) => (
+      <div key={education.id}>
+        <p>
+          <strong>School Name:</strong> {education.schoolName}
+        </p>
+        <p>
+          <strong>Degree:</strong> {education.degree}
+        </p>
+        {/* Add more education history fields here */}
+      </div>
+    ));
+  };
+
   return (
-    <div className="w-1/2 bg-gray-200 p-4 rounded-lg">
+    <div className="w-full bg-gray-200 p-4 rounded-lg">
       <h1 className="text-2xl mb-4">Overview</h1>
       <div className="mb-4">
         <h2 className="text-lg">Profile Image</h2>
@@ -36,33 +65,13 @@ function View ({ userData, onEditUserInfo }) {
       </div>
       <div className="mb-4">
         <h2 className="text-lg">Work History</h2>
-        {userData.workHistory.map((work, index) => (
-          <div key={index}>
-            <p>
-              <strong>Job Title:</strong> {work.jobTitle}
-            </p>
-            <p>
-              <strong>Company:</strong> {work.company}
-            </p>
-            {/* Add more work history fields here */}
-          </div>
-        ))}
+        {renderWorkHistory()}
       </div>
       <div className="mb-4">
         <h2 className="text-lg">Education History</h2>
-        {userData.educationHistory.map((education, index) => (
-          <div key={index}>
-            <p>
-              <strong>School Name:</strong> {education.schoolName}
-            </p>
-            <p>
-              <strong>Degree:</strong> {education.degree}
-            </p>
-            {/* Add more education history fields here */}
-          </div>
-        ))}
+        {renderEducationHistory()}
       </div>
-      <button onClick={() => onEditUserInfo()} className="btn btn-primary">
+      <button onClick={onEditUserInfo} className="btn btn-primary">
         Edit Information
       </button>
     </div>
