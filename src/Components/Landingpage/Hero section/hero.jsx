@@ -14,16 +14,18 @@ const Hero = () => {
              lg:mt-0"
             data-aos="fade-right"
             data-aos-duration="2000"
-          >
+          >  
+            <p className="text-[#001975] font-bold mini-logo">TechProsNaija</p>
             <img  src={Vector} className="Vector-img"/>
-            <h1 className=" text-5xl md:text-6xl lg:text-5xl xl:text-7xl flex font-primary font-primary xl:font-primary  font-bold tracking-tight mb-12 text-[#001975] animate-text "
+            <h1 className=" text-4xl   md:text-6xl lg:text-5xl xl:text-6xl  font-primary font-primary xl:font-primary  font-bold tracking-tight mb-5  animate-text hero-text "
              style={{
            
-            fontWeight:"900px"
+            fontWeight:"900px",
+            lineHeight:"70px"
           
             }}>
-              <br />
-              TechProsNG
+            <span className="text-[#001975]">Unleash</span>
+             Your Potential Through Tech Mastery
             </h1>
             <p className="text-xl text-justify text-black">
               We are Tech Education Company dedicated to empowering the next
@@ -33,7 +35,7 @@ const Hero = () => {
               era. Start your transformative journey with us now.
             </p>
 
-            <button className="flex hidden sm:hidden md:hidden lg:flex justify-between items-center px-10 py-5 bg-transparent hover:bg-blue-900 text-red-500 font-semibold border-2 border-red-500 transition duration-300 hover:border-blue-900 hover:text-white  mt-5"
+            <button className="flex  lg:flex justify-between items-center px-10 py-5 bg-transparent hover:bg-blue-900 text-red-500 font-semibold border-2 border-red-500 transition duration-300 hover:border-blue-900 hover:text-white  mt-5"
             style={{
               width: "220px",
               borderRadius: "20px",
@@ -70,7 +72,7 @@ const Hero = () => {
             />
           </div>
           <div className="block  md:block w-full lg:hidden">
-            <button className="rounded-[20px] bg-[#FE0000] outline-none text-white p-[18px_24px]  flex justify-center items-center w-full">
+            <button className="rounded-[20px] bg-[#FE0000] hidden sm:hidden md:hidden outline-none text-white p-[18px_24px]  flex justify-center items-center w-full">
               <p className="w-[129px]">See Courses</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

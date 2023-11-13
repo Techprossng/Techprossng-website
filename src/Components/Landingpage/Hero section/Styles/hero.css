@@ -7,8 +7,97 @@
 }
 
 .Vector-img {
-  width: 240px;
+  width: 70px;
   height: 48px;
+  position: relative;
+  bottom: 20px;
+ 
+}
+
+@media only screen and (min-width: 360px) and (max-width: 422px) {
+      .Vector-img{
+        display: none;
+      }
+      .mini-logo{
+        display: none;
+      }
+      .hero-text{
+        display: block;
+        text-align: start;
+        line-height: 40px !important;
+        margin-top: -10%;
+        font-size: 33px;
+      
+        
+      }
+
+}
+
+@media only screen and (min-width: 422px) and (max-width: 500px) {
+  .Vector-img{
+    display: none;
+  }
+  .mini-logo{
+    display: none;
+  }
+  .hero-text{
+    display: block;
+    text-align: start;
+    line-height: 50px !important;
+    margin-top: -10%; 
+    font-size: 40px;
+  }
+
+}
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .Vector-img{
+    display: none;
+  }
+  .mini-logo{
+    display: none;
+  }
+  .hero-text{
+    display: block;
+    text-align: start;
+    line-height: 50px !important;
+    margin-top: -10%; 
+    font-size: 42px;
+    width: 87%;
+  }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .Vector-img{
+    display: none;
+  }
+  .mini-logo{
+    display: none;
+  }
+  .hero-text{
+    display: block;
+    text-align: start;
+    line-height: 50px !important;
+    margin-top: -10%; 
+    font-size: 42px;
+    width: 80%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Vector-img{
+    display: none;
+  }
+  .mini-logo{
+    display: none;
+  }
+  .hero-text{
+    display: block;
+    text-align: start;
+    line-height: 70px !important;
+    margin-top: -10%;  
+  }
+
 }
 
 @media only screen and (min-width: 640px) and (max-width: 788px) {
@@ -27,4 +116,5 @@
     background-position-x: 60%;
     background-size: 140%;
   }
+ 
 }
