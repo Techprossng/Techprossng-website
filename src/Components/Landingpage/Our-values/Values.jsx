@@ -6,12 +6,11 @@ import "./styles/style.css";
 const Values = () => {
   return (
     <section className="values mt-20">
-       <div className="items-center">
-      <h2 className="text-center  text-4xl md:text-3xl xl:text-4xl  md:mb-12">
-         Our Values  
-         <p className=" relative bottom-[-5px] left-[44%] ml-0 w-[83px] h-[6px] color  rounded-[12px] under-line"></p>  
-      </h2>
-      
+      <div className="items-center">
+        <h2 className="text-center  text-4xl md:text-3xl xl:text-4xl  md:mb-12">
+          Our Values
+          <p className=" relative bottom-[-5px] left-[44%] ml-0 w-[83px] h-[6px] color  rounded-[12px] under-line"></p>
+        </h2>
       </div>
       <div className="mt-10 md:mt-24">
         <div className="grid-cols-1 sm:grid md:grid-cols-2 mb-4 text-2xl font-sans mx-12 ">
