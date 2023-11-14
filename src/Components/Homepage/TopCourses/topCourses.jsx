@@ -1,4 +1,4 @@
-import "./Styles/recommended.css";
+import "./Styles/topCourses.css";
 import clock from "../../../assets/clock.png";
 import img1 from "../../../assets/img1.png";
 import img2 from "../../../assets/img2.png";
@@ -84,7 +84,7 @@ export const courses = [
   // },
 ];
 
-const Recommended = () => {
+const Topcourses = () => {
   // const [showFullList, setShowFullList] = useState(false);
   // const [isMobile, setIsMobile] = useState(window.innerWidth <= 980);
 
@@ -107,7 +107,7 @@ const Recommended = () => {
   return (
     <div className="container mx-auto mt-10 mb-11 main-con">
       <div className="head-box">
-        <h2 className="headerText text-2xl font-bold">Recommended For you</h2>
+        <h2 className="headerText text-2xl font-bold">Top Courses For You</h2>
       </div>
       <div className="mt-8 w-full flex flex-wrap justify-between gap-10 ">
         {courses.map((item, index) => (
@@ -248,4 +248,4 @@ const Recommended = () => {
   );
 };
 
-export default Recommended;
+export default Topcourses;
