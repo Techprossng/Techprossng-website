@@ -152,7 +152,7 @@ const AboutUs = () => {
               <a href="#">Go To Blog <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
           </div>
-          <div className="bts">
+          {/* <div className="bts">
             <h1>Behind The Scene</h1>
             <div className="bts-image">
               <img src="../../../src/assets/images/behind-the-scene.png" alt="" />
@@ -163,8 +163,8 @@ const AboutUs = () => {
             <div className="bts-image-mobile">
               <img src="../../../src/assets/images/behind-the-scene-mobile.png" alt="" />
             </div>
-          </div>
-          <div className="careers">
+          </div> */}
+          {/* <div className="careers">
             <div className="careers-text">
               <h1>Careers</h1>
               <h4>Lorem ipsum dolor sit amet consectetur. <br /> Adipisicing elit ad.</h4>
@@ -180,7 +180,7 @@ const AboutUs = () => {
             <div className="careers-image">
               <img src="../../../src/assets/images/careers.png" alt="" />
             </div>
-          </div>
+          </div> */}
           <div className="contact-us">
             <h1>Contact Us</h1>
             <h4>Please fill out the form below, and our team will get back to you as <br /> soon as possible. </h4>
@@ -197,14 +197,7 @@ const AboutUs = () => {
               </div>
               <div className="query">
                 <p>How can we help?</p>
-                <div className="option">
-                  <select id="choose-question">
-                    <option value="#">------</option>
-                    <option value="lorem">Lorem</option>
-                    <option value="lorem">Lorem</option>
-                    <option value="lorem">Lorem</option>
-                  </select>
-                </div>
+                <input type="text" />
               </div>
               <div className="mail">
               <div className="email">

@@ -197,6 +197,7 @@ p{
      padding-left: 1.5rem;
 }
 .about-us .contact-us{
+     margin-top: 5rem;
      margin-bottom: 5rem;
 }
 .about-us .contact-us h1{
@@ -224,21 +225,22 @@ p{
      gap: 2rem;
      margin-bottom: 3rem;
 }
-.about-us .contact-us .contact-form .query{
-     margin-bottom: 3rem;
-     width: 52rem;
-}
-.about-us .contact-us .contact-form .query .option{
+.about-us .contact-us .contact-form .query input{
      border: 1px solid #001975;
      height: 3rem;
      border-radius: 0.5rem;
      padding: 0.5rem;
+     width: 52rem;
+     margin-bottom: 3rem;
 }
 .about-us .contact-us .contact-form .mail{
      display: flex;
      justify-content: space-between;
      align-items: center;
      gap: 2rem;
+}
+.about-us .contact-us .contact-form .mail .website input{
+     margin-top: 2.5rem;
 }
 .about-us .contact-us .contact-form input{
      width: 25rem;
@@ -357,10 +359,11 @@ p{
           display: flex;
           flex-direction: column;
      }
-     .about-us .contact-us .contact-form .query{
+     .about-us .contact-us .contact-form .query input{
           width: 20rem;
      }
 }
+
 @media only screen and (min-width: 480px) and (max-width: 767px){
      .about-us .hero-text{
           display: flex;
@@ -417,7 +420,7 @@ p{
      .about-us .contact-us .contact-form input{
           width: 13.5rem;
      }
-     .about-us .contact-us .contact-form .query{
+     .about-us .contact-us .contact-form .query input{
           width: 29rem;
      }
 }
