@@ -1,7 +1,6 @@
 // import React from "react";
 import Navbar from "../../Components/Landingpage/Navbar/navbar";
 import Hero from "../../Components/Landingpage/Hero section/hero";
-import Mission from "../../Components/Landingpage/Mission/mission-vision";
 import Services from "../../Components/Landingpage/Services/services";
 import Identity from "../../Components/Landingpage/WhoWeAre/identity";
 import Sponsor from "../../Components/Landingpage/Sponsor/sponsor";
@@ -24,7 +23,6 @@ const LandingPage = () => {
       <Services />
       <WhyChooseUs />
       <Sponsor />
-      <Mission />
       <Values />
       <Testimonial />
       <OurTeam />
