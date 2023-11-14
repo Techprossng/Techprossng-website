@@ -74,36 +74,47 @@ const index = () => {
         }}
         modules={[EffectFade, Autoplay, Pagination, Navigation]}
       >
-        <SwiperSlide className="bg-[blue]">
+        <SwiperSlide className="bg-[#000517]">
           <div className="flex justify-around">
-            <div
-              className="flex flex-col border-rounded border-[#001975] border-2 p-5 m-5 shadow-xl w-4/6
-            "
-            >
-              <h1 className="text-lg font-bold font-primary text-[#fff]">
+            <div className="flex flex-col p-[2rem] m-[3rem] shadow-xl w-4/6">
+              <h1 className="text-lg font-bold font-primary text-[#FE0000]">
                 Top recommended
               </h1>
-              <h1 className="text-2xl font-bold text-[#001975]">
+              <h1 className="text-6xl font-black leading-[76.8px] font-primary text-[#AAB2D1]">
                 UI/UX Design
               </h1>
-              <p
-                className="text-[#656565] text-justify w-[500px] h-[100px] overflow-hidden
-              "
-              >
-                "Join our UI/UX Design Course for a transformative learning
+              <p className="text-[#fff] text-justify w-[647px] h-[72px] overflow-hidden font-medium text-base mt-5">
+                Join our UI/UX Design Course for a transformative learning
                 experience. Master the art of creating intuitive user interfaces
                 and delightful user experiences. Enroll now and shape the future
-                of design!",
+                of design!
               </p>
-              <div className="flex flex-col">
+              <div className="flex flex-col mt-5">
                 <div className="flex flex-col">
-                  <p className="text-[#656565]">2 months</p>
-                  <p className="text-[#656565]">45 currently enrolled</p>
-                  <p className="text-[#656565]">includes certificate</p>
+                  <p className="text-[#fff] text-base font-bold font-secondary">
+                    3 months
+                  </p>
+                  <p className="text-[#fff] text-base font-bold font-secondary">
+                    45 currently enrolled
+                  </p>
+                  <p className="text-[#fff] text-base font-bold font-secondary">
+                    includes certificate
+                  </p>
                 </div>
-                <div className="flex flex-col">
-                  <p className="text-[#656565]">4.5 (56) Read Reviews</p>
+                <div className="flex gap-1">
+                  <figure className="text-[#fff] text-base font-bold font-secondary">
+                    4.5
+                  </figure>
+                  <figure className="text-[#FE0000]">(56) Read Reviews</figure>
                 </div>
+              </div>
+              <div className="flex items-center gap-7 w-[70%] mt-5">
+                <button className="px-10 py-5 bg-[#FC0606] text-[#fff] font-bold text-base">
+                  Start Courses
+                </button>
+                <span className=" flex text-[#fff] font-bold text-base">
+                  Save For Later
+                </span>
               </div>
             </div>
 
@@ -116,39 +127,49 @@ const index = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="flex justify-around bg-[blue]">
-            <div
-              className="flex flex-col border-rounded border-[#001975] border-2 p-5 m-5 shadow-xl w-4/6
-            "
-            >
-              <h1 className="text-lg font-bold font-primary text-[#fff]">
-                Top courses
+        <SwiperSlide className="bg-[#000517]">
+          <div className="flex justify-around">
+            <div className="flex flex-col border-rounded border-[#001975] border-2 p-[2rem] m-[3rem] shadow-xl w-4/6">
+              <h1 className="text-lg font-bold font-primary text-[#FE0000]">
+                New Additions
               </h1>
-              <h1 className="text-2xl font-bold text-[#001975]">
-                Web Development
+              <h1 className="text-6xl font-black leading-[76.8px] font-primary text-[#AAB2D1]">
+                Cyber-security
               </h1>
-              <p
-                className="text-[#656565] text-justify w-[500px] h-[100px] overflow-hidden
-              "
-              >
-                "Join our UI/UX Design Course for a transformative learning
+              <p className="text-[#fff] text-justify w-[647px] h-[72px] overflow-hidden font-medium text-base mt-5">
+                Join our UI/UX Design Course for a transformative learning
                 experience. Master the art of creating intuitive user interfaces
                 and delightful user experiences. Enroll now and shape the future
-                of design!",
+                of design!
               </p>
-              <div className="flex flex-col">
+              <div className="flex flex-col mt-5">
                 <div className="flex flex-col">
-                  <p className="text-[#656565]">4 months</p>
-                  <p className="text-[#656565]">45 currently enrolled</p>
-                  <p className="text-[#656565]">includes certificate</p>
+                  <p className="text-[#fff] text-base font-bold font-secondary">
+                    4 months
+                  </p>
+                  <p className="text-[#fff] text-base font-bold font-secondary">
+                    15 currently enrolled
+                  </p>
+                  <p className="text-[#fff] text-base font-bold font-secondary">
+                    includes certificate
+                  </p>
                 </div>
-                <div className="flex flex-col">
-                  <p className="text-[#656565]">4.5 (56) Read Reviews</p>
+                <div className="flex gap-1">
+                  <figure className="text-[#fff] text-base font-bold font-secondary">
+                    4.8
+                  </figure>
+                  <figure className="text-[#FE0000]">(56) Read Reviews</figure>
                 </div>
               </div>
+              <div className="flex items-center gap-7 w-[70%] mt-5">
+                <button className="px-10 py-5 bg-[#FC0606] text-[#fff] font-bold text-base">
+                  Start Courses
+                </button>
+                <span className=" flex text-[#fff] font-bold text-base">
+                  Save For Later
+                </span>
+              </div>
             </div>
-
             <div
               className="flex flex-col w-2/6 object-cover
             "
