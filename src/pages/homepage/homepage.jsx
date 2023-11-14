@@ -5,18 +5,17 @@ import Progress from "../../Components/Homepage/InProgress/progress";
 import FromOurCommunity from "../../Components/Homepage/FromOurCommunity";
 import Footer from "../../Components/Landingpage/Footer/footer";
 
-
 const Homepage = () => {
-    return (
-        <>
-        <Navbar/>
-        <Progress/>
-        <Library />
-        <FromOurCommunity />
-        <Mentor/>
-        <Footer/>
-        </>
-    );
-    }
+  return (
+    <>
+      <Navbar />
+      <Progress />
+      <Library />
+      <FromOurCommunity />
+      <Mentor />
+      <Footer />
+    </>
+  );
+};
 
 export default Homepage;
