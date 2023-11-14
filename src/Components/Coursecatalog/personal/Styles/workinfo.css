@@ -1,0 +1,17 @@
+.history-container{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 16px;
+    
+}
+.btn-secondary{
+    text-decoration: 2px solid red underline;
+    color: red;
+    font-weight:bold;
+    position: relative;
+    left: 40rem;
+}
+.add-icon{
+    position: relative;
+    left: 3px;
+    top: 3px;
+}

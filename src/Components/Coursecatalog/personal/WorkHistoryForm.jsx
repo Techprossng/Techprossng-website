@@ -48,7 +48,7 @@ function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
       </div>
       {/* Add other input fields for work history here */}
       <div className="flex items-center">
-        <button onClick={onCancel} className="btn btn-secondary mr-2">
+        <button onClick={onCancel} className="btn  mr-2">
           Cancel
         </button>
         <button onClick={handleSave} className="btn btn-primary">

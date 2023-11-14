@@ -1,9 +1,9 @@
 .bio-container{
-    border: 3px solid rgba(230, 230, 230, 1);
+    border: 2px solid rgba(230, 230, 230, 1);
     border-radius: 16px;
 }
 .bio-text-container{
-    border: 3px solid rgba(230, 230, 230, 1);
+    border: 2px solid rgba(230, 230, 230, 1);
     border-radius: 16px; 
 }
 .label-text{
@@ -18,11 +18,15 @@
     width: 50%;
 }
 .input-container{
-    border: 3px solid rgba(230, 230, 230, 1);
+    border: 2px solid rgba(230, 230, 230, 1);
     border-radius: 16px;
 }
+.number-input{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 16px; 
+}
 .input{
-  padding: 0px;
+  padding: 3px;
   outline: none;
   font-size: 15px;
 }
@@ -33,8 +37,6 @@
 .select{
     outline: none;
 }
-.custom-select {
-    outline: none !important; 
-    padding: 8px !important; 
-    
-  }
+.custom-location{
+    border: 1px solid rgba(43, 63, 140, 1) ; 
+}

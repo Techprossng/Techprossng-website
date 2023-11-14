@@ -34,7 +34,7 @@ function Catalog() {
           isEditing={isEditing} // Pass the isEditing state
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 ml-5">
         <View userData={userData} onEditUserInfo={handleEditUserInfo} />
       </div>
     </div>

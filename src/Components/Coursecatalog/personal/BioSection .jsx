@@ -1,7 +1,7 @@
 import React from "react";
 import countries from "./Data/Countries";
 import countryCodes from "./Data/CountryCodes";
-import { BiUser, BiDetail } from "react-icons/bi";
+import { BiUser, BiDetail , BiEnvelope , BiCurrentLocation} from "react-icons/bi";
 import Select from "react-select";
 import "../personal/Styles/biosection.css";
 
@@ -22,8 +22,8 @@ function BioSection({ userData, onSaveUserInfo }) {
     onSaveUserInfo({ ...userData, phoneNumber });
   };
 
-  const handleCountryChange = (e) => {
-    const country = e.target.value;
+  const handleCountryChange = (selectedOption) => {
+    const country = selectedOption.value;
     onSaveUserInfo({ ...userData, country });
   };
   const handleEmailChange = (e) => {
@@ -35,8 +35,23 @@ function BioSection({ userData, onSaveUserInfo }) {
     control: (provided) => ({
       ...provided,
       outline: "none",
-      padding: "8px",
-      // Add any other custom styles you want for the control
+      padding: "10px",
+      border: "1px solid rgba(43, 63, 140, 1) ; ",
+      borderRadius: "10px",
+      boxShadow: "none",
+      width: "100%",
+      fontSize: "14px",
+    }),
+  };
+
+  const countryStyles = {
+    control: (provided) => ({
+      ...provided,
+      outline: "none",
+      border: "none",
+      borderRadius: "10px",
+      boxShadow: "none",
+   
     }),
   };
   
@@ -85,7 +100,7 @@ function BioSection({ userData, onSaveUserInfo }) {
             </div>
           </div>
         </div>
-        <div className="mb-2 w-full bio-text-container">
+        <div className="mt-6 w-full bio-text-container">
           <div className=" flex p-5">
             <BiDetail size={20} className="mt-5" />
             <div className="ml-5 bio-text w-full">
@@ -103,8 +118,8 @@ function BioSection({ userData, onSaveUserInfo }) {
             </div>
           </div>
         </div>
-        <div className="flex">
-          <div className="mb-2 w-1/2">
+        <div className="flex gap-2 mt-8">
+          <div className="mt-5 w-45">
             <Select
               id="countryCode"
               name="countryCode"
@@ -117,12 +132,12 @@ function BioSection({ userData, onSaveUserInfo }) {
                 value: country.code,
                 label: `${country.code} (${country.name})`,
               }))}
-              className="select  w-1/2 "
+              className="select w-40"
               styles={customStyles} 
             />
           </div>
-          <div className="mb-2">
-            <label htmlFor="phoneNumber">Phone Number:</label>
+          <div className=" number-input w-[30%] p-5">
+            <label htmlFor="phoneNumber" className="label-text">Phone Number</label>
             <input
               type="text"
               id="phoneNumber"
@@ -132,32 +147,40 @@ function BioSection({ userData, onSaveUserInfo }) {
               className="input"
             />
           </div>
-          <div className="mb-2">
-            <label htmlFor="email">Email Address:</label>
+          <div className=" number-input flex  w-[100%] p-5">
+            <BiEnvelope size={20} className="mt-4" />
+            <div className="ml-5 w-full">
+            <label htmlFor="email" className=" label-text">Email</label>
             <input
               type="email"
               id="email"
               value={userData.email}
               onChange={handleEmailChange}
-              className="input"
+              className="input w-full"
             />
+            </div>
           </div>
         </div>
-        <div className="mb-2">
-          <label htmlFor="country">Country:</label>
-          <select
+        <div className="mt-8  flex number-input custom-location w-1/2 p-5">
+          <BiCurrentLocation size={20} className="mt-4"/>
+          <div className="w-full ml-5">
+          <label htmlFor="country" className="label-text">Country</label>
+          <Select
             id="country"
             name="country"
-            value={userData.country}
+            value={{
+              value:userData.country,
+              label:userData.country,
+            }}
             onChange={handleCountryChange}
-            className="select"
-          >
-            {countries.map((country, index) => (
-              <option key={index} value={country.code}>
-                {`${country.name} (${country.iso})`}
-              </option>
-            ))}
-          </select>
+            options={countries.map((country) => ({
+              value: country.name,
+              label: `${country.name} (${country.iso})`,
+            }))}
+            styles={countryStyles}
+            className="select "
+          />
+          </div>
         </div>
       </form>
     </div>
