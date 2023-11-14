@@ -3,7 +3,7 @@ import "../Resource Library/Style/library.css";
 
 function Library() {
   return (
-    <div className="libraries">
+    <div className="library">
         <h1 className="heading">Resource Library <div class="resourse-link"><a href="#">View Resource Library</a> <i class="fa-solid fa-arrow-right-long"></i></div></h1> 
         <div className="box-container">
             <div className="box">
