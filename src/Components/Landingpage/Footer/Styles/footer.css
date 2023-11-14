@@ -6,7 +6,7 @@
   color: white;
 
   /* padding: 80px 0 30px; */
-  font-size: 10px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -15,7 +15,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.footer .row{
+  display: flex;
+  justify-content: space-between;
+}
 .row {
   width: 85%;
   margin: auto;
@@ -46,31 +49,6 @@ ul li {
   margin-bottom: 5px;
   color: white;
   text-decoration: none;
-}
-
-form {
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  background: white;
-}
-
-form .fa-solid {
-  font-size: 12px;
-  margin-right: 0;
-  color: #000d3b;
-}
-
-form select {
-  width: 100%;
-  color: #000d3b;
-  border: 0;
-  outline: none;
-  cursor: pointer;
 }
 
 .social-icons {

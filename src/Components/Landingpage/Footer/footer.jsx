@@ -1,4 +1,5 @@
 import "../Footer/Styles/footer.css";
+import Logo  from "../../../assets/images/Logo.png";
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
           className="first-container
             "
         >
-          <img src="../../../src/assets/images/Logo.png" />
+          <img src={Logo} />
 
           <div>
             <div className="social-icons">
@@ -99,19 +100,6 @@ function Footer() {
               <a href="">Podcasts</a>
             </li>
           </ul>
-        </div>
-        <div className="col">
-          <br />
-          <br />
-          <form action="#">
-            <i className="fa-solid fa-globe"></i>
-            <select id="lang">
-              <option value="english">English</option>
-              <option value="french">French</option>
-              <option value="german">German</option>
-              <option value="spanish">Spanish</option>
-            </select>
-          </form>
         </div>
       </div>
       <hr className="w-[85%] horizontal-line" />

@@ -8,7 +8,7 @@ import "../../Homepage/Mentor/Styles/mentor.css";
 function MentorsSection() {
 
   const [showFullList, setShowFullList] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 980);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
   
   const toggleFullList = () => {
@@ -17,7 +17,7 @@ function MentorsSection() {
   
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 980);
+      setIsMobile(window.innerWidth <= 1024);
     };
 
     window.addEventListener("resize", handleResize);

@@ -20,7 +20,6 @@ const Navbar = () => {
     { name: "Mentorship", link: "/mentorship" },
     { name: "Resources", link: "/resources" },
     { name: "Pricing", link: "/pricing" },
-    { name: "Library", link: "/library" },
     { name: "About Us", link: "/about" },
   ];
   let Links2 = [
@@ -145,7 +144,7 @@ const Navbar = () => {
       </div>
 
       {/* Tablet and Desktop Menu */}
-      <div className="hidden  md:flex  custom-space-x desktop">
+      <div className="hidden  md:flex  custom-space-x  desktop">
         {Links.map((link) => (
           <a
             href={`/${link.link}`}
@@ -161,7 +160,7 @@ const Navbar = () => {
             {link.name}
           </a>
         ))}
-        <BiSearch size={25} className="mr-5 p-0" style={{ cursor:"pointer"}}/>
+       
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
         <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>

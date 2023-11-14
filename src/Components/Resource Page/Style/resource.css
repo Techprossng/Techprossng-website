@@ -1,0 +1,364 @@
+.resource{
+     margin: 5rem;
+     padding-top: 5rem;
+     padding-left: 0.75rem;
+     padding-right: 0.75rem;
+}
+h1{
+     font-size: 2rem;
+     font-weight: bold;
+     margin-bottom: 0.8rem;
+}
+h2{
+     font-weight: bold;
+}
+h3{
+     font-weight: bold;
+}
+h6{
+     font-size: 0.8rem;
+}
+h5{
+     font-size: 0.8rem;
+}
+.resource .faq-mobile{
+     display: none;
+}
+.resource .contact-us-mobile{
+     display: none;
+}
+.resource .guide-mobile{
+     display: none;
+}
+.resource .hero-header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 7rem;
+}
+.resource .tablet-hero-image{
+     display: none;
+}
+.resource .hero-header .hero-text h1{
+     margin-bottom: 1.5rem;
+}
+.resource .hero-header .hero-text h6{
+     margin-bottom: 1.5rem;
+     width: 70%;
+}
+.resource .hero-header .hero-text .search-box{
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     height: 2rem;
+}
+.resource .hero-header .hero-text .search-box input{
+     border: 1px solid grey;
+     padding-left: 2rem;
+     border-radius: 0.7rem;
+     width: 70%;
+     padding-top: 0.5rem;
+     padding-bottom: 0.5rem;
+     outline: none;
+}
+.resource .hero-header .hero-text .search-box .fa-solid{
+     position: absolute;
+     margin-top: 1rem;
+     margin-left: 1rem;
+     transform: translate(-50%, -50%);
+     color: grey;     
+}
+.resource .hero-header .hero-text .search-box button{
+     position: absolute;
+     margin-top: 2.1rem;
+     margin-left: 22.5rem;
+     transform: translate(-50%, -50%);
+     padding: 5px 12px;
+     cursor: pointer;
+     outline: none;
+     border-radius: 0.5rem;
+     background: #001975;
+     color: white;
+     width: 150px;
+     transition: 0.8s;
+}
+.resource .hero-header .hero-text .search-box button:hover{
+     letter-spacing: 0.1rem;
+     transition: 0.5s;
+}
+.resource .hero-header .hero-image{
+     width: 70rem;
+     height: 22rem;
+}
+.resource .faq h6{
+     margin-bottom: 3rem;
+}
+.resource .faq .col1{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+     width: 100%;
+     margin-bottom: 2rem;
+}
+.resource .faq .col1 .tab h6{
+     width: 80%;
+}
+.resource .faq .col2{
+     display: flex;
+     justify-content: space-between;
+     align-items: left;
+     gap: 2rem;
+     width: 100%;
+}
+.resource .faq .col2 .tab h6{
+     width: 60%;
+}
+.resource .faq .col2 .tab h3{
+     margin-left: -42%;
+}
+.resource .faq .col2 .tab h5{
+     width: 60%;
+     margin-left: -42%;
+}
+.resource .contact-us .col3{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+     width: 100%;
+     margin-bottom: 2rem;
+}
+.resource .contact-us h6{
+     width: 47%;
+     margin-bottom: 2rem;
+}
+.resource .contact-us .col3 .tab h6{
+     width: 80%;
+}
+.resource .guide .col4{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+     width: 100%;
+     margin-bottom: 2rem;
+}
+.resource .guide h6{
+     width: 47%;
+     margin-bottom: 2rem;
+}
+.resource .guide .col4 .tab h6{
+     width: 90%;
+}
+.resource .guide .col5 .tab h6{
+     width: 22%;
+     margin-bottom: 4rem;
+}
+.resource .bottom{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 3rem;
+}
+.resource .bottom h6{
+     width: 80%;
+}
+.resource a{
+     padding: 0.5rem;
+     border: 1px solid grey;
+     border-radius: 0.5rem;
+     background: #001975;
+}
+.resource .faq .faq-link{
+     margin-bottom: 3rem;
+}
+.resource .faq .faq-link:hover{
+     letter-spacing: 0.05rem;
+     transition: 0.5s;
+}
+.resource .contact-us .contact-us-link{
+     margin-bottom: 3rem;
+}
+.resource .contact-us .contact-us-link:hover{
+     letter-spacing: 0.05rem;
+     transition: 0.5s;
+}
+.resource .guide .guide-link{
+     margin-bottom: 3rem;
+}
+.resource .guide .guide-link:hover{
+     letter-spacing: 0.05rem;
+     transition: 0.5s;
+}
+.resource .bottom .bottom-link{
+     margin-top: 2rem;
+     margin-bottom: 3rem;
+}
+.resource .bottom .bottom-link:hover{
+     letter-spacing: 0.05rem;
+     transition: 0.5s;
+}
+.resource .tablet-community-forum{
+     display: none;
+}
+@media only screen and (min-width: 360px) and (max-width: 479px){
+     .resource{
+          margin-left: 0;
+          margin-right: 0;
+     }
+     .resource .hero-header .hero-image{
+          display: none;
+     }
+     .resource .tablet-hero-image{
+          display: contents;
+     }
+     .resource .hero-header .hero-text .search-box input{
+          width: 21rem;
+     }
+     .resource .hero-header .hero-text .search-box button{
+          margin-left: 16rem;
+          margin-top: 2.1rem;
+     }
+     .resource .hero-header .hero-text h1{
+          width: 75%;
+     }
+     .resource .hero-header .hero-text h6{
+          width: 62%;
+     }
+     .resource .tablet-hero-image img{
+          width: 26rem;
+          height: 20rem;
+     }
+     .resource .hero-header .hero-text .search-box{
+          width: 35rem;
+     }
+     .resource .faq{
+          display: none;
+     }
+     .resource .faq-mobile{
+          display: contents;
+     }
+     .resource .faq-mobile h1{
+          margin-top: 3rem;
+     }
+     .resource .faq-mobile .col1 .tab{
+          margin-top: 3rem;
+     }
+     .resource .faq-mobile .col2 .tab{
+          margin-top: 3rem;
+     }
+     .resource .faq-mobile .faq-link{
+          margin-top: 2rem;
+     }
+     .resource .contact-us{
+          display: none;
+     }
+     .resource .contact-us-mobile{
+          display: contents;
+     }
+     .resource .contact-us-mobile h1{
+          margin-top: 3rem;
+     }
+     .resource .contact-us-mobile .col3 .tab{
+          margin-top: 3rem;
+     }
+     .resource .contact-us-mobile .contact-us-link{
+          margin-top: 2rem;
+     }
+     .resource .guide{
+          display: none;
+     }
+     .resource .guide-mobile{
+          display: contents;
+     }
+     .resource .guide-mobile h1{
+          margin-top: 3rem;
+     }
+     .resource .guide-mobile .col4 .tab{
+          margin-top: 3rem;
+     }
+     .resource .guide-mobile .col5 .tab{
+          margin-top: 3rem;
+     }
+     .resource .guide-mobile .guide-link{
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+     }
+     .resource .community-forum{
+          display: none;
+     }
+     .resource .tablet-community-forum{
+          display: contents;
+     }
+     .resource .tablet-community-forum h1{
+          margin-top: -3rem;
+     }
+     .resource .tablet-community-forum .tablet-bottom-link{
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+     }
+
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+     .resource .faq-mobile{
+          display: none;
+     }
+     .resource .contact-us-mobile{
+          display: none;
+     }
+     .resource{
+          margin-left: 0;
+          margin-right: 0;
+     }
+     .resource .hero-header .hero-image{
+          display: none;
+     }
+     .resource .tablet-hero-image{
+          display: contents;
+     }
+     .resource .hero-header .hero-text .search-box{
+          width: 35rem;
+     }
+     .resource .hero-header .hero-text .search-box button{
+          margin-left: 19.5rem;
+          margin-top: 2.2rem;
+     }
+     .resource .hero-header .hero-text h6{
+          width: 80%;
+     }
+     .resource .faq .col1 .tab h6{
+          width: 90%;
+     }
+     .resource .faq .col2 .tab h5{
+          margin-left: -35%;
+     }
+     .resource .faq .col2 .tab h3{
+          margin-left: -35%;
+     }
+     .resource .contact-us h6{
+          width: 85%;
+     }
+     .resource .contact-us .col3 .tab h6{
+          width: 90%;
+     }
+     .resource .guide h6{
+          width: 80%;
+     }
+     .resource .guide .col4 .tab h6{
+          width: 100%;
+     }
+     .resource .guide .col5 .tab h6{
+          width: 40%;
+     }
+     .resource .community-forum{
+          display: none;
+     }
+     .resource .tablet-community-forum{
+          display: contents;
+     }
+     .resource .tablet-community-forum .tablet-bottom-link{
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+     }
+}
