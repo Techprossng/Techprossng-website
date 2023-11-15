@@ -1,0 +1,86 @@
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .home-image {
+    display: none;
+  }
+
+  .ui-ux-image {
+    background-image: url("../../../../assets/images/home-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #40475e;
+    width: 100%;
+  }
+
+  .cyber-image {
+    background-image: url("../../../../assets/images/cyber.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #40475e;
+    width: 100%;
+
+  }
+
+  .game-image {
+    background-image: url("../../../../assets/images/game-dev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #40475e;
+    width: 100%;
+
+  }
+
+  .content-image {
+    background-image: url("../../../../assets/images/content-marketing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #40475e;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .home-image {
+    display: none;
+  }
+
+  .ui-ux-image {
+    background-image: url("../../../../assets/images/home-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #40475e;
+    width: 100%;
+
+  }
+
+  .cyber-image {
+    background-image: url("../../../../assets/images/cyber.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #40475e;
+    width: 100%;
+  }
+
+  .game-image {
+    background-image: url("../../../../assets/images/game-dev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #40475e;
+    width: 100%;
+  }
+
+  .content-image {
+    background-image: url("../../../../assets/images/content-marketing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #40475e;
+    width: 100%;
+  }
+}
