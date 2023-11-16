@@ -109,7 +109,7 @@ const Recommended = () => {
       <div className="head-box">
         <h2 className="headerText text-2xl font-bold">Recommended For you</h2>
       </div>
-      <div className="mt-8 w-full flex flex-wrap justify-between gap-10 ">
+      <div className="mt-8 w-full flex flex-wrap justify-between">
         {courses.map((item, index) => (
           <div
             key={index}

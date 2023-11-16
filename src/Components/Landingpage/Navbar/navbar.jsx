@@ -1,5 +1,6 @@
 // src/components/Navbar.js
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/logo2.png";
 import close from "../../../assets/icons/close.svg";
 import Menu from "../../../assets/icons/menu.svg";
@@ -7,12 +8,12 @@ import "../../Landingpage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
   let Links = [
-    { name: "Home", link: "/" },
-    { name: "Courses", link: "/courses" },
+    { name: "Home", link: "/home" },
+    { name: "Courses", link: "/course-catalogue" },
     { name: "Mentorship", link: "/mentorship" },
     { name: "Resources", link: "/resources" },
     { name: "Pricing", link: "/pricing" },
-    { name: "About Us", link: "/about" },
+    { name: "About Us", link: "/about-us" },
   ];
 
   let [open, setOpen] = useState(false);
@@ -56,20 +57,19 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-10">
           {Links.map((link) => (
-            <a
-              key={link.name}
-              href={`/${link.link}`}
-              className={`text-gray-800 duration-500 ${
+            <Link 
+             to={link.link} 
+             key={link.name} 
+             className={`text-gray-800 duration-500 ${
                 activeLink === link.name ? "active-nav" : ""
               }`}
               style={{ fontSize: "20px", fontWeight: "500" }}
-              onClick={(e) => {
-                e.preventDefault();
+              onClick={() => {
                 handleLinkClick(link.name);
               }}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex flex-wrap space-y-4 pr-5 pl-5 mt-10">
@@ -85,19 +85,18 @@ const Navbar = () => {
       {/* Tablet and Desktop Menu */}
       <div className="hidden  md:flex  custom-space-landing   desktop">
         {Links.map((link) => (
-          <a
-            href={`/${link.link}`}
+          <Link
+            to={link.link}
             key={link.name}
             className={`text-gray-800 duration-500  custom-font-small ${
               activeLink === link.name ? "active-nav" : ""
             }`}
-            onClick={(e) => {
-              e.preventDefault();
+            onClick={() => {
               handleLinkClick(link.name);
             }}
           >
             {link.name}
-          </a>
+          </Link>
         ))}
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">

@@ -19,8 +19,10 @@ function StatsImpactVideo() {
                     <img src={Stat3} alt="" />
                </div>
           </div>
-          <div className="impact-video">
-               <a href=""><img src={IV} alt="" /></a>
+          <div className="impact-video mt-10 mb-10 w-[80%]">
+               <a href=""><img src={IV} alt="impact-video" 
+               className="w-full"
+               /></a>
           </div>
     </div>
   )
