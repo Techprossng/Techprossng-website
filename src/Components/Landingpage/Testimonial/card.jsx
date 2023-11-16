@@ -22,7 +22,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
               className="flex gap-9 justify-center items-center"
               data-aos="zoom-in-left"
             >
-              <img src={image} alt="avi" className="w-44 h-44 " />
+              <img src={image} alt="avi" className="testimonial-image w-44 h-44 " />
               <div className="rounded-lg px-4 py-6 shadow-2xl">
                 <p
                   style={{
@@ -77,7 +77,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   {content}
                 </p>
               </div>
-              <img src={image} alt="avi" className="w-44 h-44" />
+              <img src={image} alt="avi" className="testimonial-image w-44 h-44" />
             </div>
           )}
         </div>
@@ -89,7 +89,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
               className="flex gap-9 justify-center items-center"
               data-aos="zoom-in-left"
             >
-              <img src={image} alt="avi" className="w-40 h-40" />
+              <img src={image} alt="avi" className="testimonial-image w-40 h-40" />
 
               <div className="rounded-lg px-4 py-6 shadow-2xl">
                 <p
@@ -145,7 +145,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   {content}
                 </p>
               </div>
-              <img src={image} alt="avi" className="w-40 h-40" />
+              <img src={image} alt="avi" className="testimonial-image w-40 h-40" />
             </div>
           )}
         </div>
@@ -155,7 +155,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
           className="flex flex-col relative justify-center items-center transform hover:scale-110 "
           data-aos="zoom-in-left"
         >
-          <img src={image} alt="avi" className="w-24 h-24 absolute -top-10" />
+          <img src={image} alt="avi" className="testimonial-image w-24 h-24 absolute -top-10" />
 
           <div className="rounded-lg w-full px-3 py-6 shadow-2xl mt-9">
             <p
