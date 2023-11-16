@@ -29,12 +29,11 @@ function App() {
         <Route path="/home" element={<Layout><Homepage /></Layout>} /> 
         <Route path="/profile" element={<Layout><ProfilePage/></Layout>} />
         <Route path="/pricing" element={<Layout><Pricing /></Layout>} />
-        <Route path="/course-catalog" element={<Layout><Catalog /></Layout>} />
+        <Route path="/course-catalogue" element={<Layout><Catalog /></Layout>} />
         <Route path="/resource-page" element={<Layout><ResourcePage /></Layout>} />
         <Route path="/about-us" element={<Layout><AboutUsPage /></Layout>} />
         <Route path="/sign-in" element={<Layout><SignInPage /></Layout>} />
         <Route path="/sign-up" element={<Layout><SignUpPage /></Layout>} />
-      </Routes>
      </> 
   )
 }
