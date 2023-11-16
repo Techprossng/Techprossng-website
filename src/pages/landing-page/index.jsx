@@ -11,6 +11,7 @@ import CTA from "../../Components/Landingpage/CTA";
 import WhyChooseUs from "../../Components/Landingpage/WhyChooseUs";
 import Footer from "../../Components/Landingpage/Footer/footer";
 import Newsletter from "../../Components/Landingpage/Newsletter Section/newsletter";
+import StatsImpactVideo from "../../Components/Landingpage/Stats-ImpactVideo/s-iv";
 
 
 
@@ -26,6 +27,7 @@ const LandingPage = () => {
       <Values />
       <Testimonial />
       <OurTeam />
+      <StatsImpactVideo />
       <Newsletter />
       <CTA />
       <Footer />
