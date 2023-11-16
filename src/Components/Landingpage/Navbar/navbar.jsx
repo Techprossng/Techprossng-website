@@ -1,7 +1,6 @@
 // src/components/Navbar.js
 import { useState } from "react";
-import Logo from "../../../assets/images/Logo.svg";
-import Logo2 from "../../../assets/images/Logo2.svg";
+import Logo from "../../../assets/images/logo2.png";
 import close from "../../../assets/icons/close.svg";
 import Menu from "../../../assets/icons/menu.svg";
 import "../../Landingpage/Navbar/Styles/navbar.css";
@@ -31,8 +30,7 @@ const Navbar = () => {
     >
       <div className="flex items-center logo-container">
         <a href="/">
-          <img src={Logo} alt="Logo" className="custom-large" />
-          <img src={Logo2} alt="Logo" className="custom-small md:hidden " />
+          <img src={Logo} alt="Logo" className="custom-large" style={{ width:"200px" , height:"200px"}}/>
         </a>
       </div>
 

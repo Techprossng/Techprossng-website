@@ -78,10 +78,11 @@
   background-color: rgba(0, 25, 117, 1);
 }
 
+
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .custom-large {
     position: relative;
-    right: 1rem;
+    right:3rem;
     bottom: 0;
   }
 
@@ -134,7 +135,7 @@
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .custom-large {
     position: relative;
-    right: 1rem;
+    right: 3rem;
   }
 
   .custom-small {
@@ -178,6 +179,10 @@
     text-align: center;
     border: none;
     transition: 0.8s;
+  }
+  .menu {
+    position: relative;
+    top: 5px;
   }
 }
 
@@ -224,7 +229,7 @@
   .custom-large {
     display: flex;
     position: relative;
-    right: 3.5rem;
+    right: 6rem;
   }
 
   .menu-container {
@@ -351,11 +356,11 @@
   justify-content: space-between!important
  }
  .custom-font-small{
-   font-size: 13px !important;
+   font-size: 12px !important;
  }
 
 .custom-space-landing > * {
-  margin-right: 20px !important;
+  margin-right: 13px !important;
 }
 
 }

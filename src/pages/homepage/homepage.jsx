@@ -6,20 +6,23 @@ import FromOurCommunity from "../../Components/Homepage/FromOurCommunity";
 import Footer from "../../Components/Landingpage/Footer/footer";
 import Recommended from "../../Components/Homepage/Recommended/recommended";
 import Topcourses from "../../Components/Homepage/TopCourses/topCourses";
+import Hero from "../../Components/Homepage/Carousel";
+
 
 const Homepage = () => {
-  return (
-    <>
-      <Navbar />
-      <Progress />
+    return (
+        <>
+        <Navbar/>
+        <Hero />
+        <Progress/>
       <Recommended />
-      <Library />
+        <Library />
       <Topcourses />
-      <FromOurCommunity />
-      <Mentor />
-      <Footer />
-    </>
-  );
-};
+        <FromOurCommunity />
+        <Mentor/>
+        <Footer/>
+        </>
+    );
+    }
 
 export default Homepage;

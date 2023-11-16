@@ -20,7 +20,7 @@ const Services = () => {
       "
       >
         <div
-          className="lg:flex flex-col justify-center items-center text-center p-10"
+          className="lg:flex flex-col justify-start p-10"
           data-aos="fade-right"
         >
           <img src={online} alt="online-learning" />
@@ -31,10 +31,34 @@ const Services = () => {
             Our online programs offer flexible, up-to-date tech education,
             allowing you to learn at your pace.
           </p>
+          <button
+            className="flex  lg:flex justify-between items-center px-10 py-5 bg-transparent hover:bg-blue-900 text-red-500 font-semibold border-2 border-red-500 transition duration-300 hover:border-blue-900 hover:text-white  mt-5"
+            style={{
+              width: "220px",
+              borderRadius: "20px",
+              fontSize: "14px",
+            }}
+          >
+            <span>See Courses</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="currentColor"
+              className="w-6 h-6 ml-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
         </div>
 
         <div
-          className="flex flex-col justify-center items-center text-center p-10"
+          className="flex flex-col justify-start p-10"
           data-aos="fade-left"
         >
           <img src={mentorship} alt="Mentorship" />
@@ -45,6 +69,30 @@ const Services = () => {
             Our online programs offer flexible, up-to-date tech education,
             allowing you to learn at your pace.
           </p>
+          <button
+            className="flex  lg:flex justify-between px-10 py-5 bg-transparent hover:bg-blue-900 text-red-500 font-semibold border-2 border-red-500 transition duration-300 hover:border-blue-900 hover:text-white  mt-5"
+            style={{
+              width: "220px",
+              borderRadius: "20px",
+              fontSize: "14px",
+            }}
+          >
+            <span>See Courses</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="currentColor"
+              className="w-6 h-6 ml-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </section>

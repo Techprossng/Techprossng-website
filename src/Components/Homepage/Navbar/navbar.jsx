@@ -10,6 +10,7 @@ import {
   BiSearch,
 } from "react-icons/bi";
 import { AiOutlineSetting } from "react-icons/ai";
+import Logo from "../../../assets/images/logo2.png";
 import { GoSignOut } from "react-icons/go";
 import "../../Homepage/Navbar/Styles/navbar.css";
 
@@ -48,16 +49,7 @@ const Navbar = () => {
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center logo-container">
-        <img
-          src="../../src/assets/images/Logo.svg"
-          alt="Logo"
-          className="custom-image-large"
-        />
-        <img
-          src="../../src/assets/images/Logo2.svg"
-          alt="Logo"
-          className="custom-image-small md:hidden "
-        />
+        <img src={Logo} alt="Logo" className="custom-image-large"  style={{width:"200px", height:"200px"}}/>
       </div>
 
       {/* Mobile Menu Button */}
@@ -78,7 +70,7 @@ const Navbar = () => {
         className={`md:hidden md:pb-0 pb-12  absolute md:static md:z-auto right-0 w-full h-screen md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in menu-color mobile-menu ${
           open ? "top-0 translate-x-0" : "top-0 translate-x-full"
         }`}
-        style={{ borderRadius: "8px", maxHeight: "100vh", overflowY: "scroll"  }}
+        style={{ borderRadius: "8px", maxHeight: "100vh", overflowY: "scroll" }}
       >
         <div className="text-3xl relative pl-7 mt-10 right-0 top-0 cursor-pointer menu-container">
           {open && (
@@ -103,7 +95,6 @@ const Navbar = () => {
                 fontSize: "19px",
                 fontWeight: "700",
                 border: "1px solid rgba(204, 209, 227, 1)",
-                
               }}
               onClick={(e) => {
                 e.preventDefault();
@@ -160,7 +151,6 @@ const Navbar = () => {
             {link.name}
           </a>
         ))}
-       
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
         <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
