@@ -86,6 +86,8 @@
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .custom-image-large {
     display: block;
+    position: relative;
+    right: 3rem;
   }
 
   .search {
@@ -173,6 +175,8 @@
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .custom-image-large {
     display: block;
+    position: relative;
+    right: 3rem;
   }
 
   .search {
@@ -300,7 +304,7 @@
   .custom-image-large {
     display: block;
     position: relative;
-    right: 3rem;
+    right: 6rem;
   }
 
   .menu-container {
