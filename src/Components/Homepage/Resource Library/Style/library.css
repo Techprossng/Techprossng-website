@@ -1,122 +1,135 @@
-.libraries{
-     background: #aab2d1;
-     padding: 15px 9%;
-     margin-top: 3rem;
-     
+.libraries {
+  background: rgba(204, 209, 227, 1);
+  padding: 40px;
+  margin-top: 3rem;
 }
-.libraries .heading{
-     /* text-align: left; 
+.libraries .heading {
+  /* text-align: left; 
      padding-left: 30px;
      padding-bottom: 15px;
      color: #2a3fac;
      text-shadow: 0 5px 10px;
      font-size: 20px; */
-     display: flex;
-     justify-content: space-between;
-     color: #2a3fac;
-     text-shadow: 0 5px 10px;
-     font-size: 20px;
-     align-items: center;
-     margin: 0;
-     padding: 1.5rem;
-     padding-left: 2rem;
-     width: 102%;
-     font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  color: #2a3fac;
+  font-size: 24px;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  width: 102%;
+  font-weight: bold;
 }
-.libraries .heading .resourse-link{
- text-align: right;
- font-size: 12px;
- padding-right: 35px;
+.libraries .heading .resourse-link {
+  text-align: right;
+  font-size: 12px;
+  padding-right: 35px;
 }
-.libraries .mobile-resourse-link{
-     display: none;
+.libraries .mobile-resourse-link {
+  display: none;
 }
-.libraries .heading .resourse-link a{
-     color: red;
-     text-decoration: underline;
+.libraries .heading .resourse-link a {
+  color: rgba(254, 0, 0, 1);
+  text-decoration: underline;
 }
-.libraries .heading .resourse-link .fa-solid{
-     color: red;
-     margin-left: 0.5rem;
+.libraries .heading .resourse-link .fa-solid {
+  color: red;
+  margin-left: 0.5rem;
 }
-.libraries .box-container{
-     display: flex;
-     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-     gap: 15px;
+.libraries .box-container {
+  display: flex;
+  justify-content: space-between;
 }
-.libraries .box-container .box{
-     background: #aab2d1;
-     text-align: center;
-     padding: 0px 30px;
+.libraries .box-container .box {
+  background: rgba(204, 209, 227, 1);
+  text-align: center;
+  padding: 0px 30px;
 }
-.libraries .box-container .box img{
-     border-radius: 20px;
+.libraries .box-container .box img {
+  border-radius: 16px;
+  width: 294px;
+  height: 294px;
 }
-.libraries .box-container .box h3{
- color: #2a3fac;
- font-size: 15px;
- padding: 10px 0;
+.libraries .box-container .box h3 {
+  color: rgba(0, 25, 117, 1);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
 }
-.libraries .box-container .box .btn{
-     margin-top: 10px;
-     display: inline-block;
-     background: white;
-     color: #2a3fac;
-     font-size: 12px;
-     border-radius: 8px;
-     cursor: pointer;
-     padding: 8px 30px;
-     border: 1px solid #2a3fac;
-     margin-left: 5px;
-}
- 
-.libraries .box-container .box .btn:hover{
-         letter-spacing: 1px;
-         transition: .2s;
-}
-@media only screen and (min-width: 360px) and (max-width: 479px){
-    .libraries .heading{
-     font-size: 15px;
-}
-     .libraries .heading .resourse-link{
-        display: none;
-    }
-.libraries .mobile-resourse-link{
-     display: contents;
-     font-size: 10px;
-     font-weight: bold;
-     
-}
-.libraries .mobile-resourse-link a{
-     color: red;
-     padding-left: 2rem;
-}
-.libraries .mobile-resourse-link .fa-solid{
-     color: red;
-    
+.libraries .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: white;
+  color: rgba(0, 25, 117, 1);
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 60px;
+  border: 2px solid rgba(0, 25, 117, 1);
+  margin-left: 5px;
 }
 
-    .libraries .box-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-        gap: 5px;
-   }
-   .libraries .box-container .box img{
-    height: 70px;
-    width: 100px;
-    border-radius: 10px;
-   }
-   .libraries .box-container .box h3{
-    color: #2a3fac;
-    font-size: 10px;
-    padding: 10px 0;
-    padding-left: 6px; 
-    margin-bottom: -15px;
-    margin-right: 2.5rem;
+.libraries .box-container .box .btn:hover {
+  letter-spacing: 1px;
+  transition: 0.2s;
 }
-.libraries .box-container .box .btn{
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .libraries .heading {
+    font-size: 24px;
+  }
+  .libraries .heading .resourse-link {
+    display: none;
+  }
+  .libraries {
+    background: rgba(204, 209, 227, 1);
+    padding: 5px;
+    margin-top: 3rem;
+  }
+  .libraries .mobile-resourse-link {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 25px ;
+    position: relative;
+    left: 12rem;
+    
+  }
+  .libraries .mobile-resourse-link a {
+    color: red;
+    text-decoration: underline;
+  
+   
+   
+    
+  }
+  .libraries .mobile-resourse-link .fa-solid {
+    color: red;
+  }
+
+  .libraries .box-container {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  
+  }
+  .libraries .box-container .box img {
+    height: 180px;
+    width: 260px;
+    border-radius: 16px;
+  }
+  .libraries .box-container .box h3 {
+     color: rgba(0, 25, 117, 1);
+     font-size: 16px;
+     font-weight: bold;
+    margin-bottom: -15px;
+
+  }
+  .libraries .box-container .box .btn {
     margin-bottom: 15px;
-    display: inline-block;
+    display: none;
     background: white;
     color: #2a3fac;
     font-size: 7px;
@@ -125,53 +138,139 @@
     padding: 3px 5px;
     border: 1px solid #2a3fac;
     margin-right: 2.5rem;
+  }
 }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px){
-     .libraries .heading{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 116%;
-     }
-     .libraries .heading .resourse-link{
-        font-size: 12px;
-    }
-    .libraries .mobile-resourse-link{
-     display: none;
-}
-    .libraries .box-container .box h3{
-        color: #2a3fac;
-        font-size: 12px;
-    }
-    .libraries .box-container .box img{
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+     .libraries .heading {
+          font-size: 24px;
+        }
+        .libraries .heading .resourse-link {
+          display: none;
+        }
+        .libraries {
+          background: rgba(204, 209, 227, 1);
+          padding: 5px;
+          margin-top: 3rem;
+        }
+        .libraries .mobile-resourse-link {
+          display: block;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 25px ;
+          position: relative;
+          left: 15rem;
+        }
+        .libraries .mobile-resourse-link a {
+          color: red;
+          text-decoration: underline;
+          padding: 20px;
+         
+          
+        }
+        .libraries .mobile-resourse-link .fa-solid {
+          color: red;
+          position: relative;
+          right: 20px;
+        }
+      
+        .libraries .box-container {
+          display: grid;
+          grid-template-columns:repeat(2, 1fr);
+          grid-template-rows: auto;
+          gap: 10px;
         
-        border-radius: 10px;
-   }
-   .libraries .box-container{
-    justify-content: space-between;
-    gap: 0;
-   }
-   .libraries .box-container .box{
-     width: 100%;
-     gap: -1rem;
-   }
-   .libraries .box-container .box .btn{
-    margin-top: 5px;
-    display: flex;
-    background: white;
-    color: #2a3fac;
-    font-size: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 8px 5px;
-    border: 1px solid #2a3fac;
-    width: 5rem;
-    justify-content: center;
-    
-}
-.libraries .box-container .box .btn:hover{
-     letter-spacing: 1px;
-     transition: .2s;
-}
-}
+        }
+        .libraries .box-container .box img {
+          height: 180px;
+          width: 260px;
+          border-radius: 16px;
+        }
+        .libraries .box-container .box h3 {
+           color: rgba(0, 25, 117, 1);
+           font-size: 16px;
+           font-weight: bold;
+          margin-bottom: -15px;
+      
+        }
+        .libraries .box-container .box .btn {
+          margin-bottom: 15px;
+          display: none;
+          background: white;
+          color: #2a3fac;
+          font-size: 7px;
+          border-radius: 8px;
+          cursor: pointer;
+          padding: 3px 5px;
+          border: 1px solid #2a3fac;
+          margin-right: 2.5rem;
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          .libraries .heading {
+               font-size: 24px;
+             }
+             .libraries .heading .resourse-link {
+               display: none;
+             }
+             .libraries {
+               background: rgba(204, 209, 227, 1);
+               padding: 5px;
+               margin-top: 3rem;
+             }
+             .libraries .mobile-resourse-link {
+               display: block;
+               font-size: 15px;
+               font-weight: bold;
+               position: relative;
+               left: 28rem;
+               padding: 25px ;
+             }
+             .libraries .mobile-resourse-link a {
+               color: red;
+               text-decoration: underline;
+               padding: 20px;
+              
+               
+             }
+             .libraries .mobile-resourse-link .fa-solid {
+               color: red;
+               position: relative;
+               right: 20px;
+             }
+           
+             .libraries .box-container {
+               display: grid;
+               grid-template-columns:repeat(2, 1fr);
+               grid-template-rows: auto;
+               gap: 10px;
+               padding: 10px;
+             
+             }
+             .libraries .box-container .box img {
+               height: 180px;
+               width: 260px;
+               border-radius: 16px;
+             }
+             .libraries .box-container .box h3 {
+                color: rgba(0, 25, 117, 1);
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                margin-right: 45px;
+               margin-bottom: -15px;
+           
+             }
+             .libraries .box-container .box .btn {
+               margin-bottom: 15px;
+               display: none;
+               background: white;
+               color: #2a3fac;
+               font-size: 7px;
+               border-radius: 8px;
+               cursor: pointer;
+               padding: 3px 5px;
+               border: 1px solid #2a3fac;
+               margin-right: 2.5rem;
+             }
+           }
+      

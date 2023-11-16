@@ -78,15 +78,19 @@
   background-color: rgba(0, 25, 117, 1);
 }
 
+
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .custom-large {
-    display: none;
+    position: relative;
+    right:3rem;
+    bottom: 0;
   }
 
   .custom-small {
     position: relative;
     right: 2.5rem;
     bottom: 0;
+    display: none;
   }
 
   .active-nav::before {
@@ -130,12 +134,14 @@
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .custom-large {
-    display: none;
+    position: relative;
+    right: 3rem;
   }
 
   .custom-small {
     position: relative;
     right: 2.5rem;
+    display: none;
     
   }
 
@@ -174,6 +180,10 @@
     border: none;
     transition: 0.8s;
   }
+  .menu {
+    position: relative;
+    top: 5px;
+  }
 }
 
 @media (min-width: 768px)  and (max-width: 1024px) {
@@ -209,6 +219,7 @@
     display: flex;
     position: relative;
     right: 5.5rem;
+    display: none;
   }
 
   .logo-container {
@@ -216,7 +227,9 @@
   }
 
   .custom-large {
-    display: none;
+    display: flex;
+    position: relative;
+    right: 6rem;
   }
 
   .menu-container {
@@ -284,6 +297,7 @@
     display: flex;
     position: relative;
     right:5.5rem;
+    display: none;
   }
 
   .logo-container {
@@ -291,7 +305,9 @@
   }
 
   .custom-large {
-    display: none;
+    display: flex;
+    position: relative;
+    right:5.5rem;
   }
 
   .menu-container {
@@ -340,11 +356,11 @@
   justify-content: space-between!important
  }
  .custom-font-small{
-   font-size: 13px !important;
+   font-size: 12px !important;
  }
 
 .custom-space-landing > * {
-  margin-right: 20px !important;
+  margin-right: 13px !important;
 }
 
 }

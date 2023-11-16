@@ -1,7 +1,6 @@
 // src/components/Navbar.js
 import { useState } from "react";
-import Logo from "../../../assets/images/Logo.svg";
-import Logo2 from "../../../assets/images/Logo2.svg";
+import Logo from "../../../assets/images/logo2.png";
 import close from "../../../assets/icons/close.svg";
 import Menu from "../../../assets/icons/menu.svg";
 import "../../Landingpage/Navbar/Styles/navbar.css";
@@ -30,8 +29,9 @@ const Navbar = () => {
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center logo-container">
-        <img src={Logo} alt="Logo" className="custom-large" />
-        <img src={Logo2} alt="Logo" className="custom-small md:hidden " />
+        <a href="/">
+          <img src={Logo} alt="Logo" className="custom-large" style={{ width:"200px" , height:"200px"}}/>
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -101,9 +101,13 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
-        <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
+        <button className="w-32 h-[44px] px-3 py-3 button-2">
+          <a href="/sign-in">
+            <span className="text-[#001975]">Log in</span>
+          </a>
+        </button>
         <button className="w-32 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          Sign Up
+          <a href="/sign-up">Sign Up</a>
         </button>
       </div>
     </nav>

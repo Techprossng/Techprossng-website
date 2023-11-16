@@ -23,6 +23,16 @@ const Identity = () => {
               celebrating tech talents globally. We are on a mission to empower
               the next generation of tech Innovators in Nigeria.
             </p>
+            <button 
+            className="border-2 border-[#001975] rounded-[16px] py-[10px] px-[20px]"
+            >
+              <a
+                href="#"
+                className="text-base font-normal font-primary text-[#001975] hover:text-[#001975]"
+              >
+                About Us
+              </a>
+            </button>
           </div>
           <div className="mini-border-container" data-aos="fade-left">
             <i className="h-9">

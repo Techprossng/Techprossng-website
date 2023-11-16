@@ -5,8 +5,7 @@ import "aos";
 
 const Hero = () => {
   return (
-    <div className="px-6 py-12 md:px-12 text-center lg:text-left  mt-24 hero-background"
-    >
+    <div className="px-6 py-12 md:px-12 text-center lg:text-left  mt-24 hero-background">
       <div className="container mx-auto xl:px-32">
         <div className="grid lg:grid-cols-2 gap-12 flex items-center">
           <div
@@ -15,32 +14,30 @@ const Hero = () => {
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <img  src={Vector} className="Vector-img"/>
-            <h1 className=" text-5xl md:text-6xl lg:text-5xl xl:text-7xl flex font-primary font-primary xl:font-primary  font-bold tracking-tight mb-12 text-[#001975] animate-text "
-             style={{
-           
-            fontWeight:"900px"
-          
-            }}>
-              <br />
-              TechProsNG
+            <p className="text-[#001975] font-bold mini-logo">TechProsNaija</p>
+            <img src={Vector} className="Vector-img" />
+            <h1
+              className=" text-4xl   md:text-6xl lg:text-5xl xl:text-6xl  font-primary font-primary xl:font-primary  font-bold tracking-tight mb-5  animate-text hero-text "
+              style={{
+                fontWeight: "900px",
+                lineHeight: "70px",
+              }}
+            >
+              <span className="text-[#001975]">Unleash</span>
+              Your Potential Through Tech Mastery
             </h1>
             <p className="text-xl text-justify text-black">
-              We are Tech Education Company dedicated to empowering the next
-              generation of tech innovators in Nigeria. Explore our cutting-edge
-              courses, join a supportive tech community, and become confident in
-              your tech skills. Together we are driving progress in the digital
-              era. Start your transformative journey with us now.
+              Start your tech journey with us and upskill with expert mentorship
             </p>
 
-            <button className="flex hidden sm:hidden md:hidden lg:flex justify-between items-center px-10 py-5 bg-transparent hover:bg-blue-900 text-red-500 font-semibold border-2 border-red-500 transition duration-300 hover:border-blue-900 hover:text-white  mt-5"
-            style={{
-              width: "220px",
-              borderRadius: "20px",
-              fontSize: "14px",
-          
-            }}>
-          
+            <button
+              className="flex  lg:flex justify-between items-center px-10 py-5 bg-transparent hover:bg-blue-900 text-red-500 font-semibold border-2 border-red-500 transition duration-300 hover:border-blue-900 hover:text-white  mt-5"
+              style={{
+                width: "220px",
+                borderRadius: "20px",
+                fontSize: "14px",
+              }}
+            >
               <span>See Courses</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +67,7 @@ const Hero = () => {
             />
           </div>
           <div className="block  md:block w-full lg:hidden">
-            <button className="rounded-[20px] bg-[#FE0000] outline-none text-white p-[18px_24px]  flex justify-center items-center w-full">
+            <button className="rounded-[20px] bg-[#FE0000] hidden sm:hidden md:hidden outline-none text-white p-[18px_24px]  flex justify-center items-center w-full">
               <p className="w-[129px]">See Courses</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
