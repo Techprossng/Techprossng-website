@@ -17,9 +17,23 @@
   line-height: 40px;
   font-size: 20px;
   color: black;
-  background-color: aqua;
   cursor: pointer;
 }
 .founder-inner{
   margin: 6rem;
+}
+.meritimage > img{
+  height: 90px;
+  width: 200px;
+}
+.blog-link{
+  border: 1px solid #001975;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.blog-link > a{
+  color: #001975;
+}
+.blogpoint{
+  color: #001975;
 }
