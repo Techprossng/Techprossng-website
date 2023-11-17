@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "Home", link: "/home" },
     { name: "Courses", link: "/course-catalogue" },
     { name: "Mentorship", link: "/mentorship" },
-    { name: "Resources", link: "/resources" },
+    { name: "Resources", link: "/resource-page" },
     { name: "Pricing", link: "/pricing" },
     { name: "About Us", link: "/about-us" },
   ];
