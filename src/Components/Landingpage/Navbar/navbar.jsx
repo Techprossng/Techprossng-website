@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// src/components/Navbar.js
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/logo2.png";
 import close from "../../../assets/icons/close.svg";
 import Menu from "../../../assets/icons/menu.svg";
 import "../../Landingpage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
-  const Links = [
+  let Links = [
     { name: "Home", link: "/home" },
-    { name: "Courses", link: "/courses" },
+    { name: "Courses", link: "/course-catalogue" },
     { name: "Mentorship", link: "/mentorship" },
     { name: "Resources", link: "/resources" },
     { name: "Pricing", link: "/pricing" },
-    { name: "About Us", link: "/about" },
+    { name: "About Us", link: "/about-us" },
   ];
 
   const [open, setOpen] = useState(false);
@@ -41,12 +42,16 @@ const Navbar = () => {
       <div className={`md:hidden md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in nav-color mobile-menu ${open ? "top-24 " : "top-[-690px]"}`} style={{ textAlign: "center", alignItems: "center" }}>
         <div className="flex flex-col space-y-10">
           {Links.map((link) => (
-            <Link
-              to={link.link}
-              key={link.name}
-              className={`text-gray-800 duration-500 ${activeLink === link.name ? "active-nav" : ""}`}
+            <Link 
+             to={link.link} 
+             key={link.name} 
+             className={`text-gray-800 duration-500 ${
+                activeLink === link.name ? "active-nav" : ""
+              }`}
               style={{ fontSize: "20px", fontWeight: "500" }}
-              onClick={() => handleLinkClick(link.name)}
+              onClick={() => {
+                handleLinkClick(link.name);
+              }}
             >
               {link.name}
             </Link>
@@ -63,8 +68,12 @@ const Navbar = () => {
           <Link
             to={link.link}
             key={link.name}
-            className={`text-gray-800 duration-500 custom-font-small ${activeLink === link.name ? "active-nav" : ""}`}
-            onClick={() => handleLinkClick(link.name)}
+            className={`text-gray-800 duration-500  custom-font-small ${
+              activeLink === link.name ? "active-nav" : ""
+            }`}
+            onClick={() => {
+              handleLinkClick(link.name);
+            }}
           >
             {link.name}
           </Link>

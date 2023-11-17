@@ -1,6 +1,6 @@
 import "./styles/services.css";
 import online from "./images/online.png";
-import Blue from "../Blueline/blue";
+import { Link } from "react-router-dom";
 import mentorship from "./images/mentorship.png";
 import "aos";
 
@@ -39,28 +39,33 @@ const Services = () => {
               fontSize: "14px",
             }}
           >
-            <span>See Courses</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={3}
-              stroke="currentColor"
-              className="w-6 h-6 ml-4"
+            <Link
+              to="/course-catalogue"
+              className="flex"
+              style={{
+                color: "#FE0000",
+              }}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
+              <span>See Courses</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={3}
+                stroke="currentColor"
+                className="w-6 h-6 ml-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </Link>
           </button>
         </div>
 
-        <div
-          className="flex flex-col justify-start p-10"
-          data-aos="fade-left"
-        >
+        <div className="flex flex-col justify-start p-10" data-aos="fade-left">
           <img src={mentorship} alt="Mentorship" />
           <h5 className="title font-normal text-3xl font-primary mb-5">
             Mentorship
@@ -77,21 +82,28 @@ const Services = () => {
               fontSize: "14px",
             }}
           >
-            <span>See Courses</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={3}
-              stroke="currentColor"
-              className="w-6 h-6 ml-4"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
+             <Link to="/course-catalogue" 
+              className="flex"
+              style={{
+                color: "#FE0000",
+              }}
+              >
+                <span>See Courses</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-6 h-6 ml-4"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </Link>
           </button>
         </div>
       </div>

@@ -19,10 +19,6 @@
      align-items: center;
      gap: 3rem;
 }
-.s-iv .impact-video{
-     margin-top: 7rem;
-     margin-bottom: 5rem;
-}
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
      .s-iv .stats .stats-image img{

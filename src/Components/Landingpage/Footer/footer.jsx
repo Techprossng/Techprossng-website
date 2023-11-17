@@ -1,17 +1,11 @@
 import "../Footer/Styles/footer.css";
-import Logo  from "../../../assets/images/Logo.png";
+import Logo from "../../../assets/images/Logo.png";
 
 function Footer() {
   return (
     <footer className="footer">
-      <div
-        className="main-container p-5 w-[87%] m-auto
-        "
-      >
-        <div
-          className="first-container
-            "
-        >
+      <div className="main-container p-5 w-[87%] m-auto">
+        <div className="first-container">
           <img src={Logo} />
 
           <div>
@@ -51,10 +45,12 @@ function Footer() {
         </div>
         <div className="col">
           <h4>
-            About Us{" "}
-            <div className="underline">
-              <span></span>
-            </div>
+            <a href="/about-us">
+              About Us{" "}
+              <div className="underline">
+                <span></span>
+              </div>
+            </a>
           </h4>
           <br />
           <ul>

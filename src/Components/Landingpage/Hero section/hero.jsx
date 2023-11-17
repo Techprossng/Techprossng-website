@@ -1,5 +1,6 @@
 import HeroImage from "../../../assets/images/hero-image.svg";
 import Vector from "../../../assets/images/Vector.svg";
+import { Link } from "react-router-dom";
 import "../../Landingpage/Hero Section/Styles/hero.css";
 import "aos";
 
@@ -38,21 +39,28 @@ const Hero = () => {
                 fontSize: "14px",
               }}
             >
-              <span>See Courses</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={3}
-                stroke="currentColor"
-                className="w-6 h-6 ml-4"
+              <Link to="/course-catalogue" 
+              className="flex"
+              style={{
+                color: "#FE0000",
+              }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                />
-              </svg>
+                <span>See Courses</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-6 h-6 ml-4"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </Link>
             </button>
           </div>
           <div
@@ -68,19 +76,21 @@ const Hero = () => {
           </div>
           <div className="block  md:block w-full lg:hidden">
             <button className="rounded-[20px] bg-[#FE0000] hidden sm:hidden md:hidden outline-none text-white p-[18px_24px]  flex justify-center items-center w-full">
-              <p className="w-[129px]">See Courses</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-              >
-                <path
-                  d="M10.6727 7.65869H2.66602V8.99202H10.6727V10.992L13.3327 8.32536L10.6727 5.65869V7.65869Z"
-                  fill="white"
-                />
-              </svg>
+              <Link to="/course-catalogue" className="w-[129px]">
+                See Courses
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                >
+                  <path
+                    d="M10.6727 7.65869H2.66602V8.99202H10.6727V10.992L13.3327 8.32536L10.6727 5.65869V7.65869Z"
+                    fill="white"
+                  />
+                </svg>
+              </Link>
             </button>
           </div>
         </div>
