@@ -41,10 +41,8 @@ const Services = () => {
           >
             <Link
               to="/course-catalogue"
-              className="flex"
-              style={{
-                color: "#FE0000",
-              }}
+              className="flex text-red-500  hover:text-white"
+              
             >
               <span>See Courses</span>
               <svg
@@ -83,10 +81,8 @@ const Services = () => {
             }}
           >
              <Link to="/course-catalogue" 
-              className="flex"
-              style={{
-                color: "#FE0000",
-              }}
+              className="flex text-red-500  hover:text-white"
+             
               >
                 <span>See Courses</span>
                 <svg

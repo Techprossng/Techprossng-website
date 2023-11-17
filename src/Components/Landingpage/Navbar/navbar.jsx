@@ -1,6 +1,6 @@
 // src/components/Navbar.js
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState , useEffect } from "react";
+import { Link , useLocation} from "react-router-dom";
 import Logo from "../../../assets/images/logo2.png";
 import close from "../../../assets/icons/close.svg";
 import Menu from "../../../assets/icons/menu.svg";
@@ -16,8 +16,25 @@ const Navbar = () => {
     { name: "About Us", link: "/about-us" },
   ];
 
+ 
   const [open, setOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
+  const location = useLocation();
+
+  useEffect(() => {
+    // Get the current pathname and find the matching link
+    const currentPath = location.pathname;
+    const matchingLink = Links.find((link) => currentPath.startsWith(link.link));
+
+    // Set the active link based on the matching link
+    if (matchingLink) {
+      setActiveLink(matchingLink.name);
+    } else {
+      // Set a default active link if no match is found
+      setActiveLink("Home");
+    }
+  }, [location.pathname, Links]);
+
 
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
@@ -58,8 +75,9 @@ const Navbar = () => {
           ))}
         </div>
         <div className="flex flex-wrap space-y-4 pr-5 pl-5 mt-10">
-          <button className="w-full h-[48px] px-5 py-3 rounded-md button-2-small">Log in</button>
-          <button className="w-full h-[48px] px-5 py-3 rounded-md text-white button-1">Sign Up</button>
+         {/*<button className="w-full h-[48px] px-5 py-3 rounded-md button-2-small">Log in</button>
+          <button className="w-full h-[48px] px-5 py-3 rounded-md text-white button-1">Sign Up</button> */} 
+          <button className="w-full h-[48px] px-5 py-3 rounded-md button-1"> <Link to="/sign-up">Contact Us</Link></button>
         </div>
       </div>
 

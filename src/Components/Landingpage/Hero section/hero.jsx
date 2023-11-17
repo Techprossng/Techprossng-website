@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
 
             <button
-              className="flex  lg:flex justify-between items-center px-10 py-5 bg-transparent hover:bg-blue-900 text-red-500 font-semibold border-2 border-red-500 transition duration-300 hover:border-blue-900 hover:text-white  mt-5"
+              className="flex  lg:flex justify-between items-center px-10 py-5 bg-transparent hover:bg-blue-900 font-semibold border-2 border-red-500 transition duration-300 hover:border-blue-900 hover:text-white-500  mt-5"
               style={{
                 width: "220px",
                 borderRadius: "20px",
@@ -40,10 +40,8 @@ const Hero = () => {
               }}
             >
               <Link to="/course-catalogue" 
-              className="flex"
-              style={{
-                color: "#FE0000",
-              }}
+              className="flex text-red-500 hover:text-white "
+            
               >
                 <span>See Courses</span>
                 <svg
