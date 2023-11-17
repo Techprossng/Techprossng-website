@@ -1,5 +1,6 @@
 // src/components/Navbar.js
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   BiHome,
   BiGroup,
@@ -11,13 +12,15 @@ import {
 } from "react-icons/bi";
 import { AiOutlineSetting } from "react-icons/ai";
 import Logo from "../../../assets/images/logo2.png";
+import close from "../../../assets/icons/next.png";
+import Menu from "../../../assets/icons/menu.svg";
 import { GoSignOut } from "react-icons/go";
 import "../../Homepage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "Courses", link: "/courses" },
+    { name: "Courses", link: "/course-catalogue" },
     { name: "Mentorship", link: "/mentorship" },
     { name: "Resources", link: "/resources" },
     { name: "Pricing", link: "/pricing" },
@@ -49,14 +52,16 @@ const Navbar = () => {
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center logo-container">
+      <Link to="/">
         <img src={Logo} alt="Logo" className="custom-image-large"  style={{width:"200px", height:"200px"}}/>
+      </Link>
       </div>
 
       {/* Mobile Menu Button */}
       <div className="text-3xl absolute right-8 top-6 cursor-pointer menu-container md:hidden">
         {!open && (
           <img
-            src="src/assets/icons/menu.svg"
+          src={Menu}
             alt="Open-Menu"
             className="menu"
             onClick={() => setOpen(true)}
@@ -75,7 +80,7 @@ const Navbar = () => {
         <div className="text-3xl relative pl-7 mt-10 right-0 top-0 cursor-pointer menu-container">
           {open && (
             <img
-              src="src/assets/icons/next.png"
+              src={close}
               alt="Close-Menu"
               className="menu-back"
               onClick={() => setOpen(false)}
@@ -85,9 +90,9 @@ const Navbar = () => {
 
         <div className="flex flex-col  custom-space-y   mt-20">
           {Links2.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={`/${link.link}`}
+              to={link.link} 
               className={`text-blue-900 flex duration-500  p-8  ${
                 activeLink === link.name ? "active-link" : ""
               } ${link.name.toLowerCase().replace(/\s/g, "-")}`}
@@ -96,8 +101,7 @@ const Navbar = () => {
                 fontWeight: "700",
                 border: "1px solid rgba(204, 209, 227, 1)",
               }}
-              onClick={(e) => {
-                e.preventDefault();
+              onClick={() => {
                 handleLinkClick(link.name);
               }}
             >
@@ -129,7 +133,7 @@ const Navbar = () => {
                 <GoSignOut size={25} className="mr-5 p-0" />
               )}
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -137,26 +141,28 @@ const Navbar = () => {
       {/* Tablet and Desktop Menu */}
       <div className="hidden  md:flex  custom-space-x  desktop">
         {Links.map((link) => (
-          <a
+          <Link
             href={`/${link.link}`}
-            key={link.name}
+            to={link.link} 
             className={`text-gray-800 duration-500 custom-font ${
               activeLink === link.name ? "active-link" : ""
             }`}
-            onClick={(e) => {
-              e.preventDefault();
+            onClick={() => {
               handleLinkClick(link.name);
             }}
           >
             {link.name}
-          </a>
+          </Link>
         ))}
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
-        <button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
+        {/*<button className="w-32 h-[44px] px-3 py-3 button-2">Log in</button>
         <button className="w-32 h-[48px] px-5 py-3 rounded-md text-white button-1">
           Sign Up
-        </button>
+          </button>*/}
+          <button className="w-35 h-[48px] px-5 py-3 rounded-md text-white button-1">
+          <Link to="/sign-up">Contact Us</Link>
+        </button>  
       </div>
     </nav>
   );

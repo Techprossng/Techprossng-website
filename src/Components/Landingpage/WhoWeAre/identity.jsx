@@ -27,7 +27,7 @@ const Identity = () => {
             className="border-2 border-[#001975] rounded-[16px] py-[10px] px-[20px]"
             >
               <a
-                href="#"
+                href="/about-us"
                 className="text-base font-normal font-primary text-[#001975] hover:text-[#001975]"
               >
                 About Us
