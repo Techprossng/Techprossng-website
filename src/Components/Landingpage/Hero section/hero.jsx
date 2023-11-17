@@ -18,14 +18,13 @@ const Hero = () => {
             <p className="text-[#001975] font-bold mini-logo">TechProsNaija</p>
             <img src={Vector} className="Vector-img" />
             <h1
-              className=" text-4xl   md:text-6xl lg:text-5xl xl:text-6xl  font-primary font-primary xl:font-primary  font-bold tracking-tight mb-5  animate-text hero-text "
+              className=" text-4xl   md:text-6xl lg:text-5xl xl:text-6xl font-primary xl:font-primary  font-bold tracking-tight mb-5  animate-text landing-hero "
               style={{
                 fontWeight: "900px",
                 lineHeight: "70px",
               }}
             >
-              <span className="text-[#001975]">Unleash</span>
-              Your Potential Through Tech Mastery
+              <span className="text-[#001975]">Unleash</span> Your Potential Through Tech Mastery
             </h1>
             <p className="text-xl text-justify text-black">
               Start your tech journey with us and upskill with expert mentorship
