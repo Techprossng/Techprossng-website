@@ -1,5 +1,6 @@
 // src/components/Navbar.js
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   BiHome,
   BiGroup,
@@ -17,7 +18,7 @@ import "../../Homepage/Navbar/Styles/navbar.css";
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "Courses", link: "/courses" },
+    { name: "Courses", link: "/course-catalogue" },
     { name: "Mentorship", link: "/mentorship" },
     { name: "Resources", link: "/resources" },
     { name: "Pricing", link: "/pricing" },
@@ -85,9 +86,9 @@ const Navbar = () => {
 
         <div className="flex flex-col  custom-space-y   mt-20">
           {Links2.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={`/${link.link}`}
+              to={link.link} 
               className={`text-blue-900 flex duration-500  p-8  ${
                 activeLink === link.name ? "active-link" : ""
               } ${link.name.toLowerCase().replace(/\s/g, "-")}`}
@@ -96,8 +97,7 @@ const Navbar = () => {
                 fontWeight: "700",
                 border: "1px solid rgba(204, 209, 227, 1)",
               }}
-              onClick={(e) => {
-                e.preventDefault();
+              onClick={() => {
                 handleLinkClick(link.name);
               }}
             >
@@ -129,7 +129,7 @@ const Navbar = () => {
                 <GoSignOut size={25} className="mr-5 p-0" />
               )}
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -137,19 +137,18 @@ const Navbar = () => {
       {/* Tablet and Desktop Menu */}
       <div className="hidden  md:flex  custom-space-x  desktop">
         {Links.map((link) => (
-          <a
+          <Link
             href={`/${link.link}`}
-            key={link.name}
+            to={link.link} 
             className={`text-gray-800 duration-500 custom-font ${
               activeLink === link.name ? "active-link" : ""
             }`}
-            onClick={(e) => {
-              e.preventDefault();
+            onClick={() => {
               handleLinkClick(link.name);
             }}
           >
             {link.name}
-          </a>
+          </Link>
         ))}
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
