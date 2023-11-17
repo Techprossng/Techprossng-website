@@ -77,7 +77,7 @@ function BioSection({ userData, onSaveUserInfo }) {
                 placeholder="Jane"
                 value={userData.firstName}
                 onChange={handleBioChange}
-                className="input"
+                className="bio-input"
               />
             </div>
           </div>
@@ -95,7 +95,7 @@ function BioSection({ userData, onSaveUserInfo }) {
                 placeholder="Doe"
                 value={userData.lastName}
                 onChange={handleBioChange}
-                className="input"
+                className="bio-input"
               />
             </div>
           </div>
@@ -144,7 +144,7 @@ function BioSection({ userData, onSaveUserInfo }) {
               name="phoneNumber"
               value={userData.phoneNumber}
               onChange={handlePhoneNumberChange}
-              className="input"
+              className="bio-input"
             />
           </div>
           <div className=" number-input flex  w-[100%] p-5">
@@ -156,7 +156,7 @@ function BioSection({ userData, onSaveUserInfo }) {
               id="email"
               value={userData.email}
               onChange={handleEmailChange}
-              className="input w-full"
+              className="bio-input w-full"
             />
             </div>
           </div>

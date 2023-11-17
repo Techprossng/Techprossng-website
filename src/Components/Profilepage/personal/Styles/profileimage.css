@@ -45,9 +45,7 @@
 .image-container{
    z-index: 0;
 }
-.hidden {
-  display: none;
-}
+
 .file-input {
   position: absolute;
   top: 0;

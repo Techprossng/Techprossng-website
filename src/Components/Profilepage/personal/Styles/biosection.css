@@ -25,13 +25,15 @@
     border: 2px solid rgba(230, 230, 230, 1);
     border-radius: 16px; 
 }
-.input{
+.bio-input{
   padding: 3px;
-  outline: none;
+  outline: none ;
+  border: none;
   font-size: 15px;
 }
 .textarea{
     outline: none;
+    border: none;
     margin-top: 5px;
 }
 .select{
