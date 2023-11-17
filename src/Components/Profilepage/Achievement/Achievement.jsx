@@ -1,4 +1,5 @@
 import React from "react";
+import ImageA from "../../../assets/images/achievement/achievement.jpg";
 import StarRating from "./Ratings";
 
 const Achievement = () => {
@@ -32,10 +33,9 @@ const Achievement = () => {
               {/* Cards in the Nested Columns */}
               <div className="md:w-4/12 lg\:w-3\/4 md:mb-0">
                 <div className="p-4 rounded-lg">
-                  <img
-                    src="images/achievement.jpg"
-                    alt="achieve-img"
+                  <ImageA
                     className="h-40 border border-1 rounded-xl w-full"
+                    alt="achieve-img"
                   />
                 </div>
               </div>
@@ -140,10 +140,9 @@ const Achievement = () => {
               {/* Cards in the Nested Columns */}
               <div className="md:w-4/12 lg\:w-3\/4 md:mb-0">
                 <div className="p-4 rounded-lg">
-                  <img
-                    src="images/achievement.jpg"
-                    alt="achieve-img"
+                  <ImageA
                     className="h-40 border border-1 rounded-xl w-full"
+                    alt="achieve-img"
                   />
                 </div>
               </div>
@@ -262,55 +261,71 @@ const Achievement = () => {
 
             <h5 className="font-bold text-xl text-blue-900">Medals</h5>
           </div>
-          <div className="flex items-center rounded-xl mb-4 border border-1 bg-blue-900 text-white p-4">
-            <h1 className="font-semibold">
-              First Time Champion <br />
-              <span className="font-normal">Complete 1 Course</span>
-            </h1>
-            <i className="fas fa-star text-white mr-1 ml-auto"></i>
-          </div>
-          <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
-            <h1 className="font-semibold">
-              First Time Champion <br />
-              <span className="font-normal">Complete 1 Course</span>
-            </h1>
-            <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
-          </div>
-          <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
-            <h1 className="font-semibold">
-              First Time Champion <br />
-              <span className="font-normal">Complete 1 Course</span>
-            </h1>
-            <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
-          </div>
-          <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
-            <h1 className="font-semibold">
-              First Time Champion <br />
-              <span className="font-normal">Complete 1 Course</span>
-            </h1>
-            <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
-          </div>
-          <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
-            <h1 className="font-semibold">
-              First Time Champion <br />
-              <span className="font-normal">Complete 1 Course</span>
-            </h1>
-            <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
-          </div>
-          <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
-            <h1 className="font-semibold">
-              First Time Champion <br />
-              <span className="font-normal">Complete 1 Course</span>
-            </h1>
-            <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
-          </div>
-          <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
-            <h1 className="font-semibold">
-              First Time Champion <br />
-              <span className="font-normal">Complete 1 Course</span>
-            </h1>
-            <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
-          </div>
+          <a href="#">
+            {" "}
+            <div className="flex items-center rounded-xl mb-4 border border-1 bg-blue-900 text-white p-4">
+              <h1 className="font-semibold">
+                First Time Champion <br />
+                <span className="font-normal">Complete 1 Course</span>
+              </h1>
+              <i className="fas fa-star text-white mr-1 ml-auto"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
+              <h1 className="font-semibold">
+                First Time Champion <br />
+                <span className="font-normal">Complete 1 Course</span>
+              </h1>
+              <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
+              <h1 className="font-semibold">
+                First Time Champion <br />
+                <span className="font-normal">Complete 1 Course</span>
+              </h1>
+              <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
+              <h1 className="font-semibold">
+                First Time Champion <br />
+                <span className="font-normal">Complete 1 Course</span>
+              </h1>
+              <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
+              <h1 className="font-semibold">
+                First Time Champion <br />
+                <span className="font-normal">Complete 1 Course</span>
+              </h1>
+              <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
+              <h1 className="font-semibold">
+                First Time Champion <br />
+                <span className="font-normal">Complete 1 Course</span>
+              </h1>
+              <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
+            </div>
+          </a>
+          <a href="#">
+            {" "}
+            <div className="flex items-center rounded-xl mb-4 border border-1 p-4">
+              <h1 className="font-semibold">
+                First Time Champion <br />
+                <span className="font-normal">Complete 1 Course</span>
+              </h1>
+              <i className="fas fa-star text-black bg-white mr-1 ml-auto"></i>
+            </div>
+          </a>
         </div>
       </div>
     </div>
