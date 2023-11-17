@@ -1,17 +1,12 @@
 import "../Footer/Styles/footer.css";
+import Logo from "../../../assets/images/Logo.png";
 
 function Footer() {
   return (
     <footer className="footer">
-      <div
-        className="main-container p-5 w-[87%] m-auto
-        "
-      >
-        <div
-          className="first-container
-            "
-        >
-          <img src="../../../src/assets/images/Logo.png" />
+      <div className="main-container p-5 w-[87%] m-auto">
+        <div className="first-container">
+          <img src={Logo} />
 
           <div>
             <div className="social-icons">
@@ -50,10 +45,12 @@ function Footer() {
         </div>
         <div className="col">
           <h4>
-            About Us{" "}
-            <div className="underline">
-              <span></span>
-            </div>
+            <a href="/about-us">
+              About Us{" "}
+              <div className="underline">
+                <span></span>
+              </div>
+            </a>
           </h4>
           <br />
           <ul>
@@ -99,19 +96,6 @@ function Footer() {
               <a href="">Podcasts</a>
             </li>
           </ul>
-        </div>
-        <div className="col">
-          <br />
-          <br />
-          <form action="#">
-            <i className="fa-solid fa-globe"></i>
-            <select id="lang">
-              <option value="english">English</option>
-              <option value="french">French</option>
-              <option value="german">German</option>
-              <option value="spanish">Spanish</option>
-            </select>
-          </form>
         </div>
       </div>
       <hr className="w-[85%] horizontal-line" />

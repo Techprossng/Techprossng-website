@@ -1,0 +1,47 @@
+.s-iv{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.s-iv .stats{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.s-iv .stats .stats-text{
+     margin-bottom: 2rem;
+}
+.s-iv .stats .stats-image{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 3rem;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+     .s-iv .stats .stats-image img{
+          width: 7rem;
+     }
+     .s-iv .stats .stats-text h1{
+          text-align: center;
+          font-size: x-large;
+     }
+}
+@media only screen and (min-width: 360px) and (max-width: 479px){
+     .s-iv .stats .stats-image{
+          display: flex;
+          flex-direction: column;
+     }
+     .s-iv .stats .stats-image img{
+          width: 10rem;
+     }
+     .s-iv .stats .stats-text h1{
+          text-align: center;
+          font-size: large;
+     }
+     .s-iv .impact-video a img{
+          padding: 0 1rem;
+     }
+}

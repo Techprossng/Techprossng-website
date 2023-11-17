@@ -17,9 +17,9 @@ function Newsletter() {
         </div>
         <div className="mobile-view">
           <p className="text-mobile">Enter your email address</p>
-          <div className="email-mobile" data-aos="fade-right">
-            <input type="email" placeholder="Email" data-aos="fade-down-left" />
-          </div>
+          <input type="email" placeholder="Email" data-aos="fade-down-left" className="
+          border-2 rounded-[16px] w-[90%]
+          " />
           <div className="mobile-button">
             <button type="submit">Subscribe</button>
           </div>

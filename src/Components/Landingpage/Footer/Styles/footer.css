@@ -6,7 +6,7 @@
   color: white;
 
   /* padding: 80px 0 30px; */
-  font-size: 10px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -15,7 +15,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.footer .row{
+  display: flex;
+  justify-content: space-between;
+}
 .row {
   width: 85%;
   margin: auto;
@@ -48,6 +51,7 @@ ul li {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 
 form .fa-solid {
   font-size: 12px;
@@ -63,6 +67,8 @@ form select {
   cursor: pointer;
 }
 
+=======
+>>>>>>> d8a9d3659256de450e9fb133d76e36d068ea2236
 .social-icons {
   display: flex;
   gap: 10px;
@@ -106,9 +112,8 @@ form select {
 
   .first-container img {
     display: flex;
-    margin-left: -2.5rem
+    margin-left: -2.5rem;
   }
-
   h4 {
     color: white;
   }
@@ -118,6 +123,10 @@ form select {
     justify-content: space-between;
     width: 95%;
   }
+
+  .social-icons {
+    margin-left: -25%;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -125,14 +134,17 @@ form select {
     display: flex;
     margin-left: -4%;
   }
+
   h4 {
     color: white;
   }
+
   .footer .copyright {
     display: flex;
     justify-content: space-between;
     width: 90%;
   }
+
   .horizontal-line {
     width: 85%;
     border: 0;
