@@ -1,0 +1,11 @@
+.education-container{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 16px;
+}
+.edu-btn{
+    text-decoration: 2px solid red underline;
+    color: red;
+    font-weight:bold;
+    position: relative;
+    left: 34.5rem;
+}
