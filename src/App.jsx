@@ -8,6 +8,7 @@ import Layout from './Components/layout';
 import Profilepage from './pages/Profilepage/profilepage/';
 import Pricing from "./pages/Pricing/pricing";
 import Catalog from './pages/Coursecatalog/course';
+import Personal from './pages/Personalpage/personal';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/profile" element={<Layout><Profilepage/></Layout>} />
         <Route path="/pricing" element={<Layout><Pricing /></Layout>} />
         <Route path="/course-catalog" element={<Layout><Catalog /></Layout>} />
+        <Route path="/personal" element={<Layout><Personal /></Layout>} />
       </Routes>
      </> 
   )
