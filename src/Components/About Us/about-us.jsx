@@ -12,84 +12,87 @@ const AboutUs = () => {
     return (
       <>
         <div className="about-us">
-          <div className="about-hero-text">
-            <div className="h2">
-            <h2>
+          <div className="about-us-intro flex justify-around items-center">
+            <div>
+            <h2 className="font-black text-5xl leading-[67.5px] text-[#001562]">
               ABOUT US
             </h2>
             </div>
-            <div className="h6">
-            <h6>
-                How we started...
-                  <p>
+            <div>
+              <h6 className="font-medium text-lg leading-[25.5px] text-[#272727]">
+                How we started...</h6>
+                <p className="font-normal text-base leading-[24px] text-[#272727] mt-3">
                   We are a dynamic tech education company that helps people access high-quality <br />
                   tech skills by increasing digital literacy and celebrating tech talents globally. <br />
-                  <br />
                   We are on a mission to empower the next generation of tech Innovators in Nigeria.
-                  </p>
-              </h6>
+                </p>
             </div>
               
           </div>
-          <div className="hero-image">
+          <div className="hero-image bg-[aqua] mt-10">
           <img src={AboutHero} alt="hero-image" className="w-full" />
           </div>
-          <div className="mission">
-            <div className="missionh2">
-            <h2>
+          <div className="mission-intro flex justify-around items-center mt-10">
+            <div>
+            <h2 className="font-black text-5xl leading-[67.5px] text-[#001562]">
               Where we are <br />headed
             </h2>
             </div>
-            <div className="mission-text">
-              <h5 className="font-primary">Our Mission</h5>
-                <p className="font-secondary">
+            <div className="mission-text flex flex-col gap-5">
+              <div>
+              <h5 className="font-primary font-medium text-2xl leading-[36px] text-[#272727]">Our Mission</h5>
+                <p className="font-secondary font-medium text-base text-[#272727] mt-2">
                 Our mission at TechProsNaija is to pave the way for digital 
                 literacy and technological <br />proficiency across Nigeria's educational 
                 landscape and workforce. 
                 </p>
-                <h5 className="font-primary">Our Vision</h5>
-                <p className="font-secondary">
+              </div>
+              <div>
+              <h5 className="font-primary font-medium text-2xl leading-[36px] text-[#272727]">Our Vision</h5>
+                <p className="font-secondary font-medium text-base text-[#272727] mt-2">
                 TechProsNaija aims to become Nigeria's premier EdTech institution by 2030. <br />
                 Our goal is to disseminate tech education throughout the nation, empowering <br />
                 a tech-savvy generation to drive the country's technological advancement.
                 </p>
+              </div>
             </div>
-          </div>
-          <div className="founder">
-            <h5 className="font-normal text-2xl">As the CEO/Founder of TechProsNaija I am glad to announce the acquisition in the edtech space, 
+            </div>
+          <div className="founder bg-[#aab2d1] border-4 mt-10">
+            <div className="founder-inner">
+            <h5 className="font-primary font-bold text-2xl text-justify">"As the CEO/Founder of TechProsNaija I am glad to announce the acquisition in the edtech space, 
             we are not just a random Edtech startup; we are creating a priceless society for skill acquisition 
             and mentorship to redefine the landscape of learning.
-            Education is the cornerstone of progress, and with this acquisition, we are committed to enhancing 
-            accessibility, innovation, and quality in the realm of learning. Together, we will leverage 
-            technology to empower students, educators, and institutions alike.
+            <br />
             <br />
             Our vision extends beyond the confines of traditional education. We aim to cultivate a culture of 
             lifelong learning, where anyone, anywhere can access knowledge that transcends boundaries. This acquisition 
-            propels us into a future where education is not a privilege but a universal right.
-            As we embark on this transformative journey, let us remember that education has the power to shape minds, 
-            break barriers, and drive societal change. Our commitment to excellence in edtech will lay the foundation 
-            for a brighter, more inclusive future.
-            Thank you for being part of this exciting chapter. Together, we will lead the way in revolutionizing 
-            education for generations to come.</h5>
+            propels us into a future where education is not a privilege but a universal right."
+            </h5>
             <br />
-            <div className="founder-frame">
+            <div className="founder-frame flex gap-3 items-center">
               <div className="ceo-image">
-                <img src={CEO} alt="" />
+                  <img src={CEO} alt="" />
               </div>
               <div className="ceo-name">
                 <h6 className="font-normal text-lg">Sogelola Mayomiwa</h6><h6 className="font-medium text-xs">Founder and CEO</h6>
               </div>
             </div>
-          </div>
-          <div className="why-us">
-            <div className="impact-video">
-              <h2>Why Choose Us?</h2>
-              <p>Elevate your learning journey with our innovative edtech solutions. <br />Expert educators, 
-                personalized learning paths, and cutting-edge <br />technology ensure a transformative 
-                educational experience tailored to your success.</p>
-                <a href=""><img src={ImpactVideo} alt="" /></a>
             </div>
-            <div className="merit flex flex-col gap-y-10" style={{backgroundColor: "#000517"}}>
+          </div>
+
+          <div className="why-us flex gap-10">
+            <div className="impact-video ml-20">
+              <div className="thetext">
+                <h2>Why Choose Us?</h2>
+                <p>Elevate your learning journey with our innovative edtech <br />solutions. Expert educators, 
+                  personalized learning paths, <br />and cutting-edge technology ensure a transformative <br />
+                  educational experience tailored to your success.</p>
+                </div>
+              <div className="theimage">
+                <a href=""><img src={ImpactVideo} alt="" /></a>
+              </div>
+            </div>
+            <div className="merit flex flex-col w-[50%] gap-y-10" style={{backgroundColor: "#000517"}}>
               <div className="meritlist flex m-3 gap-x-3">
                 <div className="merigimgage flex">
                   <img src={Merit} alt="" />
