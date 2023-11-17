@@ -32,7 +32,7 @@ const AboutUs = () => {
               
           </div>
           <div className="hero-image">
-          <img src={AboutHero} alt="" />
+          <img src={AboutHero} alt="hero-image" className="w-full" />
           </div>
           <div className="mission">
             <div className="missionh2">
@@ -89,75 +89,61 @@ const AboutUs = () => {
                 educational experience tailored to your success.</p>
                 <a href=""><img src={ImpactVideo} alt="" /></a>
             </div>
-            <div className="merit" style={{backgroundColor: "#000517"}}>
-              <div className="meritlist flex p-7">
-                <div className="merigimgage flex justify-center w-[50%] ">
+            <div className="merit flex flex-col gap-y-10" style={{backgroundColor: "#000517"}}>
+              <div className="meritlist flex m-3 gap-x-3">
+                <div className="merigimgage flex">
                   <img src={Merit} alt="" />
                 </div>
-                <div className="merittext">
+                <div className="merittext flex flex-col">
                   <div className="merith5">
-                  <h5 className="font-normal text-base">Training</h5>
+                  <h5 className="font-normal text-2xl text-[#fff]">Training</h5>
                   </div>
-                  <div className="meritp w-[80%]">
-                  <p>Proper Tech Learning-drill: We focus on real-world applications, 
+                  <div className="meritp">
+                  <p className="font-medium text-base text-[#fff]">Proper Tech Learning-drill: We focus on real-world applications, 
                     so you can confidently apply your skills in any tech-related field.
                   </p>
                   </div>
                 </div>
               </div>
-              <div className="meritlist flex p-7">
-                <div className="merigimgage flex justify-center w-[50%] ">
+              <div className="meritlist flex m-3 gap-x-3">
+                <div className="merigimgage flex">
                   <img src={Merit} alt="" />
                 </div>
                 <div className="merittext">
                   <div className="merith5">
-                  <h5 className="font-normal text-base">Flexibility</h5>
+                  <h5 className="font-normal text-base text-[#fff] ">Flexibility</h5>
                   </div>
-                  <div className="meritp w-[80%]">
+                  <div className="meritp text-[#fff] ">
                   <p>Learn at your own pace with our online and offline classes. Fit 
                     tech education into your busy life.
                   </p>
                   </div>
                 </div>
               </div>
-              <div className="meritlist flex p-7">
-                <div className="merigimgage flex justify-center w-[50%] ">
+              <div className="meritlist flex m-3 gap-x-3">
+                <div className="merigimgage flex">
                   <img src={Merit} alt="" />
                 </div>
                 <div className="merittext">
                   <div className="merith5">
-                  <h5 className="font-normal text-base">Industry-Driven Curriculum</h5>
+                  <h5 className="font-normal text-base text-[#fff] ">Industry-Driven Curriculum</h5>
                   </div>
-                  <div className="meritp w-[80%]">
+                  <div className="meritp text-[#fff] ">
                   <p>Our courses are designed in collaboration with industry experts to 
                     ensure you're learning what matters most.
                   </p>
                   </div>
                 </div>
               </div>
-              <div className="meritlist flex p-7">
-                <div className="merigimgage flex justify-center w-[50%] ">
+              <div className="meritlist flex m-3 gap-x-3">
+                <div className="merigimgage flex ">
                   <img src={Merit} alt="" />
                 </div>
                 <div className="merittext">
                   <div className="merith5">
-                  <h5 className="font-normal text-base">Supportive Community:</h5>
+                  <h5 className="font-normal text-base text-[#fff] ">Career Opportunities</h5>
                   </div>
-                  <div className="meritp w-[80%]">
-                  <p>Join a network of fellow learners, mentors, and alumni who are passionate about tech.
-                  </p>
-                  </div>
-                </div>
-              </div>
-              <div className="meritlist flex p-7">
-                <div className="merigimgage flex justify-center w-[50%] ">
-                  <img src={Merit} alt="" />
-                </div>
-                <div className="merittext">
-                  <div className="merith5">
-                  <h5 className="font-normal text-base">Career Opportunities</h5>
-                  </div>
-                  <div className="meritp w-[80%]">
+                  <div className="meritp text-[#fff] ">
                   <p>TechProsNaija graduates are followed up and given internship opportunities 
                     to land their first jobs
                   </p>
@@ -170,7 +156,7 @@ const AboutUs = () => {
             <h1>Our Team</h1>
             <div className="team-image">
               <div className="set">
-                <div className="set1">
+                <div className="set1 ">
                   <img src={MS} alt="" /><h2>Adeyemo Temitope</h2><h6>Marketing Specialist</h6>
                 </div>
                 <div className="set1">
