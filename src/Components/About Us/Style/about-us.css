@@ -1,25 +1,31 @@
-.about-us h1{
-     font-size: 2.5rem;
+.about-us{
+     margin-top: 10rem;
+}
+
+.mission > h2,
+.about-us h2{
+     font-weight: 900;
+     font-size: 48px;
      color: #001975;
 }
-h2{
-     font-size: large;
+.about-us .about-hero-text .h6 h6{
+     font-weight: 400;
+     font-size: 17px;
 }
-p{
-     font-size: x-small;
+.about-us p{
+     font-weight: 500;
+     font-size: 16px;
 }
-.about-us .hero-text{
-     margin-top: 10rem;
+.about-us .about-hero-text{
      display: flex;
      justify-content: space-around;
      align-items: center;
      margin-bottom: 2rem;
 }
-.about-us .hero-text h2 p{
+.about-us .about-hero-text h6 p{
      margin-top: 0.5rem;
 }
-.hero-image img{
-     width: 100%;
+.about-us .hero-image{
      margin-bottom: 2rem;
 }
 .about-us .mission{
@@ -28,12 +34,16 @@ p{
      align-items: center;
      margin-bottom: 2rem;
 }
-.about-us .mission span h2{
+.about-us .mission .mission-text h5{
+     font-weight: 400;
+     font-size: 24px;
      margin-bottom: 0.5rem;
 }
-.about-us .mission span p{
+.about-us .mission .mission-text p{
      margin-bottom: 1.5rem;
-     font-size: small;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
 }
 .about-us .founder{
      display: flex;
@@ -43,13 +53,33 @@ p{
      color: #001975;
      font-weight: bold;
 }
+.about-us .founder .founder-frame{
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+}
+/* .about-us .founder .founder-frame .ceo-name h6{
+     font-weight: 400;
+     font-size: 17px;
+     line-height: 25.5px;
+} */
+
+.about-us .founder .founder-frame img{
+     height: 5rem;
+     border-radius: 50%;
+}
+.about-us .founder .founder-frame{
+     color: #333;
+}
 .about-us .why-us{
      display: flex;
-     justify-content: space-around;
-     align-items: center;
+     gap: 3rem;
 }
 .about-us .why-us .impact-video{
-     padding: 0 5.7rem;
+     padding-left: 5.7rem;
+}
+.about-us .why-us .impact-video a img{
+     width: 40rem;
 }
 .about-us .why-us .impact-video h2{
      color: #001975;
@@ -60,19 +90,6 @@ p{
      margin-bottom: 1rem;
      font-size: small;
 }
-.about-us .why-us .merit ul{
-     background: #000517;
-}
-.about-us .why-us .merit ul li{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 2rem;
-     
-}
-.about-us .why-us .merit ul li img{
-     padding-right: 1rem;
-}
 .about-us .our-team{
      background: #aab2d1;
      padding: 4rem;
@@ -80,6 +97,29 @@ p{
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     margin-top: -0.3rem;
+}
+.about-us .our-team .team-image{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.about-us .our-team .team-image .set{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+}
+.about-us .our-team .team-image .set .set1 img{
+     height: 25rem;
+     width: 20rem;
+     margin-bottom: 1rem;
+     margin-top: 2rem;
+     border-radius: 2rem;
+}
+.about-us .our-team .team-image .set .set1{
+     color: #333;
 }
 .about-us .our-team-mobile{
      background: #aab2d1;
@@ -88,9 +128,6 @@ p{
      flex-direction: column;
      justify-content: center;
      align-items: center;
-}
-.about-us .our-team-mobile{
-     display: none;
 }
 .about-us .blog-cards{
      display: flex;
@@ -148,57 +185,7 @@ p{
 .about-us .blog .blog-link a .fa-solid{
      padding-left: 1.5rem;
 }
-.about-us .bts{
-     padding: 4rem;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     margin-top: 2rem;
-     margin-bottom: 5rem;
-}
-.about-us .bts-mobile{
-     display: none;
-}
-.about-us .careers{
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     margin-bottom: 3rem;
-     padding: 0 7rem;
-}
-.about-us .careers .careers-text h4{
-     margin-bottom: 1rem;
-     font-size: xx-large;
-     color: #000;
-}
-.about-us .careers .careers-text p{
-     margin-bottom: 2rem;
-     font-size: small;
-}
-.about-us .careers .careers-text .careers-link{
-     color: #001975;
-     border: 2px solid #001975;
-     border-radius: 0.8rem;
-     text-align: center;
-     padding: 0.5rem 3rem;
-     cursor: pointer;
-}
-.about-us .careers .careers-text .careers-link:hover{
-     background: #001975;
-     transition: 0.8s;
-}
-.about-us .careers .careers-text .careers-link a{
-     color: #001975;
-}
-.about-us .careers .careers-text .careers-link a:hover{
-     color: #fff;
-}
-.about-us .careers .careers-text .careers-link a .fa-solid{
-     padding-left: 1.5rem;
-}
 .about-us .contact-us{
-     margin-top: 5rem;
      margin-bottom: 5rem;
 }
 .about-us .contact-us h1{
@@ -227,21 +214,18 @@ p{
      margin-bottom: 3rem;
 }
 .about-us .contact-us .contact-form .query input{
+     margin-bottom: 3rem;
+     width: 52rem;
      border: 1px solid #001975;
      height: 3rem;
      border-radius: 0.5rem;
      padding: 0.5rem;
-     width: 52rem;
-     margin-bottom: 3rem;
 }
 .about-us .contact-us .contact-form .mail{
      display: flex;
      justify-content: space-between;
      align-items: center;
      gap: 2rem;
-}
-.about-us .contact-us .contact-form .mail .website input{
-     margin-top: 2.5rem;
 }
 .about-us .contact-us .contact-form input{
      width: 25rem;
@@ -287,15 +271,32 @@ p{
      .about-us .why-us .impact-video{
           padding: 1rem;
      }
+     .about-us .why-us .merit ul{
+          margin: 0;
+          width: 50rem;
+     }
+     .about-us .why-us .merit ul li{
+          
+          margin: 0 5rem;
+          text-align: center;
+          margin-left: 0;
+     }
      .about-us .our-team h1{
           font-size: 1.5rem;
           margin-top: -3rem;
      }
-     .about-us .our-team{
-          display: none;
+     .about-us .our-team .team-image .set{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
      }
-     .about-us .our-team-mobile{
-          display: content;
+     .about-us .our-team .team-image .set .set1 img{
+          height: 15rem;
+          width: 20rem;
+          margin-bottom: 1rem;
+          margin-top: 2rem;
+          border-radius: 2rem;
      }
      .about-us .our-team-mobile{
           background: #aab2d1;
@@ -314,34 +315,6 @@ p{
      }
      .about-us .blog .blog-cards .blog-card .blog-topic{
           color: #001975;
-     }
-     .about-us .bts{
-          display: none;
-     }
-     .about-us .bts-mobile{
-          display: contents;
-     }
-     .about-us .bts-mobile{
-          text-align: center;
-          margin-top: 4rem;
-          margin-bottom: 5rem;
-     }
-     .about-us .bts-mobile h1{
-          margin-top: 2rem;
-     }
-     .about-us .bts-image-mobile{
-          padding: 1.5rem;
-     }
-     .about-us .careers{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: center;
-          margin-bottom: 3rem;
-          padding: 1.5rem;
-     }
-     .about-us .careers .careers-image{
-          margin-top: 2rem;
      }
      .about-us .contact-us{
           padding: 0;
@@ -364,7 +337,6 @@ p{
           width: 20rem;
      }
 }
-
 @media only screen and (min-width: 480px) and (max-width: 767px){
      .about-us .hero-text{
           display: flex;
@@ -391,6 +363,13 @@ p{
           font-size: 1.5rem;
           margin-top: -3rem;
      }
+     .about-us .our-team .team-image .set .set1 img{
+          height: 10rem;
+          width: 10rem;
+          margin-bottom: 1rem;
+          margin-top: 2rem;
+          border-radius: 2rem;
+     }
      .about-us .blog-cards{
           display: flex;
           flex-direction: column;
@@ -400,17 +379,6 @@ p{
      }
      .about-us .blog .blog-cards .blog-card .blog-topic{
           color: #001975;
-     }
-     .about-us .careers{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: center;
-          margin-bottom: 3rem;
-          padding: 1.5rem;
-     }
-     .about-us .careers .careers-image{
-          margin-top: 2rem;
      }
      .about-us .contact-us{
           padding: 0;

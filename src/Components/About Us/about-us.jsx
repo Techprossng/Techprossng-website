@@ -1,90 +1,196 @@
 import "../About Us/Style/about-us.css";
+import ImpactVideo from "../../assets/images/impact-video.png"
+import AboutHero from "../../assets/images/about-hero-image.png"
+import CEO from "../../assets/images/team/soge-ceo.jpg"
+import Merit from "../../assets/images/merit-frame.png"
+import HR from "../../assets/images/team/sophia-hr.jpg"
+import MS from "../../assets/images/team/adeyemo-ms.jpg"
+import FM from "../../assets/images/team/chinyere-fm.jpg"
+import PM from "../../assets/images/team/mofe-pm.jpg"
+import COO from "../../assets/images/team/praise-coo.jpg"
 const AboutUs = () => {
     return (
       <>
         <div className="about-us">
-          <div className="hero-text">
-            <h1>
+          <div className="about-hero-text">
+            <div className="h2">
+            <h2>
               ABOUT US
-            </h1>
-              <h2>
+            </h2>
+            </div>
+            <div className="h6">
+            <h6>
                 How we started...
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit consequuntur. <br />
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit consequuntur.
+                  We are a dynamic tech education company that helps people access high-quality <br />
+                  tech skills by increasing digital literacy and celebrating tech talents globally. <br />
+                  <br />
+                  We are on a mission to empower the next generation of tech Innovators in Nigeria.
                   </p>
-              </h2>
+              </h6>
+            </div>
+              
           </div>
           <div className="hero-image">
-          <img src="../../../src/assets/images/about-hero-image.png" alt="" />
+          <img src={AboutHero} alt="" />
           </div>
           <div className="mission">
-            <h1>
-              Where we are headed
-            </h1>
-            <span>
-              <h2>Our Mission</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit consequuntur. <br />
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit consequuntur.
+            <div className="missionh2">
+            <h2>
+              Where we are <br />headed
+            </h2>
+            </div>
+            <div className="mission-text">
+              <h5 className="font-primary">Our Mission</h5>
+                <p className="font-secondary">
+                Our mission at TechProsNaija is to pave the way for digital 
+                literacy and technological <br />proficiency across Nigeria's educational 
+                landscape and workforce. 
                 </p>
-                <h2>Our Vision</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit consequuntur. <br />
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit consequuntur.
+                <h5 className="font-primary">Our Vision</h5>
+                <p className="font-secondary">
+                TechProsNaija aims to become Nigeria's premier EdTech institution by 2030. <br />
+                Our goal is to disseminate tech education throughout the nation, empowering <br />
+                a tech-savvy generation to drive the country's technological advancement.
                 </p>
-            </span>
+            </div>
           </div>
           <div className="founder">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, aliquid. Velit. <br />
-            Lorem ipsum dolor sit amet. <br />
+            <h5 className="font-normal text-2xl">As the CEO/Founder of TechProsNaija I am glad to announce the acquisition in the edtech space, 
+            we are not just a random Edtech startup; we are creating a priceless society for skill acquisition 
+            and mentorship to redefine the landscape of learning.
+            Education is the cornerstone of progress, and with this acquisition, we are committed to enhancing 
+            accessibility, innovation, and quality in the realm of learning. Together, we will leverage 
+            technology to empower students, educators, and institutions alike.
             <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, aliquid. Velit. <br />
-            Lorem ipsum dolor sit amet. <br />
+            Our vision extends beyond the confines of traditional education. We aim to cultivate a culture of 
+            lifelong learning, where anyone, anywhere can access knowledge that transcends boundaries. This acquisition 
+            propels us into a future where education is not a privilege but a universal right.
+            As we embark on this transformative journey, let us remember that education has the power to shape minds, 
+            break barriers, and drive societal change. Our commitment to excellence in edtech will lay the foundation 
+            for a brighter, more inclusive future.
+            Thank you for being part of this exciting chapter. Together, we will lead the way in revolutionizing 
+            education for generations to come.</h5>
             <br />
             <div className="founder-frame">
-              <img src="../../../src/assets/images/founder-frame.png" alt="" />
+              <div className="ceo-image">
+                <img src={CEO} alt="" />
+              </div>
+              <div className="ceo-name">
+                <h6 className="font-normal text-lg">Sogelola Mayomiwa</h6><h6 className="font-medium text-xs">Founder and CEO</h6>
+              </div>
             </div>
           </div>
           <div className="why-us">
             <div className="impact-video">
-              <h2>Why Us?</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Soluta doloribus <br />repellendus qui itaque, eum voluptatem, 
-                placeat culpa quasi beatae consectetur maxime.</p>
-                <img src="../../../src/assets/images/impact-video.png" alt="" />
+              <h2>Why Choose Us?</h2>
+              <p>Elevate your learning journey with our innovative edtech solutions. <br />Expert educators, 
+                personalized learning paths, and cutting-edge <br />technology ensure a transformative 
+                educational experience tailored to your success.</p>
+                <a href=""><img src={ImpactVideo} alt="" /></a>
             </div>
-            <div className="merit">
-            <ul>
-              <li><img src="../../../src/assets/images/merit-frame.png" alt="" /><h2>Lorem Ipsum <p>Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. <br /> 
-              Incidunt eos, doloremque voluptatibus reprehenderit 
-              reiciendis labore corporis.</p></h2></li>
-              <li><img src="../../../src/assets/images/merit-frame.png" alt="" /><h2>Lorem Ipsum <p>Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. <br /> 
-              Incidunt eos, doloremque voluptatibus reprehenderit 
-              reiciendis labore corporis.</p></h2></li>
-              <li><img src="../../../src/assets/images/merit-frame.png" alt="" /><h2>Lorem Ipsum <p>Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. <br /> 
-              Incidunt eos, doloremque voluptatibus reprehenderit 
-              reiciendis labore corporis.</p></h2></li>
-              <li><img src="../../../src/assets/images/merit-frame.png" alt="" /><h2>Lorem Ipsum <p>Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. <br /> 
-              Incidunt eos, doloremque voluptatibus reprehenderit 
-              reiciendis labore corporis.</p></h2></li>
-            </ul>
+            <div className="merit" style={{backgroundColor: "#000517"}}>
+              <div className="meritlist flex p-7">
+                <div className="merigimgage flex justify-center w-[50%] ">
+                  <img src={Merit} alt="" />
+                </div>
+                <div className="merittext">
+                  <div className="merith5">
+                  <h5 className="font-normal text-base">Training</h5>
+                  </div>
+                  <div className="meritp w-[80%]">
+                  <p>Proper Tech Learning-drill: We focus on real-world applications, 
+                    so you can confidently apply your skills in any tech-related field.
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div className="meritlist flex p-7">
+                <div className="merigimgage flex justify-center w-[50%] ">
+                  <img src={Merit} alt="" />
+                </div>
+                <div className="merittext">
+                  <div className="merith5">
+                  <h5 className="font-normal text-base">Flexibility</h5>
+                  </div>
+                  <div className="meritp w-[80%]">
+                  <p>Learn at your own pace with our online and offline classes. Fit 
+                    tech education into your busy life.
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div className="meritlist flex p-7">
+                <div className="merigimgage flex justify-center w-[50%] ">
+                  <img src={Merit} alt="" />
+                </div>
+                <div className="merittext">
+                  <div className="merith5">
+                  <h5 className="font-normal text-base">Industry-Driven Curriculum</h5>
+                  </div>
+                  <div className="meritp w-[80%]">
+                  <p>Our courses are designed in collaboration with industry experts to 
+                    ensure you're learning what matters most.
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div className="meritlist flex p-7">
+                <div className="merigimgage flex justify-center w-[50%] ">
+                  <img src={Merit} alt="" />
+                </div>
+                <div className="merittext">
+                  <div className="merith5">
+                  <h5 className="font-normal text-base">Supportive Community:</h5>
+                  </div>
+                  <div className="meritp w-[80%]">
+                  <p>Join a network of fellow learners, mentors, and alumni who are passionate about tech.
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div className="meritlist flex p-7">
+                <div className="merigimgage flex justify-center w-[50%] ">
+                  <img src={Merit} alt="" />
+                </div>
+                <div className="merittext">
+                  <div className="merith5">
+                  <h5 className="font-normal text-base">Career Opportunities</h5>
+                  </div>
+                  <div className="meritp w-[80%]">
+                  <p>TechProsNaija graduates are followed up and given internship opportunities 
+                    to land their first jobs
+                  </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="our-team">
             <h1>Our Team</h1>
             <div className="team-image">
-              <img src="../../../src/assets/images/team-frame.png" alt="" />
-            </div>
-          </div>
-          <div className="our-team-mobile">
-            <h1>Our Team</h1>
-            <div className="team-image-mobile">
-              <img src="../../../src/assets/images/team-frame-mobile.png" alt="" />
+              <div className="set">
+                <div className="set1">
+                  <img src={MS} alt="" /><h2>Adeyemo Temitope</h2><h6>Marketing Specialist</h6>
+                </div>
+                <div className="set1">
+                  <img src={FM} alt="" /><h2>Chinyere Irechukwu</h2><h6>Finance Manager</h6>
+                </div>
+                <div className="set1">
+                  <img src={PM} alt="" /><h2>Mofeoluwa Opadotun</h2><h6>Project Manager</h6>
+                </div>
+              </div>
+              <div className="set">
+                <div className="set1">
+                  <img src={HR} alt="" /><h2>Sophia Runsewe</h2><h6>HR Manager</h6>
+                </div>
+                <div className="set1">
+                  <img src={COO} alt="" /><h2>Praise Olakanmi</h2><h6>COO</h6>
+                </div>
+                <div className="set1">
+                  <img src={CEO} alt="" /><h2>Sogelola Mayomiwa</h2><h6>CEO</h6>
+                </div>
+              </div>
             </div>
           </div>
           <div className="blog">
@@ -152,35 +258,6 @@ const AboutUs = () => {
               <a href="#">Go To Blog <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
           </div>
-          {/* <div className="bts">
-            <h1>Behind The Scene</h1>
-            <div className="bts-image">
-              <img src="../../../src/assets/images/behind-the-scene.png" alt="" />
-            </div>
-          </div>
-          <div className="bts-mobile">
-            <h1>Behind The Scene</h1>
-            <div className="bts-image-mobile">
-              <img src="../../../src/assets/images/behind-the-scene-mobile.png" alt="" />
-            </div>
-          </div> */}
-          {/* <div className="careers">
-            <div className="careers-text">
-              <h1>Careers</h1>
-              <h4>Lorem ipsum dolor sit amet consectetur. <br /> Adipisicing elit ad.</h4>
-              <p>Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. <br /> 
-              Incidunt eos, doloremque voluptatibus reprehenderit 
-              reiciendis labore corporis. <br />
-              adipisicing elit Incidunt eos, doloremque</p>
-              <div className="careers-link">
-                <a href="#">See Openings <i class="fa-solid fa-arrow-right-long"></i></a>
-              </div>
-            </div>
-            <div className="careers-image">
-              <img src="../../../src/assets/images/careers.png" alt="" />
-            </div>
-          </div> */}
           <div className="contact-us">
             <h1>Contact Us</h1>
             <h4>Please fill out the form below, and our team will get back to you as <br /> soon as possible. </h4>
