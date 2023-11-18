@@ -21,9 +21,9 @@ const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "Courses", link: "/course-catalogue" },
-    { name: "Mentorship", link: "/mentorship" },
-    { name: "Resources", link: "/resources" },
-    { name: "Pricing", link: "/pricing" },
+    { name: "Mentorship", link: "/coming-soon" },
+    { name: "Resources", link: "/resource-page" },
+    { name: "Pricing", link: "/coming-soon" },
     { name: "About Us", link: "/about" },
   ];
   let Links2 = [
@@ -31,11 +31,11 @@ const Navbar = () => {
     { name: "Home", link: "/" },
     { name: "Catalog", link: "/catalog" },
     { name: "Library", link: "/library" },
-    { name: "Community", link: "/community" },
-    { name: "Mentors", link: "/mentors" },
-    { name: "Profile", link: "/profile" },
-    { name: "Settings", link: "/settings" },
-    { name: "Logout", link: "/logout" },
+    { name: "Community", link: "/coming-soon" },
+    { name: "Mentors", link: "/coming-soon" },
+    { name: "Profile", link: "/coming-soon" },
+    { name: "Settings", link: "/coming-soon" },
+    { name: "Logout", link: "/coming-soon" },
   ];
 
   let [open, setOpen] = useState(false);
@@ -161,7 +161,7 @@ const Navbar = () => {
           Sign Up
           </button>*/}
           <button className="w-35 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          <Link to="/sign-up">Contact Us</Link>
+          <Link to="/coming-soon">Contact Us</Link>
         </button>  
       </div>
     </nav>

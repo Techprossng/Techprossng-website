@@ -1,0 +1,54 @@
+.background-soon{
+    background-color: #fff;
+    background-image:
+      url(../../../assets/images/BGsoon.svg),
+      url(../../../assets/images/bluesoon.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 60%;
+    background-position-y: 70%, 76%;
+    background-position-x: 70%, 98%;
+  }
+   .soon-search {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 2rem;
+  }
+   .soon-search input {
+    border: 2px solid rgba(230, 230, 230, 1);
+    padding: 1.4rem 2rem ;
+    border-radius: 0.7rem;
+    text-indent: 10px;
+    width: 100%;
+    outline: none !important;
+
+  }
+   .soon-search .fa-solid {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1.4em;
+    transform: translate(-50%, -50%);
+    color: grey;
+  }
+   .soon-search button {
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left: 30rem;
+    transform: translate(-50%, -38%);
+    padding: 10px 12px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.5rem;
+    background:  rgba(128, 140, 186, 1);
+    color: white;
+    width: 150px;
+    transition: 0.8s;
+  }
+   .soon-search button:hover {
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+  }
+  .header-bold{
+    font-weight: 800;
+  }
+ 
