@@ -37,3 +37,61 @@
 .blogpoint{
   color: #001975;
 }
+.firstinput > input{
+  border: 1px solid #656565;
+  border-radius: 12px;
+  height: 60px;
+  width: 436px;
+  padding: 19px 24px;
+}
+.lastinput > input{
+  border: 1px solid #656565;
+  border-radius: 12px;
+  height: 60px;
+  width: 436px;
+  padding: 19px 24px;
+}
+.course-select > select{
+  border: 1px solid #656565;
+  border-radius: 12px;
+  height: 60px;
+  width: 1036px;
+  padding: 19px 24px;
+}
+.field > input {
+  border: 1px solid #656565;
+  border-radius: 12px;
+  height: 60px;
+  width: 1036px;
+  padding: 19px 24px;
+}
+.mailinput > input{
+  border: 1px solid #656565;
+  border-radius: 12px;
+  height: 60px;
+  width: 436px;
+  padding: 19px 24px;
+}
+.websiteinput > input{
+  border: 1px solid #656565;
+  border-radius: 12px;
+  height: 60px;
+  width: 436px;
+  padding: 19px 24px;
+}
+.submit-form > button{
+  padding: 18px 24px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  background: #0F1B63;
+  color: white;
+  width: 1036px;
+  transition: 0.3s;
+  height: 56px;
+}
+
+.submit-form > button:hover {
+  background: #FE0000;
+  transition: 1s;
+}

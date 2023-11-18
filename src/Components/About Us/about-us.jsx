@@ -84,7 +84,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="why-us flex gap-1 w-[100%]">
+          <div className="why-us flex gap-1 w-[100%] mb-10">
             <div className="impact-video ml-20 w-[50%]">
               <div className="thetext mt-8">
                 <h4 className="font-bold text-3xl text-[#001562]">Why Choose Us?</h4>
@@ -146,17 +146,19 @@ const AboutUs = () => {
           </div>
           <div className="blog-section flex flex-col items-center">
             <div className="blog-header text-[#001562] mt-10">
-              <h4 className="font-bold text-3xl">
+              <h4 className="font-bold text-3xl mb-10">
                 Our Blog
               </h4>
             </div>
-            <div className="blog-detail-container flex gap- bg-[aqua] ">
+            <div className="blog-detail-container flex gap-10 items-center justify-around] ">
+              
               {Blogs.map((blog, index)=>(
-                <div className="blog-details mt-10 flex flex-col gap-3">
-                <div className="blog-poster">
-                  <img src={blog.img} alt="blog-poster" />
+              <>
+                <div className="flex justify-around flex-col gap-5">
+                <div className="blog-poster flex justify-center items-center">
+                  <img src={blog.img} alt="blog-poster" className="w-full"/>
               </div>
-              <div className="blog-text">
+              <div className="blog-text flex flex-col justify-start">
                 <p className="font-bold text-sm text-[#001562]">
                   {blog.title}
                 </p>
@@ -173,7 +175,9 @@ const AboutUs = () => {
                 </p>
               </div>
               </div>
+              </>
               ))}
+              
               </div>
             {/* <div className="blog-details mt-10 flex flex-col gap-3">
               <div className="blog-poster">
@@ -199,12 +203,79 @@ const AboutUs = () => {
               </div>
             </div> */}
             
-            <div className="blog-link w-10/12 mt-10 border-3 flex gap-10 justify-center items-center font-bold text-sm">
+            <div className="blog-link w-full mt-10 border-3 flex gap-10 justify-center items-center font-bold text-sm">
               <a href="#">Go To Blog</a>
               <FaLongArrowAltRight className="blogpoint"/>
             </div>
           </div>
-          <div className="contact-us">
+
+          <form action="" className="contact-form my-10">
+            <div className="contact-us m-10">
+                <div className="contact-intro flex flex-col justify-center items-center">
+                  <h4 className="font-bold text-3xl text-[#001562]">
+                    Contact Us
+                  </h4>
+                  <p className="font-medium text-base text-[#272727] mt-5">
+                  Please fill out the form below, and our team will get back to you as soon as possible. 
+                  </p>
+                </div>
+                <div className="name flex justify-around items-center mt-10">
+                  <div className="firstinput">
+                    <p className="text-[#272727] font-medium text-sm">
+                      First Name
+                    </p>
+                    <input type="name" className="" />
+                  </div>
+                  <div className="lastinput">
+                    <p className="text-[#272727] font-medium text-sm">
+                      Last Name
+                    </p>
+                    <input type="name" className="" />
+                  </div>
+                </div>
+                <div className="course-option flex flex-col flex justify-center items-center mt-10">
+                  <p className="text-[#272727] font-medium text-sm">
+                    Please select your course of enquiry.
+                  </p>
+                  <div className="course-select">
+                    <select id="courses">
+                      <option value="---">--Select One--</option>
+                      <option value="digital-marketing">Digital Marketing</option>
+                      <option value="data-analyst">Data Analyst</option>
+                      <option value="frontend">Frontend Web Developer</option>
+                      <option value="backend">Backend Web Developer</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="text-enquiry flex flex-col justify-center items-center mt-10">
+                  <p className="text-[#272727] font-medium text-sm text-">
+                      How can we help?
+                  </p>
+                  <div className="field">
+                    <input type="name" className="" />
+                  </div>
+                </div>
+                <div className="mail-website flex justify-around items-center mt-10">
+                  <div className="mailinput">
+                    <p className="text-[#272727] font-medium text-sm">
+                      Email
+                    </p>
+                    <input type="email" className="" />
+                  </div>
+                  <div className="websiteinput">
+                    <p className="text-[#272727] font-medium text-sm">
+                      Website (Optional)
+                    </p>
+                    <input type="text" className="" />
+                  </div>
+                </div>
+                <div className="submit-form flex justify-center mt-10">
+                  <button type="submit"><p className="font-semibold text-sm">Send</p></button>
+                </div>
+            </div>
+          </form>
+          
+          {/* <div className="contact-us">
             <h1>Contact Us</h1>
             <h4>Please fill out the form below, and our team will get back to you as <br /> soon as possible. </h4>
             <form className="contact-form">
@@ -236,7 +307,7 @@ const AboutUs = () => {
                 <button type="submit">Send</button>
               </div>
             </form>
-          </div>
+          </div> */}
         </div>
       </>
     );
