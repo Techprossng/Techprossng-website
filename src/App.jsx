@@ -1,5 +1,6 @@
 import  { useEffect } from 'react';
 import './App.css'
+import './Calendar.css'
 import AosInitializer from './assets/aosInitializer';
 import { Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/landing-page';
@@ -9,8 +10,6 @@ import Pricing from './pages/Pricing/pricing';
 import Catalog from './pages/Coursecatalog/course';
 import Layout from './Components/layout';
 import { ProfileCourses } from './Components/Profilepage/Courses';
-
-
 
 function App() {
 
