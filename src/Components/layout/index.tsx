@@ -12,5 +12,5 @@ export default function Layout({children}: LayoutProps) {
       <Navbar />
       <div>{children}</div>
     </main>
-  );
+  )
 }
