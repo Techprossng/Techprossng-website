@@ -23,7 +23,7 @@ const AboutUs = () => {
             </h2>
             </div>
             <div>
-              <h6 className="font-medium text-lg leading-[25.5px] text-[#272727]">
+              <h6 className="font-medium text-lg leading-[25.5px] text-[#272727] mt-5">
                 How we started...</h6>
                 <p className="font-normal text-base leading-[24px] text-[#272727] mt-3">
                   We are a dynamic tech education company that helps people access high-quality <br />
@@ -31,7 +31,6 @@ const AboutUs = () => {
                   We are on a mission to empower the next generation of tech Innovators in Nigeria.
                 </p>
             </div>
-              
           </div>
           <div className="hero-image bg-[aqua] mt-10">
           <img src={AboutHero} alt="hero-image" className="w-full" />
@@ -43,7 +42,7 @@ const AboutUs = () => {
             </h2>
             </div>
             <div className="mission-text flex flex-col gap-5">
-              <div>
+              <div className="mission-text-sub">
               <h5 className="font-primary font-medium text-2xl leading-[36px] text-[#272727]">Our Mission</h5>
                 <p className="font-secondary font-medium text-base text-[#272727] mt-2">
                 Our mission at TechProsNaija is to pave the way for digital 
@@ -51,7 +50,7 @@ const AboutUs = () => {
                 landscape and workforce. 
                 </p>
               </div>
-              <div>
+              <div className="mission-text-sub">
               <h5 className="font-primary font-medium text-2xl leading-[36px] text-[#272727]">Our Vision</h5>
                 <p className="font-secondary font-medium text-base text-[#272727] mt-2">
                 TechProsNaija aims to become Nigeria's premier EdTech institution by 2030. <br />
@@ -83,20 +82,18 @@ const AboutUs = () => {
             </div>
             </div>
           </div>
-
           <div className="why-us flex gap-1 w-[100%] mb-10">
             <div className="impact-video ml-20 w-[50%]">
               <div className="thetext mt-8">
                 <h4 className="font-bold text-3xl text-[#001562]">Why Choose Us?</h4>
-                <p className="font-normal py-5 text-base">Elevate your learning journey with our innovative edtech <br />solutions. Expert educators, 
-                  personalized learning paths, <br />and cutting-edge technology ensure a transformative <br />
+                <p className="font-normal py-5 text-base">Elevate your learning journey with our innovative edtech solutions. <br />Expert educators, 
+                  personalized learning paths, and cutting-edge technology ensure a transformative
                   educational experience tailored to your success.</p>
-                </div>
+              </div>
               <div className="thevideo w-full">
                 <a href=""><img src={ImpactVideo} alt="impact video" className="w-[90%]" /></a>
               </div>
             </div>
-    
             <div className="merit flex flex-col w-[50%] gap-y-10" style={{backgroundColor: "#000517"}}>
               <div className="meritlist flex items-center gap-10 mx-10 mt-5 text-justify">
                 <div className="meritimage">
@@ -151,10 +148,9 @@ const AboutUs = () => {
               </h4>
             </div>
             <div className="blog-detail-container flex gap-10 items-center justify-around] ">
-              
               {Blogs.map((blog, index)=>(
               <>
-                <div className="flex justify-around flex-col gap-5">
+                <div className="blog-details flex justify-around flex-col gap-5">
                 <div className="blog-poster flex justify-center items-center">
                   <img src={blog.img} alt="blog-poster" className="w-full"/>
               </div>
@@ -177,38 +173,12 @@ const AboutUs = () => {
               </div>
               </>
               ))}
-              
               </div>
-            {/* <div className="blog-details mt-10 flex flex-col gap-3">
-              <div className="blog-poster">
-                <img src={BlogVector} alt="blog-poster" />
-              </div>
-              <div className="blog-text">
-                <p className="font-bold text-sm text-[#001562]">
-                  TECHNOLOGY
-                </p>
-                <h5 className="font-bold text-2xl mt-3">
-                  Lorem ipsum dolor sit. <br />
-                  Lorem, ipsum. <br />
-                  Lorem, ipsum dolor. <br />
-                </h5>
-              </div>
-              <div className="blog-author flex justify-between">
-              <p className="font-bold text-sm">
-                  Eze Chiemele
-                </p>
-                <p className="font-normal text-sm">
-                  October 25, 2023
-                </p>
-              </div>
-            </div> */}
-            
             <div className="blog-link w-full mt-10 border-3 flex gap-10 justify-center items-center font-bold text-sm">
               <a href="#">Go To Blog</a>
               <FaLongArrowAltRight className="blogpoint"/>
             </div>
           </div>
-
           <form action="" className="contact-form my-10">
             <div className="contact-us m-10">
                 <div className="contact-intro flex flex-col justify-center items-center">
@@ -219,6 +189,7 @@ const AboutUs = () => {
                   Please fill out the form below, and our team will get back to you as soon as possible. 
                   </p>
                 </div>
+                <div className="forminputs">
                 <div className="name flex justify-around items-center mt-10">
                   <div className="firstinput">
                     <p className="text-[#272727] font-medium text-sm">
@@ -268,46 +239,13 @@ const AboutUs = () => {
                     </p>
                     <input type="text" className="" />
                   </div>
+                  </div>
                 </div>
                 <div className="submit-form flex justify-center mt-10">
                   <button type="submit"><p className="font-semibold text-sm">Send</p></button>
                 </div>
             </div>
           </form>
-          
-          {/* <div className="contact-us">
-            <h1>Contact Us</h1>
-            <h4>Please fill out the form below, and our team will get back to you as <br /> soon as possible. </h4>
-            <form className="contact-form">
-              <div className="name">
-              <div className="firstname">
-                  <p>First Name</p>
-                  <input type="name" />
-              </div>
-              <div className="lastname">
-                  <p>Last Name</p>
-                  <input type="name" />
-              </div>
-              </div>
-              <div className="query">
-                <p>How can we help?</p>
-                <input type="text" />
-              </div>
-              <div className="mail">
-              <div className="email">
-                  <p>Email</p>
-                  <input type="name" />
-              </div>
-              <div className="website">
-                  <p>Website (Optional)</p>
-                  <input type="name" />
-              </div>
-              </div>
-              <div className="send-button">
-                <button type="submit">Send</button>
-              </div>
-            </form>
-          </div> */}
         </div>
       </>
     );

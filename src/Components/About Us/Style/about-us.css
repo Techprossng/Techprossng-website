@@ -95,3 +95,160 @@
   background: #FE0000;
   transition: 1s;
 }
+
+@media only screen and (min-width: 360px) and (max-width: 479px){
+  .about-us-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .about-us-intro h2{
+    justify-content: flex-start;
+  }
+  .mission-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .founder-inner{
+    margin: 0;
+    padding: 10px;
+  }
+  .founder-inner > h5{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .why-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .impact-video{
+    margin: 0;
+    margin-left: 0;
+    padding: 10px;
+    width: fit-content;
+  }
+  .merit{
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    width: fit-content;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+  .name{
+    display: flex;
+    flex-direction: column;
+  }
+  .mail-website{
+    display: flex;
+    flex-direction: column;
+  }
+  .firstinput > input{
+    width: 343px;
+    margin-bottom: 20px;
+  }
+  .lastinput > input{
+    width: 343px;
+  }
+  .course-select > select{
+    width: 343px;
+  }
+  .field > input {
+    width: 343px;
+  }
+  .mailinput > input{
+    width: 343px;
+    margin-bottom: 20px;
+  }
+  .websiteinput > input{
+    width: 343px;
+  }
+  .submit-form > button{
+    width: 343px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .about-us-intro{
+    padding: 10px;
+  }
+  .about-us-intro h2{
+    justify-content: flex-start;
+  }
+  .mission-intro{
+    padding: 10px;
+  }
+  .founder-inner{
+    margin: 0;
+    padding: 10px;
+  }
+  .founder-inner > h5{
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .mission-text-sub > p{
+    font-size: 14px;
+  }
+  .why-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .impact-video{
+    margin: 0;
+    margin-left: 0;
+    padding: 10px;
+    width: fit-content;
+  }
+  .merit{
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    width: fit-content;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+  .name{
+    display: flex;
+    flex-direction: column;
+  }
+  .mail-website{
+    display: flex;
+    flex-direction: column;
+  }
+  .firstinput > input{
+    width: 475px;
+    margin-bottom: 20px;
+  }
+  .lastinput > input{
+    width: 475px;
+  }
+  .course-select > select{
+    width: 475px;
+  }
+  .field > input {
+    width: 475px;
+  }
+  .mailinput > input{
+    width: 475px;
+    margin-bottom: 20px;
+  }
+  .websiteinput > input{
+    width: 475px;
+  }
+  .submit-form > button{
+    width: 475px;
+  }
+}
