@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className="flex flex-wrap space-y-4 pr-5 pl-5 mt-10">
          {/*<button className="w-full h-[48px] px-5 py-3 rounded-md button-2-small">Log in</button>
           <button className="w-full h-[48px] px-5 py-3 rounded-md text-white button-1">Sign Up</button> */} 
-          <button className="w-full h-[48px] px-5 py-3 rounded-md button-1"> <Link to="/sign-up">Contact Us</Link></button>
+          <button className="w-full h-[48px] px-5 py-3 rounded-md button-1"> <Link to="/contact-us">Contact Us</Link></button>
         </div>
       </div>
 
