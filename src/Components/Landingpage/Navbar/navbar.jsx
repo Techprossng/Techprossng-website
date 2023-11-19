@@ -106,8 +106,9 @@ const Navbar = () => {
         <button className="w-32 h-[48px] px-5 py-3 rounded-md text-white button-1">
           <Link to="/sign-up">Sign Up</Link>
         </button> */}
+        
         <button className="w-35 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          <Link to="/coming-soon">Contact Us</Link>
+          <Link to="/contact-us">Contact Us</Link>
         </button> 
       </div>
     </nav>
