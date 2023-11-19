@@ -1,4 +1,6 @@
 import "../../Components/Sign Up Page/Style/sign-up.css"
+import Line from "../../assets/images/line.png"
+import GoogleLogo from "../../assets/images/google-logo.png"
 
 const SignUp = () => {
      return (
@@ -38,10 +40,10 @@ const SignUp = () => {
                     <p>Already have an account? <a href="#">Log In</a></p>
                </div>
                <div className="line">
-                    <img src="../../../src/assets/images/line.png" alt="" />
+                    <img src={Line} alt="line image" />
                </div>
                <div className="google">
-                    <a href="#"><img src="../../../src/assets/images/google-logo.png" alt="" /></a>
+                    <a href="#"><img src={GoogleLogo} alt="google logo" /></a>
                </div>
          </form>
        </>

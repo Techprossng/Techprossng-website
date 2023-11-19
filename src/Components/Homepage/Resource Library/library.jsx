@@ -1,6 +1,9 @@
 import React from 'react'
 import "../Resource Library/Style/library.css";
 import Image1 from "../../../assets/images/image1.png"
+import Image4 from "../../../assets/images/image4.png"
+import Image5 from "../../../assets/images/image5.png"
+import Image6 from "../../../assets/images/image6.png"
 
 function Library() {
   return (
@@ -13,17 +16,17 @@ function Library() {
                 <a href="#" className="btn">Explore Now</a>
             </div>
             <div className="box">
-                <img src="../../../src/assets/images/image4.png" alt="" />
+            <img src={Image4} alt="library image"/>
                 <h3>E-Books</h3>
                 <a href="#" className="btn">Explore Now</a>
             </div>
             <div className="box">
-                <img src="../../../src/assets/images/image5.png" alt=""/>
+            <img src={Image5} alt="library image"/>
                 <h3>Projects</h3>
                 <a href="#" className="btn">Explore Now</a>
             </div>
             <div className="box">
-                <img src="../../../src/assets/images/image6.png" alt=""/>
+            <img src={Image6} alt="library image"/>
                 <h3>Tutorials</h3>
                 <a href="#" className="btn">Explore Now</a>
             </div>

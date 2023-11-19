@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../Homepage/Mentor/Styles/mentor.css";
-import Arrow from "../../../assets/images/arrow.png"
+import Arrow from "../../../assets/icons/arrow.png"
 
 function MentorsSection() {
 
