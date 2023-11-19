@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "Courses", link: "/course-catalogue" },
     { name: "Mentorship", link: "/coming-soon" },
     { name: "Resources", link: "/resource-page" },
-    { name: "Pricing", link: "/coming-soon" },
+    { name: "Pricing", link: "/coming" },
     { name: "About Us", link: "/about-us" },
   ];
 

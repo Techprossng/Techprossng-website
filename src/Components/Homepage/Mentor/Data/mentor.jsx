@@ -1,3 +1,9 @@
+import Tutor1 from "../../../../assets/images/tutor1.svg"
+import Tutor2 from "../../../../assets/images/tutor2.svg"
+import Tutor3 from "../../../../assets/images/tutor3.svg"
+import Star from "../../../../assets/icons/star.png"
+
+
 const mentor = [
     {
       name: "Alice ",
@@ -5,8 +11,8 @@ const mentor = [
       certifications: "Machine Learning Expert",
       starRating: 4.8,
       starPublish: "(13) ",
-      imageURL: "../../src/assets/images/tutor1.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL:Tutor1,
+      starIcon:Star,
     },
     {
       name: "Bob ",
@@ -14,8 +20,8 @@ const mentor = [
       certifications: "IBM Full Stack Development Certification",
       starRating: 4.2,
       starPublish: "(18) ",
-      imageURL: "../../src/assets/images/tutor2.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: {Tutor2},
+      starIcon:Star,
     },
     {
       name: "Eva ",
@@ -23,8 +29,8 @@ const mentor = [
       certifications: "Creative Illustrator",
       starRating: 4.6,
       starPublish: "(43) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Michael ",
@@ -32,8 +38,8 @@ const mentor = [
       certifications: "Agile Certified",
       starRating: 4.4,
       starPublish: "(23) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Sarah ",
@@ -41,16 +47,16 @@ const mentor = [
       certifications: "Digital Marketing Pro",
       starRating: 4.7,
       starPublish: "(13) ",
-      imageURL: "../../src/assets/images/tutor2.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: {Tutor2},
+      starIcon:Star,
     },
     {
       name: "Liam ",
       jobTitle: "Software Architect",
       certifications: "Architectural Master",
       starRating: 4.9,
-      imageURL: "../../src/assets/images/tutor2.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: {Tutor2},
+      starIcon:Star,
     },
     {
       name: "Olivia",
@@ -58,8 +64,8 @@ const mentor = [
       certifications: "User Experience Guru",
       starRating: 4.5,
       starPublish: "(10) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Daniel ",
@@ -67,8 +73,8 @@ const mentor = [
       certifications: "Cisco Certified Professional",
       starRating: 4.1,
       starPublish: "(14) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Sophia ",
@@ -77,7 +83,7 @@ const mentor = [
       starRating: 4.3,
       starPublish: "(13) ",
       imageURL: "../../src/assets/images/Logo.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      starIcon:Star,
     },
     {
       name: "Jackson ",
@@ -85,8 +91,8 @@ const mentor = [
       certifications: "Certified Project Manager",
       starRating: 4.6,
       starPublish: "(33) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Emma",
@@ -94,8 +100,8 @@ const mentor = [
       certifications: "Content Marketing Specialist",
       starRating: 4.7,
       starPublish: "(42) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Matthew",
@@ -103,8 +109,8 @@ const mentor = [
       certifications: "System Admin Pro",
       starRating: 4.4,
       starPublish: "(12) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Isabella",
@@ -112,8 +118,8 @@ const mentor = [
       certifications: "UI/UX Specialist",
       starRating: 4.8,
       starPublish: "(11) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Logan",
@@ -121,8 +127,8 @@ const mentor = [
       certifications: "DevOps Pro",
       starRating: 4.2,
       starPublish: "(10) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Ava",
@@ -130,8 +136,8 @@ const mentor = [
       certifications: "QA Expert",
       starRating: 4.5,
       starPublish: "(13) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
     {
       name: "Noah",
@@ -139,8 +145,8 @@ const mentor = [
       certifications: "Business Analysis Master",
       starRating: 4.6,
       starPublish: "(11) ",
-      imageURL: "../../src/assets/images/tutor3.svg",
-      starIcon: "../../src/assets/icons/star.png",
+      imageURL: Tutor3,
+      starIcon:Star,
     },
   ];
   export default mentor;

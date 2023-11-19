@@ -10,7 +10,7 @@ export default function CTA() {
           </div>
           <button className="rounded-[20px] bg-[#FE0000] outline-none text-white p-[18px_24px] justify-center items-center hidden sm:flex">
             <a href="/course-catalogue" className="flex">
-              <p className="w-[90px]">See Courses</p>
+              <p className="w-[190px]">See Courses</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -32,7 +32,7 @@ export default function CTA() {
         <div className="block sm:hidden">
           <button className="rounded-[20px] bg-[#FE0000] outline-none text-white p-[18px_24px]  flex justify-center items-center w-full sm:w-fit">
             <a href="/course-catalogue" className="flex">
-              <p className="w-[90px]">See Courses</p>
+              <p className="w-[190px]">See Courses</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
