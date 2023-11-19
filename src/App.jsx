@@ -12,6 +12,7 @@ import ResourcePage from "./pages/Resource-Page/resource";
 import AboutUsPage from "./pages/About-Us/about";
 import SignInPage from "./pages/Sign-In/signin";
 import SignUpPage from "./pages/Sign-Up/signup";
+import BlogPage from "./pages/blog";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/about-us" element={<Layout><AboutUsPage /></Layout>} />
         <Route path="/sign-in" element={<Layout><SignInPage /></Layout>} />
         <Route path="/sign-up" element={<Layout><SignUpPage /></Layout>} />
+        <Route path="/blog" element={<Layout><BlogPage /></Layout>} />
        </Routes>
      </> 
   )
