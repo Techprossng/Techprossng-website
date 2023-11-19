@@ -10,9 +10,9 @@ const Navbar = () => {
   let Links = [
     { name: "Home", link: "/home" },
     { name: "Courses", link: "/course-catalogue" },
-    { name: "Mentorship", link: "/mentorship" },
+    { name: "Mentorship", link: "/coming-soon" },
     { name: "Resources", link: "/resource-page" },
-    { name: "Pricing", link: "/pricing" },
+    { name: "Pricing", link: "/coming-soon" },
     { name: "About Us", link: "/about-us" },
   ];
 
@@ -107,7 +107,7 @@ const Navbar = () => {
           <Link to="/sign-up">Sign Up</Link>
         </button> */}
         <button className="w-35 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          <Link to="/sign-up">Contact Us</Link>
+          <Link to="/coming-soon">Contact Us</Link>
         </button> 
       </div>
     </nav>

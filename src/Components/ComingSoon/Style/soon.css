@@ -1,0 +1,163 @@
+.background-soon{
+    background-color: #fff;
+    background-image:
+      url(../../../assets/images/BGsoon.svg),
+      url(../../../assets/images/bluesoon.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 60%;
+    background-position-y: 70%, 76%;
+    background-position-x: 70%, 98%;
+}
+.header-bold{
+  font-weight: 800;
+}
+ .soon-search {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: center;
+  height: 2rem;
+}
+ .soon-search input {
+  border: 1px solid grey;
+  padding-left: 2rem;
+  text-indent: 25px;
+  padding: 15px;
+  border-radius: 0.7rem;
+  width: 100%;
+  outline: none;
+}
+ .soon-search .fa-solid {
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 1.4rem;
+  transform: translate(-50%, -50%);
+  color: grey;
+}
+ .soon-search button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px 12px;
+  transform: translate(-5%, -14%);
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5rem;
+  background: rgba(128, 140, 186, 1);
+  color: white;
+  width: 150px;
+  transition: 0.8s;
+}
+.soon-search button:hover {
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  background: rgba(0, 25, 117, 1);
+  ;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .background-soon{
+    background-color: #fff;
+    background-image:
+      url(../../../assets/images/BGsoon.svg),
+      url(../../../assets/images/bluesoon.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 380%, 200%;
+    background-position-y: 20%, 500%;
+    background-position-x: 70%, 78%;
+} 
+.Timeimg-container {
+  text-align: center;
+}
+.Timeimg-container .Time-img{
+   margin-left: -40px;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 579px) {
+  .background-soon{
+    background-color: #fff;
+    background-image:
+      url(../../../assets/images/BGsoon.svg),
+      url(../../../assets/images/bluesoon.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 380%, 200%;
+    background-position-y: 20%, -550%;
+    background-position-x: 70%, 78%;
+} 
+.Timeimg-container {
+  text-align: center;
+}
+.Timeimg-container .Time-img{
+   margin-left: -60px;
+}
+}
+@media only screen and (min-width: 579px) and (max-width: 680px) {
+  .background-soon{
+    background-color: #fff;
+    background-image:
+      url(../../../assets/images/BGsoon.svg),
+      url(../../../assets/images/bluesoon.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 380%, 200%;
+    background-position-y: 20%, -200%;
+    background-position-x: 70%, 78%;
+} 
+.Timeimg-container {
+  text-align: center;
+}
+.Timeimg-container .Time-img{
+   margin-left: -60px;
+}
+}
+@media only screen and (min-width: 680px) and (max-width: 768px) {
+  .background-soon{
+    background-color: #fff;
+    background-image:
+      url(../../../assets/images/BGsoon.svg),
+      url(../../../assets/images/bluesoon.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 380%, 200%;
+    background-position-y: 20%, -200%;
+    background-position-x: 70%, 78%;
+} 
+.Timeimg-container {
+  text-align: center;
+}
+.Timeimg-container .Time-img{
+   margin-left: -60px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .background-soon{
+    background-color: #fff;
+    background-image:
+      url(../../../assets/images/BGsoon.svg),
+      url(../../../assets/images/bluesoon.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 180%, 70%;
+    background-position-y: 20%, 120%;
+    background-position-x: 70%, 110%;
+    margin-top: 5rem;
+  
+} 
+.Timeimg-container {
+  text-align: center;
+}
+.Timeimg-container .Time-img{
+  margin-top: 20px;
+}
+.soon-custom{
+  display: flex;
+  padding: 0rem;
+}
+.left-soon{
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.soon-text h2{
+  font-size: 20px;
+}
+.soon-text h1{
+  font-size: 40px;
+}
+
+}
