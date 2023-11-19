@@ -14,64 +14,12 @@ import "./styles/style.css";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-
-// export const announcements = [
-//   {
-//     header: "Top recommended",
-//     title: "UI/UX Design",
-//     description:
-//       "Join our UI/UX Design Course for a transformative learning experience. Master the art of creating intuitive user interfaces and delightful user experiences. Enroll now and shape the future of design!",
-//     time: "2 months",
-//     enrolled: "45 currently enrolled",
-//     certificate: "includes certificate",
-//     rating: "4.5 (56) Read Reviews",
-//     image: img,
-//   },
-
-//   {
-//     header: "Top course",
-//     title: "Web Development",
-//     description:
-//       "Join our UI/UX Design Course for a transformative learning experience. Master the art of creating intuitive user interfaces and delightful user experiences. Enroll now and shape the future of design!",
-//     time: "2 months",
-//     enrolled: "45 currently enrolled",
-//     certificate: "includes certificate",
-//     rating: "4.5 (56) Read Reviews",
-//     image: img1,
-//   },
-
-//   {
-//     header: "Top recommended",
-//     title: "UI/UX Design",
-//     description:
-//       "Join our UI/UX Design Course for a transformative learning experience. Master the art of creating intuitive user interfaces and delightful user experiences. Enroll now and shape the future of design!",
-//     time: "2 months",
-//     enrolled: "45 currently enrolled",
-//     certificate: "includes certificate",
-//     rating: "4.5 (56) Read Reviews",
-//     image: img,
-//   },
-
-//   {
-//     header: "Top recommended",
-//     title: "UI/UX Design",
-//     description:
-//       "Join our UI/UX Design Course for a transformative learning experience. Master the art of creating intuitive user interfaces and delightful user experiences. Enroll now and shape the future of design!",
-//     time: "2 months",
-//     enrolled: "45 currently enrolled",
-//     certificate: "includes certificate",
-//     rating: "4.5 (56) Read Reviews",
-//     image: img,
-//   },
-// ];
-
 const index = () => {
   return (
     <div className=" mt-24">
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
-        //cant i set the fading duration here?
         effect={"fade"}
         autoplay={{
           delay: 2500,
@@ -311,10 +259,10 @@ const index = () => {
                 Content Marketing Course
               </h1>
               <p className="text-[#fff] text-justify overflow-hidden font-medium text-base mt-5">
-                Craft compelling stories, boost brand visibility, and drive
+                &quot;Craft compelling stories, boost brand visibility, and drive
                 results with our Content Marketing Course. Dive into the art of
                 creating content that resonates and converts. Join us now and
-                master the tools of the trade!"
+                master the tools of the trade!&quot;
               </p>
               <div className="flex flex-col mt-5">
                 <div className="flex flex-col">

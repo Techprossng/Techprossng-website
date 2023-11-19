@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Coursecatalog/Style/course-catalog.css";
+import Consider from "../../assets/images/consideration-image.png"
 
 function Consideration() {
   return (
@@ -10,16 +11,16 @@ function Consideration() {
                     <h4>Tech Pros Ng has you covered</h4>
                     <ul>
                          <li>
-                              <p><i class="fa-solid fa-check"></i>Designed in collaboration with industry experts, focusing on practical skills.</p>
-                              <p><i class="fa-solid fa-check"></i>Affordable courses and flexible payment options.</p>
-                              <p><i class="fa-solid fa-check"></i>Personalized learning paths and adaptive assessments.</p>
-                              <p><i class="fa-solid fa-check"></i>Frequently updated to align with industry standards and market demands.</p>
-                              <p><i class="fa-solid fa-check"></i>Support you need to succeed, not only academically but also personally and professionally.</p>
+                              <p><i className="fa-solid fa-check"></i>Designed in collaboration with industry experts, focusing on practical skills.</p>
+                              <p><i className="fa-solid fa-check"></i>Affordable courses and flexible payment options.</p>
+                              <p><i className="fa-solid fa-check"></i>Personalized learning paths and adaptive assessments.</p>
+                              <p><i className="fa-solid fa-check"></i>Frequently updated to align with industry standards and market demands.</p>
+                              <p><i className="fa-solid fa-check"></i>Support you need to succeed, not only academically but also personally and professionally.</p>
                          </li>
                     </ul>
                     </div>
                <div className="photo">
-                    <img src="../../../src/assets/images/consideration-image.png" />
+                    <img src={Consider} alt="consideration image" />
                </div>
           </div>
      </div>

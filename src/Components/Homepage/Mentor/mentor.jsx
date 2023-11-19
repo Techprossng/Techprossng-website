@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../Homepage/Mentor/Styles/mentor.css";
+import Arrow from "../../../assets/images/arrow.png"
 
 function MentorsSection() {
 
@@ -166,7 +167,7 @@ function MentorsSection() {
       >
         {showFullList ? "Hide Full List" : "View Full List"}
         <img
-          src="../../src/assets/icons/arrow.png"
+          src={Arrow} alt="arrow image"
           style={{
             width: "20px",
             height: "20px",

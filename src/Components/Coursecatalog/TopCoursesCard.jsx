@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react'
 import CardImage from '../../assets/images/catalog-img/topcourses.png'
 import { MdStar, MdBookmarks } from 'react-icons/md'
+import { Link } from 'react-router-dom';
+import PropTypes from "prop-types";
+
 const TopCoursesCard = (props) => {
   return (
         <article className="w-full mb-8 sm:mb-14">
@@ -28,13 +30,21 @@ const TopCoursesCard = (props) => {
             <MdBookmarks />
             <span className="ml-2">Add To List</span>
           </button>
+          <Link to='/coming-soon'>
           <button className="inline-flex items-center sm:ml-2 sm:mb-0 mb-2 bg-red-500 text-white hover:bg-blue-900 hover:text-white text-lg font-semibold px-4 py-2 rounded-2xl">
             <span>View Course</span>
           </button>
+          </Link>
         </div>
       </div>
     </article>
   );
+};
+
+TopCoursesCard.propTypes = {
+  head: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  src: PropTypes.element.isRequired,
 };
 
 const CourseForyou = () => {

@@ -140,8 +140,9 @@ const Navbar = () => {
 
       {/* Tablet and Desktop Menu */}
       <div className="hidden  md:flex  custom-space-x  desktop">
-        {Links.map((link) => (
-          <Link
+        {Links.map((link, index) => (
+          <Link 
+            key={index}
             href={`/${link.link}`}
             to={link.link} 
             className={`text-gray-800 duration-500 custom-font ${

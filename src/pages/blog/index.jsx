@@ -4,9 +4,11 @@ import TechProsNaija from "../../assets/images/TechProsNaija.png"
 import CoffeeSplash from "../../assets/images/coffee_unsplash.png"
 import BlogBooks from "../../assets/images/blog_books.png"
 import BlogTrees from "../../assets/images/blog_trees.png"
+import Footer from "../../Components/Landingpage/Footer/footer"
 
 export default function BlogPage() {
   return (
+    <>
     <section className="mt-24 p-[46px_128px] max-[375px]:px-[1.5rem] max-[1080px]:px-[2rem]">
       {/* header section */}
       <header className="mb-[96px]">
@@ -32,8 +34,8 @@ export default function BlogPage() {
         <p className="flex items-center gap-x-[8px] max-[480px]:text-[12px] flex-wrap">
           <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Group">
-              <path id="Vector" d="M10.875 1H7.125L5.25 3.25H3C2.60218 3.25 2.22064 3.40804 1.93934 3.68934C1.65804 3.97064 1.5 4.35218 1.5 4.75V11.5C1.5 11.8978 1.65804 12.2794 1.93934 12.5607C2.22064 12.842 2.60218 13 3 13H15C15.3978 13 15.7794 12.842 16.0607 12.5607C16.342 12.2794 16.5 11.8978 16.5 11.5V4.75C16.5 4.35218 16.342 3.97064 16.0607 3.68934C15.7794 3.40804 15.3978 3.25 15 3.25H12.75L10.875 1Z" stroke="#2B3F8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path id="Vector_2" d="M9 10C10.2426 10 11.25 8.99264 11.25 7.75C11.25 6.50736 10.2426 5.5 9 5.5C7.75736 5.5 6.75 6.50736 6.75 7.75C6.75 8.99264 7.75736 10 9 10Z" stroke="#2B3F8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path id="Vector" d="M10.875 1H7.125L5.25 3.25H3C2.60218 3.25 2.22064 3.40804 1.93934 3.68934C1.65804 3.97064 1.5 4.35218 1.5 4.75V11.5C1.5 11.8978 1.65804 12.2794 1.93934 12.5607C2.22064 12.842 2.60218 13 3 13H15C15.3978 13 15.7794 12.842 16.0607 12.5607C16.342 12.2794 16.5 11.8978 16.5 11.5V4.75C16.5 4.35218 16.342 3.97064 16.0607 3.68934C15.7794 3.40804 15.3978 3.25 15 3.25H12.75L10.875 1Z" stroke="#2B3F8C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path id="Vector_2" d="M9 10C10.2426 10 11.25 8.99264 11.25 7.75C11.25 6.50736 10.2426 5.5 9 5.5C7.75736 5.5 6.75 6.50736 6.75 7.75C6.75 8.99264 7.75736 10 9 10Z" stroke="#2B3F8C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </g>
           </svg>
           <span className="font-secondary text-[#656565] font-medium">Image credits:</span>
@@ -100,5 +102,7 @@ export default function BlogPage() {
       {/* newsletter section */}
       <Newsletter />
     </section>
+    <Footer />
+    </>
   )
 }

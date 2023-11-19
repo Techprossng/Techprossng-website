@@ -5,7 +5,7 @@ import "./styles/style.css";
 // import backgroundimage from "../../../assets/images/values/background.svg";
 import aos from "aos";
 
-const ValueItem = ({ title, icon, description }) => {
+const ValueItem = ({ title, icon, }) => {
   return (
     <div
     className="bg-image mx-6 md:mx-20   mt-6  flex flex-col  rounded-full bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0 border py-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-black duration-300 button-container"
@@ -22,7 +22,6 @@ const ValueItem = ({ title, icon, description }) => {
 ValueItem.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.element.isRequired,
-  description: PropTypes.string.isRequired,
 };
 
 const Values = () => {

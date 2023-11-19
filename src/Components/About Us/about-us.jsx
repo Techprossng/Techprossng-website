@@ -3,12 +3,12 @@ import ImpactVideo from "../../assets/images/impact-video.png";
 import AboutHero from "../../assets/images/about-hero-image.png";
 import CEO from "../../assets/images/team/soge-ceo.jpg";
 import Merit from "../../assets/images/merit-frame.png";
-import HR from "../../assets/images/team/sophia-hr.jpg";
-import MS from "../../assets/images/team/adeyemo-ms.jpg";
-import FM from "../../assets/images/team/chinyere-fm.jpg";
-import PM from "../../assets/images/team/mofe-pm.jpg";
-import COO from "../../assets/images/team/praise-coo.jpg";
-import BlogVector from "../../assets/images/blog-frame.png";
+// import HR from "../../assets/images/team/sophia-hr.jpg";
+// import MS from "../../assets/images/team/adeyemo-ms.jpg";
+// import FM from "../../assets/images/team/chinyere-fm.jpg";
+// import PM from "../../assets/images/team/mofe-pm.jpg";
+// import COO from "../../assets/images/team/praise-coo.jpg";
+// import BlogVector from "../../assets/images/blog-frame.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Blogs } from "./Data/data";
 
@@ -54,7 +54,7 @@ const AboutUs = () => {
               <p className="font-secondary font-medium text-base text-[#272727] mt-2">
                 Our mission at TechProsNaija is to pave the way for digital
                 literacy and technological <br />
-                proficiency across Nigeria's educational landscape and
+                proficiency across Nigeria&apos;s educational landscape and
                 workforce.
               </p>
             </div>
@@ -63,10 +63,10 @@ const AboutUs = () => {
                 Our Vision
               </h5>
               <p className="font-secondary font-medium text-base text-[#272727] mt-2">
-                TechProsNaija aims to become Nigeria's premier EdTech
+                TechProsNaija aims to become Nigeria&apos;s premier EdTech
                 institution by 2030. <br />
                 Our goal is to disseminate tech education throughout the nation,
-                empowering <br />a tech-savvy generation to drive the country's
+                empowering <br />a tech-savvy generation to drive the country&apos;s
                 technological advancement.
               </p>
             </div>
@@ -75,7 +75,7 @@ const AboutUs = () => {
         <div className="founder bg-[#aab2d1] border-4 mt-10">
           <div className="founder-inner">
             <h5 className="font-primary font-bold text-2xl text-justify">
-              "As the CEO/Founder of TechProsNaija I am glad to announce the
+              &quot;As the CEO/Founder of TechProsNaija I am glad to announce the
               acquisition in the edtech space, we are not just a random Edtech
               startup; we are creating a priceless society for skill acquisition
               and mentorship to redefine the landscape of learning.
@@ -85,7 +85,7 @@ const AboutUs = () => {
               We aim to cultivate a culture of lifelong learning, where anyone,
               anywhere can access knowledge that transcends boundaries. This
               acquisition propels us into a future where education is not a
-              privilege but a universal right."
+              privilege but a universal right.&quot;
             </h5>
             <br />
             <div className="founder-frame flex gap-3 items-center">
@@ -161,7 +161,7 @@ const AboutUs = () => {
                 </h5>
                 <p className="font-medium text-base text-[#fff]">
                   Our courses are designed in collaboration with industry
-                  experts to ensure you're learning what matters most with new
+                  experts to ensure you&apos;re learning what matters most with new
                   technologies.
                 </p>
               </div>
@@ -212,7 +212,7 @@ const AboutUs = () => {
             ))}
           </div>
           <div className="blog-link w-full mt-10 border-3 flex gap-10 justify-center items-center font-bold text-sm">
-            <a href="#">Go To Blog</a>
+            <a href="/blog">Go To Blog</a>
             <FaLongArrowAltRight className="blogpoint" />
           </div>
         </div>

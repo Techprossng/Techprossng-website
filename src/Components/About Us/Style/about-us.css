@@ -1,12 +1,7 @@
 .about-us-intro {
   margin-top: 10rem;
 }
-.border-2 {
-  border: 2px solid red;
-}
-.border-3 {
-  border: 3px solid blue;
-}
+
 .ceo-image > img {
   display: flex;
   justify-content: center;
