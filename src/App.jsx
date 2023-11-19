@@ -14,6 +14,7 @@ import SignInPage from "./pages/Sign-In/signin";
 import SignUpPage from "./pages/Sign-Up/signup";
 import ComingSoonPage from "./pages/ComingSoon/soon";
 import BlogPage from "./pages/blog";
+import ContactUs from "./pages/Contact-Us/contact"
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/sign-in" element={<Layout><SignInPage /></Layout>} />
         <Route path="/sign-up" element={<Layout><SignUpPage /></Layout>} />
         <Route path="/blog" element={<Layout><BlogPage /></Layout>} />
+        <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
        </Routes>
      </> 
   )
