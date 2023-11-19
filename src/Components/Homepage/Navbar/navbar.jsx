@@ -21,7 +21,7 @@ const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "Courses", link: "/course-catalogue" },
-    { name: "Mentorship", link: "/coming-soon" },
+    { name: "Mentorship", link: "/" },
     { name: "Resources", link: "/resource-page" },
     { name: "Pricing", link: "/coming-soon" },
     { name: "About Us", link: "/about" },
@@ -32,7 +32,7 @@ const Navbar = () => {
     { name: "Catalog", link: "/catalog" },
     { name: "Library", link: "/library" },
     { name: "Community", link: "/coming-soon" },
-    { name: "Mentors", link: "/coming-soon" },
+    { name: "Mentors", link: "/" },
     { name: "Profile", link: "/coming-soon" },
     { name: "Settings", link: "/coming-soon" },
     { name: "Logout", link: "/coming-soon" },
