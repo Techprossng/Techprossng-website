@@ -11,7 +11,7 @@ import "./styles/progress.css";
 
 const Progress = () => {
   return (
-    <section className="inprogress-container mt-28">
+    <section className="inprogress-container mt-20">
       <div className="progress mobile-inprogress sm:w-[100%] md:w-[100%] lg:w-[92%] p-5 bg-[#fff] text-[#00114E]">
         <h5 className="progress-title font-primary font-bold font-bold w-[143px] h-[36px]">
           In Progress
