@@ -1,6 +1,5 @@
 import "./styles/services.css";
 import online from "./images/online.png";
-import { Link } from "react-router-dom";
 import mentorship from "./images/mentorship.png";
 import "aos";
 
@@ -8,9 +7,9 @@ const Services = () => {
   return (
     <section className="services flex flex-col items-center justify-center">
       <div className="flex justify-center">
-        <h2 className="text-[32px] leading-[38.4px] relative w-fit text-4xl font-bold uppercase">
+        <h4 className="text-[32px] leading-[38.4px] font-primary relative w-fit text-4xl font-bold uppercase">
           Our Services
-        </h2>
+        </h4>
       </div>
       <div className="flex">
         <span className="w-[80px] h-[6px] color rounded-[12px] mr-[11pc]"></span>
@@ -24,7 +23,7 @@ const Services = () => {
           data-aos="fade-right"
         >
           <img src={online} alt="online-learning" />
-          <h5 className="title font-normal text-3xl font-primary mb-5">
+          <h5 className="title font-bold text-3xl font-primary mb-5">
             Online Learning and Training
           </h5>
           <p className="paragraph text-2xl font-medium font-secondary">
@@ -64,7 +63,7 @@ const Services = () => {
 
         <div className="flex flex-col justify-start p-10" data-aos="fade-left">
           <img src={mentorship} alt="Mentorship" />
-          <h5 className="title font-normal text-3xl font-primary mb-5">
+          <h5 className="title font-bold text-3xl font-primary mb-5">
             Mentorship
           </h5>
           <p className="paragraph text-2xl font-medium font-secondary">

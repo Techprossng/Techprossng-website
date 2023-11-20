@@ -126,10 +126,10 @@ const Values = () => {
   return (
     <section className="values mt-8 sm:mt-20 my-20">
     <div className="items-center">
-  <h2 className="text-center font-secondary text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl md:mb-6 lg:mb-12 ">
+  <h4 className="text-center font-secondary text-[32px] font-bold  sm:text-3xl md:text-4xl lg:text-[32px] xl:text-4xl md:mb-6 lg:mb-12 ">
     Our Values
     <p className="relative bottom-[-5px] ml-[33%] md:ml-[38%] sm:ml-[40%] lg:ml-[44%] w-[83px] h-[6px] color rounded-[12px] value-line mx-auto"></p>
-  </h2>
+  </h4>
 </div>
 
 

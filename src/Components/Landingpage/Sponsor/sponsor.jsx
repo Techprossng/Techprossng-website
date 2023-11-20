@@ -23,10 +23,10 @@ const Sponsor = () => {
   return (
     <div className="px-6 bg-contain w-full bg-center py-40 background-color sponsor-contain">
       <div className="flex justify-center" style={{ zIndex: 1 }}>
-        <h2 className="text-[32px] leading-[38.4px] relative w-fit header-text  ">
+        <h4 className="text-[32px] leading-[38.4px] relative w-fit header-text font-primary font-normal">
           PARTNERSHIPS
           <p className="absolute bottom-[80px] left-0 w-[83px] h-[6px] color rounded-[12px] under-line"></p>
-        </h2>
+        </h4>
       </div>
 
       <div

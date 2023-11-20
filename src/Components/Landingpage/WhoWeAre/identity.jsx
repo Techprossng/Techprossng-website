@@ -11,9 +11,8 @@ const Identity = () => {
         <div className="flex justify-between items-center">
           <div
             className="flex flex-col items-start gap-[16px]"
-            data-aos="fade-right"
-          >
-            <h6 className="who-we-are text-base font-normal font-primary text-[#272727]">WHO WE ARE</h6>
+            data-aos="fade-right">
+            <h6 className="who-we-are text-base font-semibold font-primary text-[#272727]">WHO WE ARE</h6>
             <h5 className="opening-text text-3xl font-normal font-primary text-[#001975]">
               WE ARE YOUR PARTNER FOR LEARNING AND CAREER GROWTH.
             </h5>

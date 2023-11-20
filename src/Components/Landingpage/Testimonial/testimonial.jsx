@@ -42,7 +42,7 @@ const Testimonial = () => {
     <div className="flex flex-col items-center justify-center gap-16 py-12">
       <div data-aos="zoom-in-left">
         <h4
-          className="text-3xl ml-24 mr-24 uppercase testimonial"
+          className="text-3xl ml-24 mr-24 uppercase testimonial font-primary font-bold"
           style={{ color: "#272727" }}
         >
           testimonials

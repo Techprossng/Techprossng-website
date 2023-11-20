@@ -22,8 +22,8 @@ const LandingPage = () => {
       <Identity />
       <Services />
       <WhyChooseUs />
-      <Sponsor />
       <Values />
+      <Sponsor />
       <Testimonial />
       <StatsImpactVideo />
       <Newsletter />
