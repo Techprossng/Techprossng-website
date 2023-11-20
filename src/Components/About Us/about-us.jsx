@@ -2,13 +2,13 @@ import "../About Us/Style/about-us.css";
 import ImpactVideo from "../../assets/images/impact-video.png";
 import AboutHero from "../../assets/images/about-hero-image.png";
 import CEO from "../../assets/images/team/soge-ceo.jpg";
+import CEO2 from "../../assets/images/team/mayomiwa.png"
 import Merit from "../../assets/images/merit-frame.png";
-// import HR from "../../assets/images/team/sophia-hr.jpg";
-// import MS from "../../assets/images/team/adeyemo-ms.jpg";
-// import FM from "../../assets/images/team/chinyere-fm.jpg";
-// import PM from "../../assets/images/team/mofe-pm.jpg";
-// import COO from "../../assets/images/team/praise-coo.jpg";
-// import BlogVector from "../../assets/images/blog-frame.png";
+import HR from "../../assets/images/team/runsewe.png";
+import MS from "../../assets/images/team/adeyemo.png";
+import FM from "../../assets/images/team/chinyere.png";
+import PM from "../../assets/images/team/mofeoluwa.png";
+import COO from "../../assets/images/team/olakanmi.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Blogs } from "./Data/data";
 
@@ -183,6 +183,25 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+
+        <div className="about-team">
+          <div>
+            <h4 className="team-title font-bold text-3xl font-primary text-center text-[#001562] my-10">
+              Our Team
+            </h4>
+          </div>
+          <div className="flex justify-center bg-[#001975]">
+            <img src={CEO2} alt="ceo image" className="w-[30%]" />
+            <img src={COO} alt="coo image" className="w-[30%]" />
+            <img src={PM} alt="pm image" className="w-[30%]" />
+          </div>
+          <div className="flex justify-center bg-[#001975]">
+            <img src={HR} alt="hr image" className="w-[30%]" />
+            <img src={FM} alt="fm image" className="w-[30%]" />
+            <img src={MS} alt="ms image" className="w-[30%]" />
+          </div>
+        </div>
+
         <div className="about-blog-section flex flex-col items-center">
           <div className="about-blog-header text-[#001562] mt-10">
             <h4 className="font-bold text-3xl mb-10 font-primary text-[#001562]">Our Blog</h4>

@@ -99,21 +99,15 @@
   .libraries .mobile-resourse-link a {
     color: red;
     text-decoration: underline;
-  
-   
-   
-    
   }
   .libraries .mobile-resourse-link .fa-solid {
     color: red;
   }
-
   .libraries .box-container {
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 10px;
-  
   }
   .libraries .box-container .box img {
     height: 180px;
@@ -121,9 +115,9 @@
     border-radius: 16px;
   }
   .libraries .box-container .box h3 {
-     color: rgba(0, 25, 117, 1);
-     font-size: 16px;
-     font-weight: bold;
+    color: rgba(0, 25, 117, 1);
+    font-size: 16px;
+    font-weight: bold;
     margin-bottom: -15px;
 
   }

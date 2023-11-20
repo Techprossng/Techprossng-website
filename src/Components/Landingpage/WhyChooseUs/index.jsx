@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
     },
     { 
       title: "Career Opportunities",
-      description: "TechProsNg graduates are followed up and given internship opportunities to land their first jobs."
+      description: "TechProsNaija graduates are followed up and given internship opportunities to land their first jobs."
     },
   ]
   return (
