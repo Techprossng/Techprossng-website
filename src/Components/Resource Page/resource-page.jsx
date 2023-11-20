@@ -13,7 +13,7 @@ const Resource = () => {
                 TechPros Support Center
               </h3>
               <p className="sub-title font-medium text-base mt-7">
-                Welcome to TechProsNg! We are here to assist you in making the most of your learning experience. Whether you have questions about our courses, technical issues, or need guidance on using our platform, you&apos;ll find the help and support you need right here.
+                Welcome to TechPros Naija! We are here to assist you in making the most of your learning experience. Whether you have questions about our courses, technical issues, or need guidance on using our platform, you&apos;ll find the help and support you need right here.
               </p>
             </div>
             <div className="resource-search-box flex justify-between items-center mt-7">
@@ -143,7 +143,7 @@ const Resource = () => {
                 Getting Started Guide
               </h6>
               <p className="desc font-medium text-base text-[#555555] mt-5">
-                New to TechProsNg? Check our guide for a smooth start.
+                New to TechPros Naija? Check our guide for a smooth start.
               </p>
             </div>
             <div className="sub-items">
@@ -195,7 +195,7 @@ const Resource = () => {
         </div>
         <div>
           <h5 className="sub-title font-semibold text-2xl w-[1152px] my-20">
-            Thank you for choosing TechPros Ng as your learning partner. We&apos;re here to support you every step of the way on your educational journey.
+            Thank you for choosing TechPros Naija as your learning partner. We&apos;re here to support you every step of the way on your educational journey.
           </h5>
         </div>
       </div>
