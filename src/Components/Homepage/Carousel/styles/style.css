@@ -3,6 +3,21 @@
     display: none;
   }
 
+  .content-course,
+  .game-course,
+  .cyber-course,
+  .ui-course {
+    margin: auto 0;
+    padding: 0.8rem;
+  }
+
+  .mobile-version {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .ui-ux-image {
     background-image: url("../../../../assets/images/home-image.png");
     background-repeat: no-repeat;
@@ -19,7 +34,6 @@
     background-blend-mode: multiply;
     background-color: #40475e;
     width: 100%;
-
   }
 
   .game-image {
@@ -29,7 +43,6 @@
     background-blend-mode: multiply;
     background-color: #40475e;
     width: 100%;
-
   }
 
   .content-image {
@@ -54,7 +67,6 @@
     background-blend-mode: multiply;
     background-color: #40475e;
     width: 100%;
-
   }
 
   .cyber-image {

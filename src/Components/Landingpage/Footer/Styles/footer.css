@@ -96,9 +96,6 @@ ul li {
     display: flex;
     margin-left: -2.5rem;
   }
-  h4 {
-    color: white;
-  }
 
   .footer .copyright {
     display: flex;
@@ -115,10 +112,6 @@ ul li {
   .first-container img {
     display: flex;
     margin-left: -4%;
-  }
-
-  h4 {
-    color: white;
   }
 
   .footer .copyright {
