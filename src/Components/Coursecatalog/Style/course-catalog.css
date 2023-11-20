@@ -17,17 +17,6 @@
 
 .box1 {
   grid-row: span 2;
-  /* background-color: #2645b8;
-  background-image: url("../../../assets/images/catalog-img/course1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: soft-light; */
-}
-
-.box2 {
-  background-color: #2645b8;
-  background-blend-mode: soft-light;
-  width: 100%;
 }
 
 .consideration {
