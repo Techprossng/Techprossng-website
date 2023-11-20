@@ -15,7 +15,7 @@ const Hero = () => {
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <p className="text-[#001975] font-bold mini-logo">TechProsNaija</p>
+            <p className="text-[#001975] font-bold font-primary mini-logo">TechProsNaija</p>
             <img src={Vector} className="Vector-img" />
             <h1
               className=" text-4xl   md:text-6xl lg:text-5xl xl:text-6xl font-primary xl:font-primary  font-bold tracking-tight mb-5  animate-text landing-hero "
@@ -26,7 +26,7 @@ const Hero = () => {
             >
               <span className="text-[#001975]">Unleash</span> Your Potential Through Tech Mastery
             </h1>
-            <p className="text-xl text-justify text-black">
+            <p className="text-xl text-justify text-black font-primary">
               Start your tech journey with us and upskill with expert mentorship
             </p>
 
@@ -39,7 +39,7 @@ const Hero = () => {
               }}
             >
               <Link to="/course-catalogue" 
-              className="flex text-red-500 hover:text-white "
+              className="flex text-red-500 hover:text-white font-seconday font-semibold "
             
               >
                 <span>See Courses</span>
@@ -72,7 +72,7 @@ const Hero = () => {
             />
           </div>
           <div className="block  md:block w-full lg:hidden">
-            <button className="rounded-[20px] bg-[#FE0000] hidden sm:hidden md:hidden outline-none text-white p-[18px_24px]  flex justify-center items-center w-full">
+            <button className="rounded-[20px] bg-[#FE0000] hidden font-seconday font-semibold sm:hidden md:hidden outline-none text-white p-[18px_24px]  flex justify-center items-center w-full">
               <Link to="/course-catalogue" className="w-[129px]">
                 See Courses
                 <svg

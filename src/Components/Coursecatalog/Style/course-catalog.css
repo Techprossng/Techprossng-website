@@ -1,54 +1,110 @@
-.skill{
-     padding: 1.5rem;
-     font-size: larger;
+.box {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
-.consideration{
-     padding: 1.5rem;
+
+.resource-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem;
 }
-.consideration .col{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+
+.span-2 {
+  grid-column: span 2;
 }
-.consideration h1{
-     font-size: 2rem;
-     padding: 0.5rem;
+
+.box1 {
+  grid-row: span 2;
 }
-.consideration h4{
-     font-size: 1rem;
-     padding: 0.5rem;
-     margin-bottom: 1rem;
-     color: #000;
+
+.consideration {
+  padding: 1.5rem;
 }
-.consideration p{
-     font-size: 0.8rem;
-     padding: 0.5rem;
-     color: #000;
+.consideration .col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.consideration p .fa-solid{
-     margin-left: 1%;
-     padding-right: 1rem;
-     color: rgb(46, 238, 46);
-     font-weight: bolder;
+.consideration h1 {
+  font-size: 2rem;
+  padding: 0.5rem;
 }
-.consideration .col .photo img{
-     height: 25rem;
+.consideration h4 {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+.consideration p {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  color: #000;
+}
+.consideration p .fa-solid {
+  margin-left: 1%;
+  padding-right: 1rem;
+  color: rgb(46, 238, 46);
+  font-weight: bolder;
+}
+.consideration .col .photo img {
+  height: 25rem;
 }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
-     .consideration .col{
-          display: flex;
-          flex-direction: column;
-     }
-     .consideration .col .photo img{
-          width: 50rem;
-     }
+  .consideration .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .consideration .col .photo img {
+    width: 50rem;
+  }
+
+  .resource-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .span-2 {
+    grid-column: span 1;
+  }
+  .box1 {
+    grid-row: span 1;
+  }
+  .grid-col-start {
+    grid-column-start: 1;
+  }
+  .box:last-child {
+    grid-column-start: 1;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-     .consideration .col{
-          display: flex;
-          flex-direction: column;
-     }
-     .consideration .col .photo img{
-          width: 50rem;
-     }
+  .consideration .col {
+    display: flex;
+    flex-direction: column;
+  }
+  .consideration .col .photo img {
+    width: 50rem;
+  }
+
+  .resource-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .span-2 {
+    grid-column: span 2;
+  }
+  .box1 {
+    grid-row: span 1;
+  }
+  .grid-col-start {
+    grid-column-start: 1;
+  }
+  .box:last-child {
+    grid-column-start: 2;
+  }
 }

@@ -44,7 +44,7 @@ const TopCoursesCard = (props) => {
 TopCoursesCard.propTypes = {
   head: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  src: PropTypes.element.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
 const CourseForyou = () => {

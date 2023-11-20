@@ -48,7 +48,7 @@ const AllCoursesCard = (props) => {
 AllCoursesCard.propTypes = {
   head: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  src: PropTypes.element.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
 const CourseForyou = () => {

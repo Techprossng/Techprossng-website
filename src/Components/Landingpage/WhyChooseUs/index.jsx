@@ -29,7 +29,7 @@ export default function WhyChooseUs() {
     <section className="p-[96px_66px] relative max-[375px]:px-[1.5rem] max-[768px]:px-[1.5rem]">
       {/* header */}
       <div className="flex justify-center">
-        <header className="text-[32px] leading-[38.4px] relative w-fit font-bold">
+        <header className="text-[32px] leading-[38.4px] relative font-primary w-fit font-bold">
           WHY CHOOSE US?
           <p className="absolute bottom-[-12px] left-0 w-[83px] h-[6px] bg-[#2B3F8C] rounded-[12px]"></p>
         </header>
@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
               <li key={index} className="flex gap-x-[24px] items-start" data-aos="fade-up-right">
                 <img src={Frame} alt="" width={64} height={64} />
                 <div className="max-w-[392px] space-y-[6px]">
-                  <p className="font-semibold text-[#000] text-[24px] break-words">{item.title}</p>
+                  <p className="font-semibold font-primary text-[#000] text-[24px] break-words">{item.title}</p>
                   <p className="font-secondary text-[#656565]">{item.description}</p>
                 </div>
               </li>
