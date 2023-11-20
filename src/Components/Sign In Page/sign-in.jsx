@@ -11,21 +11,21 @@ const SignIn = () => {
                     <img src="../../../src/assets/images/Logo-Sign-In.png" alt="" />
                </div>
                <div className="email">
-                    <p className="email-text">Email address</p>
+                    <p className="email-text font-secondary">Email address</p>
                     <div className="email-input">
                          <input type="email" placeholder="Enter email" />
                     </div>
                </div>
                <div className="password">
-                    <p className="password-text">Password</p>
+                    <p className="password-text font-secondary">Password</p>
                     <div className="password-input">
                          <input type="password" placeholder="Enter password" />
                     </div>
                </div>
-               <div className="login-button">
+               <div className="login-button font-secondary">
                     <button type="submit">Log In</button>
                </div>
-               <div className="sign-up">
+               <div className="sign-up  font-secondary">
                     <p>Don&apos;t have an account? <a href="#">Sign Up</a></p>
                </div>
                <div className="line">

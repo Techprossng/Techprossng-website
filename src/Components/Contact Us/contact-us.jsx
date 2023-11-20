@@ -6,13 +6,13 @@ function ContactUs() {
      <form action="" className="contact-form my-10">
           <div className="contact-us m-10">
             <div className="contact-intro flex flex-col justify-center items-center">
-              <h4 className="font-bold text-3xl text-[#001562]">Contact Us</h4>
-              <p className="font-medium text-base text-[#272727] mt-5">
+              <h4 className="font-bold text-3xl text-[#001562] font-primary">Contact Us</h4>
+              <p className="font-medium text-base text-[#272727] mt-5 font-secondary">
                 Please fill out the form below, and our team will get back to
                 you as soon as possible.
               </p>
             </div>
-            <div className="forminputs">
+            <div className="forminputs font-secondary">
               <div className="name flex justify-around items-center mt-10">
                 <div className="firstinput">
                   <p className="text-[#272727] font-medium text-sm">
@@ -27,7 +27,7 @@ function ContactUs() {
                   <input type="name" className="" />
                 </div>
               </div>
-              <div className="course-option flex flex-col flex justify-center items-center mt-10">
+              <div className="course-option flex flex-col justify-center items-center mt-10">
                 <p className="text-[#272727] font-medium text-sm">
                   Please select your course of enquiry.
                 </p>
@@ -62,7 +62,7 @@ function ContactUs() {
                 </div>
               </div>
             </div>
-            <div className="submit-form flex justify-center mt-10">
+            <div className="submit-form flex justify-center mt-10  font-secondary">
               <button type="submit">
                 <p className="font-semibold text-sm">Send</p>
               </button>

@@ -8,7 +8,7 @@ function Consideration() {
           <div className="col">
                <div className="texts">
                     <h1>Have you been thinking about getting into tech?</h1>
-                    <h4>Tech Pros Naija has you covered</h4>
+                    <h4>TechProsNaija has you covered</h4>
                     <ul>
                          <li>
                               <p><i className="fa-solid fa-check"></i>Designed in collaboration with industry experts, focusing on practical skills.</p>
