@@ -1,32 +1,34 @@
 import React from "react";
-import BgImage from "../../assets/images/catalog-img/course1.png";
-import BgImage1 from "../../assets/images/catalog-img/course4.png";
-import BgImage2 from "../../assets/images/catalog-img/course2.png";
-import BgImage3 from "../../assets/images/catalog-img/course3.png";
+import BgImage from "../../assets/images/catalog-img/Cybersecurity.png";
+import BgImage1 from "../../assets/images/catalog-img/Development.png";
+import BgImage2 from "../../assets/images/catalog-img/Design.png";
+import BgImage3 from "../../assets/images/catalog-img/Business.png";
 import "../Coursecatalog/Style/course-catalog.css";
 const TopicSkills = () => {
   return (
     <React.Fragment>
-      <section className="mt-28">
+      <section className="mt-32">
         <div>
           {" "}
-          <h4 className="text-[17px] font-medium font-primary ">
+          <h6 className="text-[17px] font-medium font-primary text-[#272727] m-7 ">
             Explore topics and skills
-          </h4>
+          </h6>
         </div>
-        <div className="resource-grid">
-          <article className="box bg-[black] span-2">
-            box1
-          </article>
-          <article className="box bg-[blue] span-2">
-            box2
-          </article>
-          <article className="box bg-[red] grid-col-start">
-            box3  
-          </article>
-          <article className="box bg-[green]">
-            box4
-          </article>
+        <div>
+          <div className="resource-grid">
+            <article className="box span-2 box1 ">
+              <img src={BgImage} alt="" className="w-[100%]" />
+            </article>
+            <article className="box span-2 box2">
+              <img src={BgImage1} alt="" className="w-[100%]" />
+            </article>
+            <article className="box  grid-col-start box3">
+              <img src={BgImage2} alt="" className="w-[100%]" />
+            </article>
+            <article className="box box4">
+              <img src={BgImage3} alt="" className="w-[100%]" />
+            </article>
+          </div>
         </div>
       </section>
     </React.Fragment>
