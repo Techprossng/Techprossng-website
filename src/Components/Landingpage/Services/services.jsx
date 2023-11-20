@@ -39,10 +39,9 @@ const Services = () => {
               fontSize: "14px",
             }}
           >
-            <Link
-              to="/course-catalogue"
+            <a
+              href="/course-catalogue"
               className="flex text-red-500  hover:text-white"
-              
             >
               <span>See Courses</span>
               <svg
@@ -59,7 +58,7 @@ const Services = () => {
                   d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                 />
               </svg>
-            </Link>
+            </a>
           </button>
         </div>
 
@@ -80,26 +79,26 @@ const Services = () => {
               fontSize: "14px",
             }}
           >
-             <Link to="/course-catalogue" 
+            <a
+              href="/coming-soon"
               className="flex text-red-500  hover:text-white"
-             
+            >
+              <span>See Mentors</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={3}
+                stroke="currentColor"
+                className="w-6 h-6 ml-4"
               >
-                <span>See Courses</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={3}
-                  stroke="currentColor"
-                  className="w-6 h-6 ml-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </Link>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </a>
           </button>
         </div>
       </div>
