@@ -10,10 +10,10 @@ function Footer() {
 
           <div>
             <div className="social-icons">
-              <i className="fa-brands fa-twitter"></i>
-              <i className="fa-brands fa-facebook"></i>
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-discord"></i>
+              <a href="https://x.com/TechProsNaija?t=u38kmZuIB5X2ogELOWCk1A&s=09"><i className="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61551049632184&mibextid=ZbWKwL"><i className="fa-brands fa-facebook"></i></a>
+              <a href="https://instagram.com/techprosnaija?igshid=OGQ5ZDc2ODk2ZA"><i className="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/techpros-ng/"><i className="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ function Footer() {
         </div>
       </div>
       <hr className="w-[85%] horizontal-line" />
-      <div className="copyright flex justify-between p-5 w-[87%] m-auto">
+      <div className="copyright flex flex-col justify-center items-center gap-5 justify-between p-5 w-[87%] m-auto">
         <span>&copy; 2023 TechPros Ng. All Rights Reserved </span>
         <a href="">Cookie Policy</a>
       </div>

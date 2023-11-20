@@ -56,7 +56,7 @@ ul li {
   gap: 10px;
 }
 
-.social-icons .fa-brands {
+.social-icons a .fa-brands {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ ul li {
   cursor: pointer;
 }
 
-.social-icons .fa-brands:hover {
+.social-icons a .fa-brands:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transform: scale(1.2);
   transition: 0.8s;
