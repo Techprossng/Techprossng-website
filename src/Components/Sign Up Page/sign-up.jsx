@@ -67,12 +67,12 @@ const SignUp = () => {
             <input
               type="name"
               placeholder="Enter First Name"
-              name="FirstName"
+              name="firstName"
               value={formValue.firstName}
               onChange={handleChange}
             />
           </div>
-          <small>{formError.firstName}</small>
+          <small className="text-red-600">{formError.firstName}</small>
         </div>
         <div className="lastname">
           <p className="lastname-text">Last Name</p>
@@ -80,12 +80,12 @@ const SignUp = () => {
             <input
               type="name"
               placeholder="Enter Last Name"
-              name="LastName"
+              name="lastName"
               value={formValue.lastName}
               onChange={handleChange}
             />
           </div>
-          <small>{formError.lastName}</small>
+          <small className="text-red-600">{formError.lastName}</small>
         </div>
         <div className="email">
           <p className="email-text">Email address</p>
@@ -98,7 +98,7 @@ const SignUp = () => {
               onChange={handleChange}
             />
           </div>
-          <small>{formError.email}</small>
+          <small className="text-red-600">{formError.email}</small>
         </div>
         <div className="password">
           <p className="password-text">Password</p>
@@ -111,7 +111,7 @@ const SignUp = () => {
               onChange={handleChange}
             />
           </div>
-          <small>{formError.password}</small>
+          <small className="text-red-600">{formError.password}</small>
         </div>
         <div className="login-button">
           <button type="submit">Log In</button>
