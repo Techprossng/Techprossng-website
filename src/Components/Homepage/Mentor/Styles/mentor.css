@@ -373,7 +373,7 @@
     position: relative;
     width: 406px;
     left: 0rem;  
-    top: 68%;
+    top: 65%;
   }
 }
 @media only screen and (min-width: 980px) and (max-width: 1024px) {
@@ -414,7 +414,7 @@
   .card-content {
     width: 406px;
     left: 14px;  
-    top: 67%;
+    top: 65%;
   }  
 
 }
@@ -456,7 +456,7 @@
   .card-content {
     width: 406px;
     left: 14px;  
-    top: 67%;
+    top: 65%;
   }  
 }
 @media only screen and (min-width: 1025px) and (max-width: 1025px) {
@@ -497,7 +497,7 @@
   .card-content {
     width: 406px;
     left: 14px;  
-    top: 67%;
+    top: 65%;
   }  
 
 }
@@ -539,7 +539,7 @@
   .card-content {
     width: 390px;
     left: 11px;  
-    top: 67%;
+    top: 65%;
   }  
 
 }
@@ -581,7 +581,7 @@
   .card-content {
     width: 340px;
     left: 11px;  
-    top: 67%;
+    top: 65%;
   }  
 
 }

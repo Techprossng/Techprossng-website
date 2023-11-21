@@ -15,7 +15,7 @@ function Soon() {
             <h1 className="header-bold text-4xl md:text-7xl mb-7">
               Coming Soon
             </h1>
-            <p className="text-base font-medium mb-4">
+            <p className="text-base font-medium mb-4 text-gray-500 font-secondary">
               Subscribe to be the first to know about all the events and get a
               discount
               <br /> on your first order!
@@ -29,13 +29,14 @@ function Soon() {
               className="font-secondary font-light text-base"
             />
             <i className="fa-solid fa-magnifying-glass"></i>
-            <button type="submit">Join Waitlist</button>
+            <button type="submit" className="font-secondary">Join Waitlist</button>
+            <button type="submit" className="soon-button-2 mt-10 font-secondary">Join Waitlist</button>
           </div>
           </form>
-          <div className="flex mt-12 md:mt-12">
+          <div className="flex mt-12 md:mt-12 ">
             <a
               href="/"
-              className="text-red-600 flex gap-x-5 items-center font-medium"
+              className="text-red-600 flex gap-x-5 items-center font-primary font-medium soon-link"
             >
               Check out our top courses
               <CgArrowLongRight size={30} className="mt-1" />

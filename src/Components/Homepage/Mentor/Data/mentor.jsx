@@ -20,7 +20,7 @@ const mentor = [
       certifications: "IBM Full Stack Development Certification",
       starRating: 4.2,
       starPublish: "(18) ",
-      imageURL: {Tutor2},
+      imageURL: Tutor2,
       starIcon:Star,
     },
     {
@@ -47,7 +47,7 @@ const mentor = [
       certifications: "Digital Marketing Pro",
       starRating: 4.7,
       starPublish: "(13) ",
-      imageURL: {Tutor2},
+      imageURL: Tutor2,
       starIcon:Star,
     },
     {
@@ -55,7 +55,7 @@ const mentor = [
       jobTitle: "Software Architect",
       certifications: "Architectural Master",
       starRating: 4.9,
-      imageURL: {Tutor2},
+      imageURL: Tutor2,
       starIcon:Star,
     },
     {

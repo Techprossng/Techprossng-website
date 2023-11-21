@@ -19,7 +19,7 @@
   height: 2rem;
 }
  .soon-search input {
-  border: 1px solid grey;
+  border: 3px solid  rgba(230, 230, 230, 1);
   padding-left: 2rem;
   text-indent: 25px;
   padding: 15px;
@@ -48,6 +48,9 @@
   width: 150px;
   transition: 0.8s;
 }
+.soon-button-2{
+  display: none;
+}
 .soon-search button:hover {
   letter-spacing: 0.1rem;
   transition: 0.5s;
@@ -71,6 +74,42 @@
 .Timeimg-container .Time-img{
    margin-left: -40px;
 }
+.soon-search button{
+  display: none;
+}
+.soon-search .soon-button-2 {
+  display: block;
+  padding: 15px 12px;
+  transform: translate(0%, -40%);
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5rem;
+  background: rgba(128, 140, 186, 1);
+  color: white;
+  width: 100%;
+  transition: 0.8s;
+}
+.soon-search input {
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 40px;
+}
+.soon-search .fa-solid {
+  position: absolute;
+  margin-top: -4rem;
+  margin-left: 1.4rem;
+  transform: translate(-50%, -50%);
+  color: grey;
+}
+.soon-search .soon-button-2:hover {
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  background: rgba(0, 25, 117, 1);
+  ;
+}
+.soon-link{
+  margin-top: 20px;
+}
 }
 @media only screen and (min-width: 480px) and (max-width: 579px) {
   .background-soon{
@@ -89,6 +128,43 @@
 .Timeimg-container .Time-img{
    margin-left: -60px;
 }
+.soon-search button{
+  display: none;
+}
+.soon-search .soon-button-2 {
+  display: block;
+  padding: 15px 12px;
+  transform: translate(0%, -40%);
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5rem;
+  background: rgba(128, 140, 186, 1);
+  color: white;
+  width: 100%;
+  transition: 0.8s;
+}
+.soon-search input {
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 40px;
+}
+.soon-search .fa-solid {
+  position: absolute;
+  margin-top: -4rem;
+  margin-left: 1.4rem;
+  transform: translate(-50%, -50%);
+  color: grey;
+}
+.soon-search .soon-button-2:hover {
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  background: rgba(0, 25, 117, 1);
+  ;
+}
+.soon-link{
+  margin-top: 20px;
+}
+
 }
 @media only screen and (min-width: 579px) and (max-width: 680px) {
   .background-soon{
@@ -107,6 +183,7 @@
 .Timeimg-container .Time-img{
    margin-left: -60px;
 }
+
 }
 @media only screen and (min-width: 680px) and (max-width: 768px) {
   .background-soon{
@@ -159,5 +236,82 @@
 .soon-text h1{
   font-size: 40px;
 }
+.soon-search button{
+  display: none;
+}
+.soon-search .soon-button-2 {
+  display: block;
+  padding: 15px 12px;
+  transform: translate(0%, -40%);
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5rem;
+  background: rgba(128, 140, 186, 1);
+  color: white;
+  width: 100%;
+  transition: 0.8s;
+}
+.soon-search input {
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 40px;
+}
+.soon-search .fa-solid {
+  position: absolute;
+  margin-top: -4rem;
+  margin-left: 1.4rem;
+  transform: translate(-50%, -50%);
+  color: grey;
+}
+.soon-search .soon-button-2:hover {
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  background: rgba(0, 25, 117, 1);
+  ;
+}
+.soon-link{
+  margin-top: 20px;
+}
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1281px) {
+
+  .soon-search button{
+    display: none;
+  }
+  .soon-search .soon-button-2 {
+    display: block;
+    padding: 15px 12px;
+    transform: translate(0%, -40%);
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.5rem;
+    background: rgba(128, 140, 186, 1);
+    color: white;
+    width: 100%;
+    transition: 0.8s;
+  }
+  .soon-search input {
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 40px;
+  }
+  .soon-search .fa-solid {
+    position: absolute;
+    margin-top: -4rem;
+    margin-left: 1.4rem;
+    transform: translate(-50%, -50%);
+    color: grey;
+  }
+  .soon-search .soon-button-2:hover {
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    background: rgba(0, 25, 117, 1);
+    ;
+  }
+  .soon-link{
+    margin-top: 20px;
+  }
+  
 
 }
