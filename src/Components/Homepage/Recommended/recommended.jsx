@@ -107,7 +107,9 @@ const Recommended = () => {
   return (
     <div className="container mx-auto mt-10 mb-11 main-con">
       <div className="head-box">
-        <h2 className="headerText text-2xl font-bold">Recommended For you</h2>
+        <h2 className="headerText text-2xl font-bold font-primary">
+          Recommended For you
+        </h2>
       </div>
       <div className="mt-8 w-full flex flex-wrap justify-between">
         {courses.map((item, index) => (
@@ -119,10 +121,10 @@ const Recommended = () => {
               <img src={item.img} alt="image" className="w-full" />
             </div>
             <div className="mt-8 w-full flex flex-col gap-4">
-              <p className="text-[#2B3F8C] font-bold text-base">
+              <p className="text-[#2B3F8C] font-bold text-base font-primary">
                 {item.career}
               </p>
-              <p className=" text-[#656565] font-medium text-xs">
+              <p className=" text-[#656565] font-medium text-xs ">
                 {item.content}
               </p>
               <div>
@@ -184,7 +186,7 @@ const Recommended = () => {
                 <div className="flex gap-1 justify-between items-center pt-2 ">
                   <div className="flex gap-1">
                     <img src={avatar} alt="avatar" className="w-4 h-4" />
-                    <p className="text-xs font-bold text-[#2B3F8C]">
+                    <p className="text-xs font-bold text-[#2B3F8C] font-primary">
                       {item.username}
                     </p>
                   </div>
@@ -218,7 +220,7 @@ const Recommended = () => {
                     </div>
                     <div
                       style={{ color: "#fe0000" }}
-                      className="text-[11px] font-bold"
+                      className="text-[11px] font-bold font-secondary"
                     >
                       {item.starRating}
                     </div>
@@ -235,7 +237,7 @@ const Recommended = () => {
                 </button>
                 <button
                   style={{ border: "1px solid #0F1B63" }}
-                  className="text-xs rounded-lg bg-[#0F1B63] font-medium text-white p-3 w-40"
+                  className="text-xs rounded-lg bg-[#0F1B63] font-medium text-white p-3 w-40 font-primary"
                 >
                   {item.viewCourse}
                 </button>
