@@ -4,18 +4,18 @@ import Consider from "../../assets/images/consideration-image.png"
 
 function Consideration() {
   return (
-     <div className="consideration">
+     <div className="consideration mx-12">
           <div className="col">
                <div className="texts">
-                    <h1>Have you been thinking about getting into tech?</h1>
-                    <h4>TechProsNaija has you covered</h4>
+                    <h5 className='font-normal text-[38px] font-primary'>Have you been thinking about getting into tech?</h5>
+                    <h6 className='font-normal text-[20px] font-primary'>TechProsNaija has you covered</h6>
                     <ul>
                          <li>
-                              <p><i className="fa-solid fa-check"></i>Designed in collaboration with industry experts, focusing on practical skills.</p>
-                              <p><i className="fa-solid fa-check"></i>Affordable courses and flexible payment options.</p>
-                              <p><i className="fa-solid fa-check"></i>Personalized learning paths and adaptive assessments.</p>
-                              <p><i className="fa-solid fa-check"></i>Frequently updated to align with industry standards and market demands.</p>
-                              <p><i className="fa-solid fa-check"></i>Support you need to succeed, not only academically but also personally and professionally.</p>
+                              <p className='font-bold text[16px] font-secondary'><i className="fa-solid fa-check"></i>Designed in collaboration with industry experts, focusing on practical skills.</p>
+                              <p className='font-bold text[16px] font-secondary'><i className="fa-solid fa-check"></i>Affordable courses and flexible payment options.</p>
+                              <p className='font-bold text[16px] font-secondary'><i className="fa-solid fa-check"></i>Personalized learning paths and adaptive assessments.</p>
+                              <p className='font-bold text[16px] font-secondary'><i className="fa-solid fa-check"></i>Frequently updated to align with industry standards and market demands.</p>
+                              <p className='font-bold text[16px] font-secondary'><i className="fa-solid fa-check"></i>Support you need to succeed, not only academically but also personally and professionally.</p>
                          </li>
                     </ul>
                     </div>

@@ -1,5 +1,6 @@
 import "./styles/services.css";
 import online from "./images/online.png";
+import { Link } from "react-router-dom";
 import mentorship from "./images/mentorship.png";
 import "aos";
 
@@ -7,9 +8,9 @@ const Services = () => {
   return (
     <section className="services flex flex-col items-center justify-center">
       <div className="flex justify-center">
-        <h4 className="text-[32px] leading-[38.4px] font-primary relative w-fit text-4xl font-bold uppercase">
+        <h2 className="text-[32px] leading-[38.4px] relative w-fit text-4xl font-bold uppercase">
           Our Services
-        </h4>
+        </h2>
       </div>
       <div className="flex">
         <span className="w-[80px] h-[6px] color rounded-[12px] mr-[11pc]"></span>
@@ -38,8 +39,8 @@ const Services = () => {
               fontSize: "14px",
             }}
           >
-            <a
-              href="/course-catalogue"
+            <Link
+              to="/course-catalogue"
               className="flex text-red-500  hover:text-white"
             >
               <span>See Courses</span>
@@ -57,7 +58,7 @@ const Services = () => {
                   d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                 />
               </svg>
-            </a>
+            </Link>
           </button>
         </div>
 
@@ -67,7 +68,7 @@ const Services = () => {
             Mentorship
           </h5>
           <p className="paragraph text-2xl font-medium font-secondary">
-            Our online programs offer flexible, up-to-date tech education,
+            Our online programs offer mentors, with mentors to assist you,
             allowing you to learn at your pace.
           </p>
           <button
@@ -78,11 +79,11 @@ const Services = () => {
               fontSize: "14px",
             }}
           >
-            <a
-              href="/coming-soon"
+            <Link
+              to="/course-catalogue"
               className="flex text-red-500  hover:text-white"
             >
-              <span>See Mentors</span>
+              <span>See Courses</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -97,7 +98,7 @@ const Services = () => {
                   d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                 />
               </svg>
-            </a>
+            </Link>
           </button>
         </div>
       </div>

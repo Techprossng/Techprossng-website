@@ -27,19 +27,19 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout><LandingPage /></Layout>} />
-        <Route path="/home" element={<Layout><Homepage /></Layout>} /> 
-        <Route path="/profile" element={<Layout><ProfilePage/></Layout>} />
-        <Route path="/pricing" element={<Layout><Pricing /></Layout>} />
-        <Route path="/course-catalogue" element={<Layout><Catalog /></Layout>} />
-        <Route path="/resource-page" element={<Layout><ResourcePage /></Layout>} />
-        <Route path="/about-us" element={<Layout><AboutUsPage /></Layout>} />
-        <Route path="/coming-soon" element={<Layout><ComingSoonPage /></Layout>} />
-        <Route path="/coming" element={<Layout><ComingPage /></Layout>} />
-        <Route path="/sign-in" element={<Layout><SignInPage /></Layout>} />
-        <Route path="/sign-up" element={<Layout><SignUpPage /></Layout>} />
-        <Route path="/blog" element={<Layout><BlogPage /></Layout>} />
-        <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Homepage />} /> 
+        <Route path="/profile" element={<ProfilePage/>} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/course-catalogue" element={<Catalog />} />
+        <Route path="/resource-page" element={<ResourcePage />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/coming-soon" element={<ComingSoonPage />} />
+        <Route path="/coming" element={<ComingPage />} />
+        <Route path="/sign-in" element={<SignInPage />} />
+        <Route path="/sign-up" element={<SignUpPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/contact-us" element={<ContactUs />} />
        </Routes>
      </> 
   )

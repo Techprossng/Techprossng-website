@@ -27,7 +27,7 @@ function MentorsSection() {
   }, []);
 
   return (
-    <div className="container mx-auto mt-10 p-20 Mentors-box">
+    <div className="mx-16 Mentors-box">
       <div className="flex items-center justify-between header-box">
         <div className="flex items-center ">
           <h2 className="text-2xl font-bold">Explore Mentors</h2>

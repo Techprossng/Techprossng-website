@@ -8,14 +8,14 @@ const TopicSkills = () => {
   return (
     <React.Fragment>
       <section className="mt-32">
-        <div>
+        <div className="mx-16">
           {" "}
-          <h6 className="text-[17px] font-medium font-primary text-[#272727] m-7 ">
+          <h6 className="text-[17px] mb-5 font-medium font-primary text-[#272727] ">
             Explore topics and skills
           </h6>
         </div>
         <div>
-          <div className="resource-grid">
+          <div className="resource-grid mx-16">
             <article className="box span-2 box1 ">
               <img src={BgImage} alt="" className="w-[100%]" />
             </article>

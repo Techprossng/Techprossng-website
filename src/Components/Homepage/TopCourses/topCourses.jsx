@@ -52,60 +52,11 @@ export const courses = [
     addToList: "Add to list",
     viewCourse: "View Course",
   },
-  // {
-  //   img: img2,
-  //   career: "Content Creation",
-  //   content:
-  //     "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
-  //   starRating: 5.0,
-  //   starPublish: "(3) ",
-  //   starIcon: "../../src/assets/icons/star.png",
-  //   clock: clock,
-  //   duration: "45 hours",
-  //   avi: avatar,
-  //   username: "Jane",
-  //   addToList: "Add to list",
-  //   viewCourse: "View Course",
-  // },
-  // {
-  //   img: img3,
-  //   career: "Graphic Design",
-  //   content:
-  //     "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
-  //   starRating: 5.0,
-  //   starPublish: "(3) ",
-  //   starIcon: "../../src/assets/icons/star.png",
-  //   clock: clock,
-  //   duration: "45 hours",
-  //   avi: avatar,
-  //   username: "Jane",
-  //   addToList: "Add to list",
-  //   viewCourse: "View Course",
-  // },
 ];
 
 const Topcourses = () => {
-  // const [showFullList, setShowFullList] = useState(false);
-  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 980);
-
-  // const toggleFullList = () => {
-  //   setShowFullList(!showFullList);
-  // };
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth <= 980);
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-
   return (
-    <div className="container mx-auto mt-10 mb-11 main-con">
+    <div className="mx-16 mt-10 mb-11 main-con">
       <div className="head-box">
         <h2 className="headerText text-2xl font-bold font-primary">
           Top Courses For You

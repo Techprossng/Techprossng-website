@@ -5,9 +5,9 @@ import { FaSearch } from "react-icons/fa";
 const Resource = () => {
   return (
     <>
-      <div className="resource"> 
-        <div className="resource-hero flex gap-20">
-          <div className="resource-hero-text w-[45%]">
+      <div className="resource mx-16"> 
+        <div className="resource-hero flex gap-4 justify-between">
+          <div className="resource-hero-text w-[60%]">
             <div>
               <h3 className="font-bold text-4xl mt-20 font-primary">
                 TechPros Support Center
@@ -31,7 +31,7 @@ const Resource = () => {
               
             </div>
           </div>
-          <div className="resource-hero-image">
+          <div className="resource-hero-image bg-[#FAFAFA]">
             <img src={ResourceImage} alt="tech support image" />
           </div>
         </div>
@@ -41,7 +41,7 @@ const Resource = () => {
             <h4 className="resource-title font-bold text-3xl font-primary">
               Frequently Asked Questions
             </h4>
-            <p className="sub-title font-medium text-base text-[#555555] mt-5 w-[629px] font-secondary">
+            <p className="sub-title font-medium text-base text-[#555555] mt-2 w-[629px] font-secondary">
               Browse our FAQs to find quick answers to common questions related to:
             </p>
           </div>
@@ -71,7 +71,7 @@ const Resource = () => {
               </p>
             </div>
           </div>
-          <div className="sub mt-10 flex gap-20">
+          <div className="sub mt-16 flex gap-20">
             <div className="sub-items">
               <h6 className="font-bold text-xl font-primary">
                 Payment
@@ -81,26 +81,26 @@ const Resource = () => {
               </p>
             </div>
             <div className="sub-items">
-              <h6 className="account font-bold text-xl ml-20 font-primary">
+              <h6 className="account font-bold text-xl font-primary">
                 Account Management
               </h6>
-              <p className="account font-medium text-base text-[#555555] mt-5 ml-20 font-secondary">
+              <p className="account font-medium text-base text-[#555555] mt-5 font-secondary">
                 Find guidance on changing your password, updating your profile, and managing your account.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="resource-contact mt-20">
+        <div className="resource-contact mt-32">
           <div>
             <h4 className="resource-title font-bold text-3xl font-primary">
               Contact Us
             </h4>
-            <p className="sub-title font-medium text-base text-[#555555] mt-5 w-[629px] font-secondary">
+            <p className="sub-title font-medium text-base text-[#555555] mt-2 w-[629px] font-secondary">
               If you can&apos;t find the answer you&apos;re looking for in our FAQs, our dedicated support team is ready to assist you. You can reach out to us through the following channels:
             </p>
           </div>
-          <div className="sub mt-10 flex justify-between">
+          <div className="sub mt-16 flex justify-between">
             <div className="sub-items">
               <h6 className="font-bold text-xl font-primary">
                 Email Support
@@ -128,16 +128,16 @@ const Resource = () => {
           </div>
         </div>
 
-        <div className="guide-faq mt-20">
+        <div className="guide-faq mt-32">
           <div>
             <h4 className="resource-title font-bold text-3xl font-primary">
               User Guides and Resources
             </h4>
-            <p className="sub-title font-medium text-base text-[#555555] mt-5 w-[629px]">
+            <p className="sub-title font-medium text-base text-[#555555] mt-2 w-[629px]">
               Explore our library of user guides and resources to make the most of your learning journey:
             </p>
           </div>
-          <div className="sub mt-10 flex justify-between">
+          <div className="sub mt-16 flex justify-between">
             <div className="sub-items">
               <h6 className="font-bold text-xl font-primary">
                 Getting Started Guide
