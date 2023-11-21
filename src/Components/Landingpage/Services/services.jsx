@@ -83,7 +83,7 @@ const Services = () => {
               to="/course-catalogue"
               className="flex text-red-500  hover:text-white"
             >
-              <span>See Courses</span>
+              <span>Mentorship</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
