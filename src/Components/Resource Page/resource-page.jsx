@@ -43,7 +43,9 @@ const Resource = () => {
             </h4>
             <p className="sub-title font-medium text-base text-[#555555] mt-2 w-[629px] font-secondary">
               Browse our FAQs to find quick answers to common questions related to:
-            </p>
+            </p> 
+            <br />
+            <hr className="w-[550px]"/>
           </div>
           <div className="sub mt-10 flex justify-between">
               <div className="sub-items">
@@ -53,6 +55,7 @@ const Resource = () => {
                 <p className="desc font-medium text-base text-[#555555] mt-5 font-secondary">
                   Explore information about course availability, prerequisites, and more.
                 </p>
+                
               </div>
               <div className="sub-items">
                 <h6 className="font-bold text-xl font-primary">
@@ -99,6 +102,8 @@ const Resource = () => {
             <p className="sub-title font-medium text-base text-[#555555] mt-2 w-[629px] font-secondary">
               If you can&apos;t find the answer you&apos;re looking for in our FAQs, our dedicated support team is ready to assist you. You can reach out to us through the following channels:
             </p>
+            <br />
+            <hr className="w-[650px]"/>
           </div>
           <div className="sub mt-16 flex justify-between">
             <div className="sub-items">
@@ -136,6 +141,8 @@ const Resource = () => {
             <p className="sub-title font-medium text-base text-[#555555] mt-2 w-[629px]">
               Explore our library of user guides and resources to make the most of your learning journey:
             </p>
+            <br />
+            <hr className="w-[600px]"/>
           </div>
           <div className="sub mt-16 flex justify-between">
             <div className="sub-items">
@@ -183,6 +190,8 @@ const Resource = () => {
             <p className="sub-title font-medium text-base text-[#555555] mt-5 w-[526.5px] font-secondary">
               Explore our library of user guides and resources to make the most of your learning journey:
             </p>
+            <br />
+            <hr className="w-[520px]"/>
           </div>
           <div>
             <h4 className="resource-title font-bold text-3xl font-primary">
@@ -191,6 +200,8 @@ const Resource = () => {
             <p className="sub-title font-medium text-base text-[#555555] mt-5 w-[526.5px] font-secondary">
               Explore our library of user guides and resources to make the most of your learning journey:
             </p>
+            <br />
+            <hr className="w-[520px]"/>
           </div>
         </div>
         <div>

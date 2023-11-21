@@ -5,10 +5,12 @@ import CoffeeSplash from "../../assets/images/coffee_unsplash.png"
 import BlogBooks from "../../assets/images/blog_books.png"
 import BlogTrees from "../../assets/images/blog_trees.png"
 import Footer from "../../Components/Landingpage/Footer/footer"
+import Navbar from "../../Components/Landingpage/Navbar/navbar"
 
 export default function BlogPage() {
   return (
     <>
+    <Navbar />
     <section className="mt-24 p-[46px_128px] max-[375px]:px-[1.5rem] max-[1080px]:px-[2rem]">
       {/* header section */}
       <header className="mb-[96px]">

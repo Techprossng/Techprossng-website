@@ -241,7 +241,7 @@ const AboutUs = () => {
             <FaLongArrowAltRight className="blogpoint" />
           </div>
         </div>
-        <form action="" className="contact-form my-10">
+        <div  className="contact-form my-10">
           <div className="contact-us m-10">
             <div className="contact-intro flex flex-col justify-center items-center">
               <h4 className="font-bold text-3xl text-[#001562]">Contact Us</h4>
@@ -250,7 +250,7 @@ const AboutUs = () => {
                 you as soon as possible.
               </p>
             </div>
-            <div className="forminputs">
+            <form action="" className="forminputs">
               <div className="name flex justify-around items-center mt-10">
                 <div className="firstinput flex flex-col">
                   <label className="text-[#272727] font-medium text-sm">
@@ -307,14 +307,14 @@ const AboutUs = () => {
                 </div>
               </div>
               </div>
-            </div>
-            <div className="submit-form flex justify-center mt-10">
+              <div className="submit-form flex justify-center mt-10">
               <button type="submit">
                 <p className="font-semibold text-sm">Send</p>
               </button>
             </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </>
   );

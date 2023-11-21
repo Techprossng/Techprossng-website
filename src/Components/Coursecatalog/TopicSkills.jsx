@@ -8,7 +8,7 @@ const TopicSkills = () => {
   return (
     <React.Fragment>
       <section className="mt-32">
-        <div className="mx-16">
+        <div className="mx-6 sm:mx-6 md:mx-16 lg:mx-16">
           {" "}
           <h6 className="text-[17px] mb-5 font-medium font-primary text-[#272727] ">
             Explore topics and skills

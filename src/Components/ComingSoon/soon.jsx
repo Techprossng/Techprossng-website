@@ -10,7 +10,7 @@ function Soon() {
         <div className="border-box p-2 md:p-20  mt-10 left-soon">
           <div className="mb-20 soon-text">
             <h2 className="header-bold text-2xl md:text-4xl mb-7">
-              Oops, We’re sorry!
+              Oops, We&apos;re sorry!
             </h2>
             <h1 className="header-bold text-4xl md:text-7xl mb-7">
               Coming Soon
