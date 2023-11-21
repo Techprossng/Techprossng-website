@@ -107,7 +107,9 @@ const Recommended = () => {
   return (
     <div className="container mx-auto mt-10 mb-11 main-con">
       <div className="head-box">
-        <h2 className="headerText text-2xl font-bold">Recommended For you</h2>
+        <h2 className="headerText text-2xl font-bold font-primary">
+          Recommended For you
+        </h2>
       </div>
       <div className="mt-8 w-full flex flex-wrap justify-between">
         {courses.map((item, index) => (
@@ -119,10 +121,10 @@ const Recommended = () => {
               <img src={item.img} alt="image" className="w-full" />
             </div>
             <div className="mt-8 w-full flex flex-col gap-4">
-              <p className="text-[#2B3F8C] font-bold text-base">
+              <p className="text-[#2B3F8C] font-bold text-base font-primary">
                 {item.career}
               </p>
-              <p className=" text-[#656565] font-medium text-xs">
+              <p className=" text-[#656565] font-medium text-xs font-primary">
                 {item.content}
               </p>
               <div>

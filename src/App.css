@@ -1,14 +1,14 @@
-@import url('https://fonts.cdnfonts.com/css/craftwork-grotesk');
+@import url("https://fonts.cdnfonts.com/css/craftwork-grotesk");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Mona Sans';
-  src:
-    url('src/assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('src/assets/fonts/Mona-Sans.woff2') format('woff2-variations');
+  font-family: "Mona Sans";
+  src: url("src/assets/fonts/Mona-Sans.woff2")
+      format("woff2 supports variations"),
+    url("src/assets/fonts/Mona-Sans.woff2") format("woff2-variations");
 }
 
 * {
@@ -18,7 +18,7 @@
 }
 
 #root {
-  font-family: 'Craftwork Grotesk', sans-serif;
+  font-family: "Craftwork Grotesk", sans-serif;
   overflow: hidden;
 }
 
@@ -29,6 +29,6 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
