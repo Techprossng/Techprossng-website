@@ -11,7 +11,7 @@ function StatsImpactVideo() {
     <div className="s-iv">
           <div className="stats">
                <div className="stats-text">
-                    <h4 className="font-primary font-bold text-3xl">Numbers doing the talking...</h4>
+                    <h4 className="font-primary font-bold text-3xl text-center">Numbers doing the talking...</h4>
                </div>
                <div className="stats-image">
                     <img src={Stat1} alt="" />

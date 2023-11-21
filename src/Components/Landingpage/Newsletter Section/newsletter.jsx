@@ -24,8 +24,8 @@ function Newsletter() {
             <button type="submit">Subscribe</button>
           </div>
         </div>
-        <div className="font-secondary">
-        <p data-aos="fade-up">
+        <div className="font-secondary flex justify-center">
+        <p data-aos="fade-up ">
           We are committed to your privacy. TechProsNaija uses the information you
           provide to us to contact you about our relevant content, products and
           services. You may unsubscribe from these communication at any time.
