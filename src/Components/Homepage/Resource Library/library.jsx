@@ -28,7 +28,7 @@ function Library() {
               className=" library-button
                 bg-white px-4 py-2 rounded-md mt-2"
             >
-              <a href="#" className="btn text-[#0F1B63] font-semibold text-xs">
+              <a href="/coming-soon" className="btn text-[#0F1B63] font-semibold text-xs">
                 Explore Now
               </a>
             </button>
@@ -47,7 +47,7 @@ function Library() {
                 bg-white px-4 py-2 rounded-md mt-2
               "
             >
-              <a href="#" className="btn text-[#0F1B63] font-semibold text-xs">
+              <a href="/coming-soon" className="btn text-[#0F1B63] font-semibold text-xs">
                 Explore Now
               </a>
             </button>
@@ -66,7 +66,7 @@ function Library() {
                 bg-white px-4 py-2 rounded-md mt-2
               "
             >
-              <a href="#" className="btn text-[#0F1B63] font-semibold text-xs">
+              <a href="/coming-soon" className="btn text-[#0F1B63] font-semibold text-xs">
                 Explore Now
               </a>
             </button>
@@ -85,7 +85,7 @@ function Library() {
                 bg-white px-4 py-2 rounded-md mt-2
               "
             >
-              <a href="#" className="btn text-[#0F1B63] font-semibold text-xs">
+              <a href="/coming-soon" className="btn text-[#0F1B63] font-semibold text-xs">
                 Explore Now
               </a>
             </button>
