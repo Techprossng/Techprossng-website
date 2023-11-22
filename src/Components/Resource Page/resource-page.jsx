@@ -5,8 +5,8 @@ import { FaSearch } from "react-icons/fa";
 const Resource = () => {
   return (
     <>
-      <div className="resource mx-16"> 
-        <div className="resource-hero flex gap-4 justify-between">
+      <div className="resource mx-5 sm:mx-8 lg:mx-16"> 
+        <div className="resource-hero flex gap-4 justify-between sm:flex  items-center md:flex">
           <div className="resource-hero-text w-[60%]">
             <div>
               <h3 className="font-bold text-4xl mt-20 font-primary">

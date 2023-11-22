@@ -195,7 +195,19 @@
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 820px) {
+  .about-us-intro-header > h2{
+    font-size: 30px;
+  }
+  .about-us-intro-sub > p{
+    font-size: 14px;
+  }
+  .mission-intro-header > h2{
+    font-size: 30px;
+  }
+  .mission-text-sub > p{
+    font-size: 14px;
+  }
   .blog-detail-container {
     display: flex;
     flex-direction: column;
@@ -226,14 +238,23 @@
   .why-us {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   .impact-video {
     margin: 0;
-    margin-left: 0;
     padding: 10px;
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .thevideo > a > img{
+    width: 100%;
+  }
+  .thetext{
+    text-align: center;
   }
   .merit {
     margin: 0;

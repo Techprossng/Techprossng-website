@@ -7,8 +7,8 @@ function Consideration() {
      <div className="consideration mx-12">
           <div className="col">
                <div className="texts">
-                    <h5 className='font-normal text-[38px] font-primary'>Have you been thinking about getting into tech?</h5>
-                    <h6 className='font-normal text-[20px] font-primary'>TechProsNaija has you covered</h6>
+                    <h5 className='font-bold text-[38px] font-primary mb-5'>Have you been thinking about getting into tech?</h5>
+                    <h6 className='font-normal text-[20px] font-primary mb-3'>TechProsNaija has you covered</h6>
                     <ul>
                          <li>
                               <p className='font-bold text[16px] font-secondary'><i className="fa-solid fa-check"></i>Designed in collaboration with industry experts, focusing on practical skills.</p>
@@ -19,7 +19,7 @@ function Consideration() {
                          </li>
                     </ul>
                     </div>
-               <div className="photo">
+               <div className="consider-photo">
                     <img src={Consider} alt="consideration image" />
                </div>
           </div>

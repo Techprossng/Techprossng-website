@@ -23,12 +23,12 @@ const AboutUs = () => {
     <>
       <div className="about-us">
         <div className="about-us-intro flex justify-around items-center">
-          <div>
+          <div className="about-us-intro-header">
             <h2 className="font-black text-5xl leading-[67.5px] text-[#001562]">
               ABOUT US
             </h2>
           </div>
-          <div>
+          <div className="about-us-intro-sub">
             <h6 className="font-medium text-lg leading-[25.5px] text-[#272727] mt-5">
               How we started...
             </h6>
@@ -46,10 +46,10 @@ const AboutUs = () => {
           <img src={AboutHero} alt="hero-image" className="w-full" />
         </div>
         <div className="mission-intro flex justify-around items-center mt-10">
-          <div>
+          <div className="mission-intro-header">
             <h2 className="font-black text-5xl leading-[67.5px] text-[#001562]">
-              Where we are <br />
-              headed
+              Where we <br />
+              are headed
             </h2>
           </div>
           <div className="mission-text flex flex-col gap-5">
@@ -196,16 +196,18 @@ const AboutUs = () => {
               Our Team
             </h4>
           </div>
-          <div className="flex justify-center bg-[#001975]">
+          <div className="flex flex-wrap">
+          <div className="flex justify-center flex-wrap bg-[#001975]">
             <img src={CEO2} alt="ceo image" className="w-[30%]" />
             <img src={COO} alt="coo image" className="w-[30%]" />
             <img src={PM} alt="pm image" className="w-[30%]" />
           </div>
-          <div className="flex justify-center bg-[#001975]">
+          <div className="flex justify-center flex-wrap bg-[#001975]">
             <img src={HR} alt="hr image" className="w-[30%]" />
             <img src={FM} alt="fm image" className="w-[30%]" />
             <img src={MS} alt="ms image" className="w-[30%]" />
           </div>
+        </div>
         </div>
 
         <div className="blog-section flex flex-col items-center">

@@ -23,14 +23,14 @@ const TopCoursesCard = (props) => {
           ))}
           <span className="text-black-900">(5.0 / 3)</span>
         </div>
-        <div className="flex gap-2 pb-5 sm:flex-row mt-4 justify-between m-3">
-          <button className="inline-flex items-center sm:mr-2 sm:mb-0 mb-2 text-blue-900 hover:bg-blue-900 hover:text-white ring-2 ring-blue-700 text-sm px-7 py-2 font-semibold rounded-md">
+        <div className="flex gap-2 pb-5 sm:flex-row mt-4 justify-around">
+          <button className="inline-flex items-center px-2 py-2 sm:mr-2 sm:mb-0 mb-2 text-blue-900 hover:bg-blue-900 hover:text-white ring-2 ring-blue-700 text-sm px-7 py-2 font-semibold rounded-md">
             <MdBookmarks />
-            <span className="ml-2">Add To List</span>
+            <span className="text-[12px]">Add To List</span>
           </button>
           <Link to="/coming-soon">
-            <button className="inline-flex items-center sm:ml-2 sm:mb-0 mb-2 bg-red-500 text-white hover:bg-blue-900 hover:text-white ring-2 text-lg font-semibold px-7 py-2 rounded-md">
-              <span>View Course</span>
+            <button className="inline-flex items-center px-2 py-2 sm:ml-2 sm:mb-0 mb-2 bg-red-500 text-white hover:bg-blue-900 hover:text-white ring-2 text-lg font-semibold px-7 py-2 rounded-md">
+              <span className="text-[12px]">View Course</span>
             </button>
           </Link>
         </div>
