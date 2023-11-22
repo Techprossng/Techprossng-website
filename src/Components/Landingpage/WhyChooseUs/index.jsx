@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
       <div className="flex justify-center">
         <header className="text-[32px] leading-[38.4px] relative font-primary w-fit font-bold">
           WHY CHOOSE US?
-          <p className="absolute bottom-[-12px] left-0 w-[83px] h-[6px] bg-[#2B3F8C] rounded-[12px]"></p>
+          <p className="absolute bottom-[-8px] left-0 w-[83px] h-[6px] bg-[#2B3F8C] rounded-[12px]"></p>
         </header>
       </div>
 

@@ -56,7 +56,7 @@ const Navbar = () => {
         <img src={open ? close : Menu} alt={open ? "Close Menu" : "Open Menu"} className="menu" />
       </div>
 
-      <div className={`md:hidden md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in nav-color mobile-menu ${open ? "top-24 " : "top-[-690px]"}`} style={{ textAlign: "center", alignItems: "center" }}>
+      <div className={`md:hidden md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full  md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in nav-color mobile-menu ${open ? "top-24 " : "top-[-690px]"}`} style={{ textAlign: "center", alignItems: "center" }}>
         <div className="flex flex-col space-y-10">
           {Links.map((link) => (
             <a

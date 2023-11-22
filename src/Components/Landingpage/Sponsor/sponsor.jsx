@@ -25,7 +25,7 @@ const Sponsor = () => {
       <div className="flex justify-center" style={{ zIndex: 1 }}>
         <h4 className="text-[32px] leading-[38.4px] relative w-fit header-text font-primary font-normal">
           PARTNERSHIPS
-          <p className="absolute bottom-[80px] left-0 w-[83px] h-[6px] color rounded-[12px] under-line"></p>
+          <p className="absolute bottom-[65%] left-0 w-[83px] h-[6px] color rounded-[12px] under-line"></p>
         </h4>
       </div>
 

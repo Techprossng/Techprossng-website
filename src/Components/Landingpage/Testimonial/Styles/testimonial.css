@@ -4,7 +4,7 @@
 
 @media only screen and (min-width: 360px) and (max-width: 640px) {
   .testimonial {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
   }
   .testimonial-image {
@@ -58,7 +58,7 @@
   }
 
   .testimonial {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
   }
 }
