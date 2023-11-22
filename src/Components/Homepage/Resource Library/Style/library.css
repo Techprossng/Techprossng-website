@@ -11,6 +11,7 @@
   align-items: center;
   margin: 0 16px;
   font-weight: bold;
+  padding: 25px 0;
 }
 .libraries .heading .resourse-link {
   text-align: right;
@@ -28,10 +29,14 @@
   color: red;
   margin-left: 0.5rem;
 }
+.library-button{
+  border: 1px solid #001975;
+}
 
 .box-container {
   display: flex;
   gap: 1rem;
+  padding-bottom: 35px;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {

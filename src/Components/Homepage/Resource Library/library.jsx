@@ -10,25 +10,25 @@ function Library() {
     <div className="libraries">
       <h1 className="heading">
         Resource Library{" "}
-        <div className="resourse-link">
-          <a href="#">View Resource Library</a>{" "}
+        <div className="resourse-link flex justify-center items-center">
+          <a href="/coming-soon">View Resource Library</a>{" "}
           <i className="fa-solid fa-arrow-right-long"></i>
         </div>
       </h1>
       <div className="box-container">
         <div className="box flex justify-around flex-col">
           <div>
-            <img src={Image1} alt="library image" className="w-full" />
+            <img src={Image1} alt="library image" className="w-full rounded-2xl" />
           </div>
           <div className="flex justify-center flex-col items-center mt-3">
             <h3 className="font-seconday font-bold text-[11px] text-[#001975]">
               Videos
             </h3>
             <button
-              className="
-                bg-[#001975] text-white px-4 py-2 rounded-md mt-2"
+              className=" library-button
+                bg-white px-4 py-2 rounded-md mt-2"
             >
-              <a href="#" className="btn">
+              <a href="#" className="btn text-[#0F1B63] font-semibold text-xs">
                 Explore Now
               </a>
             </button>
@@ -36,18 +36,18 @@ function Library() {
         </div>
         <div className="box">
           <div>
-            <img src={Image4} alt="library image" className="w-full" />
+            <img src={Image4} alt="library image" className="w-full rounded-2xl" />
           </div>
           <div className="flex justify-center flex-col items-center mt-3">
             <h3 className="font-seconday font-bold text-[11px] text-[#001975]">
               E-Books
             </h3>
             <button
-              className="
-                bg-[#001975] text-white px-4 py-2 rounded-md mt-2
+              className=" library-button
+                bg-white px-4 py-2 rounded-md mt-2
               "
             >
-              <a href="#" className="btn">
+              <a href="#" className="btn text-[#0F1B63] font-semibold text-xs">
                 Explore Now
               </a>
             </button>
@@ -55,18 +55,18 @@ function Library() {
         </div>
         <div className="box">
           <div>
-            <img src={Image5} alt="library image" className="w-full" />
+            <img src={Image5} alt="library image" className="w-full rounded-2xl" />
           </div>
           <div className="flex justify-center flex-col items-center mt-3">
             <h3 className="font-seconday font-bold text-[11px] text-[#001975]">
               Projects
             </h3>
             <button
-              className="
-                bg-[#001975] text-white px-4 py-2 rounded-md mt-2
+              className=" library-button
+                bg-white px-4 py-2 rounded-md mt-2
               "
             >
-              <a href="#" className="btn">
+              <a href="#" className="btn text-[#0F1B63] font-semibold text-xs">
                 Explore Now
               </a>
             </button>
@@ -74,26 +74,26 @@ function Library() {
         </div>
         <div className="box">
           <div>
-            <img src={Image6} alt="library image" className="w-full" />
+            <img src={Image6} alt="library image" className="w-full rounded-2xl" />
           </div>
           <div className="flex justify-center flex-col items-center mt-3">
             <h3 className="font-seconday font-bold text-[11px] text-[#001975]">
               Tutorials
             </h3>
             <button
-              className="
-                bg-[#001975] text-white px-4 py-2 rounded-md mt-2
+              className=" library-button
+                bg-white px-4 py-2 rounded-md mt-2
               "
             >
-              <a href="#" className="btn">
+              <a href="#" className="btn text-[#0F1B63] font-semibold text-xs">
                 Explore Now
               </a>
             </button>
           </div>
         </div>
       </div>
-      <div className="mobile-resourse-link">
-        <a href="#">View Resource Library</a>{" "}
+      <div className="mobile-resourse-link flex justify-center items-center">
+        <a href="/coming-soon">View Resource Library</a>{" "}
         <i className="fa-solid fa-arrow-right-long"></i>
       </div>
     </div>
