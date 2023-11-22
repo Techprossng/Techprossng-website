@@ -1,6 +1,5 @@
 import "./styles/services.css";
 import online from "./images/online.png";
-import { Link } from "react-router-dom";
 import mentorship from "./images/mentorship.png";
 import "aos";
 

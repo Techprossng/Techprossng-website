@@ -124,13 +124,15 @@ const Values = () => {
   ];
 
   return (
-    <section className="values mt-8 sm:mt-20 my-20">
-    <div className="items-center">
-  <header className="text-center font-primary text-[32px] font-bold  sm:text-3xl md:text-4xl lg:text-[32px] xl:text-4xl md:mb-6 lg:mb-12 ">
-    OUR VALUES
-    <p className="relative bottom-[-5px] ml-[23%] md:ml-[39%] sm:ml-[36%] lg:ml-[42%] w-[83px] h-[6px] color rounded-[12px] value-line mx-auto"></p>
-  </header>
-</div>
+    <section className="values mt-8 sm:mt-20 my-20  ">
+    <div className="flex justify-center">
+        <h2 className="text-[32px] leading-[38.4px] relative w-fit text-4xl font-bold uppercase">
+          OUR VALUES
+        </h2>
+      </div>
+      <div className="flex justify-center">
+        <span className="w-[80px] h-[6px] color rounded-[12px] mr-[9pc]"></span>
+      </div>
 
 
     <div className="mt-6 sm:mt-12 md:mt-24">
