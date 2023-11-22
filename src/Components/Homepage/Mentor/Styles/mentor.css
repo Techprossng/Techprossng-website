@@ -30,11 +30,11 @@
 }
 
 .slick-prev {
-  left: 94%;
+  left: 89%;
 }
 
 .slick-next {
-  right: 0;
+  right: 6%;
 }
 
 .slick-prev:hover,
@@ -82,7 +82,7 @@
 /* cards */
 
 .card {
-  width: 400px;
+  width: 350px;
   height: 493px;
 }
 
@@ -111,17 +111,18 @@
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .header-box h2 {
-    font-size: 20px;
-    padding: 5px;
+    font-size: 24px;
+    
   }
 
   .Mentors-box {
-    padding: 12px;
-    margin-top: 25%;
+    margin-top: 10%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
   .slick-list{
     overflow: visible;
-   
+    margin-right: -11%;     
     
 }
   .your-slider {
@@ -150,15 +151,17 @@
 
 @media only screen and (min-width: 480px) and (max-width: 500px) {
   .header-box h2 {
-    font-size: 26px;
-    padding: 10px;
+    font-size: 24px;
+    
   }
   .slick-list{
     overflow: visible;
+    margin-right: 5%;
   }
   .Mentors-box {
-    padding: 30px;
-    margin-top: 25%;
+    margin-top: 10%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -174,28 +177,30 @@
   }
 
   .card {
-    width: 390px;
+    width: 353px;
     height: 493px;
   }
 
   .card-content {
-    width: 366px;
-    left: 13px;
+    width: 314px;
+   position: relative;
+   left: 0.6%;
   }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 550px) {
   .header-box h2 {
-    font-size: 26px;
-    padding: 10px;
+    font-size: 24px;
+    
   }
   .slick-list{
     overflow: visible;
     margin-right: 5%;
   }
   .Mentors-box {
-    padding: 40px;
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -224,15 +229,16 @@
 
 @media only screen and (min-width: 550px) and (max-width: 600px) {
   .header-box h2 {
-    font-size: 26px;
-    padding: 10px;
+    font-size: 24px;
+ 
   }
   .slick-list{
     overflow: visible;
   }
   .Mentors-box {
-    padding: 60px;
     margin-top: 10%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -262,16 +268,17 @@
 
 @media only screen and (min-width: 600px) and (max-width: 750px) {
   .header-box h2 {
-    font-size: 26px;
-    padding: 10px;
+    font-size: 24px;
+ 
   }
   .slick-list{
     overflow: visible;
-    margin-left: 20%;
+    margin-right: 14rem;
   }
   .Mentors-box {
-    padding: 10px;
     margin-top: 10%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -287,12 +294,12 @@
   }
 
   .card {
-    width: 450px;
+    width: 350px;
     height: 493px;
   }
 
   .card-content {
-    width: 423px;
+    width: 323px;
     left: -3px;
     position: relative;
     top: 58%;
@@ -301,16 +308,17 @@
 
 @media only screen and (min-width: 750px) and (max-width: 768px) {
   .header-box h2 {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 24px;
+  
   }
   .slick-list{
     overflow: visible;
     margin-right: 20%;
   }
   .Mentors-box {
-    padding: 10px;
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -340,16 +348,17 @@
     display: none !important;
   }
   .header-box h2 {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 24px;
+    
   }
   .slick-list{
     overflow: visible;
     margin-right: 40%;
   }
   .Mentors-box {
-    padding: 10px;
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -365,13 +374,13 @@
   }
 
   .card {
-    width: 450px;
+    width: 380px;
     height: 493px;
   }
 
   .card-content {
     position: relative;
-    width: 406px;
+    width: 346px;
     left: 0rem;  
     top: 65%;
   }
@@ -381,17 +390,18 @@
     display: none !important;
   }
   .header-box h2 {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 24px;
+   
   }
   .slick-list{
     overflow: visible;
-    margin-right: 40%;
+    margin-right: 60%;
     
   }
   .Mentors-box {
-    padding: 10px;
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -407,12 +417,12 @@
   }
 
   .card {
-    width: 450px;
+    width: 350px;
     height: 495px;
   }
 
   .card-content {
-    width: 406px;
+    width: 320px;
     left: 14px;  
     top: 65%;
   }  
@@ -423,17 +433,18 @@
     display: none !important;
   }
   .header-box h2 {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 24px;
+   
   }
   .slick-list{
     overflow: visible;
-    margin-right: 55%;
+    margin-right: 60%;
     
   }
   .Mentors-box {
-    padding: 10px;
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -449,12 +460,12 @@
   }
 
   .card {
-    width: 450px;
+    width: 350px;
     height: 495px;
   }
 
   .card-content {
-    width: 406px;
+    width: 320px;
     left: 14px;  
     top: 65%;
   }  
@@ -464,8 +475,8 @@
     display: none !important;
   }
   .header-box h2 {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 24px;
+   
   }
   .slick-list{
     overflow: visible;
@@ -473,8 +484,9 @@
     
   }
   .Mentors-box {
-    padding: 10px;
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -506,17 +518,18 @@
     display: none !important;
   }
   .header-box h2 {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 24px;
+   
   }
   .slick-list{
     overflow: hidden;
-    margin-right: -70%;
+    margin-right: -60%;
     
   }
   .Mentors-box {
-    padding: 10px;
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-left:1.5rem ;
+    margin-right:1.5rem ;
   }
 
   .your-slider {
@@ -532,13 +545,13 @@
   }
 
   .card {
-    width: 460px;
+    width: 360px;
     height: 495px;
   }
 
   .card-content {
-    width: 390px;
-    left: 11px;  
+    width: 340px;
+    left: 10px;  
     top: 65%;
   }  
 
@@ -553,7 +566,7 @@
   }
   .slick-list{
     overflow: hidden;
-    margin-right: -20%;
+    margin-right: -30%;
     
   }
   .Mentors-box {
@@ -574,7 +587,7 @@
   }
 
   .card {
-    width: 460px;
+    width: 360px;
     height: 495px;
   }
 

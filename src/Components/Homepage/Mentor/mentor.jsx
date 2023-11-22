@@ -27,7 +27,7 @@ function MentorsSection() {
   }, []);
 
   return (
-    <div className="mx-16 Mentors-box">
+    <div className="mx-16 Mentors-box mt-10">
       <div className="flex items-center justify-between header-box">
         <div className="flex items-center ">
           <h2 className="text-2xl font-bold">Explore Mentors</h2>
@@ -104,7 +104,7 @@ function MentorsSection() {
             slidesToScroll={isMobile ? 1 : 3}
           >
             {mentor.map((mentor, index) => (
-              <div key={index} className="w-full p-2">
+              <div key={index} className="w-full p-0">
                 <div className="relative flex card-house">
                   <div
                     className="bg-cover bg-center rounded-lg p-4 border border-opacity-20 card"
@@ -114,7 +114,7 @@ function MentorsSection() {
                     }}
                   >
                     <div
-                      className="absolute top-[55%] left-2 h-auto p-2 pt-8 pb-3  gap-0 bg-black bg-opacity-70 flex flex-wrap items-center text-white card-content"
+                      className="absolute top-[55%] left-[5%] h-auto p-2 pt-8 pb-3  gap-0 bg-black bg-opacity-70 flex flex-wrap items-center text-white card-content"
                       style={{
                         borderRadius: "10px",
                       }}

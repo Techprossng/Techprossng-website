@@ -5,8 +5,8 @@ import Time from "../../assets/images/Time.svg";
 
 function Soon() {
   return (
-    <div className="w-full background-soon mt-20 md:mt-10 ">
-      <div className="flex flex-col md:flex-row justify-between p-2 md:p-20 soon-custom">
+    <div className="w-full background-soon mt-20 md:mt-5 ">
+      <div className="flex flex-col md:flex-row justify-between p-2 md:p-10 soon-custom">
         <div className="border-box p-2 md:p-20  mt-10 left-soon">
           <div className="mb-20 soon-text">
             <h2 className="header-bold text-2xl md:text-4xl mb-7">
@@ -28,7 +28,7 @@ function Soon() {
               placeholder="Enter your email"
               className="font-secondary font-light text-base"
             />
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-envelope "></i>
             <button type="submit" className="font-secondary">Join Waitlist</button>
             <button type="submit" className="soon-button-2 mt-10 font-secondary">Join Waitlist</button>
           </div>
@@ -43,8 +43,8 @@ function Soon() {
             </a>
           </div>
         </div>
-        <div className="border-box mb-5 md:mb-0 Timeimg-container">
-          <img src={Time} alt="Time-img" className="w-full Time-img " />
+        <div className="border-box mb-5 md:mb-0 Timeimg-container ">
+          <img src={Time} alt="Time-img" className="w-full Time-img rotating " />
         </div>
       </div>
     </div>
