@@ -10,8 +10,8 @@ const Navbar = () => {
   let Links = [
     { name: "Home", link: "/home" },
     { name: "Courses", link: "/course-catalogue" },
-    { name: "About Us", link: "/about-us" },
     { name: "Resources", link: "/resource-page" },
+    { name: "About Us", link: "/about-us" },
     { name: "Mentorship", link: "/coming-soon" },
     { name: "Pricing", link: "/coming" },
   ];

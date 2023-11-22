@@ -21,10 +21,11 @@ const Navbar = () => {
   let Links = [
     { name: "Home", link: "/home" },
     { name: "Courses", link: "/course-catalogue" },
-    { name: "Mentorship", link: "/coming-soon" },
     { name: "Resources", link: "/resource-page" },
-    { name: "Pricing", link: "/coming-soon" },
     { name: "About Us", link: "/about-us" },
+    { name: "Mentorship", link: "/coming-soon" },
+    { name: "Pricing", link: "/coming-soon" },
+
   ];
   let Links2 = [
     { name: "Search", link: "/search" },
