@@ -5,6 +5,7 @@ import img2 from "../../../assets/img2.png";
 import img3 from "../../../assets/img3.png";
 import avatar from "../../../assets/avatar.png";
 import { BsBookmark } from "react-icons/bs";
+import StarIcons from "../../../assets/icons/star.png"
 
 export const courses = [
   {
@@ -14,7 +15,7 @@ export const courses = [
       "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
     starRating: 5.0,
     starPublish: "(3) ",
-    starIcon: "../../src/assets/icons/star.png",
+    
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -29,7 +30,7 @@ export const courses = [
       "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
     starRating: 5.0,
     starPublish: "(3) ",
-    starIcon: "../../src/assets/icons/star.png",
+    
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -44,7 +45,7 @@ export const courses = [
       "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
     starRating: 5.0,
     starPublish: "(3) ",
-    starIcon: "../../src/assets/icons/star.png",
+    
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -83,27 +84,27 @@ const Topcourses = () => {
                   <div className="flex gap-1 justify-center items-center">
                     <div className="flex gap-1">
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
@@ -144,27 +145,27 @@ const Topcourses = () => {
                   <div className="flex gap-1">
                     <div className="flex gap-1">
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />
                       <img
-                        src={item.starIcon}
+                        src={StarIcons}
                         alt="star-icon"
                         className="w-4 h-4"
                       />

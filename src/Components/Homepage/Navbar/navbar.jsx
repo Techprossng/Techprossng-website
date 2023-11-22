@@ -19,7 +19,7 @@ import "../../Homepage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
   let Links = [
-    { name: "Home", link: "/" },
+    { name: "Home", link: "/home" },
     { name: "Courses", link: "/course-catalogue" },
     { name: "Mentorship", link: "/coming-soon" },
     { name: "Resources", link: "/resource-page" },
@@ -28,9 +28,9 @@ const Navbar = () => {
   ];
   let Links2 = [
     { name: "Search", link: "/search" },
-    { name: "Home", link: "/" },
-    { name: "Catalog", link: "/catalog" },
-    { name: "Library", link: "/library" },
+    { name: "Home", link: "/home" },
+    { name: "Catalog", link: "/course-catalogue" },
+    { name: "Library", link: "/coming-soon" },
     { name: "Community", link: "/coming-soon" },
     { name: "Mentors", link: "/coming-soon" },
     { name: "Profile", link: "/coming-soon" },
