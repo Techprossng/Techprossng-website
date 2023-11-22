@@ -1,6 +1,5 @@
 import HeroImage from "../../../assets/images/hero-image.svg";
 import Vector from "../../../assets/images/Vector.svg";
-import { Link } from "react-router-dom";
 import "../../Landingpage/Hero Section/Styles/hero.css";
 import "aos";
 
@@ -38,7 +37,7 @@ const Hero = () => {
                 fontSize: "14px",
               }}
             >
-              <Link to="/course-catalogue" 
+              <a href="/course-catalogue" 
               className="flex text-red-500 hover:text-white font-seconday font-semibold "
             
               >
@@ -57,7 +56,7 @@ const Hero = () => {
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
-              </Link>
+              </a>
             </button>
           </div>
           <div
@@ -73,7 +72,7 @@ const Hero = () => {
           </div>
           <div className="block  md:block w-full lg:hidden">
             <button className="rounded-[20px] bg-[#FE0000] hidden font-seconday font-semibold sm:hidden md:hidden outline-none text-white p-[18px_24px]  flex justify-center items-center w-full">
-              <Link to="/course-catalogue" className="w-[129px]">
+              <a href="/course-catalogue" className="w-[129px]">
                 See Courses
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +86,7 @@ const Hero = () => {
                     fill="white"
                   />
                 </svg>
-              </Link>
+              </a>
             </button>
           </div>
         </div>

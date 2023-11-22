@@ -39,8 +39,8 @@ const Services = () => {
               fontSize: "14px",
             }}
           >
-            <Link
-              to="/course-catalogue"
+            <a
+              href="/course-catalogue"
               className="flex text-red-500  hover:text-white"
             >
               <span>See Courses</span>
@@ -58,7 +58,7 @@ const Services = () => {
                   d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                 />
               </svg>
-            </Link>
+            </a>
           </button>
         </div>
 
@@ -79,8 +79,8 @@ const Services = () => {
               fontSize: "14px",
             }}
           >
-            <Link
-              to="/course-catalogue"
+            <a
+              href="/coming-soon"
               className="flex text-red-500  hover:text-white"
             >
               <span>Mentorship</span>
@@ -98,7 +98,7 @@ const Services = () => {
                   d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                 />
               </svg>
-            </Link>
+            </a>
           </button>
         </div>
       </div>

@@ -52,9 +52,9 @@ const Navbar = () => {
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center logo-container">
-      <Link to="/">
+      <a href="/">
         <img src={Logo} alt="Logo" className="custom-image-large"  style={{width:"200px", height:"200px"}}/>
-      </Link>
+      </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -90,9 +90,9 @@ const Navbar = () => {
 
         <div className="flex flex-col  custom-space-y   mt-20">
           {Links2.map((link) => (
-            <Link
+            <a
               key={link.name}
-              to={link.link} 
+              href={link.link} 
               className={`text-blue-900 flex duration-500  p-8  ${
                 activeLink === link.name ? "active-link" : ""
               } ${link.name.toLowerCase().replace(/\s/g, "-")}`}
@@ -133,7 +133,7 @@ const Navbar = () => {
                 <GoSignOut size={25} className="mr-5 p-0" />
               )}
               {link.name}
-            </Link>
+            </a>
           ))}
         </div>
       </div>
@@ -141,10 +141,10 @@ const Navbar = () => {
       {/* Tablet and Desktop Menu */}
       <div className="hidden  md:flex  custom-space-x  desktop">
         {Links.map((link, index) => (
-          <Link 
+          <a 
             key={index}
-            href={`/${link.link}`}
-            to={link.link} 
+            href={link.link}
+            // to={link.link} 
             className={`text-gray-800 duration-500 custom-font ${
               activeLink === link.name ? "active-link" : ""
             }`}
@@ -153,7 +153,7 @@ const Navbar = () => {
             }}
           >
             {link.name}
-          </Link>
+          </a>
         ))}
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
@@ -162,7 +162,7 @@ const Navbar = () => {
           Sign Up
           </button>*/}
           <button className="w-35 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          <Link to="/contact-us">Contact Us</Link>
+          <a href="/contact-us">Contact Us</a>
         </button>  
       </div>
     </nav>

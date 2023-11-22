@@ -100,6 +100,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+        <hr />
 
       {/* newsletter section */}
       <Newsletter />

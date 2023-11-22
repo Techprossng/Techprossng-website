@@ -57,13 +57,13 @@ export const courses = [
 
 const Recommended = () => {
   return (
-    <div className="mx-16 mt-10 mb-11 main-con">
+    <div className="mx-0 mt-8 mb-11 sm:mx-8 lg:mx-16">
       <div className="head-box">
         <h2 className="headerText text-2xl font-bold font-primary">
           Recommended For you
         </h2>
       </div>
-      <div className="mt-8 w-full flex flex-wrap justify-between">
+      <div className="mt-8 w-full flex gap-3 flex-wrap justify-between">
         {courses.map((item, index) => (
           <div
             key={index}
@@ -191,7 +191,7 @@ const Recommended = () => {
                   style={{ border: "1px solid #0F1B63" }}
                   className="text-xs rounded-lg bg-[#0F1B63] font-medium text-white p-3 w-[40%] font-primary"
                 >
-                  {item.viewCourse}
+                  <a href="/coming-soon">{item.viewCourse}</a>
                 </button>
               </div>
             </div>

@@ -1,23 +1,21 @@
-import React from 'react'
-import CardImage from '../../assets/images/catalog-img/allcourses.png'
-import { MdStar, MdBookmarks } from 'react-icons/md'
-import { Link } from 'react-router-dom';
+import React from "react";
+import CardImage from "../../assets/images/catalog-img/allcourses.png";
+import { MdStar, MdBookmarks } from "react-icons/md";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const CourseForYouCard = (props) => {
   return (
-
-<article className="w-full mb-8 sm:mb-14">
+    <article className="w-full mb-8 sm:mb-14">
       <div className="bg-white rounded-md shadow-md">
         <div
           className="h-[200px] sm:h-[300px] bg-cover bg-center bg-no-repeat mb-4 rounded-2xl"
           style={{ backgroundImage: `url(${props.src})` }}
-
         ></div>
-        <h5 className="text-2xl m-3 font-bold tracking-tight text-blue-900">
+        <h5 className="text-2xl m-3 font-primay font-bold tracking-tight text-blue-900">
           {props.head}
         </h5>
-        <p className="font-normal m-3 text-gray-700 mt-2">
+        <p className="font-normal font-secondary font-medium text-sm m-3 text-gray-700 mt-2">
           {props.text}
         </p>
         <div className="mt-4 m-3 flex items-center">
@@ -31,13 +29,17 @@ const CourseForYouCard = (props) => {
         <div className="flex gap-2 pb-5 sm:flex-row mt-4 justify-around">
           <button className="inline-flex items-center px-2 py-2 sm:mr-2 sm:mb-0 mb-2 text-blue-900 hover:bg-blue-900 hover:text-white ring-2 ring-blue-700 text-sm px-7 py-2 font-semibold rounded-md">
             <MdBookmarks />
-            <span className="text-[12px]">Add To List</span>
+            <span className="text-[12px] font-secondary font-semibold">
+              Add To List
+            </span>
           </button>
-          <Link to='/coming-soon'> 
           <button className="inline-flex items-center px-2 py-2 sm:ml-2 sm:mb-0 mb-2 bg-red-500 text-white hover:bg-blue-900 hover:text-white ring-2 text-lg font-semibold px-7 py-2 rounded-md">
-            <span className='text-[12px]'>View Course</span>
-          </button> 
-          </ Link>
+            <a href="/coming-soon">
+              <span className="text-[12px] font-secondary font-semibold">
+                View Course
+              </span>
+            </a>
+          </button>
         </div>
       </div>
     </article>
@@ -54,7 +56,9 @@ const CourseForyou = () => {
   return (
     <section>
       <div className="mx-6 md:mx-16 lg:mx-16 mt-20 font-sans text-2xl sm: mb-8">
-        <p>Recommended For You</p>
+        <h4 className="font-primary font-normal text-3xl">
+          Recommended For You
+        </h4>
       </div>
 
       <div className="mx-6 md:mx-16 lg:mx-16 mb-8 sm:mb-14 mx-6">

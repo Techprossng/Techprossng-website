@@ -4,11 +4,6 @@
 }
 
 @media only screen and (min-width: 360px) and (max-width: 640px) {
-  .main-con {
-    padding: 2rem;
-    margin-top: 6rem;
-  }
-
   .head-box h2 {
     color: rgba(0, 17, 78, 1);
     font-weight: 700;
@@ -26,10 +21,6 @@
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  .main-con {
-    padding: 1rem;
-    margin-top: 8rem;
-  }
 
   .head-box h2 {
     color: rgba(0, 17, 78, 1);
