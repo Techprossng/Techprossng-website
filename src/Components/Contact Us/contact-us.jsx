@@ -2,7 +2,8 @@ import "../Contact Us/Style/contact-us.css"
 
 function ContactUs() {
   return (
-    <div  className="contact-form my-10">
+    <>
+    <div className="contact-form my-10">
     <div className="contact-us m-10">
       <div className="contact-intro flex flex-col justify-center items-center">
         <h4 className="font-bold text-3xl text-[#001562]">Contact Us</h4>
@@ -76,6 +77,7 @@ function ContactUs() {
       </form>
     </div>
   </div>
+  </>
   )
 }
 
