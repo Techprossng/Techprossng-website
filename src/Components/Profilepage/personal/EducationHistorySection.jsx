@@ -37,7 +37,7 @@ function EducationHistorySection({ userData, onSaveUserInfo }) {
     <div className="mt-10 block education-container p-5">
       <div className="flex">
       <LuGraduationCap size={25} color="red"/>
-      <h2 className="text-md mb-0 font-bold text-[#001975] ml-2">Education History</h2>
+      <h2 className="text-md mb-0 font-bold text-[#001975] font-secondary ml-2">Education History</h2>
       </div>
       {userData.educationHistory.length === 0 && !isEditing ? (
         <p className="text-center font-bold mt-10">You have not added any education history.<br/>Click the link below to add now.</p>

@@ -41,7 +41,7 @@ function WorkHistorySection({ userData, onSaveUserInfo }) {
     <div className="mt-10 block  history-container p-5">
       <div className="flex">
         <IoBagOutline size={20} color="red"/>
-        <h2 className="text-md mb-0 font-bold text-[#001975] ml-2">Work History</h2>
+        <h2 className="text-md mb-0 font-bold text-[#001975] ml-2 font-secondary">Work History</h2>
       </div>
       {userData.workHistory.length === 0 && !isEditing ? (
         <p className=" text-center font-bold mt-10" >

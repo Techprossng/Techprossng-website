@@ -61,13 +61,13 @@ function BioSection({ userData, onSaveUserInfo }) {
       <form className="w-full block">
         <div className="flex">
           <BiUser size={25} style={{ color: "red" }} />
-          <h2 className="text-lg mb-2 font-bold text-[#001975] ml-2">Bio</h2>
+          <h2 className="text-lg mb-2 font-bold text-[#001975] font-secondary ml-2">Bio</h2>
         </div>
         <div className="flex justify-between gap-4 mt-5">
           <div className="mb-2 flex w-full p-5 input-container">
             <BiUser size={20} className="mt-2" />
             <div className="name-input ml-5">
-              <label htmlFor="firstName" className=" label-text">
+              <label htmlFor="firstName" className=" label-text font-secondary">
                 First Name
               </label>
               <input
@@ -77,7 +77,7 @@ function BioSection({ userData, onSaveUserInfo }) {
                 placeholder="Jane"
                 value={userData.firstName}
                 onChange={handleBioChange}
-                className="bio-input"
+                className="bio-input font-secondary"
               />
             </div>
           </div>
@@ -85,7 +85,7 @@ function BioSection({ userData, onSaveUserInfo }) {
           <div className="mb-2 flex w-full p-5 input-container">
             <BiUser size={20} className="mt-2" />
             <div className="name-input ml-5">
-              <label htmlFor="lastName" className=" label-text">
+              <label htmlFor="lastName" className=" label-text font-secondary">
                 Last Name
               </label>
               <input
@@ -95,7 +95,7 @@ function BioSection({ userData, onSaveUserInfo }) {
                 placeholder="Doe"
                 value={userData.lastName}
                 onChange={handleBioChange}
-                className="bio-input"
+                className="bio-input font-secondary"
               />
             </div>
           </div>
@@ -104,7 +104,7 @@ function BioSection({ userData, onSaveUserInfo }) {
           <div className=" flex p-5">
             <BiDetail size={20} className="mt-5" />
             <div className="ml-5 bio-text w-full">
-              <label htmlFor="bio" className="label-text">
+              <label htmlFor="bio" className="label-text font-secondary">
                 Bio
               </label>
               <textarea
@@ -113,7 +113,7 @@ function BioSection({ userData, onSaveUserInfo }) {
                 placeholder="Write a short introduction about yourself"
                 value={userData.bio}
                 onChange={handleBioChange}
-                className="textarea w-full "
+                className="textarea w-full font-secondary "
               />
             </div>
           </div>
@@ -132,12 +132,12 @@ function BioSection({ userData, onSaveUserInfo }) {
                 value: country.code,
                 label: `${country.code} (${country.name})`,
               }))}
-              className="select w-40"
+              className="select w-40 font-secondary"
               styles={customStyles} 
             />
           </div>
           <div className=" number-input w-[30%] p-5">
-            <label htmlFor="phoneNumber" className="label-text">Phone Number</label>
+            <label htmlFor="phoneNumber" className="label-text font-secondary">Phone Number</label>
             <input
               type="text"
               id="phoneNumber"
@@ -150,7 +150,7 @@ function BioSection({ userData, onSaveUserInfo }) {
           <div className=" number-input flex  w-[100%] p-5">
             <BiEnvelope size={20} className="mt-4" />
             <div className="ml-5 w-full">
-            <label htmlFor="email" className=" label-text">Email</label>
+            <label htmlFor="email" className=" label-text font-secondary">Email</label>
             <input
               type="email"
               id="email"
@@ -164,7 +164,7 @@ function BioSection({ userData, onSaveUserInfo }) {
         <div className="mt-8  flex number-input custom-location w-1/2 p-5">
           <BiCurrentLocation size={20} className="mt-4"/>
           <div className="w-full ml-5">
-          <label htmlFor="country" className="label-text">Country</label>
+          <label htmlFor="country" className="label-text font-secondary">Country</label>
           <Select
             id="country"
             name="country"
@@ -178,7 +178,7 @@ function BioSection({ userData, onSaveUserInfo }) {
               label: `${country.name} (${country.iso})`,
             }))}
             styles={countryStyles}
-            className="select "
+            className="select font-secondary"
           />
           </div>
         </div>
