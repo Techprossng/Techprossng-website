@@ -9,11 +9,12 @@ import "../../Landingpage/Navbar/Styles/navbar.css";
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/home" },
-    { name: "Courses", link: "/course-catalogue" },
-    { name: "Resources", link: "/resource-page" },
     { name: "About Us", link: "/about-us" },
-    { name: "Mentorship", link: "/coming-soon" },
+    { name: "Courses", link: "/course-catalogue" },
     { name: "Pricing", link: "/coming" },
+    { name: "Resources", link: "/resource-page" },
+    { name: "Mentorship", link: "/coming-soon" },
+    
   ];
 
  
