@@ -29,9 +29,6 @@ const AboutUs = () => {
             </h2>
           </div>
           <div className="about-us-intro-sub">
-            <h6 className="font-medium text-lg leading-[25.5px] text-[#272727] mt-5">
-              How we started...
-            </h6>
             <p className="font-normal text-base leading-[24px] text-[#272727] mt-3">
               We are a dynamic tech education company that helps people access
               high-quality <br />
@@ -42,7 +39,7 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="hero-image bg-[aqua] mt-10">
+        <div className="hero-image mt-10">
           <img src={AboutHero} alt="hero-image" className="w-full" />
         </div>
         <div className="mission-intro flex justify-around items-center mt-10">
