@@ -1,6 +1,6 @@
 import HeroImage from "../../../assets/images/hero-image.svg";
 import Vector from "../../../assets/images/Vector.svg";
-import "../../Landingpage/Hero Section/Styles/hero.css";
+//import "../../Landingpage/Hero section/Styles/hero.css";
 import "aos";
 
 const Hero = () => {

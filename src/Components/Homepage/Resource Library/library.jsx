@@ -1,9 +1,9 @@
 import React from "react";
 import "../Resource Library/Style/library.css";
-import Image1 from "../../../assets/images/image1.png";
-import Image4 from "../../../assets/images/image4.png";
-import Image5 from "../../../assets/images/image5.png";
-import Image6 from "../../../assets/images/image6.png";
+import Image1 from "../../../assets/images/Image1.png";
+import Image4 from "../../../assets/images/Image4.png";
+import Image5 from "../../../assets/images/Image5.png";
+import Image6 from "../../../assets/images/Image6.png";
 
 function Library() {
   return (
