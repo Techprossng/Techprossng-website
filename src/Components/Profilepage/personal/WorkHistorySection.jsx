@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { IoBagOutline } from "react-icons/io5";
 import { BiPlus } from "react-icons/bi";
+import { ImPencil } from "react-icons/im";
+import { FaTrash } from "react-icons/fa";
 import WorkHistoryForm from "./WorkHistoryForm";
 import "../personal/Styles/workinfo.css";
 
@@ -49,26 +51,33 @@ function WorkHistorySection({ userData, onSaveUserInfo }) {
         </p>
       ) : (
         userData.workHistory.map((work, index) => (
-          <div key={index}>
+          <div key={index}  className="flex justify-between work-section p-5">
+            <div className="">
             <p>
-              <strong>Job Title:</strong> {work.jobTitle}
+             {work.jobTitle}
             </p>
             <p>
-              <strong>Company:</strong> {work.company}
+             {work.company}
             </p>
+            <p>{work.location}</p>
+            </div>
             {/* Add other work history fields here */}
-            <button
+
+            <div>
+            <ImPencil
               onClick={() => handleEditWorkHistory(index)}
               className="btn "
-            >
-              Edit
-            </button>
-            <button
+              size="20px"
+            />
+            
+            <FaTrash
               onClick={() => handleDeleteWorkHistory(index)}
-              className="btn btn-danger"
-            >
-              Delete
-            </button>
+              className="btn btn-danger mt-40"
+              size="20px"
+              color="red"
+              
+            />
+            </div>
           </div>
         ))
       )}
