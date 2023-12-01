@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import "../Coursecatalog/Style/course-catalog.css";
-import Consider from "../../assets/images/consideration-image.png"
+import Consider from "../../assets/images/consideration-image.png";
 
 function Consideration() {
   return (

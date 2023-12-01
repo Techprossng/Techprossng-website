@@ -1,8 +1,9 @@
-import "../Stats-ImpactVideo/Style/s-iv.css"
-import IV from "../../../assets/images/impact-video.png"
-import Stat1 from "../../../assets/images/Stats.png"
-import Stat2 from "../../../assets/images/Stats-2.png"
-import Stat3 from "../../../assets/images/Stats-3.png"
+import React from 'react';
+import "../Stats-ImpactVideo/Style/s-iv.css";
+import IV from "../../../assets/images/impact-video.png";
+import Stat1 from "../../../assets/images/Stats.png";
+import Stat2 from "../../../assets/images/Stats-2.png";
+import Stat3 from "../../../assets/images/Stats-3.png";
 
 
 

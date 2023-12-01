@@ -1,3 +1,4 @@
+import React from 'react';
 import cta from "../../../assets/images/cta_image.png";
 
 export default function CTA() {

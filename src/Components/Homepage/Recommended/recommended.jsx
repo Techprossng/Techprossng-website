@@ -1,3 +1,4 @@
+import React from 'react';
 import "./Styles/recommended.css";
 import clock from "../../../assets/clock.png";
 import img1 from "../../../assets/img1.png";

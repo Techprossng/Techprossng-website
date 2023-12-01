@@ -1,3 +1,4 @@
+import React from 'react';
 import "../About Us/Style/about-us.css";
 import ImpactVideo from "../../assets/images/impact-video.png";
 import AboutHero from "../../assets/images/about-hero-image.png";
@@ -14,7 +15,7 @@ import MS from "../../assets/images/team/adeyemo.png";
 import FM from "../../assets/images/team/chinyere.png";
 import PM from "../../assets/images/team/mofeoluwa.png";
 import COO from "../../assets/images/team/olakanmi.png";
-import CEO2 from "../../assets/images/team/mayomiwa.png"
+import CEO2 from "../../assets/images/team/mayomiwa.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Blogs } from "./Data/data";
 

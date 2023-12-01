@@ -1,7 +1,7 @@
-import Tutor1 from "../../../../assets/images/tutor1.svg"
-import Tutor2 from "../../../../assets/images/tutor2.svg"
-import Tutor3 from "../../../../assets/images/tutor3.svg"
-import Star from "../../../../assets/icons/star.png"
+import Tutor1 from "../../../../assets/images/tutor1.svg";
+import Tutor2 from "../../../../assets/images/tutor2.svg";
+import Tutor3 from "../../../../assets/images/tutor3.svg";
+import Star from "../../../../assets/icons/star.png";
 
 
 const mentor = [

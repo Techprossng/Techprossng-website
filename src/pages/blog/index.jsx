@@ -1,11 +1,11 @@
 import React from "react";
 import Newsletter from "../../Components/Landingpage/Newsletter Section/newsletter";
-import TechProsNaija from "../../assets/images/TechProsNaija.png"
-import CoffeeSplash from "../../assets/images/coffee_unsplash.png"
-import BlogBooks from "../../assets/images/blog_books.png"
-import BlogTrees from "../../assets/images/blog_trees.png"
-import Footer from "../../Components/Landingpage/Footer/footer"
-import Navbar from "../../Components/Landingpage/Navbar/navbar"
+import TechProsNaija from "../../assets/images/TechProsNaija.png";
+import CoffeeSplash from "../../assets/images/coffee_unsplash.png";
+import BlogBooks from "../../assets/images/blog_books.png";
+import BlogTrees from "../../assets/images/blog_trees.png";
+import Footer from "../../Components/Landingpage/Footer/footer";
+import Navbar from "../../Components/Landingpage/Navbar/navbar";
 
 export default function BlogPage() {
   return (

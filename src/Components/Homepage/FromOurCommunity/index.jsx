@@ -1,3 +1,4 @@
+import React from 'react';
 import foc from "../../../assets/images/homepage_foc.png";
 import foc2 from "../../../assets/images/homepage_foc_image.png";
 

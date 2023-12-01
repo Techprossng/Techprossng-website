@@ -1,6 +1,7 @@
-import "../../Components/Sign In Page/Style/sign-in.css"
-import Line from "../../assets/images/line.png"
-import GoogleLogo from "../../assets/images/google-logo.png"
+import React from 'react';
+import "../../Components/Sign In Page/Style/sign-in.css";
+import Line from "../../assets/images/line.png";
+import GoogleLogo from "../../assets/images/google-logo.png";
 
 
 const SignIn = () => {

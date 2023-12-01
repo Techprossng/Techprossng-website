@@ -1,4 +1,4 @@
-import BlogVector from "../../../assets/images/blog-frame.png"
+import BlogVector from "../../../assets/images/blog-frame.png";
 
 export const Blogs = [{
      img: BlogVector, 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Sample from "../../Components/Pricing/Pricing"
+import Sample from "../../Components/Pricing/Pricing";
 
 
 const Pricingpage = () => {
