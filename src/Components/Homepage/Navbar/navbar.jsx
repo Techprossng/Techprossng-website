@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: "Courses", link: "/course-catalogue" },
     { name: "Pricing", link: "/coming-soon" },
     { name: "Resources", link: "/resource-page" },
-    { name: "Mentorship", link: "/coming-soon" },
+    { name: "Mentorship", link: "/coming" },
     
 
   ];

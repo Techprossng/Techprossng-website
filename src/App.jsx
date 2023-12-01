@@ -34,8 +34,8 @@ function App() {
         <Route path="/course-catalogue" element={<Catalog />} />
         <Route path="/resource-page" element={<ResourcePage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/coming-soon" element={<ComingSoonPage />} />
-        <Route path="/coming" element={<ComingPage />} />
+        <Route path="/coming" element={<ComingSoonPage />} />
+        <Route path="/coming-soon" element={<ComingPage />} />
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/blog" element={<BlogPage />} />
