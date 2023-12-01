@@ -42,8 +42,8 @@ function WorkHistorySection({ userData, onSaveUserInfo }) {
   return (
     <div className="mt-10 block  history-container p-5">
       <div className="flex">
-        <IoBagOutline size={20} color="red"/>
-        <h2 className="text-md mb-0 font-bold text-[#001975] ml-2 font-secondary">Work History</h2>
+        <IoBagOutline size={20} color="red" className="mt-[3px]"/>
+        <h2 className="text-lg mb-1 font-bold text-[#001975] ml-2 font-secondary">Work History</h2>
       </div>
       {userData.workHistory.length === 0 && !isEditing ? (
         <p className=" text-center font-bold mt-10" >
@@ -51,23 +51,29 @@ function WorkHistorySection({ userData, onSaveUserInfo }) {
         </p>
       ) : (
         userData.workHistory.map((work, index) => (
-          <div key={index}  className="flex justify-between work-section p-5">
+          <div key={index}  className="flex justify-between work-section p-5 mt-5">
             <div className="">
-            <p>
-             {work.jobTitle}
-            </p>
-            <p>
+            <p className="text-[15px] font-bold ">
              {work.company}
             </p>
-            <p>{work.location}</p>
+            <p className="text-[12px] font-bold">
+             {work.jobTitle}
+            </p>
+            <p className="text-[11px] font-medium">
+            {work.location}</p>
+            <p className="text-[12px] font-bold">
+             {work.jobTitle}
+            </p>
+            <p className="text-[11px] font-medium">
+            {work.location}</p>
             </div>
             {/* Add other work history fields here */}
-
-            <div>
+            <div style={{ cursor:"pointer"}}>
             <ImPencil
               onClick={() => handleEditWorkHistory(index)}
               className="btn "
               size="20px"
+              color="rgba(0, 25, 117, 1)"
             />
             
             <FaTrash

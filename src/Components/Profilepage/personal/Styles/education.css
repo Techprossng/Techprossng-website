@@ -9,3 +9,11 @@
     position: relative;
     left: 34.5rem;
 }
+.work-section{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 16px;
+    line-height: 40px;
+}
+.work-action{
+    line-height: 40px;
+}

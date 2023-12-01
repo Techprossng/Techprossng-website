@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { IoBagOutline } from "react-icons/io5";
+import { IoBagOutline  } from "react-icons/io5";
 import { BiCurrentLocation } from "react-icons/bi";
+import { MdOutlineCalendarToday , MdOutlineFactory } from "react-icons/md";
 import countries from "./Data/Countries";
 import Select from "react-select";
 import "../personal/Styles/workform.css";
@@ -45,13 +46,13 @@ function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
   
 
   return (
-    <div className="mb-4 p-4 border rounded-lg" >
+    <div className="mb-4 mt-2 p-4 border rounded-lg" >
       <div className="flex">
-      <IoBagOutline size={20} color="red"/>
-      <h2 className="text-md mb-0 font-bold text-[#001975] ml-2 font-secondary">Add Work History</h2>
+      <IoBagOutline size={20} color="red" className="mt-[2px]"/>
+      <h2 className="text-[16px] mb-0 font-bold text-[#001975] ml-2 font-secondary">Add Work History</h2>
       </div>
          {/* Add container div to the inputs  */}
-        <div className="container mt-5 mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 pl-0 ">
+       <div className="container mt-5 mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 pl-0 ">
       <div className="mb-2 flex w-full p-5 form-container">
       <IoBagOutline size={20} color="black" className="mt-2" />
       <div className="form-input ml-5">
@@ -68,8 +69,8 @@ function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
       </div>
       </div>
       <div className="mb-2 flex w-full p-5 form-container">
-      <IoBagOutline size={20} color="black" className="mt-2" />
-      <div className=" form-input ml-5 mb-2">
+      <MdOutlineFactory size={20} color="black" className="mt-2" />
+      <div className="form-input ml-5 mb-2">
         <label htmlFor="company" className=" form-text font-secondary">Company Name</label>
         <input
           type="text"
@@ -98,7 +99,7 @@ function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
       </div>
       </div>     
       <div className="mt-8  flex number-input w-full p-5">
-          <BiCurrentLocation size={20} className="mt-4"/>
+      <MdOutlineCalendarToday size={20} className="mt-4"/>
           <div className="w-full ml-5">
           <label htmlFor="country" className="form-text font-secondary">Employment Type</label>
           <Select
@@ -119,7 +120,7 @@ function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
           </div>
         </div>
         <div className="mt-8  flex number-input  w-full p-5">
-          <BiCurrentLocation size={20} className="mt-4"/>
+          <MdOutlineCalendarToday size={20} className="mt-4"/>
           <div className="w-full ml-5">
           <label htmlFor="country" className="form-text font-secondary">Start Month</label>
           <Select
@@ -140,7 +141,7 @@ function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
           </div>
         </div>
         <div className="mt-8  flex number-input  w-full p-5">
-          <BiCurrentLocation size={20} className="mt-4"/>
+        <MdOutlineCalendarToday size={20} className="mt-4"/>
           <div className="w-full ml-5">
           <label htmlFor="country" className="form-text font-secondary">Start Year</label>
           <Select
@@ -161,7 +162,7 @@ function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
           </div>
         </div>
         <div className="mt-8  flex number-input w-full p-5">
-          <BiCurrentLocation size={20} className="mt-4"/>
+        <MdOutlineCalendarToday size={20} className="mt-4"/>
           <div className="w-full ml-5">
           <label htmlFor="country" className="form-text font-secondary">End Month</label>
           <Select
@@ -182,7 +183,7 @@ function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
           </div>
         </div>
         <div className="mt-8  flex number-input w-full p-5">
-          <BiCurrentLocation size={20} className="mt-4"/>
+        <MdOutlineCalendarToday size={20} className="mt-4"/>
           <div className="w-full ml-5">
           <label htmlFor="country" className="form-text font-secondary">End Year</label>
           <Select

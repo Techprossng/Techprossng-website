@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import { BiPlus } from "react-icons/bi";
+import { ImPencil } from "react-icons/im";
+import { FaTrash } from "react-icons/fa";
 import EducationHistoryForm from "./EducationHistoryForm";
 import "../personal/Styles/education.css";
 
@@ -43,21 +45,31 @@ function EducationHistorySection({ userData, onSaveUserInfo }) {
         <p className="text-center font-bold mt-10">You have not added any education history.<br/>Click the link below to add now.</p>
       ) : (
         userData.educationHistory.map((education, index) => (
-          <div key={index}>
-            <p>
-              <strong>School Name:</strong> {education.schoolName}
+          <div key={index} className="flex justify-between work-section p-5 mt-5">
+            <div className="">
+            <p className="text-[15px] font-bold">
+            {education.schoolName}
             </p>
-            <p>
-              <strong>Degree:</strong> {education.degree}
+            <p className="text-[15px] font-bold">
+            {education.degree}
             </p>
+            </div>
             {/* Add other education history fields here */}
-            <div>
-              <button onClick={() => handleEditEducation(index)} className="btn ">
-                Edit
-              </button>
-              <button onClick={() => handleDeleteEducationHistory(index)} className="btn btn-danger">
-                Delete
-              </button>
+            <div style={{ cursor:"pointer"}}>
+            <ImPencil
+              onClick={() => handleEditEducation(index)}
+              className="btn "
+              size="20px"
+              color="rgba(0, 25, 117, 1)"
+            />
+            
+            <FaTrash
+              onClick={() => handleDeleteEducationHistory(index)}
+              className="btn btn-danger mt-40"
+              size="20px"
+              color="red"
+              
+            />
             </div>
           </div>
         ))
