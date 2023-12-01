@@ -1,3 +1,4 @@
+import React from 'react';
 import "../../Components/Sign Up Page/Style/sign-up.css"
 import Line from "../../assets/images/line.png"
 import GoogleLogo from "../../assets/images/google-logo.png"

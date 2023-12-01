@@ -1,3 +1,4 @@
+import React from 'react';
 import smGuy from "../../../assets/smGuy.jpg";
 import dataGuy from "../../../assets/dataGuy.jpg";
 import Rafiu from "../../../assets/Rafiu.png";

@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Footer/Styles/footer.css";
 import Logo from "../../../assets/images/Logo.png";
 

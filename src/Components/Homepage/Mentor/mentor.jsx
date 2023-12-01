@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from "react";
 import mentor from "../Mentor/Data/mentor";
 import Slider from "react-slick";

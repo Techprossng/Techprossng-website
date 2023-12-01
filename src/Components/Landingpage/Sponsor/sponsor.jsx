@@ -1,3 +1,4 @@
+import React from 'react';
 import "aos/dist/aos.css";
 import Sponsor3 from "../../../assets/images/slack.svg";
 import Sponsor4 from "../../../assets/images/dropbox.svg";

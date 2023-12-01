@@ -1,3 +1,4 @@
+import React from 'react';
 import "../About Us/Style/about-us.css";
 import ImpactVideo from "../../assets/images/impact-video.png";
 import AboutHero from "../../assets/images/about-hero-image.png";

@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Stats-ImpactVideo/Style/s-iv.css"
 import IV from "../../../assets/images/impact-video.png"
 import Stat1 from "../../../assets/images/Stats.png"
