@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/landing-page" element={<LandingPage />} />
+        <Route path="/" exact element={<LandingPage />} />
         <Route path="/home" element={<Homepage />} /> 
         <Route path="/profile" element={<ProfilePage/>} />
         <Route path="/pricing" element={<Pricing />} />
