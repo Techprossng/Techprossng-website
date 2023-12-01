@@ -1,3 +1,4 @@
+import React from 'react';
 import Dots from "../../../assets/icons/whychooseus_dots.svg";
 import Frame from "../../../assets/icons/whychooseus_frame.svg";
 import Choose from "../../../assets/images/whychooseus_image.png";

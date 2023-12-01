@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Contact Us/Style/contact-us.css"
 
 function ContactUs() {

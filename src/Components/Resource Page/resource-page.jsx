@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Resource Page/Style/resource.css";
 import ResourceImage from "../../assets/images/Resource-Hero.png"
 import { FaSearch } from "react-icons/fa";

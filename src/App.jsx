@@ -16,7 +16,7 @@ import ComingPage from "./pages/comesoon/coming";
 import ComingSoonPage from "./pages/ComingSoon/soon";
 import BlogPage from "./pages/blog";
 import ContactUs from "./pages/Contact-Us/contact"
-
+import React from 'react';
 
 
 function App() {

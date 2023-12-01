@@ -1,3 +1,4 @@
+import React from 'react';
 import CardImage from "../../assets/images/catalog-img/topcourses.png";
 import { MdStar, MdBookmarks } from "react-icons/md";
 import { Link } from "react-router-dom";

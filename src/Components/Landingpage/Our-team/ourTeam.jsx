@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import team_avi from "../../../assets/team_avi.png";
 import "./styles/team.css";
 import Blue from "../Blueline/blue";
