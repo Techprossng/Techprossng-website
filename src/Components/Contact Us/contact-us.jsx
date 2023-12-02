@@ -1,7 +1,48 @@
-import React from 'react';
+import React, { useState} from 'react';
 import "../Contact Us/Style/contact-us.css"
 
 function ContactUs() {
+  const courses = ["Data Analysis", "Cybersecurity", "Digital Marketing", "Frontend Development", "Backend Development", "Product Design", "UI/UX Design"]
+  const initialValues = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    description: "",
+    website: "",
+    course: "",
+  }
+    const [formValues, setFormValues] = useState(initialValues)
+    const [formErrors, setFormErrors] = useState({})
+    const handleChange = (e) => {
+      const {name, value} = e.target;
+      setFormValues({...formValues, [name]:value})
+      console.log(formValues)
+    }
+    const handleSubmit = async (e) => {
+      e.preventDefault()
+      
+      setFormErrors(validation(formValues))
+    }
+    const validation = (values) =>{
+    const errors = {}
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!values.firstName){
+      errors.firstName = "First Name is required"
+    }
+    if (!values.lasttName){
+      errors.lastName = "Last Name is required"
+    }
+    if (!values.email){
+      errors.email = "Email is required"
+    }
+    else if (!emailPattern.test(values.email)){
+      errors.email = "This is not a valid email pattern"
+    }
+    if (!values.description){
+      errors.description = "Description is required"
+    }
+    return errors
+    }
   return (
     <>
     <div className="contact-form my-10">
@@ -13,19 +54,28 @@ function ContactUs() {
           you as soon as possible.
         </p>
       </div>
-      <form action="" className="forminputs">
+      <form 
+      onSubmit={handleSubmit}
+      action="" className="forminputs">
         <div className="name flex justify-around items-center mt-10">
           <div className="firstinput flex flex-col">
             <label className="text-[#272727] font-medium text-sm">
               First Name
             </label>
-            <input type="name" className="" />
+            <input 
+            onChange={handleChange}
+            name='firstName' value={formValues.firstName} type="text" className="" />
+            <p className="mt-2 text-[#f00]">{formErrors.firstName}</p>
           </div>
           <div className="lastinput flex flex-col">
             <label className="text-[#272727] font-medium text-sm">
               Last Name
             </label>
-            <input type="name" className="" />
+            <input 
+            onChange={handleChange}
+            name='lastName' value={formValues.lastName}
+            type="text" className="" />
+            <p className="mt-2 text-[#f00]">{formErrors.lastName}</p>
           </div>
         </div>
         <div className="mail-website flex justify-around items-center mt-10">
@@ -33,13 +83,20 @@ function ContactUs() {
             <label className="text-[#272727] font-medium text-sm">
               Email
             </label>
-            <input type="email" className="" />
+            <input 
+            onChange={handleChange}
+            name='email' value={formValues.email}
+            type="email" className="" />
+            <p className="mt-2 text-[#f00]">{formErrors.email}</p>
           </div>
           <div className="websiteinput flex flex-col">
             <label className="text-[#272727] font-medium text-sm">
               Website (Optional)
             </label>
-            <input type="text" className="" />
+            <input 
+            onChange={handleChange}
+            name='website' value={formValues.website}
+            type="text" className="" />
           </div>
         </div>
         <div className="flex justify-center ">
@@ -49,13 +106,19 @@ function ContactUs() {
             </label>
             <div className="course-select">
               <select id="courses">
-                <option value="---">--Select One--</option>
+                {/* <option value="---">--Select One--</option>
                 <option value="digital-marketing">
                   Digital Marketing
                 </option>
                 <option value="data-analyst">Data Analyst</option>
                 <option value="frontend">Frontend Web Developer</option>
-                <option value="backend">Backend Web Developer</option>
+                <option value="backend">Backend Web Developer</option> */}
+                {
+                  courses.map((item, index) => (
+                    <option value={item} key={index}>{item}</option>
+
+                  ))
+                }
               </select>
             </div>
           </div>
@@ -66,7 +129,11 @@ function ContactUs() {
             How can we help?
           </label>
           <div className="field">
-            <input type="name" className="" />
+            <input 
+            onChange={handleChange}
+            name='description' value={formValues.description}
+            type="text" className="" />
+            <p className="mt-2 text-[#f00]">{formErrors.description}</p>
           </div>
         </div>
         </div>
