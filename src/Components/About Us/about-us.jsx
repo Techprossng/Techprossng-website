@@ -1,25 +1,103 @@
-import React from 'react';
+import React, { useState } from "react";
 import "../About Us/Style/about-us.css";
 import ImpactVideo from "../../assets/images/impact-video.png";
 import AboutHero from "../../assets/images/about-hero-image.png";
 import CEO from "../../assets/images/team/soge-ceo.jpg";
 import Merit from "../../assets/images/merit-frame.png";
-// import HR from "../../assets/images/team/sophia-hr.jpg";
-// import MS from "../../assets/images/team/adeyemo-ms.jpg";
-// import FM from "../../assets/images/team/chinyere-fm.jpg";
-// import PM from "../../assets/images/team/mofe-pm.jpg";
-// import COO from "../../assets/images/team/praise-coo.jpg";
-// import BlogVector from "../../assets/images/blog-frame.png";
 import HR from "../../assets/images/team/runsewe.png";
 import MS from "../../assets/images/team/adeyemo.png";
 import FM from "../../assets/images/team/chinyere.png";
 import PM from "../../assets/images/team/mofeoluwa.png";
 import COO from "../../assets/images/team/olakanmi.png";
-import CEO2 from "../../assets/images/team/mayomiwa.png"
+import CEO2 from "../../assets/images/team/mayomiwa.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Blogs } from "./Data/data";
 
 const AboutUs = () => {
+  const courses = [
+    "--Select your Course--",
+    "Data Analysis",
+    "Cybersecurity",
+    "Digital Marketing",
+    "Frontend Development",
+    "Backend Development",
+    "Product Design",
+    "UI/UX Design",
+  ];
+  const initialValues = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    description: "",
+    website: "",
+    course: "",
+  };
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const [formSuccess, setFormSuccess] = useState(false);
+
+  const validation = (values) => {
+    const errors = {};
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!values.firstName) {
+      errors.firstName = "First Name is required";
+    }
+    if (!values.lastName) {
+      errors.lastName = "Last Name is required";
+    }
+    if (!values.email) {
+      errors.email = "Email is required";
+    } else if (!emailPattern.test(values.email)) {
+      errors.email = "This is not a valid email pattern";
+    }
+    if (!values.description) {
+      errors.description = "Description is required";
+    }
+    return errors;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormErrors(validation(formValues));
+    try {
+      const response = await fetch(
+        "https://techprosnaija.com/api/v1/contacts",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            firstName: formValues.firstName,
+            lastName: formValues.lastName,
+            email: formValues.email,
+            description: formValues.description,
+            website: formValues.website,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      if (response.ok) {
+        console.log("Sent");
+        setFormValues(initialValues);
+        setFormSuccess(true);
+        setTimeout(() => {
+          setFormSuccess(false);
+        }, 3000);
+      } else {
+        console.error("Try again:", response.status, response.statusText);
+      }
+    } catch (error) {
+      console.error("An error occured:", error.message);
+      setFormErrors("An error occured:" + error.message);
+    }
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+    console.log(formValues);
+  };
+
   return (
     <>
       <div className="about-us">
@@ -195,17 +273,17 @@ const AboutUs = () => {
             </h4>
           </div>
           <div className="flex flex-wrap">
-          <div className="flex justify-center flex-wrap bg-[#001975]">
-            <img src={CEO2} alt="ceo image" className="w-[30%]" />
-            <img src={COO} alt="coo image" className="w-[30%]" />
-            <img src={PM} alt="pm image" className="w-[30%]" />
+            <div className="flex justify-center flex-wrap bg-[#001975]">
+              <img src={CEO2} alt="ceo image" className="w-[30%]" />
+              <img src={COO} alt="coo image" className="w-[30%]" />
+              <img src={PM} alt="pm image" className="w-[30%]" />
+            </div>
+            <div className="flex justify-center flex-wrap bg-[#001975]">
+              <img src={HR} alt="hr image" className="w-[30%]" />
+              <img src={FM} alt="fm image" className="w-[30%]" />
+              <img src={MS} alt="ms image" className="w-[30%]" />
+            </div>
           </div>
-          <div className="flex justify-center flex-wrap bg-[#001975]">
-            <img src={HR} alt="hr image" className="w-[30%]" />
-            <img src={FM} alt="fm image" className="w-[30%]" />
-            <img src={MS} alt="ms image" className="w-[30%]" />
-          </div>
-        </div>
         </div>
 
         <div className="blog-section flex flex-col items-center">
@@ -241,7 +319,7 @@ const AboutUs = () => {
             <FaLongArrowAltRight className="blogpoint" />
           </div>
         </div>
-        <div  className="contact-form my-10">
+        <div className="contact-form my-10">
           <div className="contact-us m-10">
             <div className="contact-intro flex flex-col justify-center items-center">
               <h4 className="font-bold text-3xl text-[#001562]">Contact Us</h4>
@@ -250,19 +328,33 @@ const AboutUs = () => {
                 you as soon as possible.
               </p>
             </div>
-            <form action="" className="forminputs">
+            <form onSubmit={handleSubmit} action="" className="forminputs">
               <div className="name flex justify-around items-center mt-10">
                 <div className="firstinput flex flex-col">
                   <label className="text-[#272727] font-medium text-sm">
                     First Name
                   </label>
-                  <input type="name" className="" />
+                  <input
+                    onChange={handleChange}
+                    name="firstName"
+                    value={formValues.firstName}
+                    type="text"
+                    className=""
+                  />
+                  <p className="mt-2 text-[#f00]">{formErrors.firstName}</p>
                 </div>
                 <div className="lastinput flex flex-col">
                   <label className="text-[#272727] font-medium text-sm">
                     Last Name
                   </label>
-                  <input type="name" className="" />
+                  <input
+                    onChange={handleChange}
+                    name="lastName"
+                    value={formValues.lastName}
+                    type="text"
+                    className=""
+                  />
+                  <p className="mt-2 text-[#f00]">{formErrors.lastName}</p>
                 </div>
               </div>
               <div className="mail-website flex justify-around items-center mt-10">
@@ -270,13 +362,26 @@ const AboutUs = () => {
                   <label className="text-[#272727] font-medium text-sm">
                     Email
                   </label>
-                  <input type="email" className="" />
+                  <input
+                    onChange={handleChange}
+                    name="email"
+                    value={formValues.email}
+                    type="email"
+                    className=""
+                  />
+                  <p className="mt-2 text-[#f00]">{formErrors.email}</p>
                 </div>
                 <div className="websiteinput flex flex-col">
                   <label className="text-[#272727] font-medium text-sm">
                     Website (Optional)
                   </label>
-                  <input type="text" className="" />
+                  <input
+                    onChange={handleChange}
+                    name="website"
+                    value={formValues.website}
+                    type="text"
+                    className=""
+                  />
                 </div>
               </div>
               <div className="flex justify-center ">
@@ -286,33 +391,50 @@ const AboutUs = () => {
                   </label>
                   <div className="course-select">
                     <select id="courses">
-                      <option value="---">--Select One--</option>
-                      <option value="digital-marketing">
-                        Digital Marketing
-                      </option>
-                      <option value="data-analyst">Data Analyst</option>
-                      <option value="frontend">Frontend Web Developer</option>
-                      <option value="backend">Backend Web Developer</option>
+                      {/* <option value="---">--Select One--</option>
+                <option value="digital-marketing">
+                  Digital Marketing
+                </option>
+                <option value="data-analyst">Data Analyst</option>
+                <option value="frontend">Frontend Web Developer</option>
+                <option value="backend">Backend Web Developer</option> */}
+                      {courses.map((item, index) => (
+                        <option value={item} key={index}>
+                          {item}
+                        </option>
+                      ))}
                     </select>
                   </div>
                 </div>
               </div>
               <div className="flex justify-center">
-              <div className="text-enquiry mt-10">
-                <label className="text-[#272727] font-medium text-sm text-">
-                  How can we help?
-                </label>
-                <div className="field">
-                  <input type="name" className="" />
+                <div className="text-enquiry mt-10">
+                  <label className="text-[#272727] font-medium text-sm text-">
+                    How can we help?
+                  </label>
+                  <div className="field">
+                    <input
+                      onChange={handleChange}
+                      name="description"
+                      value={formValues.description}
+                      type="text"
+                      className=""
+                    />
+                    <p className="mt-2 text-[#f00]">{formErrors.description}</p>
+                  </div>
                 </div>
               </div>
-              </div>
               <div className="submit-form flex justify-center mt-10">
-              <button type="submit">
-                <p className="font-semibold text-sm">Send</p>
-              </button>
-            </div>
+                <button type="submit">
+                  <p className="font-semibold text-sm">Send</p>
+                </button>
+              </div>
             </form>
+            {formSuccess && (
+              <div className="text-green-500 text-center font-bold mt-5 text-xl">
+                Successful!
+              </div>
+            )}
           </div>
         </div>
       </div>
