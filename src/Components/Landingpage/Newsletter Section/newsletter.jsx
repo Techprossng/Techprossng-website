@@ -4,12 +4,20 @@ import "../Newsletter Section/Styles/newsletter.css";
 function Newsletter() {
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState(null);
-  const validate = (value) => {
-    isValid = true
-    
-  }
+  const validation = (value) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let error = "";
+    if (!value) {
+      error = "Enter an email address";
+    } else if (!emailPattern.test(value)) {
+      error = "This is not a valid email format";
+    }
+    return error;
+  };
+
   const subscribeHandler = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    validation(email);
     try {
       const response = await fetch(
         "https://techprosnaija.com/api/v1/subscribers",
@@ -19,12 +27,15 @@ function Newsletter() {
           headers: {
             "Content-Type": "application/json",
           },
-          
         }
       );
       if (response.ok) {
         console.log("Successfully subscribed!");
-        setEmail("")
+        setEmail("");
+        setErrors("Successfully Subscribed");
+        setTimeout(() => {
+          setErrors(null); // Clear the message after 3000 milliseconds (3 seconds)
+        }, 3000);
         // You might want to update your UI or show a success message here
       } else {
         console.error(
@@ -32,10 +43,20 @@ function Newsletter() {
           response.status,
           response.statusText
         );
+        setErrors("Failed to Subscribed, please check the email entered");
+        setTimeout(() => {
+          setErrors(null); // Clear the message after 3000 milliseconds (3 seconds)
+        }, 3000);
         // Handle error states or show an error message to the user
       }
     } catch (error) {
       console.error("Error subscribing:", error.message);
+      setErrors(
+        "Failed to Subscribe, please check the email entered:" + error.message
+      );
+      setTimeout(() => {
+        setErrors(null); // Clear the message after 3000 milliseconds (3 seconds)
+      }, 3000);
       // Handle error states or show an error message to the user
     }
   };
@@ -52,7 +73,6 @@ function Newsletter() {
           <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
-
             type="email"
             placeholder="Enter your email address"
             data-aos="fade-down-left"
@@ -60,16 +80,19 @@ function Newsletter() {
           <i className="icon fa fa-envelope"></i>
           <button type="submit">Subscribe</button>
         </form>
-        <div style={{color:"red"}}>
-          {errors}
-        </div>
+        {errors && (
+          <p
+            style={{ color: errors.includes("Successfully") ? "green" : "red" }}
+          >
+            {errors}
+          </p>
+        )}
 
-        <form className="mobile-view">
+        <form onSubmit={subscribeHandler} className="mobile-view">
           <p className="text-mobile font-primary">Enter your email address</p>
           <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
-              
             type="email"
             placeholder="Email"
             data-aos="fade-down-left"
