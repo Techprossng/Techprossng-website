@@ -34,9 +34,9 @@ function Newsletter() {
         setEmail("");
         setErrors("Successfully Subscribed");
         setTimeout(() => {
-          setErrors(null); // Clear the message after 3000 milliseconds (3 seconds)
+          setErrors(null); // Clears the message after 3000 milliseconds (3 seconds)
         }, 3000);
-        // You might want to update your UI or show a success message here
+
       } else {
         console.error(
           "Failed to subscribe:",
@@ -45,14 +45,14 @@ function Newsletter() {
         );
         setErrors("Failed to Subscribed, please check the email entered");
         setTimeout(() => {
-          setErrors(null); // Clear the message after 3000 milliseconds (3 seconds)
+          setErrors(null); // Clears the message after 3000 milliseconds (3 seconds)
         }, 3000);
         // Handle error states or show an error message to the user
       }
     } catch (error) {
-      console.error("Error subscribing:", error.message);
+      console.error("Error subscribing:  ",  error.message);
       setErrors(
-        "Failed to Subscribe, please check the email entered:" + error.message
+        "Network Error:" + error.message
       );
       setTimeout(() => {
         setErrors(null); // Clear the message after 3000 milliseconds (3 seconds)

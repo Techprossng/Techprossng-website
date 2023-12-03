@@ -110,7 +110,7 @@ function ContactUs() {
                   type="text"
                   className=""
                 />
-                <p className="mt-2 text-[#f00]">{formErrors.firstName}</p>
+                <p className="mb-10 md:mt-2 text-[#f00]">{formErrors.firstName}</p>
               </div>
               <div className="lastinput flex flex-col">
                 <label className="text-[#272727] font-medium text-sm">
@@ -189,7 +189,7 @@ function ContactUs() {
                     type="text"
                     className=""
                   />
-                  <p className="mt-2 text-[#f00]">{formErrors.description}</p>
+                  <p className="mt-1 text-[#f00]">{formErrors.description}</p>
                 </div>
               </div>
             </div>
