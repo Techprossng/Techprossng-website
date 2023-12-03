@@ -1,20 +1,14 @@
-import React from 'react';
+import React from "react";
 import smGuy from "../../../assets/smGuy.jpg";
 import dataGuy from "../../../assets/dataGuy.jpg";
 import Rafiu from "../../../assets/Rafiu.png";
-import avi from "../../../assets/avi.png";
+// import avi from "../../../assets/avi.png";
 import Card from "./card";
 import Blue from "../Blueline/blue";
+import bolu from "../../../assets/bolu.jpg";
 import "./Styles/testimonial.css";
 
 export const cards = [
-  {
-    image: avi,
-    heading: "Content Marketer",
-    subHeading: "Boluwatife Ogunniyi",
-    content:
-      "TechProsNaija has transformed me into a more skilled Content Writer & Creator. Being a part of TechProsNaija opened my eyes to the fact that possessing a skill is just the beginning; it's the application of that skill to tackle content challenges that truly matters. TechProsNaija served as my practical training ground, where I put my acquired skills into action like a true professional.",
-  },
   {
     image: Rafiu,
     heading: "Product Designer",
@@ -28,6 +22,13 @@ export const cards = [
     subHeading: "Oluwatobi Akinwale",
     content:
       "My experience at TechProsNaija provided valuable insights into the dynamics of remote teams. It allowed me to refine my communication and collaboration skills, which are crucial for ensuring the efficiency of remote work and successful project deliveries. I've been involved in various projects, including data gathering and cleansing, creating a real-time dashboard for monitoring a social media platform using Google Sheets (GS).",
+  },
+  {
+    image: bolu,
+    heading: "Content Marketer",
+    subHeading: "Boluwatife Ogunniyi",
+    content:
+      "TechProsNaija has transformed me into a more skilled Content Writer & Creator. Being a part of TechProsNaija opened my eyes to the fact that possessing a skill is just the beginning; it's the application of that skill to tackle content challenges that truly matters. TechProsNaija served as my practical training ground, where I put my acquired skills into action like a true professional.",
   },
   {
     image: smGuy,
