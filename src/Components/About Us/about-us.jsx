@@ -331,9 +331,10 @@ const AboutUs = () => {
             <form onSubmit={handleSubmit} action="" className="forminputs">
               <div className="name flex justify-around items-center mt-10">
                 <div className="firstinput flex flex-col">
-                  <label className="text-[#272727] font-medium text-sm">
-                    First Name
-                  </label>
+                <label className="text-[#272727] font-medium text-sm flex gap-1 ">
+                  <span className="text-inherit"> First Name</span>
+                  <div className="text-red-600 text-base font-bold">*</div>
+                </label>
                   <input
                     onChange={handleChange}
                     name="firstName"
@@ -344,9 +345,10 @@ const AboutUs = () => {
                   <p className="mt-2 text-[#f00]">{formErrors.firstName}</p>
                 </div>
                 <div className="lastinput flex flex-col">
-                  <label className="text-[#272727] font-medium text-sm">
-                    Last Name
-                  </label>
+                <label className="text-[#272727] font-medium text-sm flex gap-1">
+                  <span className="text-inherit"> Last Name</span>
+                  <div className="text-red-600 text-base font-bold">*</div>
+                </label>
                   <input
                     onChange={handleChange}
                     name="lastName"
@@ -359,9 +361,10 @@ const AboutUs = () => {
               </div>
               <div className="mail-website flex justify-around items-center mt-10">
                 <div className="mailinput flex flex-col">
-                  <label className="text-[#272727] font-medium text-sm">
-                    Email
-                  </label>
+                <label className="text-[#272727] font-medium text-sm flex gap-1">
+                  <span className="text-inherit">Email</span>
+                  <div className="text-red-600 text-base font-bold">*</div>
+                </label>
                   <input
                     onChange={handleChange}
                     name="email"
@@ -386,9 +389,12 @@ const AboutUs = () => {
               </div>
               <div className="flex justify-center ">
                 <div className="course-option mt-10">
-                  <label className="text-[#272727] font-medium text-sm">
-                    Please select your course of enquiry.
-                  </label>
+                <label className="text-[#272727] font-medium text-sm flex gap-1">
+                  <span className="text-inherit">
+                    Please select your course of enquiry
+                  </span>
+                  <div className="text-red-600 text-base font-bold">*</div>
+                </label>
                   <div className="course-select">
                     <select id="courses">
                       {/* <option value="---">--Select One--</option>
@@ -409,9 +415,10 @@ const AboutUs = () => {
               </div>
               <div className="flex justify-center">
                 <div className="text-enquiry mt-10">
-                  <label className="text-[#272727] font-medium text-sm text-">
-                    How can we help?
-                  </label>
+                <label className="text-[#272727] font-medium text-sm flex gap-1">
+                  <span className="text-inherit"> How can we help</span>
+                  <div className="text-red-600 text-base font-bold">*</div>
+                </label>
                   <div className="field">
                     <input
                       onChange={handleChange}
