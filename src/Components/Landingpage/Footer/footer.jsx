@@ -1,6 +1,7 @@
 import React from 'react';
 import "../Footer/Styles/footer.css";
 import Logo from "../../../assets/images/Logo.png";
+import { FaSquarePhone, FaEnvelopeCircleCheck } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -105,8 +106,16 @@ function Footer() {
       </div>
       <hr className="w-[85%] horizontal-line" />
       <div className="copyright font-secondary flex flex-col justify-center items-center gap-5 p-5 w-[87%] m-auto">
+        <a href="mailto:henryhopeengnig@yahoo.com" className="flex gap-2 items-center">
+          <FaEnvelopeCircleCheck className="footer-top-icons text-[#fff] w-5 h-5"/>
+          <p>hello@techprosnaija.com</p>
+        </a>
+        <a href="tel:+2348033225912" className="flex gap-2 items-center">
+          <FaSquarePhone className="footer-top-icons text-[#fff] w-5 h-5"/>
+          <p>+23413306145</p>
+        </a>
         <span>&copy; 2023 TechProsNaija. All Rights Reserved </span>
-        <a href="">Cookie Policy</a>
+        <a href="">Cookie Policy</a> 
       </div>
     </footer>
   );
