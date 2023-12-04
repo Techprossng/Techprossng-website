@@ -131,7 +131,7 @@ function ContactUs() {
             <div className="mail-website flex justify-around items-center mt-10">
               <div className="mailinput flex flex-col">
                 <label className="text-[#272727] font-medium text-sm flex gap-1">
-                  <span className="text-inherit"> Last Name</span>
+                  <span className="text-inherit">Email</span>
                   <div className="text-red-600 text-base font-bold">*</div>
                 </label>
                 <input
