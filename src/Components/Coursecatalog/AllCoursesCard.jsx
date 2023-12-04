@@ -15,7 +15,7 @@ const AllCoursesCard = (props) => {
         <h5 className="text-2xl m-3 font-primay font-bold tracking-tight text-blue-900">
           {props.head}
         </h5>
-        <p className="font-normal font-secondary font-medium text-sm m-3 text-gray-700 mt-2">
+        <p className="font-secondary font-medium text-sm m-3 text-gray-700 mt-2">
           {props.text}
         </p>
         <div className="mt-4 m-3 flex items-center">
