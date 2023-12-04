@@ -35,7 +35,7 @@ function Soon() {
           </form>
           <div className="flex mt-12 md:mt-12 ">
             <a
-              href="/"
+              href="/course-catalogue"
               className="text-red-600 flex gap-x-5 items-center font-primary font-medium soon-link"
             >
               Check out our top courses
