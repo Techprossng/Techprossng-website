@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: "About Us", link: "/about-us" },
     { name: "Courses", link: "/course-catalogue" },
     { name: "Pricing", link: "/coming-soon" },
-    { name: "Resources", link: "/resource-page" },
+    { name: "Resources", link: "/coming-soon" },
     { name: "Mentorship", link: "/coming" },
     
   ];
