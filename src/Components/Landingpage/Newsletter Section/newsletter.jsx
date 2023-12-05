@@ -8,7 +8,7 @@ function Newsletter() {
   const [errors, setErrors] = useState(null);
 
   const emailRef = useRef(); 
-  useEffect(() => emailjs.init("AqcwFAWOQMHZsaGmS"), []);
+  useEffect(() => emailjs.init("vwO4HaF8SUOUXS9-6"), []);
 
 
   const validation = (value) => {
@@ -37,8 +37,8 @@ function Newsletter() {
         }
       );
       if (response.ok) {
-        const serviceId = "service_us46k6q";
-        const templateId = "template_0dyp1so";
+        const serviceId = "service_vt8jufe";
+        const templateId = "template_cek4prb";
         await emailjs.send(serviceId, templateId, {
           email: emailRef.current.value,
         });
