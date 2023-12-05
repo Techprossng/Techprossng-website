@@ -16,13 +16,22 @@ import { Blogs } from "./Data/data";
 const AboutUs = () => {
   const courses = [
     "--Select your Course--",
-    "Data Analysis",
+    "Back-end Development",
+    "Content / Copywriting Marketing",
+    "Creative Design",
     "Cybersecurity",
-    "Digital Marketing",
-    "Frontend Development",
-    "Backend Development",
-    "Product Design",
-    "UI/UX Design",
+    "Data Science", 
+    "Data Analytics",
+    "Digital Marketing and SEO",
+    "Front-end Development",
+    "Full Stack Development",
+    "Microsoft for Complete Beginners",
+    "Mobile App Development",
+    "Product Management",
+    "Social Media Management",
+    "UI/UX Advanced for Professionals",
+    "UI/UX Design for Beginners",
+    "Web Development"
   ];
   const initialValues = {
     firstName: "",
@@ -286,7 +295,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="blog-section flex flex-col items-center">
+        <div className="blog-section flex flex-col items-center mx-4">
           <div className="blog-header text-[#001562] mt-10">
             <h4 className="font-bold text-3xl mb-10">Our Blog</h4>
           </div>
@@ -297,7 +306,7 @@ const AboutUs = () => {
                 className="blog-details flex justify-around flex-col gap-5"
               >
                 <div className="blog-poster flex justify-center items-center">
-                  <img src={blog.img} alt="blog-poster" className="w-full" />
+                  <img src={blog.img} alt="blog-poster" className="w-full rounded-xl"/>
                 </div>
                 <div className="blog-text flex flex-col justify-start">
                   <p className="font-bold text-sm text-[#001562]">
