@@ -15,13 +15,13 @@ export default function BlogPage() {
       {/* header section */}
       <header className="mb-[96px]">
         <img src={TechProsNaija} className="mb-[64px]"/>
-        <p className="text-[48px] max-[768px]:text-[40px] font-extrabold text-[#272727] mb-[16px]">Lorem ipsum dolor sit amet consectetur. Et in vitae fringilla.</p>
+        <p className="text-[48px] max-[768px]:text-[40px] font-extrabold text-[#272727] mb-[16px]">Tech Mentorship For Beginners: Finding Your Guide in The Tech World. </p>
         <p className="text-[17px] font-bold text-[#656565] mb-[32px]">
-          Lorem ipsum dolor sit amet consectetur. Lacus non morbi tempus diam magna. Pretium gravida enim justo porttitor at. Habitant viverra vehicula duis congue augue tincidunt feugiat tempus. Mauris ornare eu mi diam.
+          New to the ever-evolving world of tech? If so, you've probably already realized that navigating this landscape can be both exciting and daunting. The good news is that you don't have to do it alone. One of the most valuable resources available to newcomers in tech is mentorship. In this blog post, we'll explore the importance of mentorship for beginners and offer guidance on how to find your tech mentor.
         </p>
         <p className="space-x-[16px]">
           <span className="text-[24px] font-extrabold text-[#272727] mb-[16px]">
-            Omolara Jaiyeola
+            Boluwatife Ogunniyi
           </span>
           <span className="text-[17px] font-bold text-[#656565]">
             November 17, 2023
@@ -51,26 +51,70 @@ export default function BlogPage() {
       {/* body content section */}
       <section className="p-[64px_100px] max-[768px]:px-0 space-y-[32px] font-secondary text-[#272727]">
         <header className="flex gap-x-[8px] items-center max-[480px]:items-start">
-          <p className="text-[96px] font-black font-primary">W</p>
-          <p>Lorem ipsum dolor sit amet consectetur. Ac amet sit ut morbi magnis purus lorem vestibulum. Scelerisque eu vitae amet rhoncus cursus etiam. Dictumst duis ut massa dui in lectus. Netus vestibulum ullamcorper purus nunc odio. </p>
+          <p className="text-[96px] font-black font-primary">T</p>
+          <p>he Power of Mentorship. Mentorship is like having a seasoned guide by your side as you embark on your tech journey. Here's why it's so valuable: </p>
         </header>
         <div className="flex gap-x-[8px] items-center">
-          <p >Lorem ipsum dolor sit amet consectetur. Pulvinar gravida ultrices ornare risus non auctor dui donec tempor. Tempor hendrerit vitae suspendisse diam ante. Arcu placerat non adipiscing amet in nec id ultrices. Nibh scelerisque sit enim volutpat in ac. Facilisis praesent purus morbi ornare habitant proin risus at volutpat. Sodales ac imperdiet risus nam mauris. Diam quis ac phasellus imperdiet risus nunc at cum lorem. Posuere quis lacus ultricies viverra ipsum sed pretium. Sit.</p>
+          <p >
+          1. Accelerated Learning
+            A mentor can help you avoid common pitfalls and provide insights that might take years to gain on your own. They can recommend resources, share their experiences, and offer practical advice that accelerates your learning process.
+          </p>
         </div>
         <div className="flex gap-x-[8px] items-center">
-          <p >Lorem ipsum dolor sit amet consectetur. Pulvinar gravida ultrices ornare risus non auctor dui donec tempor. Tempor hendrerit vitae suspendisse diam ante. Arcu placerat non adipiscing amet in nec id ultrices. Nibh scelerisque sit enim volutpat in ac. Facilisis praesent purus morbi ornare habitant proin risus at volutpat. Sodales ac imperdiet risus nam mauris. Diam quis ac phasellus imperdiet risus nunc at cum lorem. Posuere quis lacus ultricies viverra ipsum sed pretium. Sit.</p>
+          <p >
+            2. Networking Opportunities
+            Tech mentors often have extensive networks in the industry. Being mentored can open doors to networking events, job opportunities, and collaborations with other professionals, giving you a head start in building your own network.
+          </p>
+        </div>
+        <div className="flex flex-col gap-x-[8px]">
+          <p className="text-[32px] font-black">Finding Your Tech Mentor</p>
+          <p >
+            Now that you have understood the value of mentorship, let's explore how to find the right mentor for you:
+          </p>
         </div>
         <div className="flex gap-x-[8px] items-center">
-          <p >Lorem ipsum dolor sit amet consectetur. Pulvinar gravida ultrices ornare risus non auctor dui donec tempor. Tempor hendrerit vitae suspendisse diam ante. Arcu placerat non adipiscing amet in nec id ultrices. Nibh scelerisque sit enim volutpat in ac. Facilisis praesent purus morbi ornare habitant proin risus at volutpat. Sodales ac imperdiet risus nam mauris. Diam quis ac phasellus imperdiet risus nunc at cum lorem. Posuere quis lacus ultricies viverra ipsum sed pretium. Sit.</p>
+          <p >
+            1. Identify Your Goals
+            Before seeking a mentor, clarify your tech-related goals. What do you want to achieve? Knowing your objectives will help you find a mentor with the expertise and experience that aligns with your aspirations
+          </p>
         </div>
         <div className="flex gap-x-[8px] items-center">
-          <p >Lorem ipsum dolor sit amet consectetur. Pulvinar gravida ultrices ornare risus non auctor dui donec tempor. Tempor hendrerit vitae suspendisse diam ante. Arcu placerat non adipiscing amet in nec id ultrices. Nibh scelerisque sit enim volutpat in ac. Facilisis praesent purus morbi ornare habitant proin risus at volutpat. Sodales ac imperdiet risus nam mauris. Diam quis ac phasellus imperdiet risus nunc at cum lorem. Posuere quis lacus ultricies viverra ipsum sed pretium. Sit.</p>
+          <p >
+            2. Leverage Online Communities
+            Tech communities, both on social media and specialized forums, can be treasure troves of mentorship opportunities. Platforms like LinkedIn, GitHub are excellent places to connect with potential mentors.
+          </p>
         </div>
         <div className="flex gap-x-[8px] items-center">
-          <p >Lorem ipsum dolor sit amet consectetur. Pulvinar gravida ultrices ornare risus non auctor dui donec tempor. Tempor hendrerit vitae suspendisse diam ante. Arcu placerat non adipiscing amet in nec id ultrices. Nibh scelerisque sit enim volutpat in ac. Facilisis praesent purus morbi ornare habitant proin risus at volutpat. Sodales ac imperdiet risus nam mauris. Diam quis ac phasellus imperdiet risus nunc at cum lorem. Posuere quis lacus ultricies viverra ipsum sed pretium. Sit.</p>
+          <p >
+            3. Attend Tech Events
+            Tech conferences, workshops, and meetups are great places to meet experienced professionals who might be willing to mentor you. Attend these events, engage in discussions, and be open to forming connections.
+          </p>
         </div>
         <div className="flex gap-x-[8px] items-center">
-          <p >Lorem ipsum dolor sit amet consectetur. Pulvinar gravida ultrices ornare risus non auctor dui donec tempor. Tempor hendrerit vitae suspendisse diam ante. Arcu placerat non adipiscing amet in nec id ultrices. Nibh scelerisque sit enim volutpat in ac. Facilisis praesent purus morbi ornare habitant proin risus at volutpat. Sodales ac imperdiet risus nam mauris. Diam quis ac phasellus imperdiet risus nunc at cum lorem. Posuere quis lacus ultricies viverra ipsum sed pretium. Sit.</p>
+          <p >
+            4. Take Advantage of Mentorship Programs
+            Many organizations and educational institutions offer formal mentorship programs for tech enthusiasts. TechProsNaija places a premium on mentorship in your learning path. We have programs that match beginners with experienced mentors, providing structured guidance.
+          </p>
+        </div>
+        <div className="flex gap-x-[8px] items-center">
+          <p >
+            5. Connect with Professionals and Instructors
+            If you're a student or enrolled in a tech-related course, don't overlook the opportunity to seek mentorship from your  instructors. They often have valuable industry insights and connections.
+          </p>
+        </div>
+
+        <div className="flex gap-x-[8px] items-center">
+          <p >
+            6. Be Proactive and Persistent
+            Finding the right mentor may take time and effort. Be proactive in reaching out, but also be respectful of their time. Craft a compelling message explaining why you'd like them to be your mentor and how you can benefit from their guidance.
+
+          </p>
+        </div>
+        <div className="flex flex-col gap-x-[8px]">
+          <p className="text-[32px] font-black">In Conclusion</p>
+          <p >
+            Tech mentorship is a powerful tool for beginners, offering guidance, support, and accelerated learning. With the right mentor by your side, you can navigate the tech world with confidence and achieve your goals more efficiently. So, don't hesitate to seek out a mentor, because in the ever-evolving landscape of technology, having a trusted guide can make all the difference in your journey to success.
+          </p>
         </div>
       </section>
 
