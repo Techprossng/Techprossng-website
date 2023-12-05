@@ -13,7 +13,7 @@ export const courses = [
     img: img1,
     career: "FullStack Development",
     content:
-      "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
+      "Full stack development refers to the end-to-end application software development, including the front end and back end. The front end consists of the user interface, and the back end takes care of the business logic and application workflows.",
     starRating: 5.0,
     starPublish: "(3) ",
     
@@ -28,7 +28,7 @@ export const courses = [
     img: img2,
     career: "Digital Marketing & SEO",
     content:
-      "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
+      "Digital marketing is the promotion of brands to connect with potential customers using the internet and other forms of digital communication. This includes not only email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.",
     starRating: 5.0,
     starPublish: "(3) ",
     
@@ -43,7 +43,7 @@ export const courses = [
     img: img3,
     career: "Product Management",
     content:
-      "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
+      "Product management is an organizational function that guides every step of a product's lifecycle — starting from it's development to it's positioning and pricing — by focusing on the product and its customers first and foremost.",
     starRating: 5.0,
     starPublish: "(3) ",
     

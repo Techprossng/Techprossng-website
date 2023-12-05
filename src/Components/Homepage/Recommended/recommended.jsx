@@ -11,9 +11,9 @@ import StarIcons from "../../../assets/icons/star.png"
 export const courses = [
   {
     img: img1,
-    career: "FullStack Development",
+    career: "Project Management",
     content:
-      "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
+      "Project management involves the planning and organization of a company's resources to move a specific task, event, or duty toward completion. It can involve a one-time project or an ongoing activity, and resources managed include personnel, finances, technology, and intellectual property.",
     starRating: 5.0,
     starPublish: "(3) ",
     
@@ -26,9 +26,9 @@ export const courses = [
   },
   {
     img: img2,
-    career: "Digital Marketing & SEO",
+    career: "UI/UX Design",
     content:
-      "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
+      "User Interface (UI) and User Experience (UX) Design play key roles in the experience users have when interacting with digital products and applications. In this course, we'll cover the theory and methodologies behind UI and UX design. You'll also design your own wireframes and interactive prototypes.",
     starRating: 5.0,
     starPublish: "(3) ",
     
@@ -41,9 +41,9 @@ export const courses = [
   },
   {
     img: img3,
-    career: "Product Management",
+    career: "Frontend Web Development",
     content:
-      "Learn the basics of coding and programming languages like HTML, CSS, and JavaScript in this beginner-friendly course.",
+      "Front end web developers use technical and design skills to create a satisfying user experience accessible to everyone, employing essential technical skills in HTML, CSS, JavaScript, command-line editing, and browser developer tools; while creating a seamless operation of the web interface",
     starRating: 5.0,
     starPublish: "(3) ",
     

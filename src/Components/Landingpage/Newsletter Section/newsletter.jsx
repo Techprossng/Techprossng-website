@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState , useEffect , useRef } from "react";
 import "../Newsletter Section/Styles/newsletter.css";
+import emailjs from "@emailjs/browser";
+
 
 function Newsletter() {
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState(null);
+
+  const emailRef = useRef(); 
+  useEffect(() => emailjs.init("vwO4HaF8SUOUXS9-6"), []);
+
+
   const validation = (value) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let error = "";
@@ -30,6 +37,12 @@ function Newsletter() {
         }
       );
       if (response.ok) {
+        const serviceId = "service_vt8jufe";
+        const templateId = "template_cek4prb";
+        await emailjs.send(serviceId, templateId, {
+          email: emailRef.current.value,
+        });
+      
         console.log("Successfully subscribed!");
         setEmail("");
         setErrors("Successfully Subscribed");
@@ -73,6 +86,7 @@ function Newsletter() {
           <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
+            ref={emailRef}
             type="email"
             placeholder="Enter your email address"
             data-aos="fade-down-left"
@@ -94,6 +108,7 @@ function Newsletter() {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             type="email"
+            ref={emailRef}
             placeholder="Email"
             data-aos="fade-down-left"
             className="

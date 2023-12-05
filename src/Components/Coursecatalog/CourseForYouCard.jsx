@@ -17,7 +17,7 @@ const CourseForYouCard = (props) => {
         </h5>
         <p className="font-secondary font-medium text-sm m-3 text-gray-700 mt-2">
           {props.text}
-        </p>
+        </p> testin this line
         <div className="mt-4 m-3 flex items-center">
           {[...Array(5)].map((_, i) => (
             <span className="mr-2 text-yellow-400" key={i}>
