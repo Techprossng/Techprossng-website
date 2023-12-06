@@ -4,13 +4,22 @@ import "../Contact Us/Style/contact-us.css";
 function ContactUs() {
   const courses = [
     "--Select your Course--",
-    "Data Analysis",
+    "Back-end Development",
+    "Content / Copywriting Marketing",
+    "Creative Design",
     "Cybersecurity",
-    "Digital Marketing",
-    "Frontend Development",
-    "Backend Development",
-    "Product Design",
-    "UI/UX Design",
+    "Data Science",
+    "Data Analytics",
+    "Digital Marketing and SEO",
+    "Front-end Development",
+    "Full Stack Development",
+    "Microsoft for Complete Beginners",
+    "Mobile App Development",
+    "Product Management",
+    "Social Media Management",
+    "UI/UX Advanced for Professionals",
+    "UI/UX Design for Beginners",
+    "Web Development"
   ];
   const initialValues = {
     firstName: "",
