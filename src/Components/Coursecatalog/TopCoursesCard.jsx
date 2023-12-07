@@ -53,6 +53,24 @@ TopCoursesCard.propTypes = {
 };
 
 const CourseForyou = () => {
+  const topCoursesData = [
+    {
+      src: CardImage,
+      head: "UI/UX Design",
+      text: "Design user interface that looks great and also provide seamless and intuitive experiences for users.",
+    },
+    {
+      src: CardImage,
+      head: "Front-End Development",
+      text: "Craft engaging user interfaces with HTML, CSS, and JavaScript for seamless web experiences..",
+    },
+    {
+      src: CardImage,
+      head: "Back-End Development",
+      text: "Build robust server-side applications and databases to power dynamic and scalable websites..",
+    },
+  ];
+
   return (
     <section>
       <div className="mx-6 md:mx-16 lg:mx-16 font-secondary text-2xl sm: mb-8">
@@ -61,13 +79,8 @@ const CourseForyou = () => {
 
       <div className="mx-6 md:mx-16 lg:mx-16 mb-8 sm:mb-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {[...Array(3)].map((_, i) => (
-            <TopCoursesCard
-              key={i}
-              src={CardImage}
-              head="UI/UX Design"
-              text="Design user interface that does not only look great but also provide seamless and intuitive experiences for users."
-            />
+          {topCoursesData.map((course, index) => (
+            <TopCoursesCard key={index} {...course} />
           ))}
         </div>
       </div>
