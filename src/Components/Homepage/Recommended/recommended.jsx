@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./Styles/recommended.css";
 import clock from "../../../assets/clock.png";
 import img1 from "../../../assets/img1.png";
@@ -6,7 +6,7 @@ import img2 from "../../../assets/img2.png";
 import img3 from "../../../assets/img3.png";
 import avatar from "../../../assets/avatar.png";
 import { BsBookmark } from "react-icons/bs";
-import StarIcons from "../../../assets/icons/star.png"
+import StarIcons from "../../../assets/icons/star.png";
 
 export const courses = [
   {
@@ -16,7 +16,7 @@ export const courses = [
       "Project management involves the planning and organization of a company's resources to move a specific task, event, or duty toward completion. It can involve a one-time project or an ongoing activity, and resources managed include personnel, finances, technology, and intellectual property.",
     starRating: 5.0,
     starPublish: "(3) ",
-    
+
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -31,7 +31,7 @@ export const courses = [
       "User Interface (UI) and User Experience (UX) Design play key roles in the experience users have when interacting with digital products and applications. In this course, we'll cover the theory and methodologies behind UI and UX design. You'll also design your own wireframes and interactive prototypes.",
     starRating: 5.0,
     starPublish: "(3) ",
-    
+
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -46,7 +46,7 @@ export const courses = [
       "Front end web developers use technical and design skills to create a satisfying user experience accessible to everyone, employing essential technical skills in HTML, CSS, JavaScript, command-line editing, and browser developer tools; while creating a seamless operation of the web interface",
     starRating: 5.0,
     starPublish: "(3) ",
-    
+
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -59,7 +59,7 @@ export const courses = [
 
 const Recommended = () => {
   return (
-    <div className="mx-0 mt-8 mb-11 sm:mx-8 lg:mx-16">
+    <div className="mx-0 mt-8 mb-11 px-6 sm:mx-8 lg:mx-16">
       <div className="head-box">
         <h2 className="headerText text-2xl font-bold font-primary">
           Recommended For you

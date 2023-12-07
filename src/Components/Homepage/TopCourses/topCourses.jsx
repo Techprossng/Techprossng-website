@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./Styles/topCourses.css";
 import clock from "../../../assets/clock.png";
 import img1 from "../../../assets/img1.png";
@@ -6,7 +6,7 @@ import img2 from "../../../assets/img2.png";
 import img3 from "../../../assets/img3.png";
 import avatar from "../../../assets/avatar.png";
 import { BsBookmark } from "react-icons/bs";
-import StarIcons from "../../../assets/icons/star.png"
+import StarIcons from "../../../assets/icons/star.png";
 
 export const courses = [
   {
@@ -16,7 +16,7 @@ export const courses = [
       "Full stack development refers to the end-to-end application software development, including the front end and back end. The front end consists of the user interface, and the back end takes care of the business logic and application workflows.",
     starRating: 5.0,
     starPublish: "(3) ",
-    
+
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -31,7 +31,7 @@ export const courses = [
       "Digital marketing is the promotion of brands to connect with potential customers using the internet and other forms of digital communication. This includes not only email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.",
     starRating: 5.0,
     starPublish: "(3) ",
-    
+
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -46,7 +46,7 @@ export const courses = [
       "Product management is an organizational function that guides every step of a product's lifecycle — starting from it's development to it's positioning and pricing — by focusing on the product and its customers first and foremost.",
     starRating: 5.0,
     starPublish: "(3) ",
-    
+
     clock: clock,
     duration: "45 hours",
     avi: avatar,
@@ -58,7 +58,7 @@ export const courses = [
 
 const Topcourses = () => {
   return (
-    <div className="mx-0 mt-8 mb-11 sm:mx-8 lg:mx-16">
+    <div className="mx-0 px-6 mt-8 mb-11 sm:mx-8 lg:mx-16">
       <div className="head-box">
         <h2 className="headerText text-2xl font-bold font-primary">
           Top Courses For You
