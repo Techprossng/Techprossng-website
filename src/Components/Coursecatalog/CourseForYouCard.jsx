@@ -1,7 +1,6 @@
 import React from "react";
 import CardImage from "../../assets/images/catalog-img/allcourses.png";
 import { MdStar, MdBookmarks } from "react-icons/md";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const CourseForYouCard = (props) => {
@@ -17,7 +16,7 @@ const CourseForYouCard = (props) => {
         </h5>
         <p className="font-secondary font-medium text-sm m-3 text-gray-700 mt-2">
           {props.text}
-        </p> testin this line
+        </p>
         <div className="mt-4 m-3 flex items-center">
           {[...Array(5)].map((_, i) => (
             <span className="mr-2 text-yellow-400" key={i}>
@@ -52,7 +51,26 @@ CourseForYouCard.propTypes = {
   src: PropTypes.string.isRequired,
 };
 
-const CourseForyou = () => {
+const CourseForYou = () => {
+  const recommendedCoursesData = [
+    {
+      src: CardImage,
+      head: "Project Management",
+      text: "Lead teams, plan, and execute projects efficiently for successful outcomes.",
+    },
+    {
+      src: CardImage,
+      head: "Full-Stack Development",
+      text: "Master both frontend and backend technologies, creating end-to-end solutions for dynamic, feature-rich web applications",
+    },
+    {
+      src: CardImage,
+      head: "Digital Marketing & SEO",
+      text: "Strategize online campaigns, optimize SEO, and utilize social media for impactful brand promotion and audience engagement",
+    },
+    
+  ];
+
   return (
     <section>
       <div className="mx-6 md:mx-16 lg:mx-16 mt-20 font-sans text-2xl sm: mb-8">
@@ -63,17 +81,13 @@ const CourseForyou = () => {
 
       <div className="mx-6 md:mx-16 lg:mx-16 mb-8 sm:mb-14 mx-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {[...Array(3)].map((_, i) => (
-            <CourseForYouCard
-              key={i}
-              src={CardImage}
-              head="UI/UX Design"
-              text="Design user interface that does not only look great but also provide seamless and intuitive experiences for users."
-            />
+          {recommendedCoursesData.map((course, index) => (
+            <CourseForYouCard key={index} {...course} />
           ))}
         </div>
       </div>
     </section>
   );
 };
-export default CourseForyou;
+export default CourseForYou;
+

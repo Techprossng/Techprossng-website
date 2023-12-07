@@ -1,7 +1,6 @@
 import React from "react";
 import CardImage from "../../assets/images/catalog-img/allcourses.png";
 import { MdStar, MdBookmarks } from "react-icons/md";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const AllCoursesCard = (props) => {
@@ -52,7 +51,27 @@ AllCoursesCard.propTypes = {
   src: PropTypes.string.isRequired,
 };
 
-const CourseForyou = () => {
+const CourseForYou = () => {
+  const allCoursesData = [
+    {
+      src: CardImage,
+      head: "Data Analysis",
+      text: "Extract insights from data to drive informed decision-making and business strategies",
+    },
+    {
+      src: CardImage,
+      head: "Cyber Security",
+      text: "Safeguard digital assets with expertise in cybersecurity measures and threat prevention",
+    },
+    {
+      src: CardImage,
+      head: "Creative Writing",
+      text: "Create compelling and impactful content for effective communication and engagement.",
+    },
+   
+   
+  ];
+
   return (
     <section>
       <div className="mx-6 md:mx-16 lg:mx-16 font-sans text-2xl sm: mb-8">
@@ -61,17 +80,13 @@ const CourseForyou = () => {
 
       <div className="mx-6 md:mx-16 lg:mx-16 mb-8 sm:mb-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {[...Array(3)].map((_, i) => (
-            <AllCoursesCard
-              key={i}
-              src={CardImage}
-              head="UI/UX Design"
-              text="Design user interface that does not only look great but also provide seamless and intuitive experiences for users."
-            />
+          {allCoursesData.map((course, index) => (
+            <AllCoursesCard key={index} {...course} />
           ))}
         </div>
       </div>
     </section>
   );
 };
-export default CourseForyou;
+
+export default CourseForYou;
