@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from "prop-types";
 import "./Styles/testimonial.css";
 import { useMediaQuery } from "react-responsive";
@@ -18,15 +19,17 @@ const Card = ({ image, heading, subHeading, content, even }) => {
       {isBigScreen && (
         <div className="flex gap-8 justify-center items-center px-16 transform hover:scale-110">
           {even ? (
-            <div className="flex gap-9" data-aos="zoom-in-left">
-              <img src={image} alt="avi" className="w-40 h-40" />
-
+            <div
+              className="flex gap-9 justify-center items-center"
+              data-aos="zoom-in-left"
+            >
+              <img src={image} alt="avi" className="testimonial-image w-44 h-44 " />
               <div className="rounded-lg px-4 py-6 shadow-2xl">
                 <p
                   style={{
                     color: "#001975",
                   }}
-                  className="text-base font-semibold mb-1"
+                  className="text-base font-semibold mb-1 font-primary"
                 >
                   {heading}
                 </p>
@@ -34,23 +37,29 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#272727",
                   }}
-                  className="text-sm mb-1"
+                  className="text-sm mb-3 font-semibold font-secondary"
                 >
                   {subHeading}
                 </p>
-                <p style={{ color: "#272727" }} className="text-xs">
+                <p
+                  style={{ color: "#272727" }}
+                  className="text-sm text-justify font-secondary"
+                >
                   {content}
                 </p>
               </div>
             </div>
           ) : (
-            <div className="flex gap-9 odd1" data-aos="zoom-in-right">
+            <div
+              className="flex gap-9 odd1 justify-center items-center"
+              data-aos="zoom-in-right"
+            >
               <div className="rounded-lg px-4 py-6 shadow-lg">
                 <p
                   style={{
                     color: "#001975",
                   }}
-                  className="text-base font-semibold mb-1"
+                  className="text-base font-semibold mb-1 font-primary"
                 >
                   {heading}
                 </p>
@@ -58,15 +67,18 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#272727",
                   }}
-                  className="text-sm mb-1"
+                  className="text-sm mb-3 font-semibold font-secondary"
                 >
                   {subHeading}
                 </p>
-                <p style={{ color: "#272727" }} className="text-xs">
+                <p
+                  style={{ color: "#272727" }}
+                  className="text-sm text-justify font-secondary"
+                >
                   {content}
                 </p>
               </div>
-              <img src={image} alt="avi" className="w-40 h-40" />
+              <img src={image} alt="avi" className="testimonial-image w-44 h-44" />
             </div>
           )}
         </div>
@@ -74,15 +86,18 @@ const Card = ({ image, heading, subHeading, content, even }) => {
       {isTab && (
         <div className="flex gap-8 justify-center items-center px-16 transform hover:scale-110 cardSection1">
           {even ? (
-            <div className="flex gap-9 even1" data-aos="zoom-in-left">
-              <img src={image} alt="avi" className="w-40 h-40" />
+            <div
+              className="flex gap-9 justify-center items-center"
+              data-aos="zoom-in-left"
+            >
+              <img src={image} alt="avi" className="testimonial-image w-40 h-40" />
 
-              <div className="rounded-lg px-4 py-6 shadow-2xl even1child">
+              <div className="rounded-lg px-4 py-6 shadow-2xl">
                 <p
                   style={{
                     color: "#001975",
                   }}
-                  className="text-base font-semibold mb-1"
+                  className="text-base font-semibold mb-1 font-primary"
                 >
                   {heading}
                 </p>
@@ -90,23 +105,29 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#272727",
                   }}
-                  className="text-sm mb-1"
+                  className="text-base mb-3 font-semibold font-secondary"
                 >
                   {subHeading}
                 </p>
-                <p style={{ color: "#272727" }} className="text-xs">
+                <p
+                  style={{ color: "#272727" }}
+                  className="text-sm text-justify font-secondary"
+                >
                   {content}
                 </p>
               </div>
             </div>
           ) : (
-            <div className="flex gap-9 odd1" data-aos="zoom-in-right">
+            <div
+              className="flex gap-9 justify-center items-center"
+              data-aos="zoom-in-right"
+            >
               <div className="rounded-lg px-4 py-6 shadow-lg">
                 <p
                   style={{
                     color: "#001975",
                   }}
-                  className="text-base font-semibold mb-1"
+                  className="text-base font-semibold mb-1 font-primary"
                 >
                   {heading}
                 </p>
@@ -114,15 +135,18 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#272727",
                   }}
-                  className="text-sm mb-1"
+                  className="text-base mb-3 font-semibold font-secondary"
                 >
                   {subHeading}
                 </p>
-                <p style={{ color: "#272727" }} className="text-xs">
+                <p
+                  style={{ color: "#272727" }}
+                  className="text-sm text-justify font-secondary"
+                >
                   {content}
                 </p>
               </div>
-              <img src={image} alt="avi" className="w-40 h-40" />
+              <img src={image} alt="avi" className="testimonial-image w-40 h-40" />
             </div>
           )}
         </div>
@@ -132,14 +156,14 @@ const Card = ({ image, heading, subHeading, content, even }) => {
           className="flex flex-col relative justify-center items-center transform hover:scale-110 "
           data-aos="zoom-in-left"
         >
-          <img src={image} alt="avi" className="w-20 h-20 absolute -top-10" />
+          <img src={image} alt="avi" className="testimonial-image w-24 h-24 absolute -top-10" />
 
-          <div className="rounded-lg w-full px-3 py-6 shadow-2xl ">
+          <div className="rounded-lg w-full px-3 py-6 shadow-2xl mt-9">
             <p
               style={{
                 color: "#001975",
               }}
-              className="text-base font-bold mb-1"
+              className="text-base font-bold mb-1 font-primary"
             >
               {heading}
             </p>
@@ -147,11 +171,11 @@ const Card = ({ image, heading, subHeading, content, even }) => {
               style={{
                 color: "#272727",
               }}
-              className="text-sm mb-1 font-medium"
+              className="text-sm mb-3 font-semibold font-secondary"
             >
               {subHeading}
             </p>
-            <p style={{ color: "#272727" }} className="text-xs font-medium">
+            <p style={{ color: "#272727" }} className="text-sm  text-justify font-secondary">
               {content}
             </p>
           </div>

@@ -1,3 +1,8 @@
+import React from 'react';
+import Dots from "../../../assets/icons/whychooseus_dots.svg";
+import Frame from "../../../assets/icons/whychooseus_frame.svg";
+import Choose from "../../../assets/images/whychooseus_image.png";
+
 export default function WhyChooseUs() {
   const list = [
     { 
@@ -18,26 +23,26 @@ export default function WhyChooseUs() {
     },
     { 
       title: "Career Opportunities",
-      description: "TechProsNg graduates are followed up and given internship opportunities to land their first jobs."
+      description: "TechProsNaija graduates are followed up and given internship opportunities to land their first jobs."
     },
   ]
   return (
     <section className="p-[96px_66px] relative max-[375px]:px-[1.5rem] max-[768px]:px-[1.5rem]">
       {/* header */}
       <div className="flex justify-center">
-        <header className="text-[32px] leading-[38.4px] relative w-fit font-bold">
+        <header className="text-[32px] leading-[38.4px] relative font-primary w-fit font-bold">
           WHY CHOOSE US?
-          <p className="absolute bottom-[-12px] left-0 w-[83px] h-[6px] bg-[#2B3F8C] rounded-[12px]"></p>
+          <p className="absolute bottom-[-8px] left-0 w-[83px] h-[6px] bg-[#2B3F8C] rounded-[12px]"></p>
         </header>
       </div>
 
       {/* contents */}
       <div>
         <div className="absolute top-[14%] right-[8%] z-[-50] sm:hidden md:left-[5%] max-[375px]:hidden lg:block">
-          <img src="src/assets/icons/whychooseus_dots.svg" className="w-[185px]"/>
+          <img src={Dots} className="w-[185px]"/>
         </div>
         <div className="absolute top-[18%] right-0 z-[-40] hidden md:block" data-aos="fade-left" data-aos-delay="50">
-          <img src="src/assets/images/whychooseus_image.png" className="w-[1135px]"/>
+          <img src={Choose} className="w-[1135px]"/>
         </div>
         <div className="absolute top-[18%] right-0 z-[-50]">
           <div className="max-[768px]:hidden">
@@ -78,9 +83,9 @@ export default function WhyChooseUs() {
           {
             list.map((item, index) => (
               <li key={index} className="flex gap-x-[24px] items-start" data-aos="fade-up-right">
-                <img src="src/assets/icons/whychooseus_frame.svg" alt="" width={64} height={64} />
+                <img src={Frame} alt="" width={64} height={64} />
                 <div className="max-w-[392px] space-y-[6px]">
-                  <p className="font-semibold text-[#000] text-[24px] break-words">{item.title}</p>
+                  <p className="font-semibold font-primary text-[#000] text-[24px] break-words">{item.title}</p>
                   <p className="font-secondary text-[#656565]">{item.description}</p>
                 </div>
               </li>

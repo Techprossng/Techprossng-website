@@ -1,14 +1,17 @@
 /* eslint-disable no-undef */
-const { fontFamily } = require('tailwindcss/defaultTheme');
-const withMT = require("@material-tailwind/react/utils/withMT");
+const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
-export default withMT({
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Craftwork Grotesk', ...fontFamily.sans],
-        secondary: ['Mona Sans', ...fontFamily.sans],
+        primary: ["Craftwork Grotesk", ...fontFamily.sans],
+        secondary: ["Mona Sans", ...fontFamily.serif],
       },
       // backgroundImage: {
       //   "team-pattern": "url('./assets/bg_team.png')",
@@ -16,5 +19,5 @@ export default withMT({
       // },
     },
   },
-  plugins: [],
-});
+  plugins: [require("flowbite/plugin")],
+};

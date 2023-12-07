@@ -1,0 +1,39 @@
+.head-box h2 {
+  color: rgba(0, 17, 78, 1);
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+  .head-box h2 {
+    color: rgba(0, 17, 78, 1);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .cardSectionRecom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .each-card {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .head-box h2 {
+    color: rgba(0, 17, 78, 1);
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .cardSectionRecom {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .each-card {
+    width: 48%;
+  }
+}

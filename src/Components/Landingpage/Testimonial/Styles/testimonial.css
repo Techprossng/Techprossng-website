@@ -1,7 +1,14 @@
+.testimonial-image {
+  border-radius: 50%;
+}
+
 @media only screen and (min-width: 360px) and (max-width: 640px) {
   .testimonial {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
+  }
+  .testimonial-image {
+    border-radius: 50%;
   }
 
   /* .cardSection1 {
@@ -39,6 +46,9 @@
     padding-right: 1rem;
     width: 100%;
   }
+  .testimonial-image {
+    border-radius: 50%;
+  }
 
   .mainSection {
     margin-left: 0;
@@ -48,7 +58,7 @@
   }
 
   .testimonial {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
   }
 }
