@@ -61,12 +61,12 @@ const CourseForYou = () => {
     {
       src: CardImage,
       head: "Full-Stack Development",
-      text: "Master both frontend and backend technologies, creating end-to-end solutions for dynamic, feature-rich web applications",
+      text: "Master frontend and backend technologies, create end-to-end solutions for dynamic web applications",
     },
     {
       src: CardImage,
       head: "Digital Marketing & SEO",
-      text: "Strategize online campaigns, optimize SEO, and utilize social media for impactful brand promotion and audience engagement",
+      text: "Strategize online campaigns, optimize SEO for brand promotion and audience engagement",
     },
     
   ];

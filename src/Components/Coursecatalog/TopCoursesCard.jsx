@@ -57,7 +57,7 @@ const CourseForyou = () => {
     {
       src: CardImage,
       head: "UI/UX Design",
-      text: "Design user interface that does not only look great but also provide seamless and intuitive experiences for users.",
+      text: "Design user interface that looks great and also provide seamless and intuitive experiences for users.",
     },
     {
       src: CardImage,
