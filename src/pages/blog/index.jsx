@@ -126,20 +126,20 @@ export default function BlogPage() {
         <div className="grid grid-cols-2 max-[768px]:grid-cols-1 gap-[32px]">
           <div className="space-y-[16px]">
             <img src={BlogBooks} className="w-full"/>
-            <p className="text-[#001975] font-extrabold text-[15px]">TECHNOLOGY</p>
-            <p className="text-[24px] font-bold">Lorem ipsum dolor sit amet consectetur. Sagittis nascetur duis.</p>
+            <p className="text-[#001975] font-extrabold text-[15px]">Marketing: Strategies and Values</p>
+            <p className="text-[24px] font-bold">How to get your product to the right audience.</p>
             <div className="flex justify-between font-secondary">
-              <p className="font-bold">Eze Chiemele</p>
-              <p className="text-[#272727] font-medium">October 25, 2023</p>
+              <p className="font-bold">Boluwatife Ogunniyi</p>
+              <p className="text-[#272727] font-medium">26th November, 2023</p>
             </div>
           </div>
           <div className="space-y-[16px]">
             <img src={BlogTrees} className="w-full"/>
-            <p className="text-[#001975] font-extrabold text-[15px]">TECHNOLOGY</p>
-            <p className="text-[24px] font-bold">Lorem ipsum dolor sit amet consectetur. Sagittis nascetur duis.</p>
+            <p className="text-[#001975] font-extrabold text-[15px]">Research</p>
+            <p className="text-[24px] font-bold">Why do you need to spend time on research?.</p>
             <div className="flex justify-between font-secondary">
-              <p className="font-bold">Eze Chiemele</p>
-              <p className="text-[#272727] font-medium">October 25, 2023</p>
+              <p className="font-bold">Boluwatife Ogunniyi</p>
+              <p className="text-[#272727] font-medium">4th December, 2023</p>
             </div>
           </div>
         </div>
