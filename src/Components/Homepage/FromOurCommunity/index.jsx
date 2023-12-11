@@ -1,3 +1,4 @@
+import React from 'react';
 import foc from "../../../assets/images/homepage_foc.png";
 import foc2 from "../../../assets/images/homepage_foc_image.png";
 
@@ -9,7 +10,7 @@ export default function FromOurCommunity() {
       <header className="flex justify-between mb-[40px]">
         <p className="text-[24px] font-bold text-[#00114E]">From Our Community</p>
         <p className="flex items-center gap-x-[8px] max-[480px]:hidden">
-          <span className="underline text-[15px] font-bold font-secondary text-[#FE0000]">Visit Community</span>
+          <span><a href="/coming-soon" className="underline text-[15px] font-bold font-secondary text-[#FE0000]">Visit Community</a></span>
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M16.01 11H4V13H16.01V16L20 12L16.01 8V11Z" fill="#FE0000"/>
@@ -46,7 +47,7 @@ export default function FromOurCommunity() {
       </section>
       <div className="pt-[40px] flex justify-end">
         <p className="hidden items-center gap-x-[8px] max-[480px]:flex">
-            <span className="underline text-[15px] font-bold font-secondary text-[#FE0000]">Visit Community</span>
+            <span><a href="/coming-soon" className="underline text-[15px] font-bold font-secondary text-[#FE0000]">Visit Community</a></span>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M16.01 11H4V13H16.01V16L20 12L16.01 8V11Z" fill="#FE0000"/>

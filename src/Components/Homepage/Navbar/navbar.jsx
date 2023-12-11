@@ -1,41 +1,45 @@
 // src/components/Navbar.js
+import React from 'react';
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  BiHome,
-  BiGroup,
-  BiImages,
-  BiLibrary,
-  BiFace,
-  BiUser,
-  BiSearch,
-} from "react-icons/bi";
+// import {
+//   BiHome,
+//   BiGroup,
+//   BiImages,
+//   BiLibrary,
+//   BiFace,
+//   BiUser,
+//   BiSearch,
+// } from "react-icons/bi";
 import { AiOutlineSetting } from "react-icons/ai";
 import Logo from "../../../assets/images/logo2.png";
-import close from "../../../assets/icons/next.png";
+// import close from "../../../assets/icons/next.png";
 import Menu from "../../../assets/icons/menu.svg";
-import { GoSignOut } from "react-icons/go";
+import close from "../../../assets/icons/close.svg";
+// import { GoSignOut } from "react-icons/go";
 import "../../Homepage/Navbar/Styles/navbar.css";
 
 const Navbar = () => {
   let Links = [
-    { name: "Home", link: "/" },
+    { name: "Home", link: "/home" },
+    { name: "About Us", link: "/about-us" },
     { name: "Courses", link: "/course-catalogue" },
-    { name: "Mentorship", link: "/mentorship" },
-    { name: "Resources", link: "/resources" },
-    { name: "Pricing", link: "/pricing" },
-    { name: "About Us", link: "/about" },
+    { name: "Pricing", link: "/coming-soon" },
+    { name: "Resources", link: "/coming-soon" },
+    { name: "Mentorship", link: "/coming" },
+    
+
   ];
   let Links2 = [
     { name: "Search", link: "/search" },
-    { name: "Home", link: "/" },
-    { name: "Catalog", link: "/catalog" },
-    { name: "Library", link: "/library" },
-    { name: "Community", link: "/community" },
-    { name: "Mentors", link: "/mentors" },
-    { name: "Profile", link: "/profile" },
-    { name: "Settings", link: "/settings" },
-    { name: "Logout", link: "/logout" },
+    { name: "Home", link: "/home" },
+    { name: "Catalog", link: "/course-catalogue" },
+    { name: "Library", link: "/coming-soon" },
+    { name: "Community", link: "/coming-soon" },
+    { name: "Mentors", link: "/coming-soon" },
+    { name: "Profile", link: "/coming-soon" },
+    { name: "Settings", link: "/coming-soon" },
+    { name: "Logout", link: "/coming-soon" },
   ];
 
   let [open, setOpen] = useState(false);
@@ -52,13 +56,45 @@ const Navbar = () => {
       style={{ zIndex: 2 }}
     >
       <div className="flex items-center logo-container">
-      <Link to="/">
+      <a href="/">
         <img src={Logo} alt="Logo" className="custom-image-large"  style={{width:"200px", height:"200px"}}/>
-      </Link>
+      </a>
+      </div>
+
+      <div
+        onClick={() => setOpen(!open)}
+        className="text-3xl absolute right-8 top-6 cursor-pointer menu-container md:hidden"
+      >
+        <img src={open ? close : Menu} alt={open ? "Close Menu" : "Open Menu"} className="menu" />
+      </div>
+
+      <div className={`md:hidden md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full  md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in nav-color mobile-menu ${open ? "top-24 " : "top-[-690px]"}`} style={{ textAlign: "center", alignItems: "center" }}>
+        <div className="flex flex-col space-y-10">
+          {Links.map((link) => (
+            <a
+             href={link.link}
+             key={link.name} 
+             className={`text-gray-800 duration-500 ${
+                activeLink === link.name ? "active-nav" : ""
+              }`}
+              style={{ fontSize: "20px", fontWeight: "500" }}
+              onClick={() => {
+                handleLinkClick(link.name);
+              }}
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+        <div className="flex flex-wrap space-y-4 pr-5 pl-5 mt-10">
+         {/*<button className="w-full h-[48px] px-5 py-3 rounded-md button-2-small">Log in</button>
+          <button className="w-full h-[48px] px-5 py-3 rounded-md text-white button-1">Sign Up</button> */} 
+          <button className="w-full h-[48px] px-5 py-3 rounded-md button-1"> <Link to="/contact-us">Contact Us</Link></button>
+        </div>
       </div>
 
       {/* Mobile Menu Button */}
-      <div className="text-3xl absolute right-8 top-6 cursor-pointer menu-container md:hidden">
+      {/* <div className="text-3xl absolute right-8 top-6 cursor-pointer menu-container md:hidden">
         {!open && (
           <img
           src={Menu}
@@ -67,11 +103,11 @@ const Navbar = () => {
             onClick={() => setOpen(true)}
           />
         )}
-      </div>
+      </div> */}
 
       {/* Mobile Menu */}
 
-      <div
+      {/* <div
         className={`md:hidden md:pb-0 pb-12  absolute md:static md:z-auto right-0 w-full h-screen md:w-auto md:pl-0 pl-0 pt-10 transition-all duration-500 ease-in menu-color mobile-menu ${
           open ? "top-0 translate-x-0" : "top-0 translate-x-full"
         }`}
@@ -90,9 +126,9 @@ const Navbar = () => {
 
         <div className="flex flex-col  custom-space-y   mt-20">
           {Links2.map((link) => (
-            <Link
+            <a
               key={link.name}
-              to={link.link} 
+              href={link.link} 
               className={`text-blue-900 flex duration-500  p-8  ${
                 activeLink === link.name ? "active-link" : ""
               } ${link.name.toLowerCase().replace(/\s/g, "-")}`}
@@ -133,17 +169,18 @@ const Navbar = () => {
                 <GoSignOut size={25} className="mr-5 p-0" />
               )}
               {link.name}
-            </Link>
+            </a>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Tablet and Desktop Menu */}
       <div className="hidden  md:flex  custom-space-x  desktop">
-        {Links.map((link) => (
-          <Link
-            href={`/${link.link}`}
-            to={link.link} 
+        {Links.map((link, index) => (
+          <a 
+            key={index}
+            href={link.link}
+            // to={link.link} 
             className={`text-gray-800 duration-500 custom-font ${
               activeLink === link.name ? "active-link" : ""
             }`}
@@ -152,7 +189,7 @@ const Navbar = () => {
             }}
           >
             {link.name}
-          </Link>
+          </a>
         ))}
       </div>
       <div className="hidden md:flex space-x-4 desktop-button">
@@ -161,7 +198,7 @@ const Navbar = () => {
           Sign Up
           </button>*/}
           <button className="w-35 h-[48px] px-5 py-3 rounded-md text-white button-1">
-          <Link to="/sign-up">Contact Us</Link>
+          <a href="/contact-us">Contact Us</a>
         </button>  
       </div>
     </nav>

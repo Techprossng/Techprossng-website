@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import Navbar from "../../Components/Landingpage/Navbar/navbar";
 import Hero from "../../Components/Landingpage/Hero section/hero";
 import Services from "../../Components/Landingpage/Services/services";
@@ -22,8 +22,8 @@ const LandingPage = () => {
       <Identity />
       <Services />
       <WhyChooseUs />
-      <Sponsor />
       <Values />
+      <Sponsor />
       <Testimonial />
       <StatsImpactVideo />
       <Newsletter />

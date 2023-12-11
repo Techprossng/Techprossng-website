@@ -5,10 +5,10 @@ import "./styles/style.css";
 // import backgroundimage from "../../../assets/images/values/background.svg";
 import aos from "aos";
 
-const ValueItem = ({ title, icon, description }) => {
+const ValueItem = ({ title, icon, }) => {
   return (
     <div
-    className="bg-image mx-6 md:mx-20   mt-6  flex flex-col  rounded-full bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0 border py-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-black duration-300 button-container"
+    className="bg-image mx-6 md:mx-20 mb-10   mt-6  flex flex-col  rounded-full bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0 border py-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-black duration-300 button-container"
     data-aos="fade-up"
   >
     <button className="flex items-center justify-center px-6 text-black hover:text-black">
@@ -22,7 +22,6 @@ const ValueItem = ({ title, icon, description }) => {
 ValueItem.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.element.isRequired,
-  description: PropTypes.string.isRequired,
 };
 
 const Values = () => {
@@ -125,13 +124,15 @@ const Values = () => {
   ];
 
   return (
-    <section className="values mt-8 sm:mt-20 my-20">
-    <div className="items-center">
-  <h2 className="text-center font-secondary text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl md:mb-6 lg:mb-12 ">
-    Our Values
-    <p className="relative bottom-[-5px] ml-[33%] md:ml-[38%] sm:ml-[40%] lg:ml-[44%] w-[83px] h-[6px] color rounded-[12px] value-line mx-auto"></p>
-  </h2>
-</div>
+    <section className="values mt-8 sm:mt-20 my-20  ">
+    <div className="flex justify-center">
+        <h2 className="text-[32px] leading-[38.4px] relative w-fit text-4xl font-bold uppercase">
+          OUR VALUES
+        </h2>
+      </div>
+      <div className="flex justify-center">
+        <span className="w-[80px] h-[6px] color rounded-[12px] mr-[9pc]"></span>
+      </div>
 
 
     <div className="mt-6 sm:mt-12 md:mt-24">

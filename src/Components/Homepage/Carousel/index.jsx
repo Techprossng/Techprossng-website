@@ -14,64 +14,12 @@ import "./styles/style.css";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-
-// export const announcements = [
-//   {
-//     header: "Top recommended",
-//     title: "UI/UX Design",
-//     description:
-//       "Join our UI/UX Design Course for a transformative learning experience. Master the art of creating intuitive user interfaces and delightful user experiences. Enroll now and shape the future of design!",
-//     time: "2 months",
-//     enrolled: "45 currently enrolled",
-//     certificate: "includes certificate",
-//     rating: "4.5 (56) Read Reviews",
-//     image: img,
-//   },
-
-//   {
-//     header: "Top course",
-//     title: "Web Development",
-//     description:
-//       "Join our UI/UX Design Course for a transformative learning experience. Master the art of creating intuitive user interfaces and delightful user experiences. Enroll now and shape the future of design!",
-//     time: "2 months",
-//     enrolled: "45 currently enrolled",
-//     certificate: "includes certificate",
-//     rating: "4.5 (56) Read Reviews",
-//     image: img1,
-//   },
-
-//   {
-//     header: "Top recommended",
-//     title: "UI/UX Design",
-//     description:
-//       "Join our UI/UX Design Course for a transformative learning experience. Master the art of creating intuitive user interfaces and delightful user experiences. Enroll now and shape the future of design!",
-//     time: "2 months",
-//     enrolled: "45 currently enrolled",
-//     certificate: "includes certificate",
-//     rating: "4.5 (56) Read Reviews",
-//     image: img,
-//   },
-
-//   {
-//     header: "Top recommended",
-//     title: "UI/UX Design",
-//     description:
-//       "Join our UI/UX Design Course for a transformative learning experience. Master the art of creating intuitive user interfaces and delightful user experiences. Enroll now and shape the future of design!",
-//     time: "2 months",
-//     enrolled: "45 currently enrolled",
-//     certificate: "includes certificate",
-//     rating: "4.5 (56) Read Reviews",
-//     image: img,
-//   },
-// ];
-
 const index = () => {
   return (
     <div className=" mt-24">
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
-        //cant i set the fading duration here?
         effect={"fade"}
         autoplay={{
           delay: 2500,
@@ -82,20 +30,16 @@ const index = () => {
         }}
         modules={[EffectFade, Autoplay, Pagination, Navigation]}
       >
-        <SwiperSlide className="bg-[#000517]">
-          <div className="flex justify-around">
-            <div
-              className="flex flex-col justify-start sm:p-1 m-1 md:p-[2rem] m-[3rem] shadow-xl w-4/6 
-            ui-ux-image bg-[#000517]
-            "
-            >
+        <SwiperSlide className="bg-[#000517] ">
+          <div className="flex justify-around ">
+            <div className="flex flex-col justify-start md:p-[2rem] m-[3rem] shadow-xl w-4/6 ui-ux-image bg-[#000517] ui-course">
               <h1 className="text-lg font-bold font-primary text-[#FE0000]">
-                Top recommended
+                Top Recommended
               </h1>
               <h1 className="text-6xl font-black leading-[76.8px] font-primary text-[#AAB2D1]">
-                UI/UX Design
+                UI/UX DESIGN
               </h1>
-              <p className="text-[#fff] text-justify overflow-hidden font-medium text-base mt-5">
+              <p className="text-[#fff] text-justify overflow-hidden font-bold text-base mt-5">
                 Join our UI/UX Design Course for a transformative learning
                 experience. Master the art of creating intuitive user interfaces
                 and delightful user experiences. Enroll now and shape the future
@@ -138,7 +82,7 @@ const index = () => {
                   <figure className="text-[#FE0000]">(56) Read Reviews</figure>
                 </div>
               </div>
-              <div className="flex items-center gap-7 mt-5">
+              <div className="flex items-center gap-7 mt-5 mobile-version">
                 <button className="px-10 py-5 bg-[#FC0606] text-[#fff] font-bold text-base">
                   Start Courses
                 </button>
@@ -153,14 +97,14 @@ const index = () => {
               </div>
             </div>
             <div className="flex flex-col w-2/6 object-cover home-image">
-              <img src={ui} alt="image" />
+              <img src={ui} alt="ui/ux image" />
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="bg-[#000517]">
           <div className="flex justify-around">
-            <div className="flex flex-col justify-start sm:p-1 m-1 md:p-[2rem] m-[3rem] shadow-xl w-4/6 cyber-image bg-[#000517]">
+            <div className="flex flex-col justify-start md:p-[2rem] m-[3rem] shadow-xl w-4/6 cyber-image bg-[#000517] cyber-course">
               <h1 className="text-lg font-bold font-primary text-[#FE0000]">
                 New Additions
               </h1>
@@ -211,7 +155,7 @@ const index = () => {
                   <figure className="text-[#FE0000]">(5) Read Reviews</figure>
                 </div>
               </div>
-              <div className="flex items-center gap-7 mt-5">
+              <div className="flex items-center gap-7 mt-5 mobile-version">
                 <button className="px-10 py-5 bg-[#FC0606] text-[#fff] font-bold text-base">
                   Start Courses
                 </button>
@@ -230,9 +174,10 @@ const index = () => {
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className="bg-[#000517]">
           <div className="flex justify-around">
-            <div className="flex flex-col justify-start sm:p-1 m-1 md:p-[2rem] m-[3rem] shadow-xl w-4/6 game-image bg-[#000517]">
+            <div className="flex flex-col justify-start md:p-[2rem] m-[3rem] shadow-xl w-4/6 game-image bg-[#000517] game-course">
               <h1 className="text-lg font-bold font-primary text-[#FE0000]">
                 New Additions
               </h1>
@@ -282,7 +227,7 @@ const index = () => {
                   <figure className="text-[#FE0000]">(7) Read Reviews</figure>
                 </div>
               </div>
-              <div className="flex items-center gap-7 mt-5">
+              <div className="flex items-center gap-7 mt-5 mobile-version">
                 <button className="px-10 py-5 bg-[#FC0606] text-[#fff] font-bold text-base">
                   Start Courses
                 </button>
@@ -301,9 +246,10 @@ const index = () => {
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className="bg-[#000517]">
           <div className="flex justify-around">
-            <div className="flex flex-col justify-start sm:p-1 m-1 md:p-[2rem] m-[3rem] shadow-xl w-4/6 content-image bg-[#000517]">
+            <div className="flex flex-col justify-start md:p-[2rem] m-[3rem] m-[3rem] shadow-xl w-4/6 content-image bg-[#000517] content-course">
               <h1 className="text-lg font-bold font-primary text-[#FE0000]">
                 New Additions
               </h1>
@@ -311,10 +257,10 @@ const index = () => {
                 Content Marketing Course
               </h1>
               <p className="text-[#fff] text-justify overflow-hidden font-medium text-base mt-5">
-                Craft compelling stories, boost brand visibility, and drive
-                results with our Content Marketing Course. Dive into the art of
-                creating content that resonates and converts. Join us now and
-                master the tools of the trade!"
+                &quot;Craft compelling stories, boost brand visibility, and
+                drive results with our Content Marketing Course. Dive into the
+                art of creating content that resonates and converts. Join us now
+                and master the tools of the trade!&quot;
               </p>
               <div className="flex flex-col mt-5">
                 <div className="flex flex-col">
@@ -353,7 +299,7 @@ const index = () => {
                   <figure className="text-[#FE0000]">(23) Read Reviews</figure>
                 </div>
               </div>
-              <div className="flex items-center gap-7 mt-5">
+              <div className="flex items-center gap-7 mt-5 mobile-version">
                 <button className="px-10 py-5 bg-[#FC0606] text-[#fff] font-bold text-base">
                   Start Courses
                 </button>

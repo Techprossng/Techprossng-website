@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from "prop-types";
 import "./Styles/testimonial.css";
 import { useMediaQuery } from "react-responsive";
@@ -28,7 +29,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#001975",
                   }}
-                  className="text-base font-semibold mb-1"
+                  className="text-base font-semibold mb-1 font-primary"
                 >
                   {heading}
                 </p>
@@ -36,13 +37,13 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#272727",
                   }}
-                  className="text-sm mb-3 font-semibold"
+                  className="text-sm mb-3 font-semibold font-secondary"
                 >
                   {subHeading}
                 </p>
                 <p
                   style={{ color: "#272727" }}
-                  className="text-sm text-justify"
+                  className="text-sm text-justify font-secondary"
                 >
                   {content}
                 </p>
@@ -58,7 +59,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#001975",
                   }}
-                  className="text-base font-semibold mb-1"
+                  className="text-base font-semibold mb-1 font-primary"
                 >
                   {heading}
                 </p>
@@ -66,13 +67,13 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#272727",
                   }}
-                  className="text-sm mb-3 font-semibold"
+                  className="text-sm mb-3 font-semibold font-secondary"
                 >
                   {subHeading}
                 </p>
                 <p
                   style={{ color: "#272727" }}
-                  className="text-sm text-justify"
+                  className="text-sm text-justify font-secondary"
                 >
                   {content}
                 </p>
@@ -96,7 +97,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#001975",
                   }}
-                  className="text-base font-semibold mb-1"
+                  className="text-base font-semibold mb-1 font-primary"
                 >
                   {heading}
                 </p>
@@ -104,13 +105,13 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#272727",
                   }}
-                  className="text-base mb-3 font-semibold"
+                  className="text-base mb-3 font-semibold font-secondary"
                 >
                   {subHeading}
                 </p>
                 <p
                   style={{ color: "#272727" }}
-                  className="text-sm text-justify"
+                  className="text-sm text-justify font-secondary"
                 >
                   {content}
                 </p>
@@ -126,7 +127,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#001975",
                   }}
-                  className="text-base font-semibold mb-1"
+                  className="text-base font-semibold mb-1 font-primary"
                 >
                   {heading}
                 </p>
@@ -134,13 +135,13 @@ const Card = ({ image, heading, subHeading, content, even }) => {
                   style={{
                     color: "#272727",
                   }}
-                  className="text-base mb-3 font-semibold"
+                  className="text-base mb-3 font-semibold font-secondary"
                 >
                   {subHeading}
                 </p>
                 <p
                   style={{ color: "#272727" }}
-                  className="text-sm text-justify"
+                  className="text-sm text-justify font-secondary"
                 >
                   {content}
                 </p>
@@ -162,7 +163,7 @@ const Card = ({ image, heading, subHeading, content, even }) => {
               style={{
                 color: "#001975",
               }}
-              className="text-base font-bold mb-1"
+              className="text-base font-bold mb-1 font-primary"
             >
               {heading}
             </p>
@@ -170,11 +171,11 @@ const Card = ({ image, heading, subHeading, content, even }) => {
               style={{
                 color: "#272727",
               }}
-              className="text-sm mb-3 font-semibold"
+              className="text-sm mb-3 font-semibold font-secondary"
             >
               {subHeading}
             </p>
-            <p style={{ color: "#272727" }} className="text-sm  text-justify">
+            <p style={{ color: "#272727" }} className="text-sm  text-justify font-secondary">
               {content}
             </p>
           </div>
