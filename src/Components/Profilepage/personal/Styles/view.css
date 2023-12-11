@@ -7,3 +7,37 @@
     justify-content: center;
     align-items: center;
 }
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+   .view-container{
+     border: none;
+     padding: auto;
+   }
+   .view-header{
+    display: none;
+   }
+   .view-image{
+    border-radius: 30px;
+   }
+   .view-contents{
+    display: none;
+   }
+   .view-eye{
+     display: none;
+   }
+   
+   }
+   
+   @media only screen and (min-width: 480px) and (max-width: 768px) {
+     
+   }
+   
+   @media (min-width: 768px)  and (max-width: 1024px) {
+     
+   }
+   @media (min-width: 1024px)  and (max-width: 1025px) {
+   
+   }
+   @media (min-width: 1025px) and (max-width: 1350px)  {
+   
+   }
+   

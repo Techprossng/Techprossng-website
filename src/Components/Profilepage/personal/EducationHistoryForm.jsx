@@ -188,7 +188,7 @@ function EducationHistoryForm({ onSaveEducation, onCancel }) {
       </div>
       {/* Add other input fields for education history here */}
       <div className="flex items-center justify-between mt-8">
-        <p className="font-secondary font-bold text-[12px]">I currently work here</p>
+        <p className="font-secondary font-bold text-[12px]">I currently study here</p>
         <input type="checkbox"
         
         />

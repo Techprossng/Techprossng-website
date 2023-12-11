@@ -19,20 +19,20 @@ function View({ userData, onEditUserInfo }) {
   };
 
   return (
-    <div className="w-full bg-white block p-4 view-container">
-      <div className="flex gap-2" style={{cursor:"pointer"}}>
+    <div className="w-full bg-white block p-4 sm:p-4 view-container">
+      <div className="flex gap-2 view-eye" style={{cursor:"pointer"}}>
         {showDetails ? (
           <IoEyeOutline onClick={toggleDetails} size={25} color="red" className="mt-1"/>
         ) : (
           <IoEyeOffOutline onClick={toggleDetails} size={25} color="red" className="mt-1" />
         )}
 
-        <h1 className="text-md mt-1 font-bold text-[#001975] ">Overview</h1>
+        <h1 className="text-md mt-1 font-bold text-[#001975] view-header">Overview</h1>
       </div>
       
       {renderSection( (
         userData.profileImage && (
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center view-image">
           <img
             src={userData.profileImage}
             alt="Profile"
@@ -41,7 +41,8 @@ function View({ userData, onEditUserInfo }) {
           </div>
         )
       ))}
-
+       
+     <div className="view-contents">
       {renderSection( (
         <p className="text-center">{`${userData.firstName} ${userData.lastName}`}</p>
       ))}
@@ -85,6 +86,7 @@ function View({ userData, onEditUserInfo }) {
       <button onClick={onEditUserInfo} className="btn btn-primary">
         Edit Information
       </button>
+      </div>
     </div>
   );
 }

@@ -2,6 +2,9 @@
     border: 2px solid rgba(230, 230, 230, 1);
     border-radius: 16px;
 }
+.bio-form-mobile{
+    display: none;
+}
 .bio-text-container{
     border: 2px solid rgba(230, 230, 230, 1);
     border-radius: 16px; 
@@ -24,12 +27,22 @@
 .number-input{
     border: 2px solid rgba(230, 230, 230, 1);
     border-radius: 16px; 
+   
+}
+.mobile-number-input{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 12px; 
+   
 }
 .bio-input{
   padding: 3px;
-  outline: none ;
   border: none;
   font-size: 15px;
+}
+.phone-input{
+    outline: none !important;
+    border: none;
+    font-size: 15px;
 }
 .textarea{
     outline: none;
@@ -42,4 +55,29 @@
 .custom-location{
     border: 1px solid rgba(43, 63, 140, 1) ; 
 }
-
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .bio-container{
+        border: none;
+    }
+    .bio-form{
+        display: none;
+    }
+    .bio-form-mobile{
+        display: block;
+    }
+   
+   }
+   
+   @media only screen and (min-width: 480px) and (max-width: 768px) {
+     
+   }
+   
+   @media (min-width: 768px)  and (max-width: 1024px) {
+     
+   }
+   @media (min-width: 1024px)  and (max-width: 1025px) {
+   
+   }
+   @media (min-width: 1025px) and (max-width: 1350px)  {
+   
+   }

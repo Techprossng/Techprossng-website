@@ -17,3 +17,34 @@
 .work-action{
     line-height: 40px;
 }
+.edu-icon-mobile{
+    display: none;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .Add-edu-button button{
+        display: none;
+    }
+    .edu-icon-mobile{
+        display: block;
+    }
+    .edu-history-header h2{
+      font-size: 15px ;
+    }
+    .edu-notice p{
+        font-size: 12px;
+    }
+   }
+   
+   @media only screen and (min-width: 480px) and (max-width: 768px) {
+     
+   }
+   
+   @media (min-width: 768px)  and (max-width: 1024px) {
+     
+   }
+   @media (min-width: 1024px)  and (max-width: 1025px) {
+   
+   }
+   @media (min-width: 1025px) and (max-width: 1350px)  {
+   
+   }

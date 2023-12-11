@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PersonalInfoForm from "../../Components/Profilepage/personal/PersonalInfoForm";
 import View from "../../Components/Profilepage/personal/View";
+import "../Personalpage/styles/personalform.css";
 
 function Personal() {
   const [userData, setUserData] = useState({
@@ -25,16 +26,16 @@ function Personal() {
   };
 
   return (
-    <div className="flex p-40 justify-between">
-      <div className="w-full">
+    <div className="flex p-2 sm:p-40 justify-between personal-container">
+      <div className="w-full info-container">
         <PersonalInfoForm
           userData={userData}
           onSaveUserInfo={handleSaveUserInfo}
           onEditUserInfo={handleEditUserInfo}
-          isEditing={isEditing} // Pass the isEditing state
+          isEditing={isEditing} 
         />
       </div>
-      <div className="w-1/2 ml-5">
+      <div className="w-1/2 ml-5 viewer-container">
         <View userData={userData} onEditUserInfo={handleEditUserInfo} />
       </div>
     </div>

@@ -37,13 +37,21 @@ function EducationHistorySection({ userData, onSaveUserInfo }) {
 
   return (
     <div className="mt-10 block education-container p-5">
-      <div className="flex">
+      <div className="flex justify-between">
+      <div className="flex edu-history-header">
       <LuGraduationCap size={25} color="red"/>
       <h2 className="text-md mb-0 font-bold text-[#001975] font-secondary ml-2">Education History</h2>
       </div>
+      <div className="edu-icon-mobile">
+        <button onClick={() => setIsEditing(true)}><BiPlus size={30} color="#fff" style={{ backgroundColor:"#fe0000" , borderRadius:"4px", padding:"3px"}}/></button>  
+      </div>
+      </div>
       {userData.educationHistory.length === 0 && !isEditing ? (
+        <div className="edu-notice">
         <p className="text-center font-bold mt-10">You have not added any education history.<br/>Click the link below to add now.</p>
+        </div>
       ) : (
+
         userData.educationHistory.map((education, index) => (
           <div key={index} className="flex justify-between work-section p-5 mt-5">
             <div className="">
@@ -81,7 +89,7 @@ function EducationHistorySection({ userData, onSaveUserInfo }) {
           onCancel={() => setIsEditing(false)}
         />
       ) : (
-        <div className="flex mt-20"> 
+        <div className="flex mt-20 Add-edu-button"> 
         <button onClick={() => setIsEditing(true)} className="btn edu-btn flex flex-end">
         <BiPlus size={18} className=" add-icon"/>  
           Add Education History

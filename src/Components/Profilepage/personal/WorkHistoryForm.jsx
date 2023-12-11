@@ -4,7 +4,7 @@ import { BiCurrentLocation } from "react-icons/bi";
 import { MdOutlineCalendarToday , MdOutlineFactory } from "react-icons/md";
 import countries from "./Data/Countries";
 import Select from "react-select";
-import "../personal/Styles/workform.css";
+import "../../Profilepage/personal/Styles/workform.css";
 
 function WorkHistoryForm({ onSaveWorkHistory, onCancel }) {
   const [workHistoryData, setWorkHistoryData] = useState({

@@ -229,6 +229,7 @@ p{
 .about-us .contact-us .contact-form .query input{
      border: 1px solid #001975;
      height: 3rem;
+     outline: none;
      border-radius: 0.5rem;
      padding: 0.5rem;
      width: 52rem;
@@ -242,12 +243,14 @@ p{
 }
 .about-us .contact-us .contact-form .mail .website input{
      margin-top: 2.5rem;
+     outline: none;
 }
 .about-us .contact-us .contact-form input{
      width: 25rem;
      border: 1px solid #001975;
      height: 3rem;
      border-radius: 0.5rem;
+     outline: none;
 }
 .about-us .contact-us .contact-form .send-button{
      margin-top: 3rem;

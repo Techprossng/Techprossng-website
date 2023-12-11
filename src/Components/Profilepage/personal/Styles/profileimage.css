@@ -1,3 +1,13 @@
+.uploader-container{
+   background: #fff;
+   border: 2px solid rgba(230, 230, 230, 1);
+   width: 180px;
+   height: 200px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
 .circular-progress-bar {
     position: relative;
     width: 80px;
@@ -44,6 +54,7 @@
 }
 .image-container{
    z-index: 0;
+   
 }
 
 .file-input {
@@ -78,6 +89,106 @@
 .edit-delete-buttons{
   cursor: pointer;
 }
+.viewer-contain{
+  display: none;
+}
+.AddImage{
+  color: black;
+  margin-top: 60px;
+}
+.UploadImage{
+  display: none;
+}
+.image-container-mobile{
+  display: none;
+}
+.edit-delete-mobile{
+  display: none;
+}
+.upbutton-contain-mobile{
+  display: none;
+} 
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .viewer-contain{
+      display: block;
+      
+  }
+  .uploader-container{
+    border: none;
+    height: auto;
+  }
+  .upbutton-contain{
+    display: none;
+  }
+  .upbutton-contain-mobile{
+    display: flex;
+    color: #FE0000;
+    margin: 10px;
+  }
+  .UploadImage{
+    display: block;
+    margin-top: 30px;
+    color: #FE0000;
+  }
+  .upbutton-contain-mobile p{
+    font-size: 13px;
+    margin-top: 49px; 
+  }
+  .image-view{
+    display: none;
+  }
+  .image-container{
+    display: none;
+  }
+  .image-container-mobile{
+     display: block;
+  }
+  .progress-mobile {
+    position: absolute;
+    right: 15%;
+    top: 35%;
+    height: 10%;
+    width: 50%;
+  }
+  
+  .fill-bar {
+    height: 10%;
+    background-color:#2B3F8C; 
+    border-radius: 5px; 
+  }
+  
+  .percentage-mobile {
+    position: absolute;
+    left: 13.4rem;
+    font-size: 12px;
+    font-weight: 700;
+    transform: translate(-50%, -40%);
+    color: red; /* Set the text color */
+  }
+  .edit-delete-buttons{
+    display: none; 
+  }
+  .edit-delete-mobile{
+    display: flex;
+    position: relative;
+    top: 3.8rem;
+  }  
+
+ }
+ 
+ @media only screen and (min-width: 480px) and (max-width: 768px) {
+   
+ }
+ 
+ @media (min-width: 768px)  and (max-width: 1024px) {
+   
+ }
+ @media (min-width: 1024px)  and (max-width: 1025px) {
+ 
+ }
+ @media (min-width: 1025px) and (max-width: 1350px)  {
+ 
+ }
 
 
 

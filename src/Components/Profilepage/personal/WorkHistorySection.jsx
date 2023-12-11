@@ -41,14 +41,21 @@ function WorkHistorySection({ userData, onSaveUserInfo }) {
 
   return (
     <div className="mt-10 block  history-container p-5">
-      <div className="flex">
+      <div className="flex justify-between">
+      <div className="flex work-history-header">
         <IoBagOutline size={20} color="red" className="mt-[3px]"/>
         <h2 className="text-lg mb-1 font-bold text-[#001975] ml-2 font-secondary">Work History</h2>
       </div>
+      <div className="add-icon-mobile">
+        <button onClick={() => handleEditWorkHistory(-1)}><BiPlus size={30} color="#fff" style={{ backgroundColor:"#fe0000" , borderRadius:"4px", padding:"3px"}}/></button>  
+      </div>
+      </div>
       {userData.workHistory.length === 0 && !isEditing ? (
+        <div className="work-notice">
         <p className=" text-center font-bold mt-10" >
           You have not added any work history.<br/>Click the link below to add now.
         </p>
+        </div>
       ) : (
         userData.workHistory.map((work, index) => (
           <div key={index}  className="flex justify-between work-section p-5 mt-5">
@@ -99,7 +106,7 @@ function WorkHistorySection({ userData, onSaveUserInfo }) {
           }}
         />
       ) : (
-        <div className="flex mt-20 ">
+        <div className="flex mt-20 Add-work-button ">
          
           <button
             onClick={() => handleEditWorkHistory(-1)}
