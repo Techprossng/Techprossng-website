@@ -28,7 +28,7 @@ export const courses = [
     img: img2,
     career: "Digital Marketing & SEO",
     content:
-      "Digital marketing is the promotion of brands to connect with potential customers using the internet and other forms of digital communication. This includes not only email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.",
+      "Digital marketing is the promotion of brands to connect with potential customers using the internet and other forms of digital communication: email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.",
     starRating: 5.0,
     starPublish: "(3) ",
 
