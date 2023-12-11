@@ -1,0 +1,22 @@
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .viewer-container{
+        display: none;
+    }
+    .info-container{
+        margin-top: 6rem;
+    }
+   }
+   
+   @media only screen and (min-width: 480px) and (max-width: 768px) {
+     
+   }
+   
+   @media (min-width: 768px)  and (max-width: 1024px) {
+     
+   }
+   @media (min-width: 1024px)  and (max-width: 1025px) {
+   
+   }
+   @media (min-width: 1025px) and (max-width: 1350px)  {
+   
+   }

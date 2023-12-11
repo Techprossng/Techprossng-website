@@ -7,6 +7,8 @@ import close from "../../../assets/icons/close.svg";
 import Menu from "../../../assets/icons/menu.svg";
 import "../../Landingpage/Navbar/Styles/navbar.css";
 
+
+
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/home" },
