@@ -1,0 +1,93 @@
+.history-container {
+  border: 2px solid rgba(230, 230, 230, 1);
+  border-radius: 16px;
+}
+.btn-secondary {
+  text-decoration: 2px solid red underline;
+  color: red;
+  font-weight: bold;
+  display: flex;
+  
+}
+.Add-work-button .btn-secondary-1{
+    color: #fff;
+}
+.add-icon {
+  position: relative;
+  left: 3px;
+  top: 3px;
+}
+.work-section {
+  border: 2px solid rgba(230, 230, 230, 1);
+  border-radius: 16px;
+  line-height: 40px;
+}
+.work-action {
+  line-height: 40px;
+}
+.add-icon-mobile {
+  display: none;
+}
+.work-mobile-actions {
+  display: none;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .history-container {
+    border: none ;
+    border-top: 2px solid rgba(230, 230, 230, 1);
+    border-bottom: 2px solid rgba(230, 230, 230, 1) ;
+    border-radius: 0px;
+  }
+  .Add-work-button button {
+    display: none;
+  }
+  .add-icon-mobile {
+    display: block;
+  }
+  .work-history-header h2 {
+    font-size: 15px;
+  }
+  .work-notice p {
+    font-size: 12px;
+  }
+  .work-section-actions {
+    display: none;
+  }
+  .work-mobile-actions {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+    .history-container {
+        border: none ;
+        border-top: 2px solid rgba(230, 230, 230, 1);
+        border-bottom: 2px solid rgba(230, 230, 230, 1) ;
+        border-radius: 0px;
+      }
+      .Add-work-button button {
+        display: none;
+      }
+      .add-icon-mobile {
+        display: block;
+      }
+      .work-history-header h2 {
+        font-size: 15px;
+      }
+      .work-notice p {
+        font-size: 12px;
+      }
+      .work-section-actions {
+        display: none;
+      }
+      .work-mobile-actions {
+        display: block;
+      }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+}
+@media (min-width: 1024px) and (max-width: 1025px) {
+}
+@media (min-width: 1025px) and (max-width: 1350px) {
+}

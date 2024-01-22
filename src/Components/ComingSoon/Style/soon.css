@@ -67,8 +67,8 @@
   }
 }
 .rotating {
-  animation: rotate 5s linear infinite; /* adjust the duration and timing function as needed */
-  transform-origin: center; /* set the rotation point to the center */
+  animation: rotate 5s linear infinite;
+  transform-origin: center; 
 }
 
 

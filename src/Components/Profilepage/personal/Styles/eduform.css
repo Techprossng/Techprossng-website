@@ -1,0 +1,89 @@
+.work-form-container{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 16px;
+}
+.edu-form-mobile{
+    display: none;
+}
+.bio-text-container{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 16px; 
+}
+.edu-text{
+    font-size: 12px;
+    font-weight: bold;
+   
+   
+}
+.form-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.form-container{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 12px;
+}
+.number-input{
+    border: 2px solid rgba(230, 230, 230, 1);
+    border-radius: 12px; 
+}
+.input-area{
+  padding: 3px;
+  outline: none ;
+  border: none;
+  font-size: 15px;
+}
+.textarea{
+    outline: none;
+    border: none;
+    margin-top: 5px;
+}
+.select{
+    outline: none;
+  
+}
+.edu-form .cancel-button{
+    border: 1px solid  rgba(254, 0, 0, 1);
+    padding: 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    color:  rgba(254, 0, 0, 1);
+}
+.edu-form .save-button{
+    background-color:  rgba(0, 25, 117, 1);
+    color: #fff;
+    padding: 24px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 10px;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .edu-form-desktop{
+        display: none;
+    }
+    .edu-form-mobile{
+        display: block;
+    }
+   
+   }
+   
+   @media only screen and (min-width: 480px) and (max-width: 600px) {
+    .edu-form-desktop{
+        display: none;
+    }
+    .edu-form-mobile{
+        display: block;
+    }
+   }
+   
+   @media (min-width: 600px)  and (max-width: 1024px) {
+     
+   }
+   @media (min-width: 1024px)  and (max-width: 1025px) {
+   
+   }
+   @media (min-width: 1025px) and (max-width: 1350px)  {
+   
+   }

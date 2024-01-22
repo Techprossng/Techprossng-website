@@ -6,6 +6,7 @@ import LandingPage from "./pages/landing-page";
 import Homepage from "./pages/homepage/homepage";
 import ProfilePage from "./pages/Profilepage/profilepage";
 import Pricing from "./pages/Pricing/pricing";
+import Personal from './pages/Personalpage/personal';
 import Catalog from "./pages/Coursecatalog/course";
 import Layout from "./Components/layout";
 import ResourcePage from "./pages/Resource-Page/resource";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/coming" element={<ComingSoonPage />} />
         <Route path="/coming-soon" element={<ComingPage />} />
+        <Route path="/personal" element={<Personal />} />
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/blog" element={<BlogPage />} />
