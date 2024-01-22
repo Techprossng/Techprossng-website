@@ -14,9 +14,11 @@ import SignInPage from "./pages/Sign-In/signin";
 import SignUpPage from "./pages/Sign-Up/signup";
 import ComingPage from "./pages/comesoon/coming";
 import ComingSoonPage from "./pages/ComingSoon/soon";
+
 import BlogPage from "./pages/blog";
 import ContactUs from "./pages/Contact-Us/contact"
 import React from 'react';
+import BootCamp from "./pages/Bootcamp/bootcamp";
 
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Homepage />} /> 
         <Route path="/profile" element={<ProfilePage/>} />
+        <Route path="/boot-camp" element={<BootCamp/>} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/course-catalogue" element={<Catalog />} />
         <Route path="/resource-page" element={<ResourcePage />} />

@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: "Home", link: "/home" },
     { name: "About Us", link: "/about-us" },
     { name: "Courses", link: "/course-catalogue" },
+    { name: "Bootcamp", link: "/boot-camp" },
     { name: "Pricing", link: "/coming-soon" },
     { name: "Resources", link: "/coming-soon" },
     { name: "Mentorship", link: "/coming" },
