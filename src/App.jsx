@@ -37,6 +37,7 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/coming" element={<ComingSoonPage />} />
         <Route path="/coming-soon" element={<ComingPage />} />
+        <Route path="/personal" element={<Personal />} />
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/blog" element={<BlogPage />} />

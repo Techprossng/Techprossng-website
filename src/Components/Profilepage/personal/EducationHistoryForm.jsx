@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import countries from "./Data/Countries";
 import { MdOutlineCalendarToday } from "react-icons/md";
 import Select from "react-select";
-import "../personal/Styles/workform.css";
+import "../personal/Styles/eduform.css";
 import { LuGraduationCap , LuBook } from "react-icons/lu";
 
 function EducationHistoryForm({ onSaveEducation, onCancel }) {
   const [educationData, setEducationData] = useState({
     schoolName: "",
     degree: "",
-    // Add other fields for education history
+   
   });
 
   const handleInputChange = (e) => {
@@ -25,7 +25,7 @@ function EducationHistoryForm({ onSaveEducation, onCancel }) {
     setEducationData({
       schoolName: "",
       degree: "",
-      // Reset other education history fields
+     
     });
   };
   const countryStyles = {
@@ -40,9 +40,9 @@ function EducationHistoryForm({ onSaveEducation, onCancel }) {
   };
 
   return (
-    <div className="mb-4 mt-5 p-4 border rounded-lg">
+    <>
+     <form className="mb-4 mt-5 p-4 border rounded-lg edu-form-desktop">
       <div className="flex">
-        <LuGraduationCap size={25} color="red" />
         <h2 className="text-md mb-0 font-bold text-[#001975] ml-2 font-secondary">Add Education History</h2>
       </div>
       <div className="mt-5">
@@ -186,7 +186,7 @@ function EducationHistoryForm({ onSaveEducation, onCancel }) {
         </div>
       </div>
       </div>
-      {/* Add other input fields for education history here */}
+    
       <div className="flex items-center justify-between mt-8">
         <p className="font-secondary font-bold text-[12px]">I currently study here</p>
         <input type="checkbox"
@@ -201,7 +201,168 @@ function EducationHistoryForm({ onSaveEducation, onCancel }) {
           Save Details
         </button>
       </div>
-    </div>
+    </form>
+    <form className="mb-4 mt-5 p-2 edu-form-mobile">
+      <div className="flex">
+        <h2 className="text-md mb-0 font-bold text-[#001975] font-secondary">Add Education History</h2>
+      </div>
+      <div className="mt-5">
+      <div className="">
+      <label htmlFor="schoolName" className=" edu-text font-secondary">Name Of Institution</label>
+      <div className=" mt-1 flex w-full p-2 form-container">
+     <LuGraduationCap size={22} color="black" className="mt-2 ml-1" />
+     <div className=" form-input ml-5 mb-2">
+        <input
+          type="text"
+          id="schoolName"
+          name="schoolName"
+          placeholder="Ex. ABC University"
+          value={educationData.schoolName}
+          onChange={handleInputChange}
+          className="input-area textarea w-full font-secondary"
+        />
+      </div>
+      </div>
+      </div>
+      <div className="container mt-2 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-1 pl-0">
+      <label htmlFor="degree" className="edu-text font-secondary ">Field Of Study</label>
+      <div className=" mt-1 flex w-full p-2 form-container">
+        <LuBook size={20} color="black" className="mt-2 ml-1" />
+        <div className="form-input ml-5 mb-2 ">
+        <input
+          type="text"
+          id="degree"
+          name="degree"
+          value={educationData.degree}
+          onChange={handleInputChange}
+          className="input-area  w-full mt-1  font-secondary"
+        />
+      </div>
+      </div>
+      <label htmlFor="country" className="edu-text font-secondary">Degree</label>
+      <div className="mt-1  flex number-input w-full p-2">
+      <LuBook  size={22} color="black" className="mt-3 ml-1"/>
+          <div className="w-full ml-5 mb-2">
+          <Select
+            id="country"
+            name="country"
+            value={{
+              value:educationData.country,
+              label:educationData.country,
+            }}
+            onChange={handleCountryChange}
+            options={countries.map((country) => ({
+              value: country.name,
+              label: `${country.name} (${country.iso})`,
+            }))}
+            styles={countryStyles}
+            className="select font-secondary"
+          />
+          </div>
+        </div>
+        <label htmlFor="country" className="edu-text font-secondary">Start Month</label>
+        <div className="mt-1  flex number-input w-full p-2">
+      <MdOutlineCalendarToday  size={20} color="black" className="mt-3 ml-1"/>
+          <div className="w-full ml-5 mb-2">
+          <Select
+            id="country"
+            name="country"
+            value={{
+              value:educationData.country,
+              label:educationData.country,
+            }}
+            onChange={handleCountryChange}
+            options={countries.map((country) => ({
+              value: country.name,
+              label: `${country.name} (${country.iso})`,
+            }))}
+            styles={countryStyles}
+            className="select font-secondary"
+          />
+          </div>
+        </div>
+        <label htmlFor="country" className="edu-text font-secondary">Start Year</label>
+        <div className="mt-1  flex number-input w-full p-2">
+      <MdOutlineCalendarToday size={20} color="black" className="mt-3 ml-1"/>
+          <div className="w-full ml-5 mb-2">
+          <Select
+            id="country"
+            name="country"
+            value={{
+              value:educationData.country,
+              label:educationData.country,
+            }}
+            onChange={handleCountryChange}
+            options={countries.map((country) => ({
+              value: country.name,
+              label: `${country.name} (${country.iso})`,
+            }))}
+            styles={countryStyles}
+            className="select font-secondary"
+          />
+          </div>
+        </div> 
+        <label htmlFor="country" className="edu-text font-secondary">End Month / Expected Graduation Month</label>
+        <div className="mt-1  flex number-input w-full p-2">
+      <MdOutlineCalendarToday size={20} color="black" className="mt-3 ml-1"/>
+          <div className="w-full ml-5 mb-2">
+          <Select
+            id="country"
+            name="country"
+            value={{
+              value:educationData.country,
+              label:educationData.country,
+            }}
+            onChange={handleCountryChange}
+            options={countries.map((country) => ({
+              value: country.name,
+              label: `${country.name} (${country.iso})`,
+            }))}
+            styles={countryStyles}
+            className="select font-secondary"
+          />
+          </div>
+        </div>
+        <label htmlFor="country" className="edu-text font-secondary">End Year / Expected Graduation Year </label>
+        <div className="mt-1 flex number-input w-full p-2">
+      <MdOutlineCalendarToday size={20} color="black" className="mt-3 ml-1"/>
+          <div className="w-full ml-5 mb-2">
+          <Select
+            id="country"
+            name="country"
+            value={{
+              value:educationData.country,
+              label:educationData.country,
+            }}
+            onChange={handleCountryChange}
+            options={countries.map((country) => ({
+              value: country.name,
+              label: `${country.name} (${country.iso})`,
+            }))}
+            styles={countryStyles}
+            className="select font-secondary"
+          />
+          </div>
+        </div>
+      </div>
+      </div>
+      <div className="flex items-center justify-between mt-5">
+        <p className="font-secondary font-bold text-[12px]">I currently study here</p>
+        <input type="checkbox"
+        
+        />
+      </div>
+      <div className=" items-center mt-8 edu-form">
+        <button onClick={onCancel} className="btn w-full mr-2 font-secondary cancel-button">
+          Cancel
+        </button>
+        <button onClick={handleSave} className="btn w-full mt-4 font-secondary btn-primary save-button">
+          Save Details
+        </button>
+      </div>
+    </form>
+    </>
+   
   );
 }
 

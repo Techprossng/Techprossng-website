@@ -58,6 +58,7 @@ function BioSection({ userData, onSaveUserInfo }) {
 
   return (
     <div className="mt-10 w-full bio-container p-5">
+       {/* desktop view  */}
       <form className="w-full block bio-form">
         <div className="flex">
           <BiUser size={25} style={{ color: "red" }} />
@@ -183,6 +184,7 @@ function BioSection({ userData, onSaveUserInfo }) {
           </div>
         </div>
       </form>
+       {/* mobile view */}
       <form className="w-full block bio-form-mobile">
         <div className="flex">
           <BiUser size={25} style={{ color: "red" }} />

@@ -27,12 +27,29 @@
    
    }
    
-   @media only screen and (min-width: 480px) and (max-width: 768px) {
-     
+   @media only screen and (min-width: 480px) and (max-width: 600px) {
+    .view-container{
+      border: none;
+      padding: auto;
+    }
+    .view-header{
+     display: none;
+    }
+    .view-image{
+     border-radius: 30px;
+    }
+    .view-contents{
+     display: none;
+    }
+    .view-eye{
+      display: none;
+    }
    }
    
-   @media (min-width: 768px)  and (max-width: 1024px) {
-     
+   @media (min-width: 600px)  and (max-width: 1024px) {
+     .view-container{
+      display: none;
+     }
    }
    @media (min-width: 1024px)  and (max-width: 1025px) {
    

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PersonalInfoForm from "../../Components/Profilepage/personal/PersonalInfoForm";
 import View from "../../Components/Profilepage/personal/View";
 import "../Personalpage/styles/personalform.css";
+import Navbar from "../../Components/Landingpage/Navbar/navbar";
 
 function Personal() {
   const [userData, setUserData] = useState({
@@ -26,7 +27,9 @@ function Personal() {
   };
 
   return (
-    <div className="flex p-2 sm:p-40 justify-between personal-container">
+    <>
+    <Navbar/>
+    <div className="flex  sm:p-40 justify-between personal-container">
       <div className="w-full info-container">
         <PersonalInfoForm
           userData={userData}
@@ -39,6 +42,7 @@ function Personal() {
         <View userData={userData} onEditUserInfo={handleEditUserInfo} />
       </div>
     </div>
+    </>
   );
 }
 

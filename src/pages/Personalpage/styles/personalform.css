@@ -7,11 +7,23 @@
     }
    }
    
-   @media only screen and (min-width: 480px) and (max-width: 768px) {
-     
+   @media only screen and (min-width: 480px) and (max-width: 600px) {
+    .viewer-container{
+        display: none;
+    }
+    .info-container{
+        margin-top: 6rem;
+    }
    }
    
-   @media (min-width: 768px)  and (max-width: 1024px) {
+   @media (min-width: 600px)  and (max-width: 1024px) {
+    .personal-container{
+        padding: 10px;
+        width: 100%;
+    }
+    .viewer-container{
+        display: none;
+    }
      
    }
    @media (min-width: 1024px)  and (max-width: 1025px) {

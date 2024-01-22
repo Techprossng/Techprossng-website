@@ -48,7 +48,7 @@ function EducationHistorySection({ userData, onSaveUserInfo }) {
       </div>
       {userData.educationHistory.length === 0 && !isEditing ? (
         <div className="edu-notice">
-        <p className="text-center font-bold mt-10">You have not added any education history.<br/>Click the link below to add now.</p>
+        <p className="text-center font-bold mt-10">You have not added any education history.<br/>Click the plus sign above to add now.</p>
         </div>
       ) : (
 
@@ -63,7 +63,7 @@ function EducationHistorySection({ userData, onSaveUserInfo }) {
             </p>
             </div>
             {/* Add other education history fields here */}
-            <div style={{ cursor:"pointer"}}>
+            <div style={{ cursor:"pointer"}} className="edu-section-actions">
             <ImPencil
               onClick={() => handleEditEducation(index)}
               className="btn "
@@ -79,6 +79,32 @@ function EducationHistorySection({ userData, onSaveUserInfo }) {
               
             />
             </div>
+            <div style={{ cursor:"pointer"}} className="edu-mobile-actions">
+            <ImPencil
+              onClick={() => handleEditEducation(index)}
+              className="btn "
+              size="23px"
+              color="#fff"
+                style={{
+                  backgroundColor: "#001975",
+                  borderRadius: "4px",
+                  padding: "5px",
+                }}
+            />
+            
+            <FaTrash
+              onClick={() => handleDeleteEducationHistory(index)}
+              className="btn btn-danger mt-40"
+              size="23px"
+              color="#fff"
+              style={{
+                backgroundColor: "#fe0000",
+                borderRadius: "4px",
+                padding: "5px",
+              }}
+              
+            />
+            </div>
           </div>
         ))
       )}
@@ -89,8 +115,11 @@ function EducationHistorySection({ userData, onSaveUserInfo }) {
           onCancel={() => setIsEditing(false)}
         />
       ) : (
-        <div className="flex mt-20 Add-edu-button"> 
-        <button onClick={() => setIsEditing(true)} className="btn edu-btn flex flex-end">
+        <div className="flex justify-between mt-20 Add-edu-button"> 
+        <button  className=" edu-btn-2  ">
+          Add Education History
+        </button>
+        <button onClick={() => setIsEditing(true)} className="btn edu-btn flex flex-end ">
         <BiPlus size={18} className=" add-icon"/>  
           Add Education History
         </button>

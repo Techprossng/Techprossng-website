@@ -97,7 +97,7 @@ function ProfileImageUpload({ userData, onSaveUserInfo }) {
           id="fileInput"
           disabled={isEditing}
         />
-        <div className="">
+        <div className="flex justify-around">
           <div className="upbutton-contain ">
             <label
               className="upload-button"
