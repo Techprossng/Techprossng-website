@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/landing-page";
 import Homepage from "./pages/homepage/homepage";
 import ProfilePage from "./pages/Profilepage/profilepage";
-import Pricing from "./pages/Pricing/pricing";
+import Pricingpage from "./pages/Pricing/pricing";
 import Catalog from "./pages/Coursecatalog/course";
 import Layout from "./Components/layout";
 import ResourcePage from "./pages/Resource-Page/resource";
@@ -30,7 +30,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Homepage />} /> 
         <Route path="/profile" element={<ProfilePage/>} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/pricing" element={<Pricingpage />} />
         <Route path="/course-catalogue" element={<Catalog />} />
         <Route path="/resource-page" element={<ResourcePage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
