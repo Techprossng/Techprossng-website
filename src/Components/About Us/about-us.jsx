@@ -443,7 +443,7 @@ const AboutUs = () => {
               <div className="submit-form flex justify-center mt-10">
                 <button type="submit">
                   <p className="font-semibold text-sm">Send</p>
-                </button>
+                </button> 
               </div>
             </form>
             {formSuccess && (
