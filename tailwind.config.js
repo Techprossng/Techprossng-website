@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         primary: ["Craftwork Grotesk", ...fontFamily.sans],
         secondary: ["Mona Sans", ...fontFamily.serif],
+        custom :  ["Source Sans 3", ...fontFamily.serif], 
       },
       // backgroundImage: {
       //   "team-pattern": "url('./assets/bg_team.png')",
