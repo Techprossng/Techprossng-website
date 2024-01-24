@@ -1,4 +1,25 @@
-body {
-     background-image: url("Image\hero1.png"), url("");
-     background-color: #cccccc;
-   }
+.hero-bootcamp {
+  background-image: 
+  linear-gradient(to right, rgba(50, 100, 250, 0.7), rgba(100, 0, 0, 0.73)), url("hero1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 720px;
+}
+.date {
+  border: 1px solid #999;
+  border-radius: 16px;
+  padding: 4px 12px;
+  background-color: rgba(211, 211, 211, 0.25);
+}
+.hero-register {
+  border: 1px solid #001975;
+  border-radius: 8px;
+  padding: 4px 48px;
+  background: #001975;
+  cursor: pointer; 
+}
+.hero-register:hover {
+  background: rgb(241, 138, 138); 
+  transition: 1s;
+  letter-spacing: 1px;
+}
