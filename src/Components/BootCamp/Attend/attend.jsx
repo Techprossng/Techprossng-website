@@ -21,11 +21,11 @@ function Attend() {
           success
         </p>
       </div>
-      <div className="flex px-20 py-12 justify-between">
-        <div className="w-[60%]">
+      <div className="flex px-20 py-12 justify-between attend-container">
+        <div className="w-[60%] attend-inner">
           <div className=" w-[737px] p-5 flex h-[350px] attend">
             <div className="w-[60%] mt-[47px] ">
-              <h2 className="font-bold text-[30px] font-secondary whitespace-nowrap mb-4">
+              <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mb-4">
                 Sign Up for the <span>BOOTCAMP</span>
               </h2>
               <p className="font-medium">
