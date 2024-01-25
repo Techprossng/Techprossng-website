@@ -30,4 +30,30 @@
   .hero-date h4 span{
     font-size: 30px;
   }
+  .date {
+    width: 358px;
+  }
+  .date h5{
+    font-size: 12.5px; 
+  }
+  .hero-date{
+    margin-top: 10%;
+  }
+  .hero-description p{
+    font-size: 14px;
+  }
+  .line-break-3{
+    display: none;
+  }
+  .hero-register{
+    width: 285px;
+    height: 39px;
+    padding: 4px;
+  }
+  .hero-bootcamp {
+    background-position-x: 32%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 720px;
+  }
 }

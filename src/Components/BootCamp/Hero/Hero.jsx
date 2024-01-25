@@ -17,9 +17,9 @@ function HeroBootcamp() {
                          <div className='hero-date  text-center'> 
                               <h4 className='text-[80px] text-center font-primary font-bold'> 2 WEEKS<span className='text-[80px] font-secondary font-normal'>BOOTCAMP</span> </h4> 
                          </div>
-                         <div className='pt-8  text-center items-center gap-2'>
-                              <p className='text-[24px]'> Come and invest in your future by getting into tech with our 2-weeks power<br/>
-                              loaded bootcamp for every on einclusive </p>
+                         <div className='pt-8  text-center items-center hero-description gap-2'>
+                              <p className='text-[24px]'> Come and invest in your future by getting into tech with our 2-weeks power<br className='line-break-3'/>
+                              loaded bootcamp for every one inclusive </p>
                          </div>
                     </div>
                     <div className='flex justify-center'>

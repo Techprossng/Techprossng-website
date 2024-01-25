@@ -29,16 +29,16 @@ function Tutors() {
 
   return (
     <div className=" Mentors-box mt-10">
-      <div className="px-20 py-28 md:px-[8%] ">
-        <div className="  header-box">
-          <div className=" text-center items-center ">
+      <div className="px-20 py-28 md:px-[8%] tutors-container">
+        <div className="header-box">
+          <div className=" text-center tutors-header">
             <h2 className="text-2xl font-bold" style={{ color: "#fff" }}>
-              Meet Our Tutors
+              Meet Our <span>Tutors</span>
             </h2>
             <p className="mt-6" style={{ color: "#fff" }}>
               Embark on a transformative learning journey as you meet our
               dedicated tutors at the bootcamp,
-              <br />
+              <br className="line-break-2" />
               where expertise converges with passion to fuel your educational
               success
             </p>
@@ -57,16 +57,16 @@ function Tutors() {
               <div key={index} className=" p-0">
                 <div className="relative flex card-house">
                   <div
-                    className="bg-cover bg-center rounded-lg   card"
+                    className="bg-cover bg-center rounded-lg  card"
                     style={{
                       borderRadius: "20px",
                     }}
                   >
-                    <div className="w-[427px] h-[254px] bg-cover "  style={{backgroundImage: `url(${tutor.imageURL})` , borderTopRightRadius:"20px", borderTopLeftRadius:"20px"}}>
+                    <div className="w-[427px] h-[254px] bg-cover tutors-image"  style={{backgroundImage: `url(${tutor.imageURL})` ,}}>
                   
 
                     </div>
-                    <div className="w-[427px] h-[241px] p-5" style={{ backgroundColor:"#fff" , borderBottomRightRadius:"20px", borderBottomLeftRadius:"20px"}}>
+                    <div className="w-[427px] h-[241px] p-5 tutors-details" style={{ backgroundColor:"#fff" ,}}>
                      <div className="name">
                       <h1 className="text-[24px] font-bold" style={{ color: "rgba(0, 25, 117, 1)" ,}}>{tutor.name}</h1>
                       <h6 className="text-[16px] font-bold">{tutor.jobTitle}</h6>

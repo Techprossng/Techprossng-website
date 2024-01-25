@@ -49,43 +49,52 @@
     height: 495px;
   }
   
-  .card-content {
-    width: 312px;
-  }
-  
-  .full-content {
-    width: 312px;
-  }
-  
-  .full-card {
-    width: 330px;
-    height: 493px;
-  }
   
   .header-box h2 {
     color: rgba(0, 17, 78, 1);
     font-weight: 700;
   }
   
-  .all-button:hover {
-    margin-top: 30px !important;
-    transition: 0.5s ease-in !important;
+  .card .tutors-image{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   }
+  .card .tutors-details{
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+
+  }
+
   
   @media only screen and (min-width: 360px) and (max-width: 480px) {
     .header-box h2 {
       font-size: 24px;
       
     }
-  
     .Mentors-box {
       margin-top: 10%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0 ;
+      margin-right:0 ;
+    }
+    .line-break-2{
+      display: none;
+    }
+    .tutors-container{
+      padding: 40px;
+      margin-top: 20%;
+    }
+    .tutors-header{
+      margin-top: 20%;
+    }
+    .tutors-header p{
+      font-size: 12px;
+    }
+    .tutors-header h2{
+      font-size: 28px;
     }
     .slick-list{
       overflow: visible;
-      margin-right: -11%;     
+      margin-right: 40%;     
       
   }
     .your-slider {
@@ -101,15 +110,48 @@
     }
   
     .card {
-      width: 340px;
-      height: 493px;
+      width: 154px;
+      height: 180px;
+      margin-bottom: 20%;
+    }
+    .card .tutors-image{
+      width: 154px;
+      height: 92px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+    }
+    .card .tutors-details{
+      width: 153.5px;
+      height: 85px;
+      padding: 5px;
+      border-bottom-right-radius: 6px ;
+      border-bottom-left-radius: 6px;
+
+    }
+    .name h1{
+      font-size: 9px;
+    }
+    .name p{
+      font-size: 6px;
+    }
+    .name h6{
+      font-size: 6px;
+    }
+    .description p{
+      font-size: 5.4px;
+    }
+    .experience span{
+      font-size: 5.4px;
+    }
+    .experience p{
+      font-size: 5.4px;
+    }
+    .experience{
+      margin-top: -4%;
+      
     }
   
-    .card-content {
-      width: 314px;
-      position: relative;
-      left: -3.5px;
-    }
+   
   }
   
   @media only screen and (min-width: 480px) and (max-width: 500px) {
@@ -144,11 +186,7 @@
       height: 493px;
     }
   
-    .card-content {
-      width: 314px;
-     position: relative;
-     left: 0.6%;
-    }
+    
   }
   
   @media only screen and (min-width: 500px) and (max-width: 550px) {
@@ -183,11 +221,7 @@
       height: 493px;
     }
   
-    .card-content {
-      position: relative;
-      width: 350px;
-      left: 1px;
-    }
+   
   }
   
   @media only screen and (min-width: 550px) and (max-width: 600px) {
@@ -221,12 +255,7 @@
       height: 493px;
     }
   
-    .card-content {
-      position: relative;
-      width: 392px;
-      left: -3px;
-      top: 58%;
-    }
+    
   }
   
   @media only screen and (min-width: 600px) and (max-width: 750px) {
@@ -261,12 +290,7 @@
       height: 493px;
     }
   
-    .card-content {
-      width: 323px;
-      left: -3px;
-      position: relative;
-      top: 58%;
-    }
+    
   }
   
   @media only screen and (min-width: 750px) and (max-width: 768px) {
@@ -301,10 +325,7 @@
       height: 493px;
     }
   
-    .card-content {
-      width: 406px;
-      left: 22px;
-    }
+   
   }
   @media only screen and (min-width: 768px) and (max-width: 980px) {
     .all-button{
@@ -341,12 +362,6 @@
       height: 493px;
     }
   
-    .card-content {
-      position: relative;
-      width: 346px;
-      left: 0rem;  
-      top: 65%;
-    }
   }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .all-button{
@@ -384,11 +399,6 @@
       height: 495px;
     }
   
-    .card-content {
-      width: 320px;
-      left: 14px;  
-      top: 65%;
-    }  
   
   }
   @media only screen and (min-width: 1024px) and (max-width: 1025px) {
@@ -427,11 +437,6 @@
       height: 495px;
     }
   
-    .card-content {
-      width: 320px;
-      left: 14px;  
-      top: 65%;
-    }  
   }
   @media only screen and (min-width: 1025px) and (max-width: 1025px) {
     .all-button{
@@ -469,11 +474,6 @@
       height: 495px;
     }
   
-    .card-content {
-      width: 406px;
-      left: 14px;  
-      top: 65%;
-    }  
   
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -512,11 +512,6 @@
       height: 495px;
     }
   
-    .card-content {
-      width: 340px;
-      left: 10px;  
-      top: 65%;
-    }  
   
   }
   @media only screen and (min-width: 1280px) and (max-width: 1535px) {
@@ -553,11 +548,5 @@
       width: 360px;
       height: 495px;
     }
-  
-    .card-content {
-      width: 340px;
-      left: 11px;  
-      top: 65%;
-    }  
   
   }

@@ -1,12 +1,13 @@
 import React from "react";
 import "../Attend/Style/attend.css";
 import Attend2 from "../../../assets/images/attend 2.svg";
+import AttendSmall from "../../../assets/images/attend2small.svg"
 import Attend1 from "../../../assets/images/attend 1.svg";
 import Box from "../../../assets/images/Box.svg";
 
 function Attend() {
   return (
-    <div className="px-6 py-12 md:px-12">
+    <div className="px-6 py-12 md:px-12 main-attend">
       <div className="header-container">
         <h5 className="text-center text-[34px] font-secondary font-bold ">
           How to attend the <span className="text-center font-thin">BOOTCAMP</span>
@@ -17,14 +18,14 @@ function Attend() {
         >
           Embark on a transformative learning journey as you meet our dedicated
           tutors at the bootcamp,
-          <br /> where expertise converges with passion to fuel your educational
+          <br className="line-break" /> where expertise converges with passion to fuel your educational
           success
         </p>
       </div>
       <div className="flex px-20 py-12 justify-between attend-container">
         <div className="w-[60%] attend-inner">
-          <div className=" w-[737px] p-5 flex h-[350px] attend">
-            <div className="w-[60%] mt-[47px] ">
+          <div className=" w-[737px] p-5 flex h-[350px] attend attend-1">
+            <div className="w-[60%] mt-[47px] attend-1-text">
               <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mb-4">
                 Sign Up for the <span>BOOTCAMP</span>
               </h2>
@@ -37,11 +38,12 @@ function Attend() {
                 <a href="">Register</a>
               </button>
             </div>
-            <div className="w-[40%]">
-              <img src={Attend2} />
+            <div className="w-[40%] attend-image">
+              <img src={Attend2} className="Attend-big"/>
+              <img src={AttendSmall} className="Attend-small"/>
             </div>
           </div>
-            <div className="flex mt-5 mr-2">
+            <div className="flex mt-5 mr-2 attend-bootcamp">
             <div className="w-[50%]">
             <div className="w-[348px] h-[317px] attends">
             <div className="p-5 ">
@@ -72,9 +74,9 @@ function Attend() {
 
           </div>
         </div>
-        <div className="w-[40%]">
-          <div className=" w-[520px] h-[690px] attend">
-          <div className="p-5 ">
+        <div className="w-[40%] select-payment">
+          <div className=" w-[520px] h-[690px] attend attend-2">
+          <div className="p-5  attend-2-text">
               <h2 className="font-bold text-[30px] font-secondary whitespace-nowrap mt-3">
                 Select Payment Options
               </h2>
@@ -87,6 +89,36 @@ function Attend() {
 
           </div>
         </div>
+        <div className="flex mt-5 mr-2 attend-bootcamp-2">
+            <div className="w-[50%] bootcamp-1">
+            <div className="w-[348px] h-[317px] attends">
+            <div className="p-5 ">
+            <img src={Box} className="mt-1"/>
+            <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mt-4">
+               Attend Bootcamp
+              </h2>
+              <p className="font-medium text-[16px]">
+              For our already registered candidates, get ready to embark on a transformative learning journey at the upcoming TechProsNaija Bootcamp, where the future of technology awaits your expertise!
+              </p>
+            </div>
+            </div>
+
+            </div>
+            <div className="w-[50%] bootcamp-2">
+            <div className="w-[348px] h-[317px] attends">
+            <div className="p-5 ">
+            <img src={Box} className="mt-1"/>
+            <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mt-4">
+               Grow in Learning
+              </h2>
+              <p className="font-medium text-[16px]">
+              As a registered candidate for the upcoming TechProsNaija Bootcamp, anticipate exponential professional growth and skill enhancement, positioning yourself at the cutting edge of the ever-evolving tech landscape.
+              </p>
+            </div>
+            </div>
+            </div>
+
+          </div>
       </div>
     </div>
   );
