@@ -2,13 +2,14 @@ import React from "react";
 import "../Attend/Style/attend.css";
 import Attend2 from "../../../assets/images/attend 2.svg";
 import Attend1 from "../../../assets/images/attend 1.svg";
+import Box from "../../../assets/images/Box.svg";
 
 function Attend() {
   return (
     <div className="px-6 py-12 md:px-12">
       <div className="header-container">
         <h5 className="text-center text-[34px] font-secondary font-bold ">
-          How to attend the <span className="text-center">BOOTCAMP</span>
+          How to attend the <span className="text-center font-thin">BOOTCAMP</span>
         </h5>
         <p
           className="text-center font-secondary "
@@ -20,7 +21,7 @@ function Attend() {
           success
         </p>
       </div>
-      <div className="flex px-20 py-12 justify-beteen">
+      <div className="flex px-20 py-12 justify-between">
         <div className="w-[60%]">
           <div className=" w-[737px] p-5 flex h-[350px] attend">
             <div className="w-[60%] mt-[47px] ">
@@ -40,16 +41,32 @@ function Attend() {
               <img src={Attend2} />
             </div>
           </div>
-          <div className="flex">
+            <div className="flex mt-5 mr-2">
             <div className="w-[50%]">
-            <div className="w-[350px] h-[313px] attend">
-ffffffffffffffffffffffffffffffff
+            <div className="w-[348px] h-[317px] attend">
+            <div className="p-5 ">
+            <img src={Box} className="mt-1"/>
+            <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mt-4">
+               Attend Bootcamp
+              </h2>
+              <p className="font-medium text-[16px]">
+              For our already registered candidates, get ready to embark on a transformative learning journey at the upcoming TechProsNaija Bootcamp, where the future of technology awaits your expertise!
+              </p>
+            </div>
             </div>
 
             </div>
             <div className="w-[50%]">
-            <div className="w-[350px]h attend">
-ffffffffffffffffffffffffffffff
+            <div className="w-[348px] h-[317px] attend">
+            <div className="p-5 ">
+            <img src={Box} className="mt-1"/>
+            <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mt-4">
+               Grow in Learning
+              </h2>
+              <p className="font-medium text-[16px]">
+              As a registered candidate for the upcoming TechProsNaija Bootcamp, anticipate exponential professional growth and skill enhancement, positioning yourself at the cutting edge of the ever-evolving tech landscape.
+              </p>
+            </div>
             </div>
             </div>
 
