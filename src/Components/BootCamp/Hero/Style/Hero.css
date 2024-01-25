@@ -23,3 +23,12 @@
   transition: 1s;
   letter-spacing: 1px;
 }
+
+@media only screen and (min-width: 260px) and (max-width: 615px) {
+  .hero-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -12,13 +12,13 @@ function HeroBootcamp() {
                          <h5 className='font-primary font-semibold text-sm'>STARTING: MONDAY, 4TH MARCH, 2024</h5>
                     </div>
                     <div>
-                         <div className='flex justify-center gap-2'> 
+                         <div className='hero-date flex justify-center gap-2'> 
                               <h4 className='text-5xl font-primary font-bold'> 2 WEEKS </h4> 
                               <h4 className='text-5xl font-secondary font-normal'> BOOTCAMP</h4> 
                          </div>
                          <div className='pt-8 flex flex-col items-center gap-2'>
-                              <p> Come and invest in your future by getting into tech with our 2-weeks power</p>
-                              <p> loaded bootcamp for every on einclusive </p>
+                              <p> Come and invest in your future by getting into tech with our 2-weeks power
+                              loaded bootcamp for every on einclusive </p>
                          </div>
                     </div>
                     <div className='hero-register mt-16'>
