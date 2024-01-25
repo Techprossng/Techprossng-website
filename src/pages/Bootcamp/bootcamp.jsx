@@ -8,23 +8,32 @@ import Footer from "../../Components/Landingpage/Footer/footer";
 import FaqBootcamp from "../../Components/BootCamp/FAQ/faq";
 import Attend from "../../Components/BootCamp/Attend/attend";
 import Tutors from "../../Components/BootCamp/Tutors/tutors";
-import "../../pages/Bootcamp/Style/boot.css"
+import "../../Components/BootCamp/NewsLetterBootcamp/style/style.css";
 
-
+import "../../pages/Bootcamp/Style/boot.css";
+import NewsLetterBootcamp from "../../Components/BootCamp/NewsLetterBootcamp/newsLetterBootcamp";
 
 const BootCamp = () => {
   return (
     <>
-      <Navbar /> 
+      <Navbar />
       <HeroBootcamp />
       <AboutBootcamp />
       <BenefitBootcamp />
-     <div className="background">
-     <Pricing />
-      <Attend />
-     </div>
-      <Tutors/>
-      <FaqBootcamp />
+      <div className="background">
+        <Pricing />
+        <Attend />
+      </div>
+      <Tutors />
+      <div className="mb-32">
+        <FaqBootcamp />
+      </div>
+      <div
+        className="mx-12 rounded-lg imgBackground"
+        style={{ border: "1px solid #001975" }}
+      >
+        <NewsLetterBootcamp />
+      </div>
       <Footer />
     </>
   );
