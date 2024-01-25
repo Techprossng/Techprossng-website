@@ -8,6 +8,8 @@ import Footer from "../../Components/Landingpage/Footer/footer";
 import FaqBootcamp from "../../Components/BootCamp/FAQ/faq";
 import Attend from "../../Components/BootCamp/Attend/attend";
 import Tutors from "../../Components/BootCamp/Tutors/tutors";
+import "../../pages/Bootcamp/Style/boot.css"
+
 
 
 const BootCamp = () => {
@@ -17,8 +19,10 @@ const BootCamp = () => {
       <HeroBootcamp />
       <AboutBootcamp />
       <BenefitBootcamp />
-      <Pricing />
+     <div className="background">
+     <Pricing />
       <Attend />
+     </div>
       <Tutors/>
       <FaqBootcamp />
       <Footer />

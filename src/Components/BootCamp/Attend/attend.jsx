@@ -43,7 +43,7 @@ function Attend() {
           </div>
             <div className="flex mt-5 mr-2">
             <div className="w-[50%]">
-            <div className="w-[348px] h-[317px] attend">
+            <div className="w-[348px] h-[317px] attends">
             <div className="p-5 ">
             <img src={Box} className="mt-1"/>
             <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mt-4">
@@ -57,7 +57,7 @@ function Attend() {
 
             </div>
             <div className="w-[50%]">
-            <div className="w-[348px] h-[317px] attend">
+            <div className="w-[348px] h-[317px] attends">
             <div className="p-5 ">
             <img src={Box} className="mt-1"/>
             <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mt-4">

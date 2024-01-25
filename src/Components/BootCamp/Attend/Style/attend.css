@@ -1,6 +1,13 @@
 .attend{
     background: rgba(245, 245, 245, 1);
     border-radius: 32px;
+    background-image: url(../../../../assets/images/bg2.svg);
+
+}
+.attends{
+  background: rgba(245, 245, 245, 1);
+  border-radius: 32px;
+  background-image: url(../../../../assets/images/bg3.svg);
 
 }
 .button-4 {
