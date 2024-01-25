@@ -21,10 +21,10 @@ function AboutBootcamp() {
                     </div>
                     <div className='flex flex-col gap-4'>
                          <div className='mt-16'>
-                              <p className='pl-7 font-secondary text-xs font-medium'>
-                              TechProsNaija is gearing up for an extraordinary upcoming <br />bootcamp, promising 
-                              an immersive learning experience with a <br />diverse array of over 10 cutting-edge courses. 
-                              This educational <br />extravaganza is set to be a game-changer, providing participants 
+                              <p className='bootcamp-about-text pl-7 font-secondary text-xs font-medium text-justify '>
+                              TechProsNaija is gearing up for an extraordinary upcoming bootcamp, promising 
+                              an immersive learning experience with a diverse array of over 10 cutting-edge courses. 
+                              This educational extravaganza is set to be a game-changer, providing participants 
                               with in-depth insights and hands-on skills in various tech domains.
                               </p>
                          </div>
