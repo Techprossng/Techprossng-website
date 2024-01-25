@@ -8,15 +8,15 @@ function BenefitBootcamp() {
      return (
           <div className='bg-[#001975]'>
                <div className='text-[#fff] flex flex-col items-center p-5 gap-9'>
-                    <div className='benefit-title flex gap-2'>
+                    <div className='benefit-title text-center flex gap-2'>
                          <h5 className='text-5xl font-secondary font-normal'>Bootcamp</h5> 
                          <h5 className='text-5xl font-primary font-bold'>Benefits.</h5>
                     </div>
                     <div>
-                         <p className='text-sm font-secondary font-normal'>Unlock boundless opportunities for professional 
-                              growth and success by enrolling in the upcoming <br />TechProsNaija 
+                         <p className='text-sm text-center font-secondary font-normal'>Unlock boundless opportunities for professional 
+                              growth and success by enrolling in the upcoming <br/> TechProsNaija 
                               Bootcamp, where immersive learning, expert mentorship, 
-                              and hands-on experience <br /> converge to propel your career in 
+                              and hands-on experience<br/>converge to propel your career in 
                               the dynamic world of technology</p>
                     </div>
                     <div className='benefit-card-holder flex gap-5 px-3'>

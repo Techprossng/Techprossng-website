@@ -6,23 +6,26 @@ import { FaRegCalendarCheck } from "react-icons/fa6";
 function HeroBootcamp() {
      return (
           <div className='hero-bootcamp px-6 py-12'>
-               <div className='mt-32 flex gap-8 flex-col items-center text-[#fff]'>
-                    <div className='date flex gap-2 items-center'>
-                         <FaRegCalendarCheck />
-                         <h5 className='font-primary font-semibold text-sm'>STARTING: MONDAY, 4TH MARCH, 2024</h5>
+               <div className='mt-32  items-center text-[#fff]'>
+                  <div className='flex justify-center'>
+                  <div className='date flex gap-[5px] w-[400px] h-[50px] p-[14px]'>
+                         <FaRegCalendarCheck size={20}/>
+                         <h5 className='font-primary text-[16px] font-semibold '>STARTING: MONDAY, 4TH MARCH, 2024</h5>
                     </div>
+                  </div>
                     <div>
-                         <div className='hero-date flex justify-center gap-2'> 
-                              <h4 className='text-5xl font-primary font-bold'> 2 WEEKS </h4> 
-                              <h4 className='text-5xl font-secondary font-normal'> BOOTCAMP</h4> 
+                         <div className='hero-date  text-center'> 
+                              <h4 className='text-[80px] text-center font-primary font-bold'> 2 WEEKS<span className='text-[80px] font-secondary font-normal'>BOOTCAMP</span> </h4> 
                          </div>
-                         <div className='pt-8 flex flex-col items-center gap-2'>
-                              <p> Come and invest in your future by getting into tech with our 2-weeks power
+                         <div className='pt-8  text-center items-center gap-2'>
+                              <p className='text-[24px]'> Come and invest in your future by getting into tech with our 2-weeks power<br/>
                               loaded bootcamp for every on einclusive </p>
                          </div>
                     </div>
-                    <div className='hero-register mt-16'>
+                    <div className='flex justify-center'>
+                    <button className='hero-register  w-[206px] h-[52px] px-5 py-3 mt-16'>
                          <a href="#">Register</a>
+                    </button>
                     </div>
                </div>
           </div>
