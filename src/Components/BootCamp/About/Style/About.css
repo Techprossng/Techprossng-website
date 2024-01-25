@@ -2,3 +2,124 @@
      width: 483px;
      height: 120px;
 }
+
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+     .bootcamp-about-main {
+          display: flex;
+          flex-direction: column;
+     }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+     .bootcamp-about-main {
+          display: flex;
+          flex-direction: column;
+     }
+     .bootcamp-about-text {
+          width: 238px;
+          height: 156px;
+     }
+     .bootcamp-classroom-photo {
+          width: 273px;
+          height: 123px;
+     }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 650px) {
+     .bootcamp-about-main {
+          display: flex;
+          flex-direction: column;
+     }
+     .bootcamp-about-text {
+          width: 168px;
+          height: 256px;
+     }
+     .bootcamp-classroom-photo {
+          width: 150px;
+          height: 123px;
+     }
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+     .bootcamp-about-main {
+          display: flex;
+          flex-direction: column;
+     }
+     .about-second-section{
+          display: flex;
+          flex-direction: column;
+     }
+     .bootcamp-about-text {
+          width: 230px;
+          height: 200px;
+     }
+     .bootcamp-classroom-photo {
+          width: 233px;
+          height: 123px;
+     }
+}
+
+
+/* .mobile-tutor-photo {
+     display: none;
+} */
+
+/* @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+     .bootcamp-about-text {
+          width: 298px;
+          height: 176px;
+     }
+}
+@media only screen and (min-width: 950px) and (max-width: 999px) {
+     .bootcamp-about-text {
+          width: 238px;
+          height: 156px;
+     }
+     .bootcamp-classroom-photo {
+          width: 273px;
+          height: 123px;
+     }
+}
+@media only screen and (min-width: 800px) and (max-width: 949px) {
+     .bootcamp-about-text {
+          width: 150px;
+          height: 256px;
+     }
+     .bootcamp-classroom-photo {
+          width: 150px;
+          height: 100px;
+     }
+}
+@media only screen and (min-width: 660px) and (max-width: 799px) {
+     .mobile-tutor-photo {
+          display: contents;
+     }
+     .tutor-photo {
+          display: none;
+     }
+     .bootcamp-about-text {
+          width: 238px;
+          height: 156px;
+     }
+     .bootcamp-classroom-photo {
+          width: 273px;
+          height: 123px;
+     }
+}
+@media only screen and (min-width: 550px) and (max-width: 659px) {
+     .mobile-tutor-photo {
+          display: contents;
+     }
+     .tutor-photo {
+          display: none;
+     }
+     .bootcamp-about-text {
+          width: 150px;
+          height: 256px;
+     }
+     .bootcamp-classroom-photo {
+          width: 150px;
+          height: 100px;
+     }
+}
+@media only screen and (min-width: 550px) and (max-width: 659px) */
