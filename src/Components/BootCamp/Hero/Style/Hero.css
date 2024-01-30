@@ -1,24 +1,17 @@
-.hero-bootcamp {
-  background-image: 
-  linear-gradient(to right, rgba(50, 100, 250, 0.7), rgba(100, 0, 0, 0.73)), url("hero1.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 720px;
-}
 .date {
-  border: 1px solid #999;
+  border: 1px solid #ebebeb;
   border-radius:100px;
- 
-  background-color: rgba(211, 211, 211, 0.25);
+  background: #ebebeb;
 }
 .hero-register {
   border: 1px solid #001975;
   border-radius: 8px;
   background: #001975;
   cursor: pointer; 
+  color: #fff;
 }
 .hero-register:hover {
-  background: rgb(241, 138, 138); 
+  background: #fe0000; 
   transition: 1s;
   letter-spacing: 1px;
 }
