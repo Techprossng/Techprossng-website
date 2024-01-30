@@ -7,10 +7,10 @@ function HeroBootcamp() {
      return (
           <div className='hero-bootcamp px-6 py-12'>
                <div className='mt-32  items-center text-[#fff]'>
-                  <div className='flex justify-center'>
-                  <div className='date flex gap-[5px] w-[400px] h-[50px] p-[14px]'>
+                  <div className='flex justify-center w-full'>
+                  <div className='date flex justify-center w-[400px] text-center h-[50px] p-[14px]'>
                          <FaRegCalendarCheck size={20}/>
-                         <h5 className='font-primary text-[16px] font-semibold '>STARTING: MONDAY, 4TH MARCH, 2024</h5>
+                         <h5 className='font-primary text-[16px]  font-semibold '>STARTING: MONDAY, 4TH MARCH, 2024</h5>
                     </div>
                   </div>
                     <div>

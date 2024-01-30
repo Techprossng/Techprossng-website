@@ -1,60 +1,42 @@
 import React from "react";
-import Red from "../Redline/red";
-import Banner from "../../../assets/images/banner.svg";
-import PricingIcon from "../../../assets/images/pricingicon.svg";
+import Money from "../../../assets/images/money.svg";
+import { FaRegCalendarCheck } from "react-icons/fa6";
 import "../Pricing/Style/pricing.css";
 
 function Pricing() {
   return (
-    <div className="px-6 py-12 md:px-12 mt-24">
-      <div>
-        <h4
-          className="text-[33px] ml-20 mr-24  font-primary font-bold"
-          style={{ color: "#272727" }}
-        >
-          Pricing
-        </h4>
-        <Red />
-      </div>
-      <div className="px-20 py-12 pricing-container">
-        <div className="w-full h-[500px] mt-10  pricing-background">
-          <div className="flex p-10">
-            <div className="pricing-left relative">
-              <img
-                src={Banner}
-                className="w-[300px] relative "
-                style={{ top: "-67.6px" }}
-                alt="Banner Image"
-              />
-              <p
-                className="absolute text-[36px] top-[12px]  font-bold left-[39px] "
-                style={{ color: "white" }}
-              >
-                ₦20,000.00
-              </p>
-              <button className=" relative left-[28px] top-[60px] w-[280px] h-[48px] px-5 py-3  rounded-md text-white button-1">
-                <a href="">Register</a>
-              </button>
-            </div>
-            <div className=" pricing-right p-20">
-              <h1
-                className="text-[140px] flex uppercase font-bold  font-secondary "
-                style={{ color: "white" }}
-              >
-                Register
-              </h1>
-              <br />
-              <div className="flex justify-between">
-                <h1
-                  className="text-[140px] uppercase flex ml-40 font-bold font-secondary"
-                  style={{ color: "white" }}
-                >
-                  now
-                </h1>
-                <img src={PricingIcon} className="relative bottom-4 right-12" />
-              </div>
-            </div>
+    <div className="w-[100%] h-[902px] pricing-background">
+      <div className=" w-full pricing-container py-[10%]">
+        <div className="pricing-content">
+        <div className="pricing-header">
+          <h1 className="text-center text-[48px] font-bold ">BootCamp Price</h1>
+          <p className="text-center text-[18px] mt-2 font-medium">
+            Experience exceptional value for your investment in the upcoming
+            TechProsNaija Bootcamp,
+            <br className="line-break-6" /> where the affordable pricing ensures access to top-tier
+            education, expert mentorship, and
+            <br className="line-break-7"/> transformative learning opportunities in the ever-evolving
+            tech landscape.
+          </p>
+        </div>
+        <div className="flex justify-center pricing-fee mt-20">
+        <img src={Money} className="w-[100px] h-[78px] money-mobile"/>
+          <p className="text-[75px] font-bold ">₦20,000.00</p>
+          <img src={Money} className="w-[186px] h-[98px] money-web"/>
+        </div>
+        <div className="flex justify-center mt-10 venue-container">
+          <div className=" flex justify-center  w-[400px] text-center h-[50px] p-[14px] venue-date">
+            <FaRegCalendarCheck size={20} />
+            <h5 className="font-primary text-[16px]  font-semibold ">
+              STARTING: MONDAY, 4TH MARCH, 2024
+            </h5>
           </div>
+        </div>
+        <div className="flex justify-center">
+          <button className="venue-register w-[590px] h-[82px] px-5 py-3 mt-16 " style={{ color:"#fff"}}>
+            <a href="#">Register</a>
+          </button>
+        </div>
         </div>
       </div>
     </div>

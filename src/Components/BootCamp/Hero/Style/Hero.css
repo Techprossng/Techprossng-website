@@ -31,7 +31,8 @@
     font-size: 30px;
   }
   .date {
-    width: 358px;
+    width: 100%;
+    padding: 15px;
   }
   .date h5{
     font-size: 12.5px; 

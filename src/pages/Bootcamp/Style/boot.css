@@ -4,3 +4,37 @@
     background-position-y: 103%;
    
 }
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .background{
+        background-image: none;
+    }
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 500px) {
+   
+  }
+  
+  @media only screen and (min-width: 500px) and (max-width: 550px) {
+   
+  
+    
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 750px) {
+    
+  }
+  @media only screen and (min-width: 768px) and (max-width: 980px) {
+   
+  
+    
+  }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+   
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1025px) {
+   
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+   
+  
+  }

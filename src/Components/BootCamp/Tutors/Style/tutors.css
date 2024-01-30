@@ -94,7 +94,7 @@
     }
     .slick-list{
       overflow: visible;
-      margin-right: 40%;     
+      margin-right: 10%;     
       
   }
     .your-slider {
@@ -110,44 +110,41 @@
     }
   
     .card {
-      width: 154px;
-      height: 180px;
-      margin-bottom: 20%;
+      width: 250px;
+      height: 170px;
+      margin-bottom: 70%;
     }
     .card .tutors-image{
-      width: 154px;
-      height: 92px;
+      width: 250px;
+      height: 150px;
       border-top-right-radius: 6px;
       border-top-left-radius: 6px;
     }
     .card .tutors-details{
-      width: 153.5px;
-      height: 85px;
+      width: 250px;
+      height: 150px;
       padding: 5px;
       border-bottom-right-radius: 6px ;
       border-bottom-left-radius: 6px;
 
     }
     .name h1{
-      font-size: 9px;
-    }
-    .name p{
-      font-size: 6px;
+      font-size: 15px;
     }
     .name h6{
-      font-size: 6px;
+      font-size: 12px;
     }
     .description p{
-      font-size: 5.4px;
+      font-size: 10px;
     }
     .experience span{
-      font-size: 5.4px;
+      font-size: 10px;
     }
     .experience p{
-      font-size: 5.4px;
+      font-size: 10px;
     }
     .experience{
-      margin-top: -4%;
+      margin-top: 2%;
       
     }
   

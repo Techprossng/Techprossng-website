@@ -7,10 +7,11 @@ import Box from "../../../assets/images/Box.svg";
 
 function Attend() {
   return (
-    <div className="px-6 py-12 md:px-12 main-attend">
+    <div className="px-6 py-12 md:px-12 main-attend ">
+     <div className="attend-contents mt-10">
       <div className="header-container">
         <h5 className="text-center text-[34px] font-secondary font-bold ">
-          How to attend the <span className="text-center font-thin">BOOTCAMP</span>
+          How to attend the <span className="text-center font-bold">BOOTCAMP</span>
         </h5>
         <p
           className="text-center font-secondary "
@@ -27,7 +28,7 @@ function Attend() {
           <div className=" w-[737px] p-5 flex h-[350px] attend attend-1">
             <div className="w-[60%] mt-[47px] attend-1-text">
               <h2 className="font-bold text-[28px] font-secondary whitespace-nowrap mb-4">
-                Sign Up for the <span>BOOTCAMP</span>
+                Sign Up for the <span>Bootcamp</span>
               </h2>
               <p className="font-medium">
                 sign up now for the TechProsNaija Bootcamp and embark on a
@@ -119,6 +120,7 @@ function Attend() {
             </div>
 
           </div>
+      </div>
       </div>
     </div>
   );

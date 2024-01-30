@@ -9,7 +9,6 @@ import FaqBootcamp from "../../Components/BootCamp/FAQ/faq";
 import Attend from "../../Components/BootCamp/Attend/attend";
 import Tutors from "../../Components/BootCamp/Tutors/tutors";
 import "../../Components/BootCamp/NewsLetterBootcamp/style/style.css";
-
 import "../../pages/Bootcamp/Style/boot.css";
 import NewsLetterBootcamp from "../../Components/BootCamp/NewsLetterBootcamp/newsLetterBootcamp";
 
