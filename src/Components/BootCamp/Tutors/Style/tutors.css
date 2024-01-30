@@ -108,7 +108,9 @@
     .slick-next::before {
       display: none;
     }
-  
+   .card-house{
+    margin-top: 20%;
+   }
     .card {
       width: 250px;
       height: 170px;
@@ -158,12 +160,12 @@
     }
     .slick-list{
       overflow: visible;
-      margin-right: 5%;
+      margin-right: 30%;
     }
     .Mentors-box {
       margin-top: 10%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0;
+      margin-right:0;
     }
   
     .your-slider {
@@ -177,28 +179,80 @@
     .slick-next::before {
       display: none;
     }
+    .card-house{
+      margin-top: 20%;
+     }
+      .card {
+        width: 250px;
+        height: 170px;
+        margin-bottom: 70%;
+      }
+      .card .tutors-image{
+        width: 250px;
+        height: 150px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+      .card .tutors-details{
+        width: 250px;
+        height: 150px;
+        padding: 5px;
+        border-bottom-right-radius: 6px ;
+        border-bottom-left-radius: 6px;
   
-    .card {
-      width: 353px;
-      height: 493px;
-    }
-  
+      }
+      .name h1{
+        font-size: 15px;
+      }
+      .name h6{
+        font-size: 12px;
+      }
+      .description p{
+        font-size: 10px;
+      }
+      .experience span{
+        font-size: 10px;
+      }
+      .experience p{
+        font-size: 10px;
+      }
+      .experience{
+        margin-top: 2%;
+        
+      }
+      .line-break-2{
+        display: none;
+      }
+      .tutors-container{
+        padding: 40px;
+        margin-top: 20%;
+      }
+      .tutors-header{
+        margin-top: 20%;
+      }
+      .tutors-header p{
+        font-size: 12px;
+      }
+      .tutors-header h2{
+        font-size: 28px;
+      }
+    
     
   }
   
-  @media only screen and (min-width: 500px) and (max-width: 550px) {
+  @media only screen and (min-width: 500px) and (max-width: 600px) {
     .header-box h2 {
       font-size: 24px;
       
     }
     .slick-list{
       overflow: visible;
-      margin-right: 5%;
+      margin-right: 25%;
     }
     .Mentors-box {
       margin-top: 10%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0 ;
+      margin-right:0;
     }
   
     .your-slider {
@@ -212,27 +266,80 @@
     .slick-next::before {
       display: none;
     }
+    .card-house{
+      margin-top: 20%;
+     }
+      .card {
+        width: 250px;
+        height: 170px;
+        margin-bottom: 70%;
+      }
+      .card .tutors-image{
+        width: 250px;
+        height: 150px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+      .card .tutors-details{
+        width: 250px;
+        height: 150px;
+        padding: 5px;
+        border-bottom-right-radius: 6px ;
+        border-bottom-left-radius: 6px;
   
-    .card {
-      width: 390px;
-      height: 493px;
-    }
+      }
+      .name h1{
+        font-size: 15px;
+      }
+      .name h6{
+        font-size: 12px;
+      }
+      .description p{
+        font-size: 10px;
+      }
+      .experience span{
+        font-size: 10px;
+      }
+      .experience p{
+        font-size: 10px;
+      }
+      .experience{
+        margin-top: 2%;
+        
+      }
+      .line-break-2{
+        display: none;
+      }
+      .tutors-container{
+        padding: 40px;
+        margin-top: 20%;
+      }
+      .tutors-header{
+        margin-top: 20%;
+      }
+      .tutors-header p{
+        font-size: 12px;
+      }
+      .tutors-header h2{
+        font-size: 28px;
+      }
   
    
   }
   
-  @media only screen and (min-width: 550px) and (max-width: 600px) {
+  @media only screen and (min-width: 600px) and (max-width: 750px) {
     .header-box h2 {
       font-size: 24px;
    
     }
     .slick-list{
       overflow: visible;
+      margin-right: 25%;
     }
     .Mentors-box {
       margin-top: 10%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0;
+      margin-right:0;
     }
   
     .your-slider {
@@ -251,23 +358,80 @@
       width: 420px;
       height: 493px;
     }
+    .card-house{
+      margin-top: 20%;
+     }
+      .card {
+        width: 250px;
+        height: 170px;
+        margin-bottom: 70%;
+      }
+      .card .tutors-image{
+        width: 250px;
+        height: 150px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+      .card .tutors-details{
+        width: 250px;
+        height: 150px;
+        padding: 5px;
+        border-bottom-right-radius: 6px ;
+        border-bottom-left-radius: 6px;
+  
+      }
+      .name h1{
+        font-size: 15px;
+      }
+      .name h6{
+        font-size: 12px;
+      }
+      .description p{
+        font-size: 10px;
+      }
+      .experience span{
+        font-size: 10px;
+      }
+      .experience p{
+        font-size: 10px;
+      }
+      .experience{
+        margin-top: 2%;
+        
+      }
+      .line-break-2{
+        display: none;
+      }
+      .tutors-container{
+        padding: 40px;
+        margin-top: 20%;
+      }
+      .tutors-header{
+        margin-top: 20%;
+      }
+      .tutors-header p{
+        font-size: 12px;
+      }
+      .tutors-header h2{
+        font-size: 28px;
+      }
   
     
   }
   
-  @media only screen and (min-width: 600px) and (max-width: 750px) {
+  @media only screen and (min-width: 750px) and (max-width: 980px) {
     .header-box h2 {
       font-size: 24px;
    
     }
     .slick-list{
       overflow: visible;
-      margin-right: 14rem;
+      margin-right: 55%;
     }
     .Mentors-box {
       margin-top: 10%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0;
+      margin-right:0;
     }
   
     .your-slider {
@@ -283,26 +447,84 @@
     }
   
     .card {
-      width: 350px;
+      width: 420px;
       height: 493px;
     }
+    .card-house{
+      margin-top: 20%;
+     }
+      .card {
+        width: 250px;
+        height: 170px;
+        margin-bottom: 70%;
+      }
+      .card .tutors-image{
+        width: 250px;
+        height: 150px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+      .card .tutors-details{
+        width: 250px;
+        height: 150px;
+        padding: 5px;
+        border-bottom-right-radius: 6px ;
+        border-bottom-left-radius: 6px;
+  
+      }
+      .name h1{
+        font-size: 15px;
+      }
+      .name h6{
+        font-size: 12px;
+      }
+      .description p{
+        font-size: 10px;
+      }
+      .experience span{
+        font-size: 10px;
+      }
+      .experience p{
+        font-size: 10px;
+      }
+      .experience{
+        margin-top: 2%;
+        
+      }
+      .line-break-2{
+        display: none;
+      }
+      .tutors-container{
+        padding: 40px;
+        margin-top: 20%;
+      }
+      .tutors-header{
+        margin-top: 20%;
+      }
+      .tutors-header p{
+        font-size: 12px;
+      }
+      .tutors-header h2{
+        font-size: 28px;
+      }
+   
   
     
   }
   
-  @media only screen and (min-width: 750px) and (max-width: 768px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .header-box h2 {
       font-size: 24px;
-    
+   
     }
     .slick-list{
       overflow: visible;
-      margin-right: 20%;
+      margin-right: 55%;
     }
     .Mentors-box {
       margin-top: 10%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0;
+      margin-right:0;
     }
   
     .your-slider {
@@ -318,13 +540,71 @@
     }
   
     .card {
-      width: 450px;
+      width: 420px;
       height: 493px;
     }
+    .card-house{
+      margin-top: 20%;
+     }
+      .card {
+        width: 250px;
+        height: 170px;
+        margin-bottom: 70%;
+      }
+      .card .tutors-image{
+        width: 250px;
+        height: 150px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+      .card .tutors-details{
+        width: 250px;
+        height: 150px;
+        padding: 5px;
+        border-bottom-right-radius: 6px ;
+        border-bottom-left-radius: 6px;
+  
+      }
+      .name h1{
+        font-size: 15px;
+      }
+      .name h6{
+        font-size: 12px;
+      }
+      .description p{
+        font-size: 10px;
+      }
+      .experience span{
+        font-size: 10px;
+      }
+      .experience p{
+        font-size: 10px;
+      }
+      .experience{
+        margin-top: 2%;
+        
+      }
+      .line-break-2{
+        display: none;
+      }
+      .tutors-container{
+        padding: 40px;
+        margin-top: 20%;
+      }
+      .tutors-header{
+        margin-top: 20%;
+      }
+      .tutors-header p{
+        font-size: 12px;
+      }
+      .tutors-header h2{
+        font-size: 28px;
+      }
+   
   
    
   }
-  @media only screen and (min-width: 768px) and (max-width: 980px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1025px) {
     .all-button{
       display: none !important;
     }
@@ -338,8 +618,8 @@
     }
     .Mentors-box {
       margin-top: 10%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0 ;
+      margin-right:0;
     }
   
     .your-slider {
@@ -360,7 +640,7 @@
     }
   
   }
-  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .all-button{
       display: none !important;
     }
@@ -376,7 +656,7 @@
     .Mentors-box {
       margin-top: 5%;
       margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-right:0 ;
     }
   
     .your-slider {
@@ -413,8 +693,8 @@
     }
     .Mentors-box {
       margin-top: 10%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0 ;
+      margin-right:0 ;
     }
   
     .your-slider {
@@ -451,7 +731,7 @@
     .Mentors-box {
       margin-top: 5%;
       margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-right:0 ;
     }
   
     .your-slider {
@@ -488,8 +768,8 @@
     }
     .Mentors-box {
       margin-top: 5%;
-      margin-left:1.5rem ;
-      margin-right:1.5rem ;
+      margin-left:0 ;
+      margin-right:0 ;
     }
   
     .your-slider {
