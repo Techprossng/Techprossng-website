@@ -1,0 +1,57 @@
+.register-header-container{
+    background-color: #be7272;
+}
+
+.venue-date {
+    border: 1px solid #999;
+    border-radius:100px;
+    background: rgba(141, 141, 141, 0.2);
+  }
+  .venue-register {
+    border: 1px solid #001975;
+    border-radius: 8px;
+    background: #001975;
+    cursor: pointer; 
+  }
+  .venue-register:hover {
+    background: rgb(241, 138, 138); 
+    transition: 1s;
+    letter-spacing: 1px;
+  }
+  .register-input{
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 12px;
+  }
+  .button-8 {
+    background: rgba(254, 0, 0, 1);
+    font-weight: 600;
+    text-align: center;
+    transition: 0.8s;
+    border-radius: 20px;
+  }
+  @media only screen and (min-width: 360px) and (max-width: 480px) {
+    
+  }
+  
+  @media only screen and (min-width: 500px) and (max-width: 600px) {
+  
+    
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 750px) {
+   
+  }
+  @media only screen and (min-width: 750px) and (max-width: 980px) {
+   
+  }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1025px) {
+    
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+  
+  }
+ 
