@@ -334,7 +334,7 @@
     }
     .slick-list{
       overflow: visible;
-      margin-right: 25%;
+      margin-right: 17%;
     }
     .Mentors-box {
       margin-top: 10%;
@@ -362,38 +362,38 @@
       margin-top: 20%;
      }
       .card {
-        width: 250px;
+        width: 420px;
         height: 170px;
-        margin-bottom: 70%;
+        margin-bottom: 100%;
       }
       .card .tutors-image{
-        width: 250px;
-        height: 150px;
+        width: 420px;
+        height: 250px;
         border-top-right-radius: 6px;
         border-top-left-radius: 6px;
       }
       .card .tutors-details{
-        width: 250px;
-        height: 150px;
+        width: 420px;
+        height: 250px;
         padding: 5px;
         border-bottom-right-radius: 6px ;
         border-bottom-left-radius: 6px;
   
       }
       .name h1{
-        font-size: 15px;
+        font-size: 25px;
       }
       .name h6{
-        font-size: 12px;
+        font-size: 20px;
       }
       .description p{
-        font-size: 10px;
+        font-size: 17px;
       }
       .experience span{
-        font-size: 10px;
+        font-size: 20px;
       }
       .experience p{
-        font-size: 10px;
+        font-size: 15px;
       }
       .experience{
         margin-top: 2%;
@@ -426,7 +426,7 @@
     }
     .slick-list{
       overflow: visible;
-      margin-right: 55%;
+      margin-right: 37%;
     }
     .Mentors-box {
       margin-top: 10%;
@@ -454,38 +454,38 @@
       margin-top: 20%;
      }
       .card {
-        width: 250px;
+        width: 420px;
         height: 170px;
-        margin-bottom: 70%;
+        margin-bottom: 100%;
       }
       .card .tutors-image{
-        width: 250px;
-        height: 150px;
+        width: 420px;
+        height: 250px;
         border-top-right-radius: 6px;
         border-top-left-radius: 6px;
       }
       .card .tutors-details{
-        width: 250px;
-        height: 150px;
+        width: 420px;
+        height: 250px;
         padding: 5px;
         border-bottom-right-radius: 6px ;
         border-bottom-left-radius: 6px;
   
       }
       .name h1{
-        font-size: 15px;
+        font-size: 25px;
       }
       .name h6{
-        font-size: 12px;
+        font-size: 20px;
       }
       .description p{
-        font-size: 10px;
+        font-size: 17px;
       }
       .experience span{
-        font-size: 10px;
+        font-size: 20px;
       }
       .experience p{
-        font-size: 10px;
+        font-size: 15px;
       }
       .experience{
         margin-top: 2%;
@@ -519,7 +519,7 @@
     }
     .slick-list{
       overflow: visible;
-      margin-right: 55%;
+      margin-right: 40%;
     }
     .Mentors-box {
       margin-top: 10%;
@@ -539,53 +539,19 @@
       display: none;
     }
   
-    .card {
-      width: 420px;
-      height: 493px;
-    }
+   
     .card-house{
       margin-top: 20%;
      }
-      .card {
+      /* .card {
         width: 250px;
         height: 170px;
         margin-bottom: 70%;
       }
-      .card .tutors-image{
-        width: 250px;
-        height: 150px;
-        border-top-right-radius: 6px;
-        border-top-left-radius: 6px;
-      }
-      .card .tutors-details{
-        width: 250px;
-        height: 150px;
-        padding: 5px;
-        border-bottom-right-radius: 6px ;
-        border-bottom-left-radius: 6px;
-  
-      }
-      .name h1{
-        font-size: 15px;
-      }
-      .name h6{
-        font-size: 12px;
-      }
-      .description p{
-        font-size: 10px;
-      }
-      .experience span{
-        font-size: 10px;
-      }
-      .experience p{
-        font-size: 10px;
-      }
+      */
       .experience{
         margin-top: 2%;
         
-      }
-      .line-break-2{
-        display: none;
       }
       .tutors-container{
         padding: 40px;
@@ -614,7 +580,7 @@
     }
     .slick-list{
       overflow: visible;
-      margin-right: 40%;
+      margin-right: 20%
     }
     .Mentors-box {
       margin-top: 10%;

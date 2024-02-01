@@ -420,7 +420,8 @@
       width: 100%;
     }
     .attend-bootcamp-2{
-      display: block;
+      display: flex;
+      gap: 5%;
       margin-right: 0;
     }
     .bootcamp-2{
@@ -518,7 +519,8 @@
       width: 100%;
     }
     .attend-bootcamp-2{
-      display: block;
+      display: flex;
+      gap: 5%;
       margin-right: 0;
     }
     .bootcamp-2{
@@ -617,7 +619,8 @@
       width: 100%;
     }
     .attend-bootcamp-2{
-      display: block;
+      display: flex;
+      gap: 5%;
       margin-right: 0;
     }
     .bootcamp-2{
@@ -714,7 +717,8 @@
       width: 100%;
     }
     .attend-bootcamp-2{
-      display: block;
+      display: flex;
+      gap: 5%;
       margin-right: 0;
     }
     .bootcamp-2{
@@ -811,7 +815,8 @@
       width: 100%;
     }
     .attend-bootcamp-2{
-      display: block;
+      display: flex;
+      gap: 5%;
       margin-right: 0;
     }
     .bootcamp-2{
@@ -833,3 +838,4 @@
     }
   
   }
+ 
