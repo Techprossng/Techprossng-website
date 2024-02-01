@@ -20,7 +20,7 @@ function HeroBootcamp() {
                               </div>
                               <div className='mt-4  hero-description gap-2'>
                                    <p className='text-[24px]'> Come and invest in your future by getting into tech with 
-                                   our <br/>2-weeks power loaded bootcamp for every one inclusive </p>
+                                   our 2-weeks power loaded bootcamp for every one inclusive </p>
                               </div>
                          </div>
                          <div className='mt-4'>
