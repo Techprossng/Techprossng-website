@@ -9,8 +9,8 @@ function Register() {
     <div className="w-full register-main">
       <div className="w-full h-[497px] register-header-container">
         <div className=" register-inner px-12 py-40">
-          <div className="flex justify-center mt-10 venue-container">
-            <div className=" flex justify-center  w-[400px] text-center h-[50px] p-[14px] venue-date">
+          <div className="flex justify-center mt-10 register-venue-container">
+            <div className=" flex justify-center  w-[400px] text-center h-[50px] p-[14px] register-date">
               <FaRegCalendarCheck size={20} />
               <h5 className="font-primary text-[16px]  font-semibold ">
                 STARTING: MONDAY, 4TH MARCH, 2024
@@ -23,15 +23,15 @@ function Register() {
         </div>
       </div>
       <div className="form-cont ">
-        <div className=" flex form main px-20 py-20">
-          <div className="w-[50%]">
-            <div className="w-[627px]">
+        <div className=" flex form-main px-20 py-20">
+          <div className="w-[50%] register-1">
+            <div className="w-[627px] register-1-inner">
               <h2 className="text-[30px]  font-bold ">
                 Personal Information
               </h2>
               <hr className="w-[53%] border-2 border-black  mt-1" />
-              <form className="flex flex-wrap mt-10">
-                <div className=" flex w-full gap-4">
+              <form className="flex flex-wrap mt-10 register-1-form">
+                <div className=" flex w-full gap-4 register-first-form">
                 <div className="w-full sm:w-1/2 input-reg-container">
                   <label className="block mb-2 label">First Name</label>
                   <input className="w-full p-3 register-input" placeholder="Enter First Name" />
@@ -56,8 +56,8 @@ function Register() {
               </form>
             </div>
           </div>
-          <div className=" w-[50%]"></div>
-          <img src={FormImage} className=" relative bottom-40" />
+          <div className=" w-[50%] register-2"></div>
+          <img src={FormImage} className=" relative bottom-40 register-image" />
         </div>
       </div>
     </div>

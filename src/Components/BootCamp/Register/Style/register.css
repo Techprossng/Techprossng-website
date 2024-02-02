@@ -2,22 +2,12 @@
     background-color: #be7272;
 }
 
-.venue-date {
+.register-date {
     border: 1px solid #999;
     border-radius:100px;
     background: rgba(141, 141, 141, 0.2);
   }
-  .venue-register {
-    border: 1px solid #001975;
-    border-radius: 8px;
-    background: #001975;
-    cursor: pointer; 
-  }
-  .venue-register:hover {
-    background: rgb(241, 138, 138); 
-    transition: 1s;
-    letter-spacing: 1px;
-  }
+  
   .register-input{
     background-color: rgba(245, 245, 245, 1);
     border-radius: 12px;
@@ -30,9 +20,63 @@
     border-radius: 20px;
   }
   @media only screen and (min-width: 360px) and (max-width: 480px) {
-    
-  }
-  
+     .register-date{
+      width: 100%;
+     }
+   
+     .register-inner{
+       width: 100%;
+       padding: 5%;
+       position: relative;
+       top: 30%;
+     
+      }
+      .register-venue-container{
+        width: 100%;
+        display: block;
+       
+      }
+      .register-venue-container h5{
+        font-size: 15px;
+      }
+      .register-header h1{
+        font-size: 31px;
+      }
+      .register-header{
+        margin-top: 7%;
+      }
+      .form-const{
+        width: 100%;
+      }
+      .form-main{
+        display: block;
+        padding: 4%;
+      }
+      .register-1{
+        width: 100%;
+      }
+      .register-1-inner{
+        width: 100%;
+      }
+      .register-1-form{
+        display: block;
+        margin-top: 10%;
+      }
+      .register-first-form{
+        display: block;
+      }
+      .register-image{
+        position: relative;
+        bottom: 0;
+        margin-top: 10%;
+      }
+      .button-8{
+        width: 100%;
+      }
+      .register-input{
+        margin-bottom: 4%;
+      }
+}
   @media only screen and (min-width: 500px) and (max-width: 600px) {
   
     
