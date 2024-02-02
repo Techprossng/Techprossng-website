@@ -29,7 +29,7 @@ function Register() {
               <h2 className="text-[30px]  font-bold ">
                 Personal Information
               </h2>
-              <hr className="w-[53%] border-2 border-black  mt-1" />
+              <hr className="w-[53%] border-2 border-black  mt-1 register-line" />
               <form className="flex flex-wrap mt-10 register-1-form">
                 <div className=" flex w-full gap-4 register-first-form">
                 <div className="w-full sm:w-1/2 input-reg-container">
