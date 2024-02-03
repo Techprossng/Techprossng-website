@@ -22,6 +22,8 @@
   @media only screen and (min-width: 360px) and (max-width: 480px) {
      .register-date{
       width: 100%;
+      padding: 13px;
+      
      }
    
      .register-inner{
@@ -33,11 +35,12 @@
       }
       .register-venue-container{
         width: 100%;
-        display: block;
+        display: inline-block;
        
       }
       .register-venue-container h5{
-        font-size: 15px;
+        font-size: 13.5px;
+        font-weight: 900;
       }
       .register-header h1{
         font-size: 31px;
@@ -77,7 +80,7 @@
         margin-bottom: 4%;
       }
       .register-line{
-        width: 82%;
+        width: 88%;
       }
 }
   @media only screen and (min-width: 480px) and (max-width: 600px) {
@@ -144,10 +147,176 @@
   }
   
   @media only screen and (min-width: 600px) and (max-width: 750px) {
+     .register-header h1{
+        font-size: 40px;
+     }
+     .register-inner{
+        position: relative;
+        top: 38%;
+     }
+     
+     .register-venue-container{
+      width: 100%;
+      display: block;
+     
+    }
+    .register-venue-container h5{
+      font-size: 15px;
+    }
    
+    .register-header{
+      margin-top: 5%;
+    }
+    .form-const{
+      width: 100%;
+    }
+    .form-main{
+      display: block;
+      padding: 4%;
+    }
+    .register-1{
+      width: 100%;
+    }
+    .register-1-inner{
+      width: 100%;
+    }
+    .register-1-form{
+      display: block;
+      margin-top: 10%;
+    }
+    .register-first-form{
+      display: block;
+    }
+    .register-image{
+      position: relative;
+      bottom: 0;
+      margin-top: 10%;
+      left: 5%;
+    }
+    .button-8{
+      width: 100%;
+    }
+    .register-input{
+      margin-bottom: 4%;
+      width: 100%;
+    }
+    .register-line{
+      width: 82%;
+    }
+    .register-date{
+      width: 100%;
+     }
+   
+     .register-inner{
+       width: 100%;
+       padding: 5%;
+       position: relative;
+       top: 30%;
+     
+      }
+      .register-venue-container{
+        width: 100%;
+        display: block;
+       
+      }
+      .register-venue-container h5{
+        font-size: 15px;
+      }
+      .register-header h1{
+        font-size: 31px;
+      }
+      .input-reg-container{
+           width: 100%;
+      }
+      .register-2{
+        width: 100%;
+      }
   }
   @media only screen and (min-width: 750px) and (max-width: 980px) {
+    .register-header h1{
+      font-size: 40px;
+   }
+   .register-inner{
+      position: relative;
+      top: 38%;
+   }
    
+   .register-venue-container{
+    width: 100%;
+    display: block;
+   
+  }
+  .register-venue-container h5{
+    font-size: 15px;
+  }
+ 
+  .register-header{
+    margin-top: 5%;
+  }
+  .form-const{
+    width: 100%;
+  }
+  .form-main{
+    display: block;
+    padding: 4%;
+  }
+  .register-1{
+    width: 100%;
+  }
+  .register-1-inner{
+    width: 100%;
+  }
+  .register-1-form{
+    display: block;
+    margin-top: 10%;
+  }
+  .register-first-form{
+    display: block;
+  }
+  .register-image{
+    position: relative;
+    bottom: 0;
+    margin-top: 10%;
+    left: 5%;
+  }
+  .button-8{
+    width: 100%;
+  }
+  .register-input{
+    margin-bottom: 4%;
+    width: 100%;
+  }
+  .register-line{
+    width: 82%;
+  }
+  .register-date{
+    width: 100%;
+   }
+ 
+   .register-inner{
+     width: 100%;
+     padding: 5%;
+     position: relative;
+     top: 30%;
+   
+    }
+    .register-venue-container{
+      width: 100%;
+      display: block;
+     
+    }
+    .register-venue-container h5{
+      font-size: 15px;
+    }
+    .register-header h1{
+      font-size: 31px;
+    }
+    .input-reg-container{
+         width: 100%;
+    }
+    .register-2{
+      width: 100%;
+    }
   }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     
