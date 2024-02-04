@@ -110,7 +110,7 @@ function Register() {
      setShowPayment(true);
     } else {
       console.error("Try again:", response.status, response.statusText);
-      alert("An error occurred: " + response.statusText);
+     
     }
   } catch (error) {
     console.error("An error occurred:", error.message);
