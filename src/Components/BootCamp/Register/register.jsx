@@ -56,24 +56,24 @@ function Register() {
         firstName: formValues.firstName,
         lastName: formValues.lastName,
         email: formValues.email,
-        amount: 100, // Set the actual payment amount
+        amount: 100, 
         narration: "BootCamp Registration Payment",
         onSuccess: function (response) {
           console.log("Callback Successful Response", response);
           setShowPayment(true);
-          // You can perform additional actions here, e.g., redirect to success page
+         
         },
         onError: function (response) {
           console.log("Callback Error Response", response);
           setFormValues(false);
-          // You can handle the error and display a message to the user
+         
         },
         onClose: function () {
           console.log("Payment modal closed");
         setShowPayment(false);
            
           
-          // You can handle the modal closure if needed
+         
         },
       };
         
