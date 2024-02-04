@@ -17,15 +17,18 @@ function Register() {
     "UI/UX Design for Beginners",
     "Web Development"
   ];
+
   const initialValues = {
     firstName: "",
     lastName: "",
     email: "",
     course: "",
   };
+
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [formSuccess, setFormSuccess] = useState(false);
+  const [showPayment, setShowPayment] = useState(false)
 
   const validation = (values) => {
     const errors = {};
@@ -41,9 +44,40 @@ function Register() {
     } else if (!emailPattern.test(values.email)) {
       errors.email = "This is not a valid email pattern";
     }
+    if (!values.course) {
+      errors.course = "Course is required";
+    }
     return errors;
   };
-  const handleSubmit = async (e) => {
+      // Set Remita payment data
+      const remitaPaymentData = {
+        key: "",
+        customerId: formValues.email,
+        firstName: formValues.firstName,
+        lastName: formValues.lastName,
+        email: formValues.email,
+        amount: 100, // Set the actual payment amount
+        narration: "BootCamp Registration Payment",
+        onSuccess: function (response) {
+          console.log("Callback Successful Response", response);
+          setShowPayment(true);
+          // You can perform additional actions here, e.g., redirect to success page
+        },
+        onError: function (response) {
+          console.log("Callback Error Response", response);
+          setFormValues(false);
+          // You can handle the error and display a message to the user
+        },
+        onClose: function () {
+          console.log("Payment modal closed");
+        setShowPayment(false);
+           
+          
+          // You can handle the modal closure if needed
+        },
+      };
+        
+  const handlePayment = async (e) => {
     e.preventDefault();
     setFormErrors(validation(formValues));
     try {
@@ -68,21 +102,30 @@ function Register() {
         setFormSuccess(true);
         setTimeout(() => {
           setFormSuccess(false);
+         
         }, 3000);
-      } else {
-        console.error("Try again:", response.status, response.statusText);
-      }
-    } catch (error) {
-      console.error("An error occured:", error.message);
-      setFormErrors("An error occured:" + error.message);
+
+    
+     // Render the RemitaPayment component with the provided data
+     setShowPayment(true);
+    } else {
+      console.error("Try again:", response.status, response.statusText);
+      alert("An error occurred: " + response.statusText);
     }
-  };
+  } catch (error) {
+    console.error("An error occurred:", error.message);
+    setFormErrors("An error occurred:" + error.message);
+  }
+};
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
-    console.log(formValues);
+   
+ 
   };
+
 
   return (
     <div className="w-full register-main">
@@ -109,7 +152,7 @@ function Register() {
                 Personal Information
               </h2>
               <hr className="w-[53%] border-2 border-black  mt-1 register-line" />
-              <form  onSubmit={handleSubmit}  className="flex flex-wrap mt-10 register-1-form">
+              <form  className="flex flex-wrap mt-10 register-1-form">
                 <div className=" flex w-full gap-4 register-first-form">
                 <div className="w-full sm:w-1/2 input-reg-container">
                   <label className="block mb-2 label">First Name</label>
@@ -160,7 +203,7 @@ function Register() {
                   </select>
                   <p className="mt-2 text-[#f00]">{formErrors.course}</p>
                 </div>
-                <button className=" w-[301px] flex justify-center gap-4 h-[52px] px-5 py-3 mt-10 text-[16px] rounded-md text-white button-8">
+                <button  onClick={handlePayment} type="button" className=" w-[301px] flex justify-center gap-4 h-[52px] px-5 py-3 mt-10 text-[16px] rounded-md text-white button-8">
                 <a href="/register">Proceed to payment </a>
                 <FaArrowRightLong size={20} className="mt-[2px]" />
               </button>
@@ -171,6 +214,7 @@ function Register() {
           <img src={FormImage} className=" relative bottom-40 register-image" />
         </div>
       </div>
+      {showPayment && <RemitaPayment key={formValues.email} {...remitaPaymentData} />}
     </div>
   );
 }

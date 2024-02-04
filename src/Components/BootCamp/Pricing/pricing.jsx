@@ -34,7 +34,7 @@ function Pricing() {
         </div>
         <div className="flex justify-center">
           <button className="venue-register w-[590px] h-[82px] px-5 py-3 mt-16 " style={{ color:"#fff"}}>
-            <a href="#">Register</a>
+            <a href="/register">Register</a>
           </button>
         </div>
         </div>
