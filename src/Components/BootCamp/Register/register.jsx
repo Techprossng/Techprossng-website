@@ -1,4 +1,5 @@
 import React from "react";
+import {Buffer} from 'buffer';
 import { useState } from "react";
 import { FaRegCalendarCheck } from "react-icons/fa6";
 import RemitaPayment from "react-remita";
@@ -43,6 +44,7 @@ function Register() {
     onClose: () => {},
   });
 
+  const userEncoded = Buffer.from(formValues.email).toString('base64')
 
   const validation = (values) => {
     const errors = {};
@@ -94,27 +96,25 @@ function Register() {
           setFormSuccess(false);
         }, 3000);
 
-        // Step 2: Get Remita payment keys
-        
+        // Step 2: Get Remita payment keys 
         const remitaKeysResponse = await fetch(
           "https://techprosnaija.com/api/v1/payments/remita/keys",     
          
           {
             headers: {
-              "Authorization":"",
+              "Authorization":`Basic ${userEncoded}`,
               "Content-Type": "application/json",
             },
           }
 
         );
 
-        if (!remitaKeysResponse.ok) {
-          console.error(
-            "Failed to get Remita keys:",
+        if (remitaKeysResponse.ok) {
+           console.log(remitaKeysResponse.json());
             remitaKeysResponse.status,
             remitaKeysResponse.statusText
-          );
-          return;
+          ;
+          
         }
 
         const remitaKeysData = await remitaKeysResponse.json();
@@ -163,14 +163,14 @@ function Register() {
         <div className=" register-inner px-12 py-40">
           <div className="flex justify-center mt-10 register-venue-container">
             <div className=" flex justify-center  w-[400px] text-center h-[50px] p-[14px] register-date">
-              <FaRegCalendarCheck size={20} />
-              <h5 className="font-primary text-[16px]  font-semibold ">
+              <FaRegCalendarCheck size={20} color="white"/>
+              <h5 className="font-primary text-[16px] text-white font-semibold ">
                 STARTING: MONDAY, 4TH MARCH, 2024
               </h5>
             </div>
           </div>
           <div className="text-center register-header">
-            <h1 className="text-[90px] font-bold">BootCamp Registration</h1>
+            <h1 className="text-[90px] font-bold text-white">BootCamp Registration</h1>
           </div>
         </div>
       </div>

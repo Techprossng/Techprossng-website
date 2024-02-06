@@ -1,5 +1,8 @@
 .register-header-container{
-    background-color: #be7272;
+    background-image: url("../../../../assets/images/regbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
 }
 
 .register-date {
