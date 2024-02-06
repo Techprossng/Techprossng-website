@@ -23,7 +23,7 @@ function BenefitBootcamp() {
             converge to propel your career in the dynamic world of technology
           </p>
         </div>
-        <div className="benefit-card-holder flex gap-5 px-3">
+        <div className="benefit-card-holder flex flex-col gap-5 px-3">
           <div className="benefit-card-tray flex gap-5">
             <div className="benefit-card text-[#000] flex flex-col gap-3">
               <div>
