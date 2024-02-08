@@ -1,34 +1,425 @@
-.hero-bootcamp {
-  background-image: 
-  linear-gradient(to right, rgba(50, 100, 250, 0.7), rgba(100, 0, 0, 0.73)), url("hero1.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 720px;
-}
 .date {
-  border: 1px solid #999;
-  border-radius: 16px;
-  padding: 4px 12px;
-  background-color: rgba(211, 211, 211, 0.25);
+  border: 1px solid #ebebeb;
+  border-radius:100px;
+  background: #ebebeb;
 }
 .hero-register {
   border: 1px solid #001975;
   border-radius: 8px;
-  padding: 4px 48px;
   background: #001975;
   cursor: pointer; 
+  color: #fff;
 }
 .hero-register:hover {
-  background: rgb(241, 138, 138); 
+  background: #fe0000; 
   transition: 1s;
   letter-spacing: 1px;
 }
 
-@media only screen and (min-width: 260px) and (max-width: 615px) {
-  .hero-date {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media only screen and (min-width: 360px) and (max-width: 410px) {
+  .hero-bootcamp{
+     padding: 10px;
   }
+  .date{
+    width: 100%;
+    padding: 11px;
+    justify-content: center;
+    gap: 0;
+  }
+  .calender{
+    margin-top: 0;
+  }
+  .date h5{
+   font-size: 14.5px;
+   margin-top: 1%;
+  }
+  .hero-left{
+    width: 100%;
+  }
+  .hero-bootcamp-inner{
+    display: block;
+  }
+  .hero-header-date h4{
+    font-size: 26px;
+    
+  }
+  .break-25{
+    display: none;
+  }
+  .hero-description p{
+    font-size: 16px;
+  
+  }
+  .hero-register{
+    width: 100%;
+  }
+  .hero-right{
+    width: 100%;
+  }
+ 
+}
+@media only screen and (min-width: 410px) and (max-width: 412px) {
+  .hero-bootcamp{
+     padding: 10px;
+  }
+  .date{
+    width: 100%;
+    padding: 11px;
+    justify-content: center;
+    gap: 0;
+    
+  }
+  .calender{
+    margin-top: 0;
+  }
+  .date h5{
+   font-size: 16px;
+   margin-top: 1%;
+  }
+  .hero-left{
+    width: 100%;
+  }
+  .hero-bootcamp-inner{
+    display: block;
+  }
+  .hero-header-date h4{
+    font-size: 30px;
+    
+  }
+  .break-25{
+    display: none;
+  }
+  .hero-description p{
+    font-size: 16px;
+  
+  }
+  .hero-register{
+    width: 100%;
+  }
+  .hero-right{
+    width: 100%;
+  }
+
+}
+@media only screen and (min-width: 412px) and (max-width: 432px) {
+  .hero-bootcamp{
+     padding: 10px;
+  }
+  .date{
+    width: 100%;
+    padding: 11px;
+    justify-content: center;
+
+  }
+  .calender{
+    margin-top: 0;
+  }
+  .date h5{
+   font-size: 17px;
+   margin-top: 1%;
+  }
+  .hero-left{
+    width: 100%;
+  }
+  .hero-bootcamp-inner{
+    display: block;
+  }
+  .hero-header-date h4{
+    font-size: 30px;
+    
+  }
+  .break-25{
+    display: none;
+  }
+  .hero-description p{
+    font-size: 16px;
+  
+  }
+  .hero-register{
+    width: 100%;
+  }
+  .hero-right{
+    width: 100%;
+  }
+
+}
+@media only screen and (min-width: 432px) and (max-width: 480px) {
+  .hero-bootcamp{
+     padding: 10px;
+  }
+  .date{
+    width: 100%;
+    padding: 8px;
+    justify-content: center;
+
+  
+  }
+  .calender{
+    margin-top: 0;
+  }
+  .date h5{
+   font-size: 17px;
+   margin-top: 1%;
+   margin: 1%;
+  }
+  .hero-left{
+    width: 100%;
+  }
+  .hero-bootcamp-inner{
+    display: block;
+  }
+  .hero-header-date h4{
+    font-size: 32px;
+    
+  }
+  .break-25{
+    display: none;
+  }
+  .hero-description p{
+    font-size: 16px;
+  
+  }
+  .hero-register{
+    width: 100%;
+  }
+  .hero-right{
+    width: 100%;
+  }
+  
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 500px) {
+  .hero-bootcamp{
+    padding: 10px;
+ }
+ .date{
+   width: 100%;
+   padding: 8px;
+   justify-content: center;
+
+ 
+ }
+ .calender{
+   margin-top: 0;
+ }
+ .date h5{
+  font-size: 17px;
+  margin-top: 1%;
+  margin: 1%;
+ }
+ .hero-left{
+   width: 100%;
+ }
+ .hero-bootcamp-inner{
+   display: block;
+ }
+ .hero-header-date h4{
+   font-size: 33.3px;
+   
+ }
+ .break-25{
+   display: none;
+ }
+ .hero-description p{
+   font-size: 16px;
+ 
+ }
+ .hero-register{
+   width: 100%;
+ }
+ .hero-right{
+   width: 100%;
+ }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .hero-bootcamp{
+    padding: 10px;
+ }
+ .date{
+   width: 100%;
+   padding: 8px;
+   justify-content: center;
+
+ 
+ }
+ .calender{
+   margin-top: 0;
+ }
+ .date h5{
+  font-size: 17px;
+  margin-top: 1%;
+  margin: 1%;
+ }
+ .hero-left{
+   width: 100%;
+ }
+ .hero-bootcamp-inner{
+   display: block;
+ }
+ .hero-header-date h4{
+   font-size: 37px;
+   text-align: center;
+   
+ }
+ .break-25{
+   display: none;
+ }
+ .hero-description p{
+   font-size: 16px;
+ 
+ }
+ .hero-register{
+   width: 100%;
+ }
+ .hero-right{
+   width: 100%;
+ }
+
+  
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  .hero-bootcamp{
+    padding: 10px;
+ }
+ .date{
+   width: 100%;
+   padding: 8px;
+   justify-content: center;
+
+ 
+ }
+ .calender{
+   margin-top: 0;
+ }
+ .date h5{
+  font-size: 17px;
+  margin-top: 1%;
+  margin: 1%;
+ }
+ .hero-left{
+   width: 100%;
+ }
+ .hero-bootcamp-inner{
+   display: block;
+ }
+ .hero-header-date h4{
+   font-size: 38px;
+   text-align: center;
+   
+ }
+ .break-25{
+   display: none;
+ }
+ .hero-description p{
+   font-size: 16px;
+   text-align: center;
+ 
+ }
+ .hero-register{
+   width: 100%;
+ }
+ .hero-right{
+   width: 100%;
+ }
+}
+@media only screen and (min-width: 750px) and (max-width: 980px) {
+  .hero-bootcamp{
+    padding: 10px;
+ }
+ .date{
+   width: 100%;
+   padding: 8px;
+   justify-content: center;
+
+ 
+ }
+ .calender{
+   margin-top: 0;
+ }
+ .date h5{
+  font-size: 17px;
+  margin-top: 1%;
+  margin: 1%;
+ }
+ .hero-left{
+   width: 100%;
+ }
+ .hero-bootcamp-inner{
+   display: block;
+ }
+ .hero-header-date h4{
+   font-size: 30px;
+   
+ }
+ .break-25{
+   display: none;
+ }
+ .hero-description p{
+   font-size: 16px;
+   text-align: center;
+ 
+ }
+ .hero-register{
+   width: 100%;
+ }
+ .hero-right{
+   width: 100%;
+ }
+
+  
+}
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  .hero-bootcamp{
+    padding: 10px;
+ }
+ .date{
+   width: 100%;
+   padding: 8px;
+   justify-content: center;
+
+ 
+ }
+ .calender{
+   margin-top: 0;
+ }
+ .date h5{
+  font-size: 17px;
+  margin-top: 1%;
+  margin: 1%;
+ }
+ .hero-left{
+   width: 100%;
+ }
+ .hero-bootcamp-inner{
+   display: block;
+ }
+ .hero-header-date h4{
+   font-size: 30px;
+   
+ }
+ .break-25{
+   display: none;
+ }
+ .hero-description p{
+   font-size: 16px;
+   text-align: center;
+ 
+ }
+ .hero-register{
+   width: 100%;
+ }
+ .hero-right{
+   width: 100%;
+ }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1025px) {
+ 
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+ 
+
 }
