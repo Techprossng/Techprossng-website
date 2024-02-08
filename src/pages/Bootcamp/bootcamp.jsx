@@ -12,6 +12,7 @@ import "../../Components/BootCamp/NewsLetterBootcamp/style/style.css";
 
 import "../../pages/Bootcamp/Style/boot.css";
 import NewsLetterBootcamp from "../../Components/BootCamp/NewsLetterBootcamp/newsLetterBootcamp";
+import CoursesBootcamp from "../../Components/BootCamp/CoursesBootcamp/coursesBootcamp";
 
 const BootCamp = () => {
   return (
@@ -19,6 +20,7 @@ const BootCamp = () => {
       <Navbar />
       <HeroBootcamp />
       <AboutBootcamp />
+      <CoursesBootcamp />
       <BenefitBootcamp />
       <div className="background">
         <Pricing />
