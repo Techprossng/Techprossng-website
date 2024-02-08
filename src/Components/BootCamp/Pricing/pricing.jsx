@@ -25,7 +25,7 @@ function Pricing() {
           <img src={Money} className="w-[186px] h-[98px] money-web"/>
         </div>
         <div className="flex justify-center mt-10 venue-container">
-          <div className=" flex justify-center  w-[400px] text-center h-[50px] p-[14px] venue-date">
+          <div className=" flex justify-center gap-[10px] w-[400px] text-center h-[50px] p-[14px] venue-date">
             <FaRegCalendarCheck size={20} />
             <h5 className="font-primary text-[16px]  font-semibold ">
               STARTING: MONDAY, 4TH MARCH, 2024

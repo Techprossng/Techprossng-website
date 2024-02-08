@@ -1,36 +1,35 @@
-import React from "react";
-import {Buffer} from 'buffer';
-import { useState } from "react";
-import { FaRegCalendarCheck } from "react-icons/fa6";
+import React, { useState } from "react";
+import { Buffer } from "buffer";
+import { FaRegCalendarCheck, FaArrowRightLong } from "react-icons/fa6";
 import RemitaPayment from "react-remita";
-import { FaArrowRightLong } from "react-icons/fa6";
 import "../../BootCamp/Register/Style/register.css";
 import FormImage from "../../../assets/images/pricebg2.svg";
 
-function Register() {
-  const courses = [
-    "--Select your Course--",
-    "Back-end Development",
-    "Data Analytics",
-    "Front-end Development",
-    "Product Management",
-    "UI/UX Design for Beginners",
-    "Web Development",
-  ];
+const courses = [
+  "--Select your Course--",
+  "Back-end Development",
+  "Data Analytics",
+  "Front-end Development",
+  "Product Management",
+  "UI/UX Design for Beginners",
+  "Web Development",
+];
 
-  const initialValues = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    course: "",
-  };
+const initialValues = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  course: "",
+};
 
-
-
+const Register = () => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [formSuccess, setFormSuccess] = useState(false);
   const [showPayment, setShowPayment] = useState(false);
+  const [loadingKeys, setLoadingKeys] = useState(false);
+  const [registrationComplete, setRegistrationComplete] = useState(false);
+
   const [remitaPaymentData, setRemitaPaymentData] = useState({
     key: "",
     customerId: "",
@@ -39,36 +38,56 @@ function Register() {
     email: "",
     amount: 0,
     narration: "",
-    onSuccess: () => {},
-    onError: () => {},
-    onClose: () => {},
   });
 
-  const userEncoded = Buffer.from(formValues.email).toString('base64')
-
-  const validation = (values) => {
-    const errors = {};
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!values.firstName) {
-      errors.firstName = "First Name is required";
-    }
-    if (!values.lastName) {
-      errors.lastName = "Last Name is required";
-    }
-    if (!values.email) {
-      errors.email = "Email is required";
-    } else if (!emailPattern.test(values.email)) {
-      errors.email = "This is not a valid email pattern";
-    }
-    if (!values.course) {
-      errors.course = "Course is required";
-    }
-    return errors;
+  const data = {
+    ...remitaPaymentData,
+    onSuccess: function (response) {
+      // function callback when payment is successful
+      console.log("callback Successful Response", response);
+    },
+    onError: function (response) {
+      // function callback when payment fails
+      console.log("callback Error Response", response);
+    },
+    onClose: function () {
+      // function callback when payment modal is closed
+      console.log("closed");
+      setRegistrationComplete(false); // reset the registrationComplete state to false
+    },
   };
 
-  const handlePayment = async (e) => {
+  const userEncoded = Buffer.from(formValues.email).toString("base64");
+
+  const validateForm = () => {
+    const errors = {};
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!formValues.firstName) {
+      errors.firstName = "First Name is required";
+    }
+    if (!formValues.lastName) {
+      errors.lastName = "Last Name is required";
+    }
+    if (!formValues.email) {
+      errors.email = "Email is required";
+    } else if (!emailPattern.test(formValues.email)) {
+      errors.email = "This is not a valid email pattern";
+    }
+    if (!formValues.course) {
+      errors.course = "Course is required";
+    }
+
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormErrors(validation(formValues));
+
+    if (registrationComplete || !validateForm()) {
+      return;
+    }
 
     try {
       // Step 1: Send user details to your server to register
@@ -76,12 +95,7 @@ function Register() {
         "https://techprosnaija.com/api/v1/payers",
         {
           method: "POST",
-          body: JSON.stringify({
-            firstName: formValues.firstName,
-            lastName: formValues.lastName,
-            email: formValues.email,
-            course: formValues.course,
-          }),
+          body: JSON.stringify(formValues),
           headers: {
             "Content-Type": "application/json",
           },
@@ -89,68 +103,76 @@ function Register() {
       );
 
       if (registerResponse.ok) {
-        console.log("Sent");
+        console.log("User registered successfully");
         setFormValues(initialValues);
         setFormSuccess(true);
-        setTimeout(() => {
-          setFormSuccess(false);
-        }, 3000);
+        setRegistrationComplete(true);
+        
 
-        // Step 2: Get Remita payment keys 
-        const remitaKeysResponse = await fetch(
-          "https://techprosnaija.com/api/v1/payments/remita/keys",     
-         
-          {
-            headers: {
-              "Authorization":`Basic ${userEncoded}`,
-              "Content-Type": "application/json",
-            },
-          }
-
-        );
-
-        if (remitaKeysResponse.ok) {
-           console.log(remitaKeysResponse.json());
-            remitaKeysResponse.status,
-            remitaKeysResponse.statusText
-          ;
-          
-        }
-
-        const remitaKeysData = await remitaKeysResponse.json();
+        // Step 2: Get Remita payment keys
+        const remitaKeysData = await fetchRemitaKeys();
+        console.log(remitaKeysData);
 
         // Step 3: Set Remita payment data and show the payment modal
         setRemitaPaymentData({
-          key: remitaKeysData.key,
+          key: remitaKeysData.publicKey,
           customerId: formValues.email,
           firstName: formValues.firstName,
           lastName: formValues.lastName,
           email: formValues.email,
-          amount: 100,
+          amount: 1000,
           narration: "BootCamp Registration Payment",
-          onSuccess: function (response) {
-            console.log("Callback Successful Response", response);
-            setShowPayment(true);
-          },
-          onError: function (response) {
-            console.error("Callback Error Response", response);
-            setFormSuccess(false);
-          },
-          onClose: function () {
-            console.log("Payment modal closed");
-            setShowPayment(false);
-          },
         });
-
-        // Render the RemitaPayment component with the provided data
-        setShowPayment(true);
       }
     } catch (error) {
-      console.error("An error occurred:", error.message);
+      console.error("An error occurred during form submission:", error.message);
       setFormErrors("An error occurred:" + error.message);
     }
   };
 
+  const fetchRemitaKeys = async () => {
+    setLoadingKeys(true);
+
+    try {
+      const remitaKeysResponse = await fetch(
+        "https://techprosnaija.com/api/v1/payments/remita/keys",
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Basic ${userEncoded}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (remitaKeysResponse.ok) {
+        const remitaKeysData = await remitaKeysResponse.json();
+        console.log("Remita Keys Response:", remitaKeysData);
+        return remitaKeysData;
+      } else {
+        console.error(
+          "Error fetching Remita keys:",
+          remitaKeysResponse.status,
+          remitaKeysResponse.statusText
+        );
+        // Handle error as needed
+      }
+    } catch (error) {
+      console.error(
+        "An error occurred during Remita keys retrieval:",
+        error.message
+      );
+      // Handle error as needed
+    } finally {
+      setLoadingKeys(false);
+    }
+  };
+
+  const handlePaymentClose = () => {
+    console.log("Payment modal closed");
+    setShowPayment(false);
+    setRegistrationComplete(false); // Reset registration state when modal is closed
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -163,20 +185,25 @@ function Register() {
         <div className=" register-inner px-12 py-40">
           <div className="flex justify-center mt-10 register-venue-container">
             <div className=" flex justify-center  w-[400px] text-center h-[50px] p-[14px] register-date">
-              <FaRegCalendarCheck size={20} color="white"/>
+              <FaRegCalendarCheck size={20} color="white" />
               <h5 className="font-primary text-[16px] text-white font-semibold ">
                 STARTING: MONDAY, 4TH MARCH, 2024
               </h5>
             </div>
           </div>
           <div className="text-center register-header">
-            <h1 className="text-[90px] font-bold text-white">BootCamp Registration</h1>
+            <h1 className="text-[90px] font-bold text-white">
+              BootCamp Registration
+            </h1>
           </div>
         </div>
       </div>
       <div className="form-cont ">
         <div className=" flex form-main px-20 py-20">
           <div className="w-[50%] register-1">
+         { registrationComplete ? (
+                  null // No need to render the form or button if registration is complete
+                ) : (
             <div className="w-[627px] register-1-inner">
               <h2 className="text-[30px]  font-bold ">Personal Information</h2>
               <hr className="w-[53%] border-2 border-black  mt-1 register-line" />
@@ -238,26 +265,36 @@ function Register() {
                   </select>
                   <p className="mt-2 text-[#f00]">{formErrors.course}</p>
                 </div>
-                <button
-                  onClick={handlePayment}
-                  type="button"
-                  className=" w-[301px] flex justify-center gap-4 h-[52px] px-5 py-3 mt-10 text-[16px] rounded-md text-white button-8"
-                >
-                  <a href="/register">Proceed to payment </a>
-                  <FaArrowRightLong size={20} className="mt-[2px]" />
-                </button>
+                {loadingKeys ? (
+                <p>Loading Remita keys...</p>
+              ) : (
+                  <button
+                    onClick={handleSubmit}
+                    type="button"
+                    className=" w-[301px] flex justify-center gap-4 h-[52px] px-5 py-3 mt-10 text-[16px] rounded-md text-white button-8"
+                  >
+                    <a href="/register">Proceed to payment </a>
+                    <FaArrowRightLong size={20} className="mt-[2px]" />
+                  </button>
+                )}
               </form>
             </div>
+                )}
           </div>
+          {registrationComplete && (
+            <div className="w-full">
+              <div className="text-[20px] font-bold  text-black mt-10">
+                Almost there! Click on the button to pay with Remita.
+              </div>
+              <RemitaPayment remitaData={data} onClose={handlePaymentClose} className=" w-[100%] flex justify-center gap-4 h-[52px] px-5 py-3 mt-10 text-[16px] rounded-md text-white button-8" />
+            </div>
+          )}
           <div className=" w-[50%] register-2"></div>
-          <img src={FormImage} className=" relative bottom-40 register-image" />
+          <img src={FormImage} className=" relative bottom-40 register-image"  />
         </div>
       </div>
-      {showPayment && (
-        <RemitaPayment key={formValues.email} {...remitaPaymentData} />
-      )}
     </div>
   );
-}
+};
 
 export default Register;

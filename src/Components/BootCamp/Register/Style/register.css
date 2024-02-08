@@ -1,9 +1,11 @@
 .register-header-container{
-    background-image: url("../../../../assets/images/regbg.png");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../../../../assets/images/regbg.png");
     background-size: cover;
     background-repeat: no-repeat;
    
 }
+
+  
 
 .register-date {
     border: 1px solid #999;

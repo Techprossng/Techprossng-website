@@ -9,9 +9,9 @@ function HeroBootcamp() {
           <div className='hero-bootcamp px-20 py-12'>
                <div className='mt-32 flex gap-5 items-center text-[#000] hero-bootcamp-inner'>
                     <div className='w-[50%] mb-[3%] hero-left'>
-                         <div className='date flex  gap-[5px] w-[544px] h-[50px] p-[5px]'>
-                              <FaRegCalendarCheck size={27} className='ml-2 mt-1 calender'/>
-                              <h5 className='font-secondary text-[24px] font-semibold '>STARTING: MONDAY, 4TH MARCH, 2024</h5>
+                         <div className='date flex  gap-[5px] w-[544px] h-[50px] p-[4px]'>
+                              <FaRegCalendarCheck size={27} className='ml-2 mt-1.5 calender'/>
+                              <h5 className='font-secondary text-[24px] font-semibold mt-0.5 '>STARTING: MONDAY, 4TH MARCH, 2024</h5>
                          </div>
                          <div>
                               <div className='hero-header-date mt-4'> 
