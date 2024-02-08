@@ -12,14 +12,16 @@ import "../../Components/BootCamp/NewsLetterBootcamp/style/style.css";
 import "../../pages/Bootcamp/Style/boot.css";
 import NewsLetterBootcamp from "../../Components/BootCamp/NewsLetterBootcamp/newsLetterBootcamp";
 import Timer from "../../Components/BootCamp/Timer/timer";
+import CoursesBootcamp from "../../Components/BootCamp/CoursesBootcamp/coursesBootcamp";
 
 const BootCamp = () => {
   return (
     <>
       <Navbar />
       <HeroBootcamp />
-      <Timer/>
+      <Timer />
       <AboutBootcamp />
+      <CoursesBootcamp />
       <BenefitBootcamp />
       <div className="background">
         <Pricing />
