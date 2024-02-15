@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../BootCamp/Tutors/Style/tutors.css";
 
-
 function Tutors() {
   const [showFullList, setShowFullList] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
@@ -62,23 +61,41 @@ function Tutors() {
                       borderRadius: "20px",
                     }}
                   >
-                    <div className="w-[427px] h-[254px] bg-cover tutors-image"  style={{backgroundImage: `url(${tutor.imageURL})` ,}}>
-                  
-
-                    </div>
-                    <div className="w-[427px] h-[241px] p-5 tutors-details" style={{ backgroundColor:"#fff" ,}}>
-                     <div className="name">
-                      <h1 className="text-[24px] font-bold" style={{ color: "rgba(0, 25, 117, 1)" ,}}>{tutor.name}</h1>
-                      <h6 className="text-[16px] font-bold">{tutor.jobTitle}</h6>
-                     </div>
-                     <div className="description mt-2">
-                      <p  className="font-bold" style={{ color:"gray"}}>Design user interfaces that not only look great but also provide seamless and intuitive experiences for users.</p>
-                     </div>
-                     <div className="experience mt-2">
-                      <span className="text-[15px] font-bold" style={{ color:"gray"}}>Experience</span>
-                      <p className="text-[15px] font-bold">4 years</p>
-
-                     </div>
+                    <div
+                      className="w-[427px] h-[254px] bg-cover tutors-image"
+                      style={{ backgroundImage: `url(${tutor.imageURL})` }}
+                    ></div>
+                    <div
+                      className="w-[427px] h-[241px] p-5 tutors-details"
+                      style={{ backgroundColor: "#fff" }}
+                    >
+                      <div className="name">
+                        <h1
+                          className="text-[24px] font-bold"
+                          style={{ color: "rgba(0, 25, 117, 1)" }}
+                        >
+                          {tutor.name}
+                        </h1>
+                        <h6 className="text-[16px] font-bold">
+                          {tutor.jobTitle}
+                        </h6>
+                      </div>
+                      <div className="description mt-2">
+                        <p className="font-bold" style={{ color: "gray" }}>
+                          Design user interfaces that not only look great but
+                          also provide seamless and intuitive experiences for
+                          users.
+                        </p>
+                      </div>
+                      <div className="experience mt-2">
+                        <span
+                          className="text-[15px] font-bold"
+                          style={{ color: "gray" }}
+                        >
+                          Experience
+                        </span>
+                        <p className="text-[15px] font-bold">4 years</p>
+                      </div>
                     </div>
                   </div>
                 </div>

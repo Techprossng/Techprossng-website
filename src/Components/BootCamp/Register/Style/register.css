@@ -1,336 +1,317 @@
-.register-header-container{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../../../../assets/images/regbg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-   
+.register-header-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../../assets/images/regbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-  
 
 .register-date {
-    border: 1px solid #999;
-    border-radius:100px;
-    background: rgba(141, 141, 141, 0.2);
-  }
-  
-  .register-input{
-    background-color: rgba(245, 245, 245, 1);
-    border-radius: 12px;
-  }
-  .button-8 {
-    background: rgba(254, 0, 0, 1);
-    font-weight: 600;
-    text-align: center;
-    transition: 0.8s;
-    border-radius: 20px;
-  }
-  @media only screen and (min-width: 360px) and (max-width: 480px) {
-     .register-date{
-      width: 100%;
-      padding: 13px;
-      
-     }
-   
-     .register-inner{
-       width: 100%;
-       padding: 5%;
-       position: relative;
-       top: 30%;
-     
-      }
-      .register-venue-container{
-        width: 100%;
-        display: inline-block;
-       
-      }
-      .register-venue-container h5{
-        font-size: 13.5px;
-        font-weight: 900;
-      }
-      .register-header h1{
-        font-size: 31px;
-      }
-      .register-header{
-        margin-top: 7%;
-      }
-      .form-const{
-        width: 100%;
-      }
-      .form-main{
-        display: block;
-        padding: 4%;
-      }
-      .register-1{
-        width: 100%;
-      }
-      .register-1-inner{
-        width: 100%;
-      }
-      .register-1-form{
-        display: block;
-        margin-top: 10%;
-      }
-      .register-first-form{
-        display: block;
-      }
-      .register-image{
-        position: relative;
-        bottom: 0;
-        margin-top: 10%;
-      }
-      .button-8{
-        width: 100%;
-      }
-      .register-input{
-        margin-bottom: 4%;
-      }
-      .register-line{
-        width: 88%;
-      }
+  border: 1px solid #999;
+  border-radius: 100px;
+  background: rgba(141, 141, 141, 0.2);
 }
-  @media only screen and (min-width: 480px) and (max-width: 600px) {
-    .register-date{
-      width: 100%;
-     }
-   
-     .register-inner{
-       width: 100%;
-       padding: 5%;
-       position: relative;
-       top: 30%;
-     
-      }
-      .register-venue-container{
-        width: 100%;
-        display: block;
-       
-      }
-      .register-venue-container h5{
-        font-size: 15px;
-      }
-      .register-header h1{
-        font-size: 31px;
-      }
-      .register-header{
-        margin-top: 7%;
-      }
-      .form-const{
-        width: 100%;
-      }
-      .form-main{
-        display: block;
-        padding: 4%;
-      }
-      .register-1{
-        width: 100%;
-      }
-      .register-1-inner{
-        width: 100%;
-      }
-      .register-1-form{
-        display: block;
-        margin-top: 10%;
-      }
-      .register-first-form{
-        display: block;
-      }
-      .register-image{
-        position: relative;
-        bottom: 0;
-        margin-top: 10%;
-      }
-      .button-8{
-        width: 100%;
-      }
-      .register-input{
-        margin-bottom: 4%;
-      }
-      .register-line{
-        width: 82%;
-      }
-    
-  }
-  
-  @media only screen and (min-width: 600px) and (max-width: 750px) {
-     .register-header h1{
-        font-size: 40px;
-     }
-     .register-inner{
-        position: relative;
-        top: 38%;
-     }
-     
-     .register-venue-container{
-      width: 100%;
-      display: block;
-     
-    }
-    .register-venue-container h5{
-      font-size: 15px;
-    }
-   
-    .register-header{
-      margin-top: 5%;
-    }
-    .form-const{
-      width: 100%;
-    }
-    .form-main{
-      display: block;
-      padding: 4%;
-    }
-    .register-1{
-      width: 100%;
-    }
-    .register-1-inner{
-      width: 100%;
-    }
-    .register-1-form{
-      display: block;
-      margin-top: 10%;
-    }
-    .register-first-form{
-      display: block;
-    }
-    .register-image{
-      position: relative;
-      bottom: 0;
-      margin-top: 10%;
-      left: 5%;
-    }
-    .button-8{
-      width: 100%;
-    }
-    .register-input{
-      margin-bottom: 4%;
-      width: 100%;
-    }
-    .register-line{
-      width: 82%;
-    }
-    .register-date{
-      width: 100%;
-     }
-   
-     .register-inner{
-       width: 100%;
-       padding: 5%;
-       position: relative;
-       top: 30%;
-     
-      }
-      .register-venue-container{
-        width: 100%;
-        display: block;
-       
-      }
-      .register-venue-container h5{
-        font-size: 15px;
-      }
-      .register-header h1{
-        font-size: 31px;
-      }
-      .input-reg-container{
-           width: 100%;
-      }
-      .register-2{
-        width: 100%;
-      }
-  }
-  @media only screen and (min-width: 750px) and (max-width: 980px) {
-    .register-header h1{
-      font-size: 40px;
-   }
-   .register-inner{
-      position: relative;
-      top: 38%;
-   }
-   
-   .register-venue-container{
+
+.register-input {
+  background-color: rgba(245, 245, 245, 1);
+  border-radius: 12px;
+}
+.button-8 {
+  background: rgba(254, 0, 0, 1);
+  font-weight: 600;
+  text-align: center;
+  transition: 0.8s;
+  border-radius: 20px;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .register-date {
     width: 100%;
-    display: block;
-   
+    padding: 13px;
   }
-  .register-venue-container h5{
-    font-size: 15px;
+
+  .register-inner {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    top: 30%;
   }
- 
-  .register-header{
-    margin-top: 5%;
+  .register-venue-container {
+    width: 100%;
+    display: inline-block;
   }
-  .form-const{
+  .register-venue-container h5 {
+    font-size: 13.5px;
+    font-weight: 900;
+  }
+  .register-header h1 {
+    font-size: 31px;
+  }
+  .register-header {
+    margin-top: 7%;
+  }
+  .form-const {
     width: 100%;
   }
-  .form-main{
+  .form-main {
     display: block;
     padding: 4%;
   }
-  .register-1{
+  .register-1 {
     width: 100%;
   }
-  .register-1-inner{
+  .register-1-inner {
     width: 100%;
   }
-  .register-1-form{
+  .register-1-form {
     display: block;
     margin-top: 10%;
   }
-  .register-first-form{
+  .register-first-form {
     display: block;
   }
-  .register-image{
+  .register-image {
+    position: relative;
+    bottom: 0;
+    margin-top: 10%;
+  }
+  .button-8 {
+    width: 100%;
+  }
+  .register-input {
+    margin-bottom: 4%;
+  }
+  .register-line {
+    width: 88%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .register-date {
+    width: 100%;
+  }
+
+  .register-inner {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    top: 30%;
+  }
+  .register-venue-container {
+    width: 100%;
+    display: block;
+  }
+  .register-venue-container h5 {
+    font-size: 15px;
+  }
+  .register-header h1 {
+    font-size: 31px;
+  }
+  .register-header {
+    margin-top: 7%;
+  }
+  .form-const {
+    width: 100%;
+  }
+  .form-main {
+    display: block;
+    padding: 4%;
+  }
+  .register-1 {
+    width: 100%;
+  }
+  .register-1-inner {
+    width: 100%;
+  }
+  .register-1-form {
+    display: block;
+    margin-top: 10%;
+  }
+  .register-first-form {
+    display: block;
+  }
+  .register-image {
+    position: relative;
+    bottom: 0;
+    margin-top: 10%;
+  }
+  .button-8 {
+    width: 100%;
+  }
+  .register-input {
+    margin-bottom: 4%;
+  }
+  .register-line {
+    width: 82%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  .register-header h1 {
+    font-size: 40px;
+  }
+  .register-inner {
+    position: relative;
+    top: 38%;
+  }
+
+  .register-venue-container {
+    width: 100%;
+    display: block;
+  }
+  .register-venue-container h5 {
+    font-size: 15px;
+  }
+
+  .register-header {
+    margin-top: 5%;
+  }
+  .form-const {
+    width: 100%;
+  }
+  .form-main {
+    display: block;
+    padding: 4%;
+  }
+  .register-1 {
+    width: 100%;
+  }
+  .register-1-inner {
+    width: 100%;
+  }
+  .register-1-form {
+    display: block;
+    margin-top: 10%;
+  }
+  .register-first-form {
+    display: block;
+  }
+  .register-image {
     position: relative;
     bottom: 0;
     margin-top: 10%;
     left: 5%;
   }
-  .button-8{
+  .button-8 {
     width: 100%;
   }
-  .register-input{
+  .register-input {
     margin-bottom: 4%;
     width: 100%;
   }
-  .register-line{
+  .register-line {
     width: 82%;
   }
-  .register-date{
+  .register-date {
     width: 100%;
-   }
- 
-   .register-inner{
-     width: 100%;
-     padding: 5%;
-     position: relative;
-     top: 30%;
-   
-    }
-    .register-venue-container{
-      width: 100%;
-      display: block;
-     
-    }
-    .register-venue-container h5{
-      font-size: 15px;
-    }
-    .register-header h1{
-      font-size: 31px;
-    }
-    .input-reg-container{
-         width: 100%;
-    }
-    .register-2{
-      width: 100%;
-    }
   }
-  @media only screen and (min-width: 980px) and (max-width: 1024px) {
-    
+
+  .register-inner {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    top: 30%;
   }
-  @media only screen and (min-width: 1024px) and (max-width: 1025px) {
-    
+  .register-venue-container {
+    width: 100%;
+    display: block;
   }
-  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-    
-  
+  .register-venue-container h5 {
+    font-size: 15px;
   }
- 
+  .register-header h1 {
+    font-size: 31px;
+  }
+  .input-reg-container {
+    width: 100%;
+  }
+  .register-2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 980px) {
+  .register-header h1 {
+    font-size: 40px;
+  }
+  .register-inner {
+    position: relative;
+    top: 38%;
+  }
+
+  .register-venue-container {
+    width: 100%;
+    display: block;
+  }
+  .register-venue-container h5 {
+    font-size: 15px;
+  }
+
+  .register-header {
+    margin-top: 5%;
+  }
+  .form-const {
+    width: 100%;
+  }
+  .form-main {
+    display: block;
+    padding: 4%;
+  }
+  .register-1 {
+    width: 100%;
+  }
+  .register-1-inner {
+    width: 100%;
+  }
+  .register-1-form {
+    display: block;
+    margin-top: 10%;
+  }
+  .register-first-form {
+    display: block;
+  }
+  .register-image {
+    position: relative;
+    bottom: 0;
+    margin-top: 10%;
+    left: 5%;
+  }
+  .button-8 {
+    width: 100%;
+  }
+  .register-input {
+    margin-bottom: 4%;
+    width: 100%;
+  }
+  .register-line {
+    width: 82%;
+  }
+  .register-date {
+    width: 100%;
+  }
+
+  .register-inner {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    top: 30%;
+  }
+  .register-venue-container {
+    width: 100%;
+    display: block;
+  }
+  .register-venue-container h5 {
+    font-size: 15px;
+  }
+  .register-header h1 {
+    font-size: 31px;
+  }
+  .input-reg-container {
+    width: 100%;
+  }
+  .register-2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+}
+@media only screen and (min-width: 1024px) and (max-width: 1025px) {
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+}

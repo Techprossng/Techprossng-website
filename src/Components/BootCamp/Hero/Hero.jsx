@@ -11,7 +11,7 @@ function HeroBootcamp() {
                     <div className='w-[50%] mb-[3%] hero-left'>
                          <div className='date flex  gap-[5px] w-[544px] h-[50px] p-[4px]'>
                               <FaRegCalendarCheck size={27} className='ml-2 mt-1.5 calender'/>
-                              <h5 className='font-secondary text-[24px] font-semibold mt-0.5 '>STARTING: MONDAY, 4TH MARCH, 2024</h5>
+                              <h5 className='font-primary text-[22px] font-semibold mt-0.5 '>STARTING: MONDAY, 4TH MARCH, 2024</h5>
                          </div>
                          <div>
                               <div className='hero-header-date mt-4'> 
