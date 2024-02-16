@@ -25,6 +25,7 @@ const initialValues = {
 const Register = () => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
+  const [loading, setLoading] = useState(false);
   const [registrationComplete, setRegistrationComplete] = useState(false);
 
   const [remitaPaymentData, setRemitaPaymentData] = useState({
@@ -82,11 +83,11 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (registrationComplete || !validateForm()) {
+    if (registrationComplete || loading || !validateForm()) {
       return;
     }
-
     try {
+      setLoading(true);
       // Step 1: Send user details to your server to register
       const registerResponse = await fetch(
         "https://techprosnaija.com/api/v1/payers",
@@ -122,6 +123,8 @@ const Register = () => {
     } catch (error) {
       console.error("An error occurred during form submission:", error.message);
       setFormErrors("An error occurred:" + error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -259,13 +262,22 @@ const Register = () => {
                     type="button"
                     className=" w-[301px] flex justify-center gap-4 h-[52px] px-5 py-3 mt-10 text-[16px] rounded-md text-white button-8"
                   >
-                    <a href="/register">Proceed to payment </a>
-                    <FaArrowRightLong size={20} className="mt-[2px]" />
+                    {loading ? (
+                      <div className="flex justify-start">
+                        <div className="text-[30px] spinner-1"></div>
+                      </div>
+                    ) : (
+                      <>
+                        Proceed to payment
+                        <FaArrowRightLong size={20} className="mt-[2px]" />
+                      </>
+                    )}
                   </button>
                 </form>
               </div>
             )}
           </div>
+
           {registrationComplete && (
             <div className="w-full">
               <div className="text-[20px] font-bold  text-black mt-10">

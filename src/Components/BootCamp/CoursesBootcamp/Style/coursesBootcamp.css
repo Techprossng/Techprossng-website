@@ -1,0 +1,77 @@
+.move-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .slick-list {
+    display: block;
+    overflow: hidden;
+  
+    cursor: grab;
+  }
+  
+  .slick-loading .slick-track {
+    visibility: visible;
+  }
+  
+  .slick-prev {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .slick-next {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .slick-prev:hover,
+  .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: none;
+    border-radius: 0;
+  }
+  
+  /* cards */
+  
+  .courses-cards {
+    width: 427px;
+    height: 495px;
+    transition: background-color 0.3s ease; 
+    position: relative;
+    
+  }
+  .course-info {
+  color: #ffffff;
+  padding: 10%;
+  background-color: #e76161; 
+  border-radius: 20px;
+  cursor: pointer;
+  
+  }
+  
+  .course-info h3 {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+  
+  .course-info p {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .course-info a{
+    font-size: 16px;
+    margin-top: 30%;
+    font-weight: 700;
+  }
+  .courses-cards .tutors-image {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .courses-cards .tutors-image {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }

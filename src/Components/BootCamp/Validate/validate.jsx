@@ -48,7 +48,7 @@ const Validated = () => {
       <div className="p-10">
         <div className="flex justify-around p-10 ">
           <div className="">
-            <BiSearch size={25} className="relative top-[41.5%] left-[3%]" />
+            <BiSearch size={25} className="relative top-[41%] left-[3%]" />
             <input
               type="text"
               value={rrrInput}

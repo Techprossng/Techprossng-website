@@ -8,29 +8,34 @@ import bed from "../../BootCamp/CoursesBootcamp/Image/bed.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../../BootCamp/Tutors/Style/tutors.css";
+import "../CoursesBootcamp/Style/coursesBootcamp.css";
 
 export const course = [
   {
     title: "Product Design",
-    image: pd,
+    description: "User Interface (UI) and User Experience (UX) Design play key roles in the experience users have when interacting with digital products and applications. In this course, we'll cover the theory and methodologies behind UI and UX design. You'll also design your own wireframes and interactive prototypes.",
+    imageUrl: pd,
+    link: "/register",
   },
   {
     title: "Web Development",
-    image: wd,
+    description: "Front end web developers use technical and design skills to create a satisfying user experience accessible to everyone, employing essential technical skills in HTML, CSS, JavaScript, command-line editing, and browser developer tools; while creating a seamless operation of the web interface",
+    imageUrl: wd,
+    link: "/bootcamp",
   },
-  //   {
-  //     title: "Data Analysis",
-  //     image: da,
-  //   },
-  //   {
-  //     title: "Mobile Application Development",
-  //     image: mad,
-  //   },
-  //   {
-  //     title: "Backend Developemnt",
-  //     image: bed,
-  //   },
+    {
+      title: "Data Analysis",
+      imageUrl: da,
+      link:"/validate"
+    },
+    {
+      title: "Mobile Application Development",
+      imageUrl: mad,
+    },
+    {
+      title: "Backend Developemnt",
+      imageUrl: bed,
+    },
 ];
 
 
@@ -39,6 +44,12 @@ export const course = [
 
 const CoursesBootcamp = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+  const [clickedCourse, setClickedCourse] = useState(null);
+
+  const handleCourseClick = (course) => {
+    setClickedCourse((prevCourse) => (prevCourse === course ? null : course));
+  };
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -70,26 +81,44 @@ const CoursesBootcamp = () => {
             fostering a comprehensive and transformative learning experience
           </p>
         </div>
-        <div className="mt-8">
-          <Slider
-            dots={false}
-            infinite={true}
-            speed={500}
-            slidesToShow={isMobile ? 1 : 3}
-            slidesToScroll={isMobile ? 1 : 3}
-          >
-          {course.map((item, index) => (
-            <div key={index} className="flex">
-              <div className="flex mt-12 gap-8 justify-between">
-              <div className="rounded-2xl">
-                <img src={item.image} alt="course" />
-                {/* <p>{item.title}</p> */}
-              </div>
+        <div className="mt-20">
+      <Slider
+        dots={false}
+        infinite={true}
+        speed={500}
+        slidesToShow={isMobile ? 1 : 3}
+        slidesToScroll={isMobile ? 1 : 3}
+      >
+        {course.map((course, index) => (
+          <div key={index} className="p-0">
+            <div className="relative flex courses-card-house">
+              <div
+                className={`bg-cover bg-center rounded-lg courses-cards ${
+                  course === clickedCourse ? "clicked" : ""
+                }`}
+                onClick={() => handleCourseClick(course)}
+              >
+                <div
+                  className="w-full h-[100%] bg-cover tutors-image"
+                  style={{ backgroundImage: `url(${course.imageUrl})` }}
+                >
+                  {course === clickedCourse && (
+                    <div className="course-info h-[100%]">
+                      <h3>{course.title}</h3>
+                      <p>{course.description}</p>
+                      <a href={course.link} target="_blank" rel="noopener noreferrer">
+                        Download Document
+                      </a>
+                    </div>
+                  )}
+
+                </div>
               </div>
             </div>
-          ))}
-          </Slider>
-        </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
       </div>
     </div>
   );
