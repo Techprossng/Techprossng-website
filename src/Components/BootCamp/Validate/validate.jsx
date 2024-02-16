@@ -46,9 +46,9 @@ const Validated = () => {
       </div>
 
       <div className="p-10">
-        <div className="flex justify-around">
-          <div className="p-10">
-            <BiSearch size={25} className="relative top-[52%] left-[3%]" />
+        <div className="flex justify-around p-10 ">
+          <div className="">
+            <BiSearch size={25} className="relative top-[41.5%] left-[3%]" />
             <input
               type="text"
               value={rrrInput}
@@ -58,7 +58,11 @@ const Validated = () => {
               className="w-[570px] p-4 validate-input "
             />
           </div>
-          <button className="validate-button" onClick={searchTransaction}>Continue</button>
+          <div className="p-6">
+          <button className="w-[301px] h-[56px] validate-button" onClick={searchTransaction}>Continue</button>
+
+          </div>
+          
         </div>
 
         {loading && (
