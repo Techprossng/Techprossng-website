@@ -1,6 +1,7 @@
 .validate-input{
     border-radius: 16px; 
     text-indent: 40px;
+    font-size: 20px;
 }
 .validate-input::placeholder {
     color: #999; 
