@@ -179,7 +179,7 @@ const Register = () => {
             <div className=" flex justify-center  w-[400px] text-center h-[50px] p-[14px] register-date">
               <FaRegCalendarCheck size={20} color="white" />
               <h5 className="font-primary text-[16px] text-white font-semibold ">
-                STARTING: MONDAY, 4TH MARCH, 2024
+                STARTING: MONDAY, 1ST APRIL, 2024
               </h5>
             </div>
           </div>

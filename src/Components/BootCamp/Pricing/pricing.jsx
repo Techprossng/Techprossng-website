@@ -30,7 +30,7 @@ function Pricing() {
             <div className=" flex justify-center gap-[10px] w-[400px] text-center h-[50px] p-[14px] venue-date">
               <FaRegCalendarCheck size={20} />
               <h5 className="font-primary text-[16px]  font-semibold ">
-                STARTING: MONDAY, 4TH MARCH, 2024
+                STARTING: MONDAY, 1ST APRIL, 2024
               </h5>
             </div>
           </div>
