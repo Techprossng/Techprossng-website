@@ -7,12 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../BootCamp/Tutors/Style/tutors.css";
 
 function Tutors() {
-  const [showFullList, setShowFullList] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
-  const toggleFullList = () => {
-    setShowFullList(!showFullList);
-  };
 
   useEffect(() => {
     const handleResize = () => {

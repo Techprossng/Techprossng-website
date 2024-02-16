@@ -20,6 +20,7 @@ import ContactUs from "./pages/Contact-Us/contact";
 import React from "react";
 import BootCamp from "./pages/Bootcamp/bootcamp";
 import Registration from "./pages/Register/registration";
+import Validate from "./pages/Validate/validate";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/boot-camp" element={<BootCamp />} />
           <Route path="/register" element={<Registration/>} />
+          <Route path="/validate" element={<Validate/>} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/course-catalogue" element={<Catalog />} />
           <Route path="/resource-page" element={<ResourcePage />} />

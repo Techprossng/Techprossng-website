@@ -3,7 +3,7 @@ import moment from "moment-timezone";
 import "../Timer/Style/timer.css";
 
 const Timer = () => {
-  const targetDate = moment.tz("2024-03-11 00:00:00", "Africa/Lagos");
+  const targetDate = moment.tz("2024-04-01 00:00:00", "Africa/Lagos");
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
