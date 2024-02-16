@@ -3,8 +3,8 @@
      top: 20%;
 }
 .about-right-content{
-   position: relative;
-   top: 41.5%;
+     position: relative;
+     top: 41.5%;
 }
 .about-right-content .about-span{
      position: relative;
@@ -128,7 +128,7 @@
        }
      
    }
-   @media only screen and (min-width: 980px) and (max-width: 1024px) {
+   @media only screen and (min-width: 751px) and (max-width: 979px) {
      .main-about-us{
           padding: 0;
      }
@@ -139,8 +139,29 @@
      .main-about-header h1{
           font-size: 26px;
      }
-     .main-about-left{
-          display: block;
+     .about-right-content{
+          position: relative;
+          top: 0;
+       }
+       .about-right-content .about-span{
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            font-size: 13.8px;
+            left: 0;
+       }
+
+   }
+   @media only screen and (min-width: 980px) and (max-width: 1024px) {
+     .main-about-us{
+          padding: 0;
+     }
+     .main-about-container{
+          padding: 10px;
+          gap: 12px;
+     }
+     .main-about-header h1{
+          font-size: 26px;
      }
      .about-right-content{
           position: relative;
