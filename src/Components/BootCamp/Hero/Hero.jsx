@@ -1,7 +1,8 @@
 import React from 'react';
 import "../Hero/Style/Hero.css";
 import { FaRegCalendarCheck } from "react-icons/fa6";
-import HeroImage from "../Hero/Style/hero1.svg"
+import HeroImage from "../Hero/Image/hero1.svg"
+import HeroImageBig from "../Hero/Image/HeroImgBig.svg"
 
 
 function HeroBootcamp() {
@@ -29,7 +30,8 @@ function HeroBootcamp() {
                          </div>
                     </div> 
                     <div className='w-[50%] hero-right'>
-                         <img src={HeroImage} alt="Hero image people learning" />
+                         <img src={HeroImage} alt="Hero image people learning"  className='hero-image-normal'/>
+                         <img src={HeroImageBig} alt="Hero image people learning" className='hero-image-large' />
                     </div>                    
                </div>
           </div>

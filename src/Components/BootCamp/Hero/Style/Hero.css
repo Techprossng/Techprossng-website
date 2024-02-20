@@ -15,6 +15,9 @@
   transition: 1s;
   letter-spacing: 1px;
 }
+.hero-image-large{
+  display: none;
+}
 
 @media only screen and (min-width: 360px) and (max-width: 410px) {
   .hero-bootcamp {
@@ -295,10 +298,18 @@
   }
   .hero-description p {
     font-size: 16px;
+    width: 85%;
+   
    
   }
   .hero-right {
     width: 100%;
+  }
+  .hero-image-normal{
+    display: none;
+  }
+  .hero-image-large{
+    display: block;
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 980px) {
@@ -325,18 +336,25 @@
     display: block;
   }
   .hero-header-date h4 {
-    font-size: 30px;
+    font-size: 50px;
   }
   .break-25 {
     display: none;
   }
   .hero-description p {
     font-size: 16px;
+    width: 70%;
    
   }
  
   .hero-right {
     width: 100%;
+  }
+  .hero-image-normal{
+    display: none;
+  }
+  .hero-image-large{
+    display: block;
   }
 }
 @media only screen and (min-width: 980px) and (max-width: 1024px) {
@@ -363,20 +381,23 @@
     display: block;
   }
   .hero-header-date h4 {
-    font-size: 30px;
+    font-size: 65px;
   }
   .break-25 {
     display: none;
   }
   .hero-description p {
-    font-size: 16px;
-    text-align: center;
-  }
-  .hero-register {
-    width: 100%;
+    font-size: 18px;
+   width: 60%;
   }
   .hero-right {
     width: 100%;
+  }
+  .hero-image-normal{
+    display: none;
+  }
+  .hero-image-large{
+    display: block;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1025px) {
