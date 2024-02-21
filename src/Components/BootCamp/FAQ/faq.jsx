@@ -13,7 +13,7 @@ const FaqBootcamp = () => {
     <div className="px-6 py-12 md:px-12 mt-24">
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center gap-7">
-          <h1 className="text-4xl font-semibold">
+          <h1 className="text-4xl text-center font-semibold">
             <span className="font-thin uppercase">Bootcamp</span> Frequently
             Asked Question(FAQ).
           </h1>

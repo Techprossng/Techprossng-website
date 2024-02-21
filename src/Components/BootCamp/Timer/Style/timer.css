@@ -3,9 +3,12 @@
     105.72deg,
     rgba(0, 25, 117, 0.8) 43.31%,
     rgba(249, 3, 18, 0.8) 100%
-  );
+  ),
+  url(../../../../assets/images/starrs.png);
   border-radius: 23px;
+  background-repeat: repeat;
 }
+
 .Timer-box p {
   color: #fff;
 }

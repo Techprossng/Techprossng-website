@@ -8,7 +8,7 @@ import Network from "../Benefits/Images/network.svg";
 function BenefitBootcamp() {
   return (
     <div className="bg-[#001975]">
-      <div className="text-[#fff] flex flex-col items-center p-5 gap-9">
+      <div className="text-[#fff] flex flex-col items-center p-20 gap-9">
         <div className="benefit-title text-center flex gap-2">
           <h5 className="text-5xl font-secondary font-normal">
             Bootcamp Benefits

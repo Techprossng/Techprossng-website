@@ -25,7 +25,7 @@ function HeroBootcamp() {
                          </div>
                          <div className='mt-4'>
                               <button className='hero-register  w-[296px] h-[52px] px-5 py-3 mt-4'>
-                              <a href="/register">Register</a>
+                              <a href="/register" className='text-[19px] font-medium' >Register</a>
                               </button>
                          </div>
                     </div> 

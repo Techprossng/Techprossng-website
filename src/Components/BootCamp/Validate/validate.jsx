@@ -27,11 +27,6 @@ const Validated = () => {
     }
   };
 
-  // const handleKeyDown = (e) => {
-  //   if (e.key === "Enter") {
-  //     searchTransaction();
-  //   }
-  // };
 
   return (
     <div className="w-full h-full">
@@ -45,10 +40,10 @@ const Validated = () => {
         </div>
       </div>
 
-      <div className="p-10">
-        <div className="flex justify-around p-10 ">
-          <div className="">
-            <BiSearch size={25} className="relative top-[41%] left-[3%]" />
+      <div className="p-10 validate-form-container">
+        <div className="flex justify-around p-10 validate-form">
+          <div className=" validate-form-left">
+            <BiSearch size={25} className="relative top-[41%] left-[3%] BiSearch" />
             <input
               type="text"
               value={rrrInput}
@@ -58,7 +53,7 @@ const Validated = () => {
               className="w-[570px] p-4 validate-input "
             />
           </div>
-          <div className="p-6">
+          <div className="p-6 validate-form-right">
           <button className="w-[301px] h-[56px] validate-button" onClick={searchTransaction}>Continue</button>
 
           </div>
@@ -71,19 +66,19 @@ const Validated = () => {
           </div>
         )}
 
-        <div className="flex justify-around">
-          <div className="">
-            <h6>Payment Status</h6>
+        <div className="flex justify-around validation-display">
+          <div className=" payment-header">
+            <h6 className="font-bold">Payment Status</h6>
           </div>
 
-          <div className="">
-            <h6>Mode of payment</h6>
+          <div className=" payment-mode-header">
+            <h6 className="font-bold">Mode of payment</h6>
           </div>
         </div>
 
         {result && (
-          <div className="flex justify-around">
-            <div className="">
+          <div className="flex justify-around validation-result">
+            <div className=" validate-result-left">
               <div
                 className={`w-[100%] h-[35px] p-1.5 relative left-[16%]  ${
                   result.message === "Request successful"
@@ -95,7 +90,7 @@ const Validated = () => {
               </div>
             </div>
 
-            <div className="">
+            <div className=" validate-result-right">
               <p>{result.remitaMessage}</p>
             </div>
           </div>
