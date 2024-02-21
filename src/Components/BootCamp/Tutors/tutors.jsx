@@ -31,11 +31,9 @@ function Tutors() {
               Meet Our <span>Tutors</span>
             </h2>
             <p className="mt-6" style={{ color: "#fff" }}>
-              Embark on a transformative learning journey as you meet our
-              dedicated tutors at the bootcamp,
+            Get acquainted with the brilliant minds shaping your learning journey. 
               <br className="line-break-2" />
-              where expertise converges with passion to fuel your educational
-              success
+              Each tutor brings passion and proficiency, ensuring your educational experience is nothing short of exceptional.
             </p>
           </div>
         </div>

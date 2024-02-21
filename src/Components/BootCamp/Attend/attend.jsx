@@ -18,10 +18,14 @@ function Attend() {
             className="text-center font-primary "
             style={{ whiteSpace: "pre-line" }}
           >
-            Embark on a transformative learning journey as you meet our
-            dedicated tutors at the bootcamp,
-            <br className="line-break" /> where expertise converges with passion
-            to fuel your educational success
+            Ready to transform your tech journey? 
+
+Simply visit our website, choose your preferred tech track, and secure your spot in our upcoming bootcamp. 
+
+            <br className="line-break" /> Join our immersive learning experience, connect with industry experts, and launch your tech career.
+
+<br className="line-break" /> Enroll now for a future filled with possibilities in tech
+
           </p>
         </div>
         <div className="flex px-20 py-12 justify-between attend-container">
@@ -70,10 +74,9 @@ function Attend() {
                       Grow in Learning
                     </h2>
                     <p className="font-medium text-[16px] font-primary">
-                      As a registered candidate for the upcoming TechProsNaija
-                      Bootcamp, anticipate exponential professional growth and
-                      skill enhancement, positioning yourself at the cutting
-                      edge of the ever-evolving tech landscape.
+                    As a tech career launchpad bootcamper, this learning process offers you the opportunity to get skilled Up, expand your knowledge and thrive in a competitive tech environment.
+Your Journey into professional mastery starts here
+
                     </p>
                   </div>
                 </div>
@@ -120,10 +123,8 @@ function Attend() {
                     Grow in Learning
                   </h2>
                   <p className="font-medium text-[16px] font-primary ">
-                    As a registered candidate for the upcoming TechProsNaija
-                    Bootcamp, anticipate exponential professional growth and
-                    skill enhancement, positioning yourself at the cutting edge
-                    of the ever-evolving tech landscape.
+                  As a tech career launchpad bootcamper, this learning process offers you the opportunity to get skilled Up, expand your knowledge and thrive in a competitive tech environment.
+Your Journey into professional mastery starts here
                   </p>
                 </div>
               </div>
