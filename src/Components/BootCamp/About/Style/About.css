@@ -110,7 +110,7 @@
           gap: 12px;
      }
      .main-about-header h1{
-          font-size: 26px;
+          font-size: 46px;
      }
      .main-about-left{
           display: block;
@@ -137,7 +137,9 @@
           gap: 12px;
      }
      .main-about-header h1{
-          font-size: 26px;
+          font-size: 48px;
+         
+          
      }
      .about-right-content{
           position: relative;
@@ -149,6 +151,9 @@
             bottom: 0;
             font-size: 13.8px;
             left: 0;
+       }
+       .About-one-image{
+          z-index: -1;
        }
 
    }
@@ -173,6 +178,9 @@
             bottom: 0;
             font-size: 13.8px;
             left: 0;
+       }
+       .About-one-image{
+          z-index: -1;
        }
    }
    @media only screen and (min-width: 1025px) and (max-width: 1025px) {

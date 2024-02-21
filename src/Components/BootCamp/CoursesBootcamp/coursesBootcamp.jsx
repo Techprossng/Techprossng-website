@@ -64,12 +64,12 @@ const CoursesBootcamp = () => {
   }, []);
   
   return (
-    <div className="px-6 py-12 md:px-12 mt-24 mb-24">
-      <div className="mx-14">
-        <div className="flex justify-between gap-8 items-center">
+    <div className="px-6 py-12 md:px-12 mt-24 mb-24 main-bootcamp-course">
+      <div className="mx-14 main-bootcamp-inner">
+        <div className="flex justify-between gap-8 items-center bootcamp-course-header">
           <h1 className="text-7xl w-1/2 font-medium flex flex-col gap-3">
-            <p> Courses for </p>
-            <p> the Bootcamp</p>
+             Courses for 
+            the Bootcamp
           </h1>
           <p
             className="w-1/2 text-base font-medium"

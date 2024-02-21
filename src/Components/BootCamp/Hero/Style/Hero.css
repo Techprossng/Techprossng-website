@@ -15,6 +15,9 @@
   transition: 1s;
   letter-spacing: 1px;
 }
+.hero-image-large{
+  display: none;
+}
 
 @media only screen and (min-width: 360px) and (max-width: 410px) {
   .hero-bootcamp {
@@ -27,10 +30,13 @@
     gap: 0;
   }
   .calender {
-    margin-top: 0;
+    margin-top: 2px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
   }
   .date h5 {
-    font-size: 14.5px;
+    font-size: 14px;
     margin-top: 1%;
   }
   .hero-left {
@@ -67,6 +73,8 @@
   }
   .calender {
     margin-top: 0;
+    margin-right: 5px;
+    
   }
   .date h5 {
     font-size: 16px;
@@ -105,9 +113,11 @@
   }
   .calender {
     margin-top: 0;
+    margin-right: 5px;
+    
   }
   .date h5 {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 1%;
   }
   .hero-left {
@@ -142,7 +152,9 @@
     justify-content: center;
   }
   .calender {
-    margin-top: 0;
+    margin-top: 2px;
+    margin-right: 2px;
+    
   }
   .date h5 {
     font-size: 17px;
@@ -182,7 +194,8 @@
     justify-content: center;
   }
   .calender {
-    margin-top: 0;
+    margin-top: 2px;
+    
   }
   .date h5 {
     font-size: 17px;
@@ -222,7 +235,7 @@
     justify-content: center;
   }
   .calender {
-    margin-top: 0;
+    margin-top: 2px;
   }
   .date h5 {
     font-size: 17px;
@@ -237,7 +250,7 @@
   }
   .hero-header-date h4 {
     font-size: 37px;
-    text-align: center;
+  
   }
   .break-25 {
     display: none;
@@ -258,12 +271,12 @@
     padding: 10px;
   }
   .date {
-    width: 100%;
+    width: 420px;
     padding: 8px;
-    justify-content: center;
+  
   }
   .calender {
-    margin-top: 0;
+    margin-top: 2px;
   }
   .date h5 {
     font-size: 17px;
@@ -278,20 +291,25 @@
   }
   .hero-header-date h4 {
     font-size: 38px;
-    text-align: center;
+  
   }
   .break-25 {
     display: none;
   }
   .hero-description p {
     font-size: 16px;
-    text-align: center;
-  }
-  .hero-register {
-    width: 100%;
+    width: 85%;
+   
+   
   }
   .hero-right {
     width: 100%;
+  }
+  .hero-image-normal{
+    display: none;
+  }
+  .hero-image-large{
+    display: block;
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 980px) {
@@ -299,9 +317,9 @@
     padding: 10px;
   }
   .date {
-    width: 100%;
+    width: 420px;
     padding: 8px;
-    justify-content: center;
+ 
   }
   .calender {
     margin-top: 0;
@@ -318,20 +336,25 @@
     display: block;
   }
   .hero-header-date h4 {
-    font-size: 30px;
+    font-size: 50px;
   }
   .break-25 {
     display: none;
   }
   .hero-description p {
     font-size: 16px;
-    text-align: center;
+    width: 70%;
+   
   }
-  .hero-register {
-    width: 100%;
-  }
+ 
   .hero-right {
     width: 100%;
+  }
+  .hero-image-normal{
+    display: none;
+  }
+  .hero-image-large{
+    display: block;
   }
 }
 @media only screen and (min-width: 980px) and (max-width: 1024px) {
@@ -339,9 +362,9 @@
     padding: 10px;
   }
   .date {
-    width: 100%;
+    width: 420px;
     padding: 8px;
-    justify-content: center;
+    
   }
   .calender {
     margin-top: 0;
@@ -358,20 +381,23 @@
     display: block;
   }
   .hero-header-date h4 {
-    font-size: 30px;
+    font-size: 65px;
   }
   .break-25 {
     display: none;
   }
   .hero-description p {
-    font-size: 16px;
-    text-align: center;
-  }
-  .hero-register {
-    width: 100%;
+    font-size: 18px;
+   width: 60%;
   }
   .hero-right {
     width: 100%;
+  }
+  .hero-image-normal{
+    display: none;
+  }
+  .hero-image-large{
+    display: block;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1025px) {
