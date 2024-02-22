@@ -28,15 +28,12 @@ function BenefitBootcamp() {
             <div className="benefit-card text-[#000] flex flex-col gap-3">
               <div>
                 <h5 className="text-base font-primary font-bold">
-                  Access to Study Materials / Resources
+                  Industry-Relevant Projects:
                 </h5>
               </div>
               <div className="image-text-holder flex justify-between">
                 <p className="text-sm font-semibold">
-                  Equip yourself for success with comprehensive and
-                  industry-relevant study materials provided at the upcoming
-                  TechProsNaija Bootcamp, ensuring a robust foundation for your
-                  learning journey.
+                  Work on real-world projects that simulate the challenges encountered in tech roles. 
                 </p>
                 <img src={Books} alt="picture of books" className="benefit-photos w-[45%] flex justify-center items-center"/>
               </div>
@@ -44,16 +41,12 @@ function BenefitBootcamp() {
             <div className="benefit-card-2 text-[#000] flex flex-col gap-3">
               <div>
                 <h5 className="text-base font-primary font-bold">
-                  Best Tutors
+                  Mentorship Opportunities:
                 </h5>
               </div>
               <div className="image-text-holder flex justify-between">
                 <p className="text-sm font-semibold">
-                Experience unparalleled learning with the best 
-                tutors at your disposal throughout the upcoming 
-                TechProsNaija Bootcamp, ensuring personalized 
-                guidance and expertise to maximize your educational 
-                journey.
+                  Receive guidance from experienced mentors in the tech field for personalized support.
                 </p>
                 <img src={Teacher} alt="picture of books" className="benefit-photos w-[33%]"/>
               </div>
@@ -63,16 +56,12 @@ function BenefitBootcamp() {
             <div className="benefit-card-2 text-[#000] flex flex-col gap-3">
               <div>
                 <h5 className="text-base font-primary font-bold">
-                  Bootcamp Certification
+                  Certification for Recognition:
                 </h5>
               </div>
               <div className="image-text-holder flex justify-between">
                 <p className="text-sm font-semibold">
-                Upon successful completion of the TechProsNaija Bootcamp, 
-                you will be awarded a prestigious certificate, 
-                validating your mastery of cutting-edge skills 
-                and signaling your readiness for impactful contributions 
-                in the tech industry.
+                  Earn a recognized certification upon completion, enhancing your credibility in the job market.
                 </p>
                 <img src={Graduation} alt="picture of books" className="benefit-photos w-[45%]"/>
               </div>
@@ -80,17 +69,12 @@ function BenefitBootcamp() {
             <div className="benefit-card text-[#000] flex flex-col gap-3">
               <div>
                 <h5 className="text-base font-primary font-bold">
-                  Access to Student Community & Networking
+                  Access to Tech Communities:
                 </h5>
               </div>
               <div className="image-text-holder flex justify-between">
                 <p className="text-sm font-semibold">
-                Forge invaluable connections and amplify your 
-                professional network through interactive sessions 
-                and collaborative opportunities at the upcoming 
-                TechProsNaija Bootcamp, where networking becomes 
-                an integral part of your transformative learning 
-                experience.
+                  Join tech communities and forums to stay updated on industry trends and connect with like-minded individuals.
                 </p>
                 <img src={Network} alt="picture of books" className="benefit-photos w-[45%]"/>
               </div>
