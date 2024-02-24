@@ -58,10 +58,9 @@ function Attend() {
                       Attend Bootcamp
                     </h2>
                     <p className="font-medium text-[16px] font-primary ">
-                      For our already registered candidates, get ready to embark
-                      on a transformative learning journey at the upcoming
-                      TechProsNaija Bootcamp, where the future of technology
-                      awaits your expertise!
+                    For our already registered participants,check your mail for important updates and pre-boot camp information. Familiarize yourself with the schedules and await the bootcamp opening date.
+
+
                     </p>
                   </div>
                 </div>
@@ -92,9 +91,7 @@ function Attend() {
                   Select Payment Options
                 </h2>
                 <p className="mt-3 font-medium font-primary">
-                  Elevate your career prospects and secure your seat at the
-                  forefront of technology by completing your registration and
-                  payment for the TechProsNaija Bootcamp today
+                Choose your preferred payment option; credit card, bank transfer, or other available methods on the remita platform.
                 </p>
                 <img src={Attend1} className="mt-20" />
               </div>
@@ -109,10 +106,7 @@ function Attend() {
                     Attend Bootcamp
                   </h2>
                   <p className="font-medium text-[16px] font-primary ">
-                    For our already registered candidates, get ready to embark
-                    on a transformative learning journey at the upcoming
-                    TechProsNaija Bootcamp, where the future of technology
-                    awaits your expertise!
+                  For our already registered participants,check your mail for important updates and pre-boot camp information. Familiarize yourself with the schedules and await the bootcamp opening date.
                   </p>
                 </div>
               </div>

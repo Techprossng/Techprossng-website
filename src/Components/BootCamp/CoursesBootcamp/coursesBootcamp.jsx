@@ -81,7 +81,7 @@ const CoursesBootcamp = () => {
             fostering a comprehensive and transformative learning experience
           </p>
         </div>
-        <div className="mt-20">
+        <div className="mt-20 course-slider ">
       <Slider
         dots={false}
         infinite={true}

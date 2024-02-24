@@ -97,6 +97,7 @@ const Register = () => {
           headers: {
             "Content-Type": "application/json",
           },
+          
         }
       );
 
@@ -132,13 +133,14 @@ const Register = () => {
   const fetchRemitaKeys = async () => {
     try {
       const remitaKeysResponse = await fetch(
-        "https://techprosnaija.com/api/v1/payments/remita/keys",
+        "https://techprosnaija.com/api/v1/payments/remita/parameters",
         {
           method: "GET",
           headers: {
             Authorization: `Basic ${userEncoded}`,
             "Content-Type": "application/json",
           },
+          
         }
       );
 
