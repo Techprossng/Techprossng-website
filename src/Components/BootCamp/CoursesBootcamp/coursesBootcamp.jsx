@@ -36,6 +36,31 @@ export const course = [
       title: "Backend Developemnt",
       imageUrl: bed,
     },
+    {
+      title: "Product Design",
+      description: "User Interface (UI) and User Experience (UX) Design play key roles in the experience users have when interacting with digital products and applications. In this course, we'll cover the theory and methodologies behind UI and UX design. You'll also design your own wireframes and interactive prototypes.",
+      imageUrl: pd,
+      link: "/register",
+    },
+    {
+      title: "Web Development",
+      description: "Front end web developers use technical and design skills to create a satisfying user experience accessible to everyone, employing essential technical skills in HTML, CSS, JavaScript, command-line editing, and browser developer tools; while creating a seamless operation of the web interface",
+      imageUrl: wd,
+      link: "/bootcamp",
+    },
+      {
+        title: "Data Analysis",
+        imageUrl: da,
+        link:"/validate"
+      },
+      {
+        title: "Mobile Application Development",
+        imageUrl: mad,
+      },
+      {
+        title: "Backend Developemnt",
+        imageUrl: bed,
+      },
 ];
 
 

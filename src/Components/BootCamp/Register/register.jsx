@@ -28,6 +28,8 @@ const Register = () => {
   const [loading, setLoading] = useState(false);
   const [registrationComplete, setRegistrationComplete] = useState(false);
 
+
+ 
   const [remitaPaymentData, setRemitaPaymentData] = useState({
     key: "",
     customerId: "",
@@ -72,7 +74,7 @@ const Register = () => {
     } else if (!emailPattern.test(formValues.email)) {
       errors.email = "This is not a valid email pattern";
     }
-    if (!formValues.course) {
+    if (!formValues.course || formValues.course === "--Select your Course--") {
       errors.course = "Course is required";
     }
 
@@ -133,14 +135,14 @@ const Register = () => {
   const fetchRemitaKeys = async () => {
     try {
       const remitaKeysResponse = await fetch(
-        "https://techprosnaija.com/api/v1/payments/remita/parameters",
+        "https://techprosnaija.com/api/v1/payments/remita/parameters?amount=1000",
         {
           method: "GET",
           headers: {
             Authorization: `Basic ${userEncoded}`,
             "Content-Type": "application/json",
           },
-          
+        
         }
       );
 
@@ -149,17 +151,11 @@ const Register = () => {
         console.log("Remita Keys Response:", remitaKeysData);
         return remitaKeysData;
       } else {
-        console.error(
-          "Error fetching Remita keys:",
-          remitaKeysResponse.status,
-          remitaKeysResponse.statusText
-        );
+        throw new Error(`Error fetching Remita keys: ${remitaKeysResponse.status} ${remitaKeysResponse.statusText}`);
       }
     } catch (error) {
-      console.error(
-        "An error occurred during Remita keys retrieval:",
-        error.message
-      );
+      console.error("An error occurred during Remita keys retrieval:", error.message);
+      return null;
     }
   };
 
