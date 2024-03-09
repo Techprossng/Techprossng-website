@@ -1,4 +1,5 @@
 import React from "react";
+import { useLoading } from "../../Components/BootCamp/Context/LoadingContext";
 import Navbar from "../../Components/Landingpage/Navbar/navbar";
 import HeroBootcamp from "../../Components/BootCamp/Hero/Hero";
 import AboutBootcamp from "../../Components/BootCamp/About/About";
@@ -15,8 +16,15 @@ import Timer from "../../Components/BootCamp/Timer/timer";
 import CoursesBootcamp from "../../Components/BootCamp/CoursesBootcamp/coursesBootcamp";
 
 const BootCamp = () => {
+  const { loading } = useLoading();
+
   return (
     <>
+      {loading && (
+        <div className="flex justify-center">
+          <div className="text-[30px] spinner-1 mt-[10%]"></div>
+        </div>
+      )}
       <Navbar />
       <HeroBootcamp />
       <Timer />

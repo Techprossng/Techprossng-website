@@ -23,7 +23,7 @@ function Pricing() {
           </div>
           <div className="flex justify-center pricing-fee mt-20">
             <img src={Money} className="w-[100px] h-[78px] money-mobile" />
-            <p className="text-[75px] font-bold ">₦2,000.00</p>
+            <p className="text-[75px] font-bold ">₦3,000.00</p>
             <img src={Money} className="w-[186px] h-[98px] money-web" />
           </div>
           <div className="flex justify-center mt-10 venue-container">

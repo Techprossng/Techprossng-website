@@ -11,6 +11,9 @@
   bottom: 4rem;
 
 }
+.About-one-image {
+  z-index: -1;
+}
 .main-about-us {
   background-image: url(../Image/aboutbg.svg);
   background-repeat: no-repeat;

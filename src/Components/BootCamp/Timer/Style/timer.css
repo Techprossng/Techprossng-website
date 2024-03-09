@@ -111,7 +111,35 @@
     font-weight: 800;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1025px) {
+@media only screen and (min-width: 1024px) and (max-width: 1025px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 80px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 28px;
+    font-weight: 800;
+  }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1330px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 60px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 18px;
+    font-weight: 800;
+  }
 }

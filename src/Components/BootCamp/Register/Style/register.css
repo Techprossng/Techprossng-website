@@ -4,7 +4,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.btn-copy{
+  color: rgba(254, 0, 0, 1) ;
+}
 .register-date {
   border: 1px solid #999;
   border-radius: 100px;
@@ -29,6 +31,11 @@
   width: 30px;
   height: 30px;
   animation: spin 1s linear infinite;
+}
+.RRR{
+  background-color: black;
+  color: #fff;
+  margin-top: 10%;
 }
 
 

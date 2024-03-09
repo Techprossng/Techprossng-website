@@ -68,11 +68,11 @@ const Validated = () => {
 
         <div className="flex justify-around validation-display">
           <div className=" payment-header">
-            <h6 className="font-bold">Payment Status</h6>
+            <h6 className="font-bold">Status</h6>
           </div>
 
           <div className=" payment-mode-header">
-            <h6 className="font-bold">Mode of payment</h6>
+            <h6 className="font-bold">Payment Status</h6>
           </div>
         </div>
 

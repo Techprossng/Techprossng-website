@@ -6,12 +6,13 @@
 
 .Mentors-box {
   background: rgba(0, 25, 117, 1);
+  
 }
 .slick-list {
   display: block;
   overflow: hidden;
-
   cursor: grab;
+  height:40rem;
 }
 
 .slick-loading .slick-track {
@@ -53,6 +54,11 @@
 .card .tutors-image {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+
+  width: 100%;
 }
 .card .tutors-details {
   border-bottom-right-radius: 20px;
@@ -87,6 +93,7 @@
   .slick-list {
     overflow: visible;
     margin-right: 10%;
+    
   }
   .your-slider {
     width: 100%;

@@ -1,5 +1,7 @@
+import React from "react";
 import { useEffect } from "react";
 import "./App.css";
+import { LoadingProvider } from "./Components/BootCamp/Context/LoadingContext";
 import AosInitializer from "./assets/aosInitializer";
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/landing-page";
@@ -17,7 +19,6 @@ import ComingSoonPage from "./pages/ComingSoon/soon";
 import { ChakraProvider } from "@chakra-ui/react";
 import BlogPage from "./pages/blog";
 import ContactUs from "./pages/Contact-Us/contact";
-import React from "react";
 import BootCamp from "./pages/Bootcamp/bootcamp";
 import Registration from "./pages/Register/registration";
 import Validate from "./pages/Validate/validate";
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
       <ChakraProvider>
+        <LoadingProvider>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<Homepage />} />
@@ -49,6 +51,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
+        </LoadingProvider>
       </ChakraProvider>
     </>
   );
