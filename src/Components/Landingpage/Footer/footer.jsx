@@ -105,17 +105,17 @@ function Footer() {
         </div>
       </div>
       <hr className="w-[85%] horizontal-line" />
-      <div className="copyright font-secondary flex flex-col justify-center items-center gap-5 p-5 w-[87%] m-auto">
+      <div className="copyright font-secondary flex flex-col justify-center items-center mb-5 gap-5 p-5 w-[87%] m-auto">
         <a href="mailto:hello@techprosnaija.com" className="flex gap-2 items-center">
           <FaEnvelopeCircleCheck className="footer-top-icons text-[#fff] w-5 h-5"/>
-          <p>hello@techprosnaija.com</p>
+          <p>support@techprosnaija.com</p>
         </a>
         <a href="tel:+2348033225912" className="flex gap-2 items-center">
           <FaSquarePhone className="footer-top-icons text-[#fff] w-5 h-5"/>
-          <p>+23413306145</p>
+          <p>08072024626, 09017433227</p>
         </a>
         <span>&copy; 2023 TechProsNaija. All Rights Reserved </span>
-        <a href="">Cookie Policy</a> 
+        <a href="" className=''>Cookie Policy</a> 
       </div>
     </footer>
   );

@@ -13,54 +13,67 @@ import "../CoursesBootcamp/Style/coursesBootcamp.css";
 export const course = [
   {
     title: "Product Design",
-    description: "User Interface (UI) and User Experience (UX) Design play key roles in the experience users have when interacting with digital products and applications. In this course, we'll cover the theory and methodologies behind UI and UX design. You'll also design your own wireframes and interactive prototypes.",
+    description: "Unlock the art of crafting innovative and user-centric products. Learn to navigate the entire design process, from ideation to prototyping, ensuring your creations seamlessly blend form and function. This course hones your skills in design tools and collaborative teamwork, empowering you to shape products that captivate users and stand out in the market.",
     imageUrl: pd,
-    link: "/register",
+    link: "https://drive.google.com/file/d/1FRD2ICmV55trSqhQ9VZh-e1EK7bxG5S4/view?usp=drive_link",
   },
   {
     title: "Web Development",
-    description: "Front end web developers use technical and design skills to create a satisfying user experience accessible to everyone, employing essential technical skills in HTML, CSS, JavaScript, command-line editing, and browser developer tools; while creating a seamless operation of the web interface",
+    description: "Become a full-stack developer by mastering both frontend and backend technologies. Learn to design user interfaces, develop server-side logic, and manage databases. Acquire a comprehensive skill set for building dynamic web applications.",
     imageUrl: wd,
-    link: "/bootcamp",
+    link: "https://drive.google.com/file/d/1cf_rLfBDSSFopzmpTmDSBWg85S56bA17/view?usp=drive_link",
   },
     {
       title: "Data Analysis",
+      description: "In this course, delve into the world of data analytics to understand and interpret complex datasets. Develop proficiency in statistical analysis, data visualization, and programming languages like Python or R. Gain insights into actionable decision-making through hands-on projects",
       imageUrl: da,
-      link:"/validate"
+      link:"https://drive.google.com/file/d/1wQwYR1f2Cgm-DTXEZ3oprExJK_tAVDP9/view?usp=drive_link"
     },
     {
-      title: "Mobile Application Development",
+      title: "Digital Marketing",
+      description: "Navigate the dynamic landscape of online marketing. Develop expertise in search engine optimization (SEO), social media marketing, content creation, and analytics. Learn to create impactful digital marketing campaigns that drive results",
       imageUrl: mad,
+      link:"https://drive.google.com/file/d/1Hy_gt7rcHXZ17MZoTRasxgF78r42adIM/view?usp=drive_link"
     },
     {
       title: "Backend Developemnt",
+      description: "Master the art of server-side development, learning to build robust and scalable applications. Explore backend frameworks and databases, acquiring the skills needed to create efficient server logic and handle data securely",
       imageUrl: bed,
+      link:"https://drive.google.com/file/d/1y8eIWNq3OypyuHEE4NrFL3fhQp110W0w/view?usp=drive_link",
+
     },
+     {
+          title: "Frontend Developemnt",
+          description: "Immerse yourself in the creation of captivating user interfaces. From HTML and CSS fundamentals to dynamic JavaScript interactions, learn the latest front-end frameworks like React or Vue.js. Craft responsive and visually appealing web applications",
+          imageUrl: bed,
+          link:"https://drive.google.com/file/d/1pEyf_Vg3cgl_jPbVXR-GQQ4FU8RMu3qQ/view?usp=drive_link",
+    
+        },
     {
-      title: "Product Design",
-      description: "User Interface (UI) and User Experience (UX) Design play key roles in the experience users have when interacting with digital products and applications. In this course, we'll cover the theory and methodologies behind UI and UX design. You'll also design your own wireframes and interactive prototypes.",
+      title: "Project management",
+      description: "Develop the skills to lead successful projects from initiation to completion. Explore project management methodologies, communication strategies, and effective team collaboration. Gain tools to ensure projects are delivered on time and within budget.",
       imageUrl: pd,
-      link: "/register",
+      link: "https://drive.google.com/file/d/13CCCCt_84WZSqfH-EdSpbXsj62SN2-b5/view?usp=drive_link",
     },
     {
-      title: "Web Development",
-      description: "Front end web developers use technical and design skills to create a satisfying user experience accessible to everyone, employing essential technical skills in HTML, CSS, JavaScript, command-line editing, and browser developer tools; while creating a seamless operation of the web interface",
+      title: "UI/UX Design for Beginners",
+      description: "Embark on a journey into the realms of User Interface (UI) and User Experience (UX) design. Understand the principles of effective design, usability, and user psychology. Create intuitive digital interfaces tailored to user needs",
       imageUrl: wd,
       link: "/bootcamp",
     },
       {
-        title: "Data Analysis",
+        title: "Creative Content Writing",
+        description:"Elevate your writing skills for the digital era. Learn the art of storytelling, content strategy, and SEO optimization. Craft engaging content for various platforms, mastering the nuances of effective online communication",
         imageUrl: da,
-        link:"/validate"
+        link:"https://drive.google.com/file/d/1GLIy2FbG_2qHJTPlDtjDRABgQTuqf7oh/view?usp=drive_link",
       },
       {
-        title: "Mobile Application Development",
+        title: "Creative Design", 
+        description:"Unleash your creativity in the world of visual design. Explore graphic design principles, color theory, and industry-standard tools. Develop the skills to create visually stunning designs that communicate effectively across various media",
         imageUrl: mad,
+        link:"https://drive.google.com/file/d/1csUBlVI6rqCL34L6iQPoy4B3J_6hVtMI/view?usp=drive_link"
       },
-      {
-        title: "Backend Developemnt",
-        imageUrl: bed,
-      },
+     
 ];
 
 

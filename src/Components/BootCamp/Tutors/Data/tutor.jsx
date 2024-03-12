@@ -7,6 +7,8 @@ import Tutors6 from "../../../../assets/images/tutors/Oyetunji.jpg";
 import Tutors7 from "../../../../assets/images/tutors/Ogunniyi.jpg";
 import Tutors8 from "../../../../assets/images/tutors/Noruf.jpg";
 import Tutors9 from "../../../../assets/images/tutors/salako.jpg";
+import Tutors10 from "../../../../assets/images/tutors/Godswill.jpg";
+
 
 
 
@@ -98,7 +100,7 @@ const tutor = [
     name: "Godswill Umoh ",
     jobTitle: "Web Development",
     bio: "Versatile web developer skilled in full-stack technologies. Expertise in designing, building, and optimizing dynamic websites. Committed to seamless user experiences. ",
-    imageURL: Tutors3,
+    imageURL: Tutors10,
   },
 ];
 export default tutor;

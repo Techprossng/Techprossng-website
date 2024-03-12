@@ -180,10 +180,8 @@ const FaqBootcamp = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4} backgroundColor={"#F8F8FF"}>
-              ●Visit our website www.techprosnaija.com/bootcamp.com <br />
-              ●Click on "Sign Up" and follow the simple registration process. <br />
-              ●Select your preferred learning path and payment option. <br />
-              ●Begin your tech journey with us! 
+              ●Visit our website www.techprosnaija.com/boot-camp <br />
+              ●Click on "Sign Up" or “register now” to fill up your details. <br />
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem
@@ -202,15 +200,11 @@ const FaqBootcamp = () => {
             <AccordionPanel pb={4} backgroundColor={"#F8F8FF"}>
               To make payment for the bootcamp, please follow these steps: <br />
                 ●Visit our website techprosnaija.com <br />
-                ●Navigate to the payment section and select your preferred payment option. <br />
-                ●Choose the "Remita" payment platform. <br />
-                ●You will be redirected to the Remita payment page. <br />
-                ●Enter the required details, including the bootcamp reference number and the amount. <br />
-                ●Select your preferred payment method (e.g., bank transfer, card payment) via the remita platform. <br />
-                ●Follow the prompts to complete the payment securely. <br />
-                ●Once the payment is successful, you will receive a confirmation receipt. <br />
+                ●Navigate to the payment section and make a transfer to the account details displaye. <br />
+                ●Kindly upload evidence if payment or receipt. <br />
+                ●Await a confirmatory email within 24hours.. <br />     
               If you encounter any issues or have questions during the payment process, 
-              our support team(at hello@techprosnaija.com) is ready to assist you.
+              our support team(at support@techprosnaija.com) is ready to assist you.
             </AccordionPanel>
           </AccordionItem>
         </Accordion>

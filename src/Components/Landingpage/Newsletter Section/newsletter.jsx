@@ -125,7 +125,7 @@ function Newsletter() {
             you provide to us to contact you about our relevant content,
             products and services. You may unsubscribe from these communication
             at any time. For more information, check our{" "}
-            <a href="/coming-soon">Privacy Policy</a>
+            <a href="09068875239">Privacy Policy</a>
           </p>
         </div>
       </div>
