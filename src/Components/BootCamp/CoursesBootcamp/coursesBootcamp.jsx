@@ -1,10 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import pd from "../../BootCamp/CoursesBootcamp/Image/pd.svg";
-import wd from "../../BootCamp/CoursesBootcamp/Image/wd.svg";
-import da from "../../BootCamp/CoursesBootcamp/Image/da.svg";
-import mad from "../../BootCamp/CoursesBootcamp/Image/mad.svg";
-import bed from "../../BootCamp/CoursesBootcamp/Image/bed.svg";
+import pd from "../../BootCamp/CoursesBootcamp/Image/pd.webp";
+import wd from "../../BootCamp/CoursesBootcamp/Image/wd.jpg";
+import da from "../../BootCamp/CoursesBootcamp/Image/da.jpg";
+import dm from "../../BootCamp/CoursesBootcamp/Image/dm.jpg";
+import bd from "../../BootCamp/CoursesBootcamp/Image/bd.jpg";
+import fd from "../../BootCamp/CoursesBootcamp/Image/fd.png";
+import pm from "../../BootCamp/CoursesBootcamp/Image/pm.png";
+import ui from "../../BootCamp/CoursesBootcamp/Image/ui.jpg";
+import cw from "../../BootCamp/CoursesBootcamp/Image/cw.jpg";
+import cd from "../../BootCamp/CoursesBootcamp/Image/cd.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,45 +37,45 @@ export const course = [
     {
       title: "Digital Marketing",
       description: "Navigate the dynamic landscape of online marketing. Develop expertise in search engine optimization (SEO), social media marketing, content creation, and analytics. Learn to create impactful digital marketing campaigns that drive results",
-      imageUrl: mad,
+      imageUrl: dm,
       link:"https://drive.google.com/file/d/1Hy_gt7rcHXZ17MZoTRasxgF78r42adIM/view?usp=drive_link"
     },
     {
       title: "Backend Developemnt",
       description: "Master the art of server-side development, learning to build robust and scalable applications. Explore backend frameworks and databases, acquiring the skills needed to create efficient server logic and handle data securely",
-      imageUrl: bed,
+      imageUrl: bd,
       link:"https://drive.google.com/file/d/1y8eIWNq3OypyuHEE4NrFL3fhQp110W0w/view?usp=drive_link",
 
     },
      {
           title: "Frontend Developemnt",
           description: "Immerse yourself in the creation of captivating user interfaces. From HTML and CSS fundamentals to dynamic JavaScript interactions, learn the latest front-end frameworks like React or Vue.js. Craft responsive and visually appealing web applications",
-          imageUrl: bed,
+          imageUrl: fd,
           link:"https://drive.google.com/file/d/1pEyf_Vg3cgl_jPbVXR-GQQ4FU8RMu3qQ/view?usp=drive_link",
     
         },
     {
       title: "Project management",
       description: "Develop the skills to lead successful projects from initiation to completion. Explore project management methodologies, communication strategies, and effective team collaboration. Gain tools to ensure projects are delivered on time and within budget.",
-      imageUrl: pd,
+      imageUrl: pm,
       link: "https://drive.google.com/file/d/13CCCCt_84WZSqfH-EdSpbXsj62SN2-b5/view?usp=drive_link",
     },
     {
       title: "UI/UX Design for Beginners",
       description: "Embark on a journey into the realms of User Interface (UI) and User Experience (UX) design. Understand the principles of effective design, usability, and user psychology. Create intuitive digital interfaces tailored to user needs",
-      imageUrl: wd,
+      imageUrl: ui,
       link: "/bootcamp",
     },
       {
         title: "Creative Content Writing",
         description:"Elevate your writing skills for the digital era. Learn the art of storytelling, content strategy, and SEO optimization. Craft engaging content for various platforms, mastering the nuances of effective online communication",
-        imageUrl: da,
+        imageUrl: cw,
         link:"https://drive.google.com/file/d/1GLIy2FbG_2qHJTPlDtjDRABgQTuqf7oh/view?usp=drive_link",
       },
       {
         title: "Creative Design", 
         description:"Unleash your creativity in the world of visual design. Explore graphic design principles, color theory, and industry-standard tools. Develop the skills to create visually stunning designs that communicate effectively across various media",
-        imageUrl: mad,
+        imageUrl: cd,
         link:"https://drive.google.com/file/d/1csUBlVI6rqCL34L6iQPoy4B3J_6hVtMI/view?usp=drive_link"
       },
      
