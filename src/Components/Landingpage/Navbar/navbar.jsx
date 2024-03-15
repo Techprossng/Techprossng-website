@@ -1,6 +1,7 @@
 // src/components/Navbar.js
 import React from 'react';
 import { useState , useEffect } from "react";
+import { useLoading } from '../../BootCamp/Context/LoadingContext';
 import { Link , useLocation} from "react-router-dom";
 import Logo from "../../../assets/images/logo2.png";
 import close from "../../../assets/icons/close.svg";
@@ -12,6 +13,7 @@ const Navbar = () => {
     { name: "Home", link: "/home" },
     { name: "About Us", link: "/about-us" },
     { name: "Courses", link: "/course-catalogue" },
+    { name: "Bootcamp", link: "/boot-camp" },
     { name: "Pricing", link: "/coming-soon" },
     { name: "Resources", link: "/coming-soon" },
     { name: "Mentorship", link: "/coming" },
@@ -22,6 +24,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
   const location = useLocation();
+  const { startLoading, stopLoading } = useLoading();
 
   useEffect(() => {
     // Get the current pathname and find the matching link
@@ -39,8 +42,12 @@ const Navbar = () => {
 
 
   const handleLinkClick = (linkName) => {
+    startLoading();
     setActiveLink(linkName);
     setOpen(false);
+    setTimeout(() => {
+      stopLoading(); // Stop loading after a delay (replace this with actual loading logic)
+    }, 2000);
   };
 
   return (

@@ -1,0 +1,171 @@
+.validate-input{
+    border-radius: 16px; 
+    text-indent: 40px;
+    font-size: 20px;
+}
+.validate-input::placeholder {
+    color: #999; 
+    transform: translateX(4px);
+  }
+.validate-button{
+   background-color: rgba(255, 170, 170, 1);
+   border-radius: 20px;
+   color: #fff;
+}
+  .successful{
+    background-color: rgba(231, 253, 233, 1);
+    font-size: 16px;
+    color: rgba(10, 101, 18, 1);
+    font-weight: 700;
+    border-radius: 4px;
+
+  }
+  .error {
+    background-color: rgba(253, 231, 231, 1);
+    font-size: 16px;
+    color: rgba(101, 10, 10, 1);
+    font-weight: 700;
+    border-radius: 4px;
+  }
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid rgba(254, 0, 0, 1);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @media only screen and (min-width: 360px) and (max-width: 480px) {
+   .validate-form-container{
+     padding: 0;
+     margin-top: 10%;
+   }
+   
+    .validate-form{
+      display: block;
+      padding: 10px;
+    }
+    .validate-input{
+      width: 100%;
+    }
+    .validate-form-right{
+      padding: 0;
+      margin-top: 10%;
+    }
+    .validate-button{
+      width: 100%;
+    }
+    .BiSearch{
+      position: relative;
+      top: 2.6rem;
+    }
+    .validation-display{
+      margin-top: 10%;
+      gap: 20%;
+    }
+    .validation-result{
+      gap: 6rem;
+      margin-top: 2%;
+    }
+   .validate-result-left{
+    width: 50%;
+   }
+   .validate-result-right{
+    width: 50%;
+   }
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .validate-form-container{
+      padding: 0;
+      margin-top: 10%;
+    }
+    
+     .validate-form{
+       display: block;
+       padding: 10px;
+     }
+     .validate-input{
+       width: 100%;
+     }
+     .validate-form-right{
+       padding: 0;
+       margin-top: 10%;
+     }
+     .validate-button{
+       width: 100%;
+     }
+     .BiSearch{
+       position: relative;
+       top: 2.6rem;
+     }
+     .validation-display{
+       margin-top: 10%;
+       gap: 20%;
+     }
+     .validation-result{
+       gap: 6rem;
+       margin-top: 2%;
+     }
+    .validate-result-left{
+     width: 50%;
+    }
+    .validate-result-right{
+     width: 50%;
+    }
+  }
+  
+  @media (min-width: 768px)  and (max-width: 1024px) {
+    .validate-form-container{
+      padding: 0;
+      margin-top: 10%;
+    }
+    
+     .validate-form{
+       display: block;
+       padding: 10px;
+     }
+     .validate-input{
+       width: 100%;
+     }
+     .validate-form-right{
+       padding: 0;
+       margin-top: 10%;
+     }
+     .validate-button{
+       width: 100%;
+     }
+     .BiSearch{
+       position: relative;
+       top: 2.6rem;
+     }
+     .validation-display{
+       margin-top: 10%;
+       gap: 20%;
+     }
+     .validation-result{
+       gap: 6rem;
+       margin-top: 2%;
+     }
+    .validate-result-left{
+     width: 50%;
+    }
+    .validate-result-right{
+     width: 50%;
+    }
+  }
+  @media (min-width: 1024px)  and (max-width: 1025px) {
+    
+  
+  }
+  @media (min-width: 1025px) and (max-width: 1350px)  {
+  
+  
+  
+  }
+  

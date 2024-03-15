@@ -1,0 +1,28 @@
+.imgBackground {
+  background-image: url(../../../../assets//images/bgIMG.svg);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .imgBackground{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  
+}
+
+@media (min-width: 768px)  and (max-width: 1024px) {
+
+}
+@media (min-width: 1024px)  and (max-width: 1025px) {
+  
+
+}
+@media (min-width: 1025px) and (max-width: 1350px)  {
+
+
+
+}
+

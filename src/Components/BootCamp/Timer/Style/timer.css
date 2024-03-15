@@ -1,0 +1,145 @@
+.Timer-box {
+  background: linear-gradient(
+    105.72deg,
+    rgba(0, 25, 117, 0.8) 43.31%,
+    rgba(249, 3, 18, 0.8) 100%
+  ),
+  url(../../../../assets/images/starrs.png);
+  border-radius: 23px;
+  background-repeat: repeat;
+}
+
+.Timer-box p {
+  color: #fff;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 18px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 8px;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 500px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 20px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 10px;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 20px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 10px;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 28px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 13px;
+    font-weight: 800;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 980px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 50px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 25px;
+    font-weight: 800;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 80px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 28px;
+    font-weight: 800;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1025px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 80px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 28px;
+    font-weight: 800;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1330px) {
+  .Timer-inner-container {
+    padding: 10px;
+    margin-top: 10%;
+  }
+  .Timer-box p {
+    font-size: 60px;
+  }
+  .Timer-box {
+    padding: 6%;
+  }
+  .Timer-box p span {
+    font-size: 18px;
+    font-weight: 800;
+  }
+}

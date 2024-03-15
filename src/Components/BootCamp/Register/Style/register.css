@@ -1,0 +1,343 @@
+.register-header-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../../assets/images/regbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn-copy{
+  color: rgba(254, 0, 0, 1) ;
+}
+.register-date {
+  border: 1px solid #999;
+  border-radius: 100px;
+  background: rgba(141, 141, 141, 0.2);
+}
+
+.register-input {
+  background-color: rgba(245, 245, 245, 1);
+  border-radius: 12px;
+}
+.button-8 {
+  background: rgba(254, 0, 0, 1);
+  font-weight: 600;
+  text-align: center;
+  transition: 0.8s;
+  border-radius: 20px;
+}
+.spinner-1 {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+.RRR{
+  background-color: black;
+  color: #fff;
+  margin-top: 10%;
+}
+.register-image{
+  width: 50%;
+  height: 50%;
+}
+.blur-background {
+  filter: blur(5px); 
+  transition: filter 0.3s ease-in-out; 
+}
+.modal-box{
+  background-color: #fff;
+  border-radius: 24px;
+  border: 2px solid black;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .register-date {
+    width: 100%;
+    padding: 13px;
+  }
+
+  .register-inner {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    top: 30%;
+  }
+  .register-venue-container {
+    width: 100%;
+    display: inline-block;
+  }
+  .register-venue-container h5 {
+    font-size: 12px;
+    margin-top: 3px;
+    font-weight: 900;
+  }
+  .register-header h1 {
+    font-size: 31px;
+  }
+  .register-header {
+    margin-top: 7%;
+  }
+  .form-const {
+    width: 100%;
+  }
+  .form-main {
+    display: block;
+    padding: 4%;
+  }
+  .register-1 {
+    width: 100%;
+  }
+  .register-1-inner {
+    width: 100%;
+  }
+ 
+  .register-1-form {
+    display: block;
+    margin-top: 10%;
+  }
+  .register-first-form {
+    display: block;
+  }
+  .register-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 10%;
+  }
+  .button-8 {
+    width: 100%;
+  }
+  .register-input {
+    margin-bottom: 4%;
+  }
+  .register-line {
+    width: 88%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .register-date {
+    width: 100%;
+  }
+
+  .register-inner {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    top: 30%;
+  }
+  .register-venue-container {
+    width: 100%;
+    display: block;
+  }
+  .register-venue-container h5 {
+    font-size: 15px;
+  }
+  .register-header h1 {
+    font-size: 31px;
+  }
+  .register-header {
+    margin-top: 7%;
+  }
+  .form-const {
+    width: 100%;
+  }
+  .form-main {
+    display: block;
+    padding: 4%;
+  }
+  .register-1 {
+    width: 100%;
+  }
+  .register-1-inner {
+    width: 100%;
+  }
+  .register-1-form {
+    display: block;
+    margin-top: 10%;
+  }
+  .register-first-form {
+    display: block;
+  }
+  .register-image {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 10%;
+  }
+  .button-8 {
+    width: 100%;
+  }
+  .register-input {
+    margin-bottom: 4%;
+  }
+  .register-line {
+    width: 82%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  .register-header h1 {
+    font-size: 40px;
+  }
+  .register-inner {
+    position: relative;
+    top: 38%;
+  }
+
+  .register-venue-container {
+    width: 100%;
+    
+  }
+  .register-venue-container h5 {
+    font-size: 15px;
+  }
+
+  .register-header {
+    margin-top: 5%;
+  }
+  .form-const {
+    width: 100%;
+  }
+  .form-main {
+    display: block;
+    padding: 4%;
+  }
+  .register-1 {
+    width: 100%;
+  }
+  .register-1-inner {
+    width: 100%;
+  }
+  .register-1-form {
+    display: block;
+    margin-top: 10%;
+  }
+  .register-first-form {
+    display: block;
+  }
+  .register-image {
+    position: relative;
+     width: 100%;
+    bottom: 0;
+    margin-top: 10%;
+    
+  }
+  .button-8 {
+    width: 100%;
+  }
+  .register-input {
+    margin-bottom: 4%;
+    width: 100%;
+  }
+  .register-line {
+    width: 82%;
+  }
+ 
+
+  .register-inner {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    top: 30%;
+  }
+
+ 
+  .register-header h1 {
+    font-size: 31px;
+  }
+  .input-reg-container {
+    width: 100%;
+  }
+  .register-2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 980px) {
+  .register-header h1 {
+    font-size: 40px;
+  }
+  .register-inner {
+    position: relative;
+    top: 38%;
+  }
+
+  .register-venue-container {
+    width: 100%;
+  
+  }
+  .register-venue-container h5 {
+    font-size: 15px;
+  }
+
+  .register-header {
+    margin-top: 5%;
+  }
+  .form-const {
+    width: 100%;
+  }
+  .form-main {
+    display: block;
+    padding: 4%;
+  }
+  .register-1 {
+    width: 100%;
+  }
+  .register-1-inner {
+    width: 100%;
+  }
+  .register-1-form {
+    display: block;
+    margin-top: 10%;
+  }
+  .register-first-form {
+    display: block;
+  }
+  .register-image {
+    position: relative;
+      width: 100%;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10%;
+   
+  }
+  .button-8 {
+    width: 100%;
+  }
+  .register-input {
+    margin-bottom: 4%;
+    width: 100%;
+  }
+  .register-line {
+    width: 82%;
+  }
+
+  .register-inner {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    top: 30%;
+  }
+ 
+  .register-header h1 {
+    font-size: 31px;
+  }
+  .input-reg-container {
+    width: 100%;
+  }
+  .register-2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+}
+@media only screen and (min-width: 1024px) and (max-width: 1025px) {
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+}

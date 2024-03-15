@@ -1,0 +1,306 @@
+.pricing-background{
+    background-image:   url("../../../../assets/images/PricingBg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.venue-date {
+    border: 1px solid #999;
+    border-radius:100px;
+    background: rgba(141, 141, 141, 0.2);
+  }
+  .venue-register {
+    border: 1px solid #001975;
+    border-radius: 8px;
+    background: #001975;
+    cursor: pointer; 
+  }
+  .venue-register:hover {
+    background: rgb(241, 138, 138); 
+    transition: 1s;
+    letter-spacing: 1px;
+  }
+  .money-mobile{
+    display: none;
+  }
+  @media only screen and (min-width: 360px) and (max-width: 480px) {
+    .pricing-header h1{
+         font-size: 34px;
+    }
+    .pricing-header p{
+      font-size: 14px;
+    }
+    .pricing-background{
+       height: 850px;
+       background-position-x: -380px;
+       background-position-y: 1px;
+  
+    }
+    .line-break-6{
+      display: none;
+    }
+    .line-break-7{
+      display: none;
+    }
+    .pricing-fee{
+      display: block;
+      margin-top: 5px;
+    }
+    .pricing-fee p{
+      font-size: 40px;
+      text-align: center;
+      padding: 5%;
+    }
+    .pricing-container{
+      padding: 4%;
+    
+    }
+    .money-mobile{
+      display: flex;
+      margin-left: 68%;
+      
+    }
+    .money-web{
+      display: none;
+    }
+    .venue-date{
+      gap: 3px;
+    }
+    .venue-date h5{
+      font-size: 13px;
+    }
+    .venue-register {
+      height: 58px;
+      margin-top: 35px;
+    }
+    .venue-container{
+      margin-top: 3px;
+    }
+    .pricing-content{
+      margin-top: 40%;
+    }
+    
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 500px) {
+    .pricing-header h1{
+      font-size: 34px;
+ }
+ .pricing-header p{
+   font-size: 14px;
+ }
+ .pricing-background{
+    height: 650px;
+    background-position-x: -380px;
+    background-position-y: 1px;
+
+ }
+ .line-break-6{
+   display: none;
+ }
+ .line-break-7{
+   display: none;
+ }
+ .pricing-fee{
+   margin-top: 5px;
+ }
+ .pricing-fee p{
+   font-size: 45px;
+   text-align: center;
+   padding: 5%;
+ }
+ .pricing-container{
+   padding: 4%;
+ 
+ }
+ .money-mobile{
+   display: none;
+   margin-left: 68%;
+   
+ }
+
+ .venue-date{
+   gap: 3px;
+ }
+ .venue-date h5{
+   font-size: 13px;
+ }
+ .venue-register {
+   height: 58px;
+   margin-top: 35px;
+ }
+ .venue-container{
+   margin-top: 3px;
+ }
+ .pricing-content{
+   margin-top: 20%;
+ }
+  }
+  
+  @media only screen and (min-width: 500px) and (max-width: 600px) {
+   
+    .pricing-header h1{
+      font-size: 34px;
+ }
+ .pricing-header p{
+   font-size: 14px;
+ }
+ .pricing-background{
+    height: 680px;
+    background-position-x: -380px;
+    background-position-y: 1px;
+
+ }
+ .line-break-6{
+   display: none;
+ }
+ .line-break-7{
+   display: none;
+ }
+ .pricing-fee{
+   margin-top: 5px;
+ }
+ .pricing-fee p{
+   font-size: 50px;
+   text-align: center;
+   padding: 5%;
+ }
+ .pricing-container{
+   padding: 4%;
+ 
+ }
+
+ .venue-date{
+   gap: 3px;
+ }
+ .venue-date h5{
+   font-size: 13px;
+ }
+ .venue-register {
+   height: 58px;
+   margin-top: 35px;
+ }
+ .venue-container{
+   margin-top: 3px;
+ }
+ .pricing-content{
+   margin-top: 20%;
+ }
+    
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 750px) {
+ .pricing-header p{
+   font-size: 14px;
+ }
+ .pricing-background{
+    height: 680px;
+    background-position-x: -20px;
+    background-position-y: 1px;
+
+ }
+ .line-break-6{
+   display: none;
+ }
+ .line-break-7{
+   display: none;
+ }
+ .pricing-fee{
+   margin-top: 5px;
+ }
+ .pricing-fee p{
+   font-size: 65px;
+   text-align: center;
+   padding: 2%;
+ }
+ .pricing-container{
+   padding: 4%;
+ 
+ }
+ .money-mobile{
+   display: none;
+   margin-left: 68%;
+   
+ }
+
+ .venue-date{
+   gap: 3px;
+ }
+ .venue-date h5{
+   font-size: 13px;
+ }
+ .venue-register {
+   height: 58px;
+   margin-top: 35px;
+ }
+ .venue-container{
+   margin-top: 3px;
+ }
+ .pricing-content{
+   margin-top: 10%;
+ } 
+  }
+  @media only screen and (min-width: 750px) and (max-width: 980px) {
+
+ .pricing-header p{
+   font-size: 14px;
+ }
+ .pricing-background{
+    height: 680px;
+    background-position-x: -30px;
+    background-position-y: 1px;
+
+ }
+ 
+ .pricing-fee{
+   margin-top: 5px;
+ }
+ .pricing-fee p{
+   font-size: 60px;
+   text-align: center;
+   padding: 2%;
+ }
+ .pricing-container{
+   padding: 4%;
+ 
+ }
+ .money-mobile{
+   display: none;
+   margin-left: 68%;
+   
+ }
+ .money-web{
+  
+ }
+
+ .venue-date{
+   gap: 3px;
+ }
+ .venue-date h5{
+   font-size: 13px;
+ }
+ .venue-register {
+   height: 58px;
+   margin-top: 35px;
+ }
+ .venue-container{
+   margin-top: 3px;
+ }
+ .pricing-content{
+   margin-top: 10%;
+ }
+  
+    
+  }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+   
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1025px) {
+   
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+   
+  
+  }
+  

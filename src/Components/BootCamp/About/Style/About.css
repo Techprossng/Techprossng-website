@@ -1,0 +1,299 @@
+.About-one-image {
+  position: relative;
+  top: 20%;
+}
+.about-right-content {
+  position: relative;
+  top:20%;
+}
+.about-right-content .about-span {
+  position: relative;
+  bottom: 4rem;
+
+}
+.About-one-image {
+  z-index: -1;
+}
+.main-about-us {
+  background-image: url(../Image/aboutbg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.learn-button {
+  background: #fff;
+  font-size: 13px;
+  position: relative;
+  bottom: 2rem;
+  border: 2px solid rgba(0, 25, 117, 1);
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.learn-button:hover {
+  background-color: rgba(254, 0, 0, 1);
+  color: #fff;
+  border: 2px solid rgba(254, 0, 0, 1);
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .main-about-us {
+    padding: 0;
+  }
+  .main-about-container {
+    padding: 10px;
+    gap: 12px;
+  }
+  .main-about-header h1 {
+    font-size: 26px;
+  }
+  .main-about-left {
+    display: block;
+  }
+  .about-right-content {
+    position: relative;
+    top: 0;
+  }
+  .about-right-content .about-span {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 13.8px;
+    left: 0;
+  }
+  .learn-button {
+    background: #fff;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid rgba(0, 25, 117, 1);
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.8s;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 500px) {
+  .main-about-us {
+    padding: 0;
+  }
+  .main-about-container {
+    padding: 10px;
+    gap: 12px;
+  }
+  .main-about-header h1 {
+    font-size: 26px;
+  }
+  .main-about-left {
+    display: block;
+  }
+  .about-right-content {
+    position: relative;
+    top: 0;
+  }
+  .about-right-content .about-span {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 13.8px;
+    left: 0;
+  }
+  .learn-button {
+    background: #fff;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid rgba(0, 25, 117, 1);
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.8s;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .main-about-us {
+    padding: 0;
+  }
+  .main-about-container {
+    padding: 10px;
+    gap: 12px;
+  }
+  .main-about-header h1 {
+    font-size: 26px;
+  }
+  .main-about-left {
+    display: block;
+  }
+  .about-right-content {
+    position: relative;
+    top: 0;
+  }
+  .about-right-content .about-span {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 13.8px;
+    left: 0;
+  }
+  .learn-button {
+    background: #fff;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid rgba(0, 25, 117, 1);
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.8s;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  .main-about-us {
+    padding: 0;
+  }
+  .main-about-container {
+    padding: 10px;
+    gap: 12px;
+  }
+  .main-about-header h1 {
+    font-size: 46px;
+  }
+  .main-about-left {
+    display: block;
+  }
+  .about-right-content {
+    position: relative;
+    top: 0;
+  }
+  .about-right-content .about-span {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 13.8px;
+    left: 0;
+  }
+  .learn-button {
+    background: #fff;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid rgba(0, 25, 117, 1);
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.8s;
+  }
+}
+@media only screen and (min-width: 751px) and (max-width: 979px) {
+  .main-about-us {
+    padding: 0;
+  }
+  .main-about-container {
+    padding: 10px;
+    gap: 12px;
+  }
+  .main-about-header h1 {
+    font-size: 48px;
+  }
+  .about-right-content {
+    position: relative;
+    top: 0;
+  }
+  .about-right-content .about-span {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 13.8px;
+    left: 0;
+  }
+  .About-one-image {
+    z-index: -1;
+  }
+  .learn-button {
+    background: #fff;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid rgba(0, 25, 117, 1);
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.8s;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  .main-about-us {
+    padding: 0;
+  }
+  .main-about-container {
+    padding: 10px;
+    gap: 12px;
+  }
+  .main-about-header h1 {
+    font-size: 26px;
+  }
+  .about-right-content {
+    position: relative;
+    top: 0;
+  }
+  .about-right-content .about-span {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 13.8px;
+    left: 0;
+  }
+  .About-one-image {
+    z-index: -1;
+  }
+  .learn-button {
+    background: #fff;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid rgba(0, 25, 117, 1);
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.8s;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1447px) {
+  .learn-button {
+    background: #fff;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    border: 2px solid rgba(0, 25, 117, 1);
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.8s;
+  }
+}
+
+
