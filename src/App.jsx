@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import "./App.css";
-import { LoadingProvider } from "./Components/BootCamp/Context/LoadingContext";
 import AosInitializer from "./assets/aosInitializer";
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/landing-page";
@@ -32,7 +31,6 @@ function App() {
   return (
     <>
       <ChakraProvider>
-        <LoadingProvider>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<Homepage />} />
@@ -51,7 +49,6 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
-        </LoadingProvider>
       </ChakraProvider>
     </>
   );

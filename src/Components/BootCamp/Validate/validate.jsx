@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import  { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import "../Validate/Style/validate.css"; 
 

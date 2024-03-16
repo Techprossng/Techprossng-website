@@ -7,7 +7,7 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import { FaRegCalendarCheck } from "react-icons/fa6";
+
 
 const SuccessModal = ({ onClose }) => {
   return (
