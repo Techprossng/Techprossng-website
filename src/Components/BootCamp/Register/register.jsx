@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import { FaRegCalendarCheck, FaArrowRightLong } from "react-icons/fa6";
 import "../../BootCamp/Register/Style/register.css";
 import FormImage from "../../../assets/images/TechProsNg2.png";
@@ -128,7 +129,7 @@ const Register = () => {
       <div className="form-cont ">
         <div className=" flex form-main px-20 py-20">
           <div className="w-[50%] register-1">
-            {registrationComplete ? null : ( // No need to render the form or button if registration is complete
+            {registrationComplete ? null : ( 
               <div className="w-[627px] register-1-inner">
                 <h2 className="text-[30px]  font-bold ">
                   Personal Information

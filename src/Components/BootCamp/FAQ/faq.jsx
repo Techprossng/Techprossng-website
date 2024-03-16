@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Accordion,
   AccordionItem,
@@ -6,7 +7,7 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import React from "react";
+
 
 const FaqBootcamp = () => {
   return (
