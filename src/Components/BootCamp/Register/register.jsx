@@ -32,13 +32,6 @@ const Register = () => {
   const [loading, setLoading] = useState(false);
   const [registrationComplete, setRegistrationComplete] = useState(false);
 
-  
-  
-
-  
-
-  
-
   const validateForm = () => {
     const errors = {};
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -86,11 +79,10 @@ const Register = () => {
         console.log("User registered successfully");
         setFormValues(initialValues);
         setRegistrationComplete(true);
-         setTimeout(() => {
-                 window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc4KvhRweS4NfetsP-kdPJ4rgJdXOrxVsVUXVP1h0bg5Wpe3Q/viewform";
-               }, 1500);
-
-       
+        setTimeout(() => {
+          window.location.href =
+            "https://docs.google.com/forms/d/e/1FAIpQLSc4KvhRweS4NfetsP-kdPJ4rgJdXOrxVsVUXVP1h0bg5Wpe3Q/viewform";
+        }, 1500);
       }
     } catch (error) {
       console.error("An error occurred during form submission:", error.message);
@@ -99,8 +91,6 @@ const Register = () => {
       setLoading(false);
     }
   };
-
- 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -134,7 +124,7 @@ const Register = () => {
       <div className="form-cont ">
         <div className=" flex form-main px-20 py-20">
           <div className="w-[50%] register-1">
-            {registrationComplete ? null : ( 
+            {registrationComplete ? null : (
               <div className="w-[627px] register-1-inner">
                 <h2 className="text-[30px]  font-bold ">
                   Personal Information
@@ -217,24 +207,21 @@ const Register = () => {
                 </form>
               </div>
             )}
-             {registrationComplete && (
-                          <div className="success-message w-full flex">
-                            <p className="text-green-500 text-[30px] font-semibold">
-                            Thank you for registering! pls follow the instructions on the next screen to make payment.
-                            </p>
-                            <GoCheckCircleFill color="green" size={200}/>
-
-                          </div>
-                        )}
+            {registrationComplete && (
+              <div className="success-message w-full flex">
+                <p className="text-green-500 text-[30px] font-semibold">
+                  Thank you for registering! pls follow the instructions on the
+                  next screen to make payment.
+                </p>
+                <GoCheckCircleFill color="green" size={200} />
+              </div>
+            )}
           </div>
-           
-            
-         
+
           <div className=" w-[50%] register-2"></div>
           <img src={FormImage} className=" relative bottom-40 register-image" />
         </div>
       </div>
-       
     </div>
   );
 };
