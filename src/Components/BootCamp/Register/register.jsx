@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FaRegCalendarCheck, FaArrowRightLong } from "react-icons/fa6";
+import { GoCheckCircleFill } from "react-icons/go";
 import "../../BootCamp/Register/Style/register.css";
 import FormImage from "../../../assets/images/TechProsNg2.png";
 
@@ -8,9 +9,12 @@ const courses = [
   "--Select your Course--",
   "Back-end Development",
   "Data Analytics",
+  "Project Management",
   "Front-end Development",
+  "Creative and Content Design",
   "Product Management",
   "Product Design",
+  "Creative Design",
   "UI/UX Design for Beginners",
   "Web Development",
 ];
@@ -82,8 +86,9 @@ const Register = () => {
         console.log("User registered successfully");
         setFormValues(initialValues);
         setRegistrationComplete(true);
-        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc4KvhRweS4NfetsP-kdPJ4rgJdXOrxVsVUXVP1h0bg5Wpe3Q/viewform";
-       
+         setTimeout(() => {
+                 window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc4KvhRweS4NfetsP-kdPJ4rgJdXOrxVsVUXVP1h0bg5Wpe3Q/viewform";
+               }, 1500);
 
        
       }
@@ -144,7 +149,7 @@ const Register = () => {
                         onChange={handleChange}
                         name="firstName"
                         type="text"
-                        className="w-full p-3 register-input"
+                        className="w-full p-3 register-input "
                         placeholder="Enter First Name"
                       />
                       <p className="mt-2 text-[#f00]">{formErrors.firstName}</p>
@@ -169,7 +174,7 @@ const Register = () => {
                       name="email"
                       value={formValues.email}
                       type="email"
-                      className="w-full p-3 register-input"
+                      className="w-full p-3 register-input email-reg-input"
                       placeholder="Enter Email Address"
                     />
                     <p className="mt-2 text-[#f00]">{formErrors.email}</p>
@@ -182,7 +187,7 @@ const Register = () => {
                       value={formValues.course}
                       type="text"
                       id="courses"
-                      className="w-full p-3 register-input"
+                      className="w-full p-3 register-input course-reg-input"
                       placeholder="Select-course"
                     >
                       {courses.map((item, index) => (
@@ -212,13 +217,24 @@ const Register = () => {
                 </form>
               </div>
             )}
-          </div>
+             {registrationComplete && (
+                          <div className="success-message w-full flex">
+                            <p className="text-green-500 text-[30px] font-semibold">
+                            Thank you for registering! pls follow the instructions on the next screen to make payment.
+                            </p>
+                            <GoCheckCircleFill color="green" size={200}/>
 
+                          </div>
+                        )}
+          </div>
+           
+            
          
           <div className=" w-[50%] register-2"></div>
           <img src={FormImage} className=" relative bottom-40 register-image" />
         </div>
       </div>
+       
     </div>
   );
 };
